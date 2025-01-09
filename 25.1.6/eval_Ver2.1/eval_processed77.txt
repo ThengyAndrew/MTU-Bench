@@ -1,0 +1,10 @@
+User:  Hi, Can you assist me with my bank account?
+Action: {}
+Assistant:  Of course! What do you need assistance with?
+User:  I am trying to check the balance of one of my accounts.
+Action: {}
+Assistant:  Sure! Could you please provide me with the account number?
+User:  The account number is 123456. And I also want to move the entire balance to my friend's account after checking.
+Action: {}
+Assistant:  I can assist you with that. Can I have your friend's account number please?
+User:  My friend's account number is 7891011. Can we proceed now?

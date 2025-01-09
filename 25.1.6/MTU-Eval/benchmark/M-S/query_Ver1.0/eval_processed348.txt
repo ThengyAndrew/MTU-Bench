@@ -1,0 +1,6 @@
+user: Hello! please can you help me to find a doctor for consultation?
+function: 
+Thought: Missing type, city. I can't call the function.
+observation: 
+assistant: : Where are you looking for? Are you looking for a General Practitioner or any specialist?
+User: I'm looking for a general practitioner in Petaluma.

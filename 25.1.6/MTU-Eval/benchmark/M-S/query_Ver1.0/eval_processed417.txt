@@ -1,0 +1,6 @@
+user: My bonus is bigger than I thought this month, so I'm ready for some entertainment. What attractions do you show that are coming up?
+function: 
+Thought: Missing location. I can't call the function.
+observation: 
+assistant: : Where do you want to go?
+User: Check out what's happening near LAX, please.

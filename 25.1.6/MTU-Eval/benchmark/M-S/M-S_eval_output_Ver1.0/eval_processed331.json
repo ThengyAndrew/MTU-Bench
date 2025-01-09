@@ -1,0 +1,58 @@
+{
+    "query": [
+        {
+            "user": "I want to search for some attractive places to visit. Can you help me to find something suit to me?",
+            "function": "",
+            "Thought": "The user wants to find attractions but has not specified a location. I need that information to proceed with an API call.",
+            "observation": "",
+            "assistant": ": Yes, in which City do you like to search for the attraction, any particular place you like to visit?"
+        },
+        {
+            "user": "Yes, search it in Chicago.",
+            "function": "",
+            "Thought": "Now that I have the location, I can call the FindAttractions API to search for attractions in Chicago.",
+            "Action": "FindAttractions",
+            "Action Input": "{'location': 'Chicago'}",
+            "observation": ": {'attraction_name': '360 CHICAGO', 'category': 'Tourist Attraction', 'free_entry': 'True', 'good_for_kids': 'True', 'location': 'Chicago', 'phone_number': '888-875-8439'}",
+            "assistant": ": What about a Tourist Attraction at 360 CHICAGO."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindAttractions",
+                "description": "Browse attractions in a given city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Find a hotel at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

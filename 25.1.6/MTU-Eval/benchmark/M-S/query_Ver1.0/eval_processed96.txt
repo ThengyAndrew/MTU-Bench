@@ -1,0 +1,11 @@
+user: I need help with my appointments
+function: 
+Thought: The user needs help with their appointments but hasn't specified how, I should ask for more details.
+observation: 
+assistant: : Appts, ok. How can i help
+user: I want to erase an appointment
+function: 
+Thought: The user wants to delete an appointment. I need to know which specific appointment they want to delete.
+observation: 
+assistant: : Erase an appt. Which one
+User: My meeting next Tuesday at 2:00 PM. Please name it as "Meeting".

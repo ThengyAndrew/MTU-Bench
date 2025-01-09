@@ -1,0 +1,37 @@
+{
+    "query": [
+        {
+            "user": "Find me a one way flight.",
+            "function": "",
+            "Thought": "Missing origin. I can't call the function.",
+            "observation": "",
+            "assistant": ": What city are you flying from?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchOnewayFlight",
+                "description": "Search for one-way flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for round-trip flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

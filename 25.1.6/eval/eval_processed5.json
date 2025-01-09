@@ -1,0 +1,190 @@
+[
+    {
+        "name": "get_current_temperature",
+        "description": "Retrieves the current ambient temperature from a specified location, such as a room, building, or outdoor environment.",
+        "required_parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The specified location, such as a room, building, or outdoor environment from where the current ambient temperature is to be retrieved."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "temperature",
+                "type": "integer",
+                "description": "The current ambient temperature at the specified location."
+            }
+        ]
+    },
+    {
+        "name": "check_door_status",
+        "description": "Queries the status of a door to determine if it is currently open or closed, and may provide additional security information.",
+        "required_parameters": [
+            {
+                "name": "door_location",
+                "type": "string",
+                "description": "The location of the door that the user wants to check the status of"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "door_status",
+                "type": "string",
+                "description": "The current status of the door: locked or unlocked"
+            }
+        ]
+    },
+    {
+        "name": "play_music",
+        "description": "Initiates the playback of music on a connected audio system, including options to select playlists, songs, or streaming services.",
+        "required_parameters": [
+            {
+                "name": "song/playlist",
+                "type": "string",
+                "description": "The specific song or playlist that the user wants to play."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "volume",
+                "type": "float",
+                "description": "The volume at which the music should be played."
+            },
+            {
+                "name": "music_service",
+                "type": "string",
+                "description": "The specific music or streaming service, e.g. Spotify."
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location where the user wants the music to be played."
+            },
+            {
+                "name": "music_genre",
+                "type": "string",
+                "description": "The specific genre of music the user wants to play."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "A confirmation message that the music has been played as per user's instruction."
+            }
+        ]
+    },
+    {
+        "name": "lock_door",
+        "description": "Commands a smart lock to secure a door, ensuring the door is locked and reporting the lock status.",
+        "required_parameters": [
+            {
+                "name": "door_name",
+                "type": "string",
+                "description": "The name or location of the door that needs to be locked"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "lock_status",
+                "type": "string",
+                "description": "The status of the door lock after the 'lock_door' action"
+            }
+        ]
+    },
+    {
+        "name": "adjust_room_temperature",
+        "description": "Controls the thermostat or heating/cooling system to set a specific temperature for a room or area.",
+        "required_parameters": [
+            {
+                "name": "temperature",
+                "type": "integer",
+                "description": "The desired temperature to set the thermostat or heating/cooling system to."
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The specific room or area where the temperature should be adjusted."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "A confirmation message that the temperature has been set as per user's instruction."
+            }
+        ]
+    },
+    {
+        "name": "adjust_lighting",
+        "description": "Modifies the lighting conditions in a specified area, which can include dimming, color changes, or turning lights on or off.",
+        "required_parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "description": "Specifies the area where the lighting conditions are to be modified"
+            },
+            {
+                "name": "action",
+                "type": "string",
+                "description": "Determines the action to be executed on the specified lighting conditions such as turning on or off lights or dimming"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "intensity",
+                "type": "float",
+                "description": "Represents the level of brightness to be set if the lights are to be dimmed or brightened"
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "status",
+                "type": "string",
+                "description": "Returns the status of the action performed on the specified lighting conditions"
+            }
+        ]
+    },
+    {
+        "name": "adjust_music_volume",
+        "description": "Changes the volume of the music currently being played on a connected audio system.",
+        "required_parameters": [
+            {
+                "name": "volume",
+                "type": "float",
+                "description": "A numerical representation of the desired music volume"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "Confirmation message that the volume adjustment has been made accordingly"
+            }
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    }
+]

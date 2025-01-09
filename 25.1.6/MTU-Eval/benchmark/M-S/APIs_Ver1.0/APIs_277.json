@@ -1,0 +1,179 @@
+[
+    {
+        "name": "SearchOnewayFlight",
+        "description": "Search for one-way flights to a destination",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "description": "Search for round-trip flights to a destination",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date",
+            "return_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "ReserveOnewayFlight",
+        "description": "Reserve a one-way flight",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "airlines",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "ReserveRoundtripFlights",
+        "description": "Reserve a round-trip flight",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "airlines",
+            "departure_date",
+            "return_date",
+            "outbound_departure_time",
+            "inbound_departure_time"
+        ],
+        "optional_parameters": {
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve a selected hotel for given dates",
+        "required_parameters": [
+            "hotel_name",
+            "check_in_date",
+            "number_of_days",
+            "destination"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "destination",
+            "number_of_rooms",
+            "check_in_date",
+            "number_of_days",
+            "star_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "has_wifi"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Find a hotel at a given location",
+        "required_parameters": [
+            "destination"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "dontcare",
+            "has_wifi": "dontcare",
+            "star_rating": "dontcare"
+        },
+        "result_parameters": [
+            "destination",
+            "number_of_rooms",
+            "star_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "has_wifi"
+        ]
+    }
+]

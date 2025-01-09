@@ -1,0 +1,48 @@
+{
+    "query": [
+        {
+            "user": "I'm in the mood for some music. Can you find me some Jon Pardi songs?",
+            "function": "",
+            "Thought": "The user is asking for songs by Jon Pardi. I should look up music by this artist.",
+            "Action": "LookupMusic",
+            "Action Input": "{'artist': 'Jon Pardi'}",
+            "observation": ": {'album': 'California Sunrise', 'artist': 'Jon Pardi', 'genre': 'Country', 'song_name': 'Head Over Boots'}",
+            "assistant": ": Sure, what about Head Over Boots by Jon Pardi off the California Sunrise album?"
+        },
+        {
+            "user": "Let's try something else. Do you have anything by Our Last Night? I like Metalcore music.",
+            "function": "",
+            "Thought": "The user is now interested in Metalcore music by Our Last Night. I'll search for music by this artist within the specified genre.",
+            "Action": "LookupMusic",
+            "Action Input": "{'artist': 'Our Last Night', 'genre': 'Metalcore'}",
+            "observation": ": {'album': 'Oak Island', 'artist': 'Our Last Night', 'genre': 'Metalcore', 'song_name': 'Same Old War'}",
+            "assistant": ": Yes, I found 1 song you might like. I can play Same Old War by Our Last Night off the Oak Island album."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "LookupMusic",
+                "description": "Search for a song based on the name and optionally other attributes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMedia",
+                "description": "Play a song by its name and optionally artist",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

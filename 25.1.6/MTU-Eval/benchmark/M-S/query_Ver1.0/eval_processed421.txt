@@ -1,0 +1,51 @@
+user: Can you help me find an intermediate priced place to eat?
+function: 
+Thought: Missing cuisine. I can't call the function.
+observation: 
+assistant: : Any food specifications? Chinese, American or something else?
+user: I love brazilian food actually
+function: 
+Thought: Missing city. I can't call the function.
+observation: 
+assistant: : Which city should I search for it?
+user: I want something in San Francisco.
+function: 
+Action: FindRestaurants 
+Action Input: {'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'moderate'}
+observation: 
+Observation: {'city': 'San Francisco', 'cuisine': 'Brazilian', 'has_live_music': 'False', 'phone_number': '415-626-8727', 'price_range': 'moderate', 'restaurant_name': 'Minas Brazilian', 'serves_alcohol': 'False', 'street_address': '41 Franklin Street'}
+assistant: : Which city should I search for it?
+user: Do you have something expensive?
+function: 
+Action: FindRestaurants 
+Action Input: {'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'expensive'}
+observation: 
+Observation: {}
+assistant: : Which city should I search for it?
+user: How about some lobster at a place that serves alcohol that in moderate price?
+function: 
+Action: FindRestaurants 
+Action Input: {'city': 'San Francisco', 'cuisine': 'Seafood', 'price_range': 'moderate', 'serves_alcohol': 'True'}
+observation: 
+Observation: {'city': 'San Francisco', 'cuisine': 'Seafood', 'has_live_music': 'False', 'phone_number': '415-757-0569', 'price_range': 'moderate', 'restaurant_name': "Betty Lou's Seafood & Grill", 'serves_alcohol': 'True', 'street_address': '318 Columbus Avenue'}
+assistant: : Which city should I search for it?
+user: Cool, make me a reservation there.
+function: 
+Thought: Missing time. I can't call the function.
+observation: 
+Observation: {'city': 'San Francisco', 'cuisine': 'Seafood', 'has_live_music': 'False', 'phone_number': '415-757-0569', 'price_range': 'moderate', 'restaurant_name': "Betty Lou's Seafood & Grill", 'serves_alcohol': 'True', 'street_address': '318 Columbus Avenue'}
+assistant: : What time should I book the slot for?
+user: Today around 19:30. That sounds perfect.
+function: 
+Action: ReserveRestaurant 
+Action Input: {"city": "San Francisco", "date": "2024-01-04", "party_size": "2", "restaurant_name": "Betty Lou's Seafood & Grill", "time": "19:30"}
+observation: 
+Observation: {'city': 'San Francisco', 'cuisine': 'Seafood', 'date': '2024-01-04', 'has_live_music': 'False', 'party_size': '2', 'phone_number': '415-757-0569', 'price_range': 'moderate', 'restaurant_name': "Betty Lou's Seafood & Grill", 'serves_alcohol': 'True', 'street_address': '318 Columbus Avenue', 'time': '19:30'}
+assistant: : What time should I book the slot for?
+user: Thanks, I also want to book a regular cab for a group of 3.
+function: 
+Thought: Missing destination. I can't call the function.
+observation: 
+Observation: {'city': 'San Francisco', 'cuisine': 'Seafood', 'date': '2024-01-04', 'has_live_music': 'False', 'party_size': '2', 'phone_number': '415-757-0569', 'price_range': 'moderate', 'restaurant_name': "Betty Lou's Seafood & Grill", 'serves_alcohol': 'True', 'street_address': '318 Columbus Avenue', 'time': '19:30'}
+assistant: : the location is 318 Columbus Avenue right?
+User: Yes, a cab for 2 I meant. Okay, what is the cost and when will the cab arrive.

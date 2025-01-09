@@ -1,0 +1,15 @@
+user: What is the price for a train departing Stansted Airport after 11:00 on Sunday, heading to Cambridge? I don't need a ticket, just the price.
+function: 
+Thought: The user is asking for the price of a train ticket from Stansted Airport to Cambridge for a departure time after 11:00 on a Sunday. I'll need to query the train schedules and prices for this specific request.
+Action: SearchTrain
+Action Input: {"day": "Sunday", "leaveAt": "11:00", "departure": "Stansted Airport", "destination": "Cambridge", "return_info": ["Ticket"]}
+observation: : {"Ticket": "8.08 pounds"}
+assistant: : They all look to be 8.08 pounds.
+user: Great, I also need something to do, a college maybe. What type of college attractions are available?
+function: 
+Thought: The user is interested in exploring college attractions in Cambridge. I need to find out what type of college-related attractions are available.
+Action: searchAttraction
+Action Input: {"type": "college", "return_info": ["all"]}
+observation: : {"name": ["15 colleges"], "area": ["west", "centre"]}
+assistant: : There are over 15 colleges located in Cambridge. All quite amazing. Were you looking to visit one in the west or centre?
+User: In the west and I will need the entrance fee if there is one, please.

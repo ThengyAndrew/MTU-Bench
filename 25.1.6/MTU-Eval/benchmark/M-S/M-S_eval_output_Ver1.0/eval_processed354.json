@@ -1,0 +1,82 @@
+{
+    "query": [
+        {
+            "user": "Hello! please can you help me to find a doctor for consultation?",
+            "function": "",
+            "Thought": "Missing type, city. I can't call the function.",
+            "observation": "",
+            "assistant": ": Where are you looking for? Are you looking for a General Practitioner or any specialist?"
+        },
+        {
+            "user": "I'm looking for a general practitioner in Petaluma.",
+            "function": "",
+            "Thought": "The user is looking for a general practitioner in Petaluma, and thus I will call the FindProvider API with these parameters.",
+            "Action": "FindProvider ",
+            "Action Input": "{'city': 'Petaluma', 'type': 'General Practitioner'}",
+            "observation": ": {'average_rating': '5.00', 'city': 'Petaluma', 'doctor_name': 'Dr. Fasih A. Hameed, MD', 'phone_number': '707-559-7510', 'street_address': '1301 Southpoint Boulevard', 'type': 'General Practitioner'}",
+            "assistant": ": Do you wish to consult with the doctor Dr. Fasih A. Hameed, MD , who is a General Practitioner located in Petaluma for he has a good ratings from his clients."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "BookAppointment",
+                "description": "Book an appointment with a specific doctor for the given date and time",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindProvider",
+                "description": "Find a medical service provider based on their location and speciality",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetEvents",
+                "description": "Get list of all calendar events for the user on a given day",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetAvailableTime",
+                "description": "Get a list of available times for the user on a given day",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "AddEvent",
+                "description": "Add event to the user's calendar",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

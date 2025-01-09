@@ -1,0 +1,23 @@
+user: I have a question about a world record
+function: 
+Thought: The user is interested in world records. The assistant should prepare to get information about the user's specific interest within world records. No API is needed yet.
+observation: 
+assistant: : Sure, what would you like for me to look up?
+user: What was the loudest sound ever recorded?
+function: 
+Thought: The user wants to know about the loudest sound ever recorded. I need to call an API to get this information.
+Action: get_world_record
+Action Input: {"record_category": "loudest sound"}
+observation: : {"information": "The loudest sound ever recorded was a nuclear explosion. And it was recorded in the United States. It was 600 decibals."}
+assistant: : The loudest sound ever recorded was a nuclear explosion.
+user: Where was it located?
+function: 
+Thought: The user wants to know the location of the loudest sound ever recorded. This information should have been returned from the previous API call.
+observation: : {"information": "The loudest sound ever recorded was a nuclear explosion. And it was recorded in the United States. It was 600 decibals."}
+assistant: : It was recorded in the United States.
+user: How loud was it?
+function: 
+Thought: The user wants to know the decibels of the loudest sound ever recorded. This information should have been returned from the previous API call.
+observation: : {"information": "The loudest sound ever recorded was a nuclear explosion. And it was recorded in the United States. It was 600 decibals."}
+assistant: : It was 600 decibals.
+User: Thank you!

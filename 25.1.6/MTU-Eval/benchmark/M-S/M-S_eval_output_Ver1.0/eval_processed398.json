@@ -1,0 +1,49 @@
+{
+    "query": [
+        {
+            "user": "Where can I eat?",
+            "function": "",
+            "Thought": "Missing cuisine, city. I can't call the function.",
+            "observation": "",
+            "assistant": ": What kind of food do you want? You can say Sushi, Mexican, Italian or another kind of food. Which city shall check in?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRestaurant",
+                "description": "Reserve a table at a restaurant",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindRestaurants",
+                "description": "Find a restaurant of a particular cuisine in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

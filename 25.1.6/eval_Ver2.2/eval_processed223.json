@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I’m thinking of setting a specific type of music for my alarm today.",
+        "Assistant": "Sure, what type of music and what time do you want your alarm to be set?"
+    },
+    {
+        "User": "I prefer pop music and I want it set for my 3pm alarm later.",
+        "Assistant": "Alright, I have found a pop song for your alarm."
+    },
+    {
+        "User": "That sounds good. Can you play the song for me right now?"
+    }
+]

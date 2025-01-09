@@ -1,0 +1,13 @@
+User:  I would like to join a library.
+Action: {}
+Assistant:  Sure, can you tell me which city you currently live in?
+
+User:  I live in San Francisco.
+Action: {"apply_for_membership": {"city_of_residence": "San Francisco"}}
+Assistant:  Great, I am applying for a library membership in San Francisco for you. 
+
+User:  I see, Can I borrow a book if I'm a member of the library?
+Action: {}
+Assistant:  Certainly, once you have your library membership, you can borrow books. Do you have a specific book in mind?
+
+User:  Yes, I'd like to borrow "To Kill a Mockingbird". Borrow it for me.

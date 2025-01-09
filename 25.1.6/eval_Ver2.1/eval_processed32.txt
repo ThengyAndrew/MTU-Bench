@@ -1,0 +1,7 @@
+User:  I am looking for some medical help.
+Action: {}
+Assistant:  Sure, would you like me to find a doctor for you?
+User:  Yes, that's what I'm looking for.
+Action: {}
+Assistant:  That's fine. Can you please tell me which specialty you are looking for and which city should it be?
+User:  I need a Cardiologist in New York, and please add the doctor's contact to my contact list once you've found it.

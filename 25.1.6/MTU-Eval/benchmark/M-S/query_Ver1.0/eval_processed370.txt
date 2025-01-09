@@ -1,0 +1,6 @@
+user: Find me a place to eat at?
+function: 
+Thought: The user is asking for restaurant recommendations but hasn't specified a cuisine preference. I can't proceed with an API call without knowing the user's cuisine preference.
+observation: 
+assistant: : Do you like American, Indian or some other type of food?
+User: I want some Chinese food.

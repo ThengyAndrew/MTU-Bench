@@ -1,0 +1,11 @@
+user: how can i change my contact name
+function: 
+Thought: The user wants to change a contact's name. I will need additional information such as the contact's current name and the new name they want to use. It seems that I need to call the update contact information API.
+observation: 
+assistant: : I can help.
+user: how can you help me?
+function: 
+Thought: The user is seeking clarification on how the assistant works. Usually, for the assistant to change the contact's name, it needs the current contact's name and the new name. The assistant will now ask for that information.
+observation: 
+assistant: : What is the name?
+User: angelee

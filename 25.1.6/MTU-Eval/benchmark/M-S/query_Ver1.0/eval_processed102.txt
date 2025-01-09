@@ -1,0 +1,6 @@
+user: I need help with my contacts
+function: 
+Thought: The user needs help with contacts, I should be prepared to provide assistance with contacts related actions like adding, deleting, updating or finding a contact. No need to call any API at this point.
+observation: 
+assistant: : Sure.
+User: I want to add a new contact

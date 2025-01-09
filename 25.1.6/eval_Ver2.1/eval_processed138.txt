@@ -1,0 +1,9 @@
+User:  I have an alarm set on my phone.
+Action: {}
+Assistant:  That's great. Can I help with anything related to that?
+
+User:  Yeah, I need to know the sound which is set for a certain time.
+Action: {}
+Assistant:  Could you please tell me the time you set the alarm for?
+
+User:  Yeah, for 07:00 today. And then, please play that sound.

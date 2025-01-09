@@ -1,0 +1,5 @@
+User:  Hey, I am in the mood for some music and entertainment.
+Action: {}
+Assistant:  That sounds like fun! What kind of music are you thinking and do you want to watch a movie as well?
+
+User:  Yes, I want to listen to some music from a particular era and genre plus it would be great if you could find out movie listings at my local cinema.

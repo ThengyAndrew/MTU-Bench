@@ -1,0 +1,71 @@
+[
+    {
+        "name": "FindBus",
+        "description": "Find a bus itinerary between cities for a given date",
+        "required_parameters": [
+            "origin",
+            "destination",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "fare_type": "Economy",
+            "group_size": "1"
+        },
+        "result_parameters": [
+            "origin",
+            "destination",
+            "origin_station_name",
+            "destination_station_name",
+            "departure_date",
+            "price",
+            "departure_time",
+            "group_size",
+            "fare_type"
+        ]
+    },
+    {
+        "name": "BuyBusTicket",
+        "description": "Buy tickets for a bus itinerary",
+        "required_parameters": [
+            "origin",
+            "destination",
+            "departure_date",
+            "departure_time",
+            "group_size"
+        ],
+        "optional_parameters": {
+            "fare_type": "Economy"
+        },
+        "result_parameters": [
+            "origin",
+            "destination",
+            "origin_station_name",
+            "destination_station_name",
+            "departure_date",
+            "price",
+            "departure_time",
+            "group_size",
+            "fare_type"
+        ]
+    },
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    }
+]

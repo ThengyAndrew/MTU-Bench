@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I'd love to find a service provider for some personal care needs in a specific city.",
+        "Assistant": "Sure, what kind of service are you looking for and in which city?"
+    },
+    {
+        "User": "I am searching for a hair stylist in New York.",
+        "Assistant": "Alright, I found a stylist named {stylist_name} who fulfills your requirements. Do you want to book an appointment with them?"
+    },
+    {
+        "User": "Yes, book an appointment for January 8th at 8:00 AM. Also, save their information for future reference."
+    }
+]

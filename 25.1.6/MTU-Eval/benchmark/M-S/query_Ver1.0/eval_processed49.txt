@@ -1,0 +1,16 @@
+user: I would like to know about fees.
+function: 
+Thought: The user wants to know about the fees that he owes. But I do not have the user's Library ID, so I need to ask them about it.
+observation: 
+assistant: : Could you please provide me with your Library ID?
+user: What is the amount of fees I currently owe?
+function: 
+Thought: The user wants to know the fees they owe. The user didn't provide the library ID. I need to ask the user to provide their library ID. 
+observation: 
+assistant: : Could you please provide me with your library ID so that I can assist you further?
+user: How much do I owe in fees. Okay, thats fine.
+function: 
+Thought: The user still wants to know about the fee, but didn't provide necessary information (Library ID). The assistant should have asked for user's library ID for fees information.
+observation: 
+assistant: : I am sorry for the inconvenience. Could you please provide me with your library ID to check the fees you owe?
+User: That will be all.

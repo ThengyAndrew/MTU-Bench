@@ -1,0 +1,41 @@
+{
+    "query": "Can you book me a non-refundable, one-stop flight on Delta Airlines from New York to Chicago, leaving on the 5th and returning on the 11th of this month in Economy class?",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve rooms at a selected place for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Look for accommodation in a city of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetWeather",
+                "description": "Get the weather of a certain location on a date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

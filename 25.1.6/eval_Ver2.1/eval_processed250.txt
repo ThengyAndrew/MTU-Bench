@@ -1,0 +1,4 @@
+User:  Hi, I'm looking to plan an outing.
+Action: {}
+Assistant:  That sounds great! How can I assist you with your plan?
+User:  Could you help me book a dinner at seagoville for five?

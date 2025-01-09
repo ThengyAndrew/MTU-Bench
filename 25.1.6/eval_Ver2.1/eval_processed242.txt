@@ -1,0 +1,9 @@
+User:  Hey, can you assist me with some music-related stuff?
+Action: {}
+Assistant:  Absolutely, what do you need help with?
+
+User:  I want to listen to a song.
+Action: {}
+Assistant:  Sure, which song or artist can I find for you?
+
+User:  The song is by Red Hot Chili Peppers.

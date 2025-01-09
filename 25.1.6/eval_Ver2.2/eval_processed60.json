@@ -1,0 +1,9 @@
+[
+    {
+        "User": "I need a certain kind of doctor within my city.",
+        "Assistant": "Of course, what kind of doctor do you need and which city?"
+    },
+    {
+        "User": "I'm looking for a dermatologist and the city is New York."
+    }
+]

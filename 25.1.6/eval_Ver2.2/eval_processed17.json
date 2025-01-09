@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hey, I need some help setting up an alarm on my phone.",
+        "Assistant": "Of course, what time would you like to set your alarm for?"
+    },
+    {
+        "User": "Let's set it for 7:00 PM.",
+        "Assistant": "I have set up your alarm for 7:00 PM. Do you want to name this alarm?"
+    },
+    {
+        "User": "Yeah, call it \"Workout\". Could you also change its sound to something more energetic, may be birdsong?"
+    }
+]

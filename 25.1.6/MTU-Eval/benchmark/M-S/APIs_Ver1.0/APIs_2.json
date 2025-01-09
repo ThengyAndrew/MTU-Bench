@@ -1,0 +1,54 @@
+[
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    },
+    {
+        "name": "LookupMusic",
+        "description": "Search for a song based on the name and optionally other attributes",
+        "required_parameters": [],
+        "optional_parameters": {
+            "genre": "dontcare",
+            "artist": "dontcare",
+            "album": "dontcare"
+        },
+        "result_parameters": [
+            "song_name",
+            "artist",
+            "album",
+            "genre"
+        ]
+    },
+    {
+        "name": "PlayMedia",
+        "description": "Play a song by its name and optionally artist",
+        "required_parameters": [
+            "song_name"
+        ],
+        "optional_parameters": {
+            "artist": "dontcare",
+            "playback_device": "TV"
+        },
+        "result_parameters": [
+            "song_name",
+            "artist",
+            "album",
+            "genre",
+            "playback_device"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "name": "ShareLocation",
+        "description": "Send your location to a contact. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "location",
+            "contact_name"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "location",
+            "contact_name"
+        ]
+    },
+    {
+        "name": "ReserveRestaurant",
+        "description": "Make a table reservation at a restaurant. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "restaurant_name",
+            "location",
+            "time"
+        ],
+        "optional_parameters": {
+            "number_of_seats": "2",
+            "date": "2019-03-01"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "number_of_seats",
+            "price_range",
+            "location",
+            "category"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find restaurants by location and by category. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "category",
+            "location"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_seating_outdoors": "dontcare",
+            "has_vegetarian_options": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "price_range",
+            "location",
+            "category"
+        ]
+    }
+]

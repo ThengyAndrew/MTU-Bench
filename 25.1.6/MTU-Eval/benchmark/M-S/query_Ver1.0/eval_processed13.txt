@@ -1,0 +1,8 @@
+user: Check for me please the weather in Mountain View.
+function: 
+Thought: The user has requested weather information for Mountain View, which requires an API call to get the current weather data.
+Action: GetWeather 
+Action Input: {'city': 'Mountain View'}
+observation: : {'city': 'Mountain View', 'date': '2024-01-04', 'humidity': '28', 'precipitation': '9', 'temperature': '91', 'wind': '3'}
+assistant: : The average temperature for the day should be 91 degrees Fahrenheit and 9 percent chance of rain.
+User: I understand.Find me a restaurant there.

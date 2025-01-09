@@ -1,0 +1,7 @@
+User:  Hey! Can you help me find some information?
+Action: {}
+Assistant:  Of course! What information are you looking for?
+User:  I¡¯m looking for the location of a play happening tonight. 
+Action: {}
+Assistant:  Sure. Could you please tell me the name and the city of the play?
+User:  Yes, it's "Romeo and Juliet" and it's happening in New York. Also, could you please send the location details to my friend John once you have found it?

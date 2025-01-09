@@ -1,0 +1,6 @@
+user: I want to search for some attractive places to visit. Can you help me to find something suit to me?
+function: 
+Thought: The user wants to find attractions but has not specified a location. I need that information to proceed with an API call.
+observation: 
+assistant: : Yes, in which City do you like to search for the attraction, any particular place you like to visit?
+User: Yes, search it in Chicago.

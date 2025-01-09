@@ -1,0 +1,6 @@
+user: I'm in the mood to watch a movie.
+function: 
+Thought: Missing location. I can't call the function.
+observation: 
+assistant: : Where would you like me to search?
+User: Look in SFO Please.

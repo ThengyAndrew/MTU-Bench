@@ -1,0 +1,46 @@
+{
+    "query": [
+        {
+            "User": "I'm interested in a concert. Also, can you tell me the weather forecast for the day of that concert?",
+            "Assistant": "Nice. What type of music event are you interested in?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindEvents",
+                "description": "Find cultural events - concerts and plays - happening in a city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyEventTickets",
+                "description": "Buy tickets for a cultural event and date in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetWeather",
+                "description": "Get the weather of a certain location on a date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

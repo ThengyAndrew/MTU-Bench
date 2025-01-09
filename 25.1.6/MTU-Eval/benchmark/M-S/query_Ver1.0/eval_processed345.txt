@@ -1,0 +1,36 @@
+user: Hello! please can you help me to find a doctor for consultation?
+function: 
+Thought: Missing type, city. I can't call the function.
+observation: 
+assistant: : Where are you looking for? Are you looking for a General Practitioner or any specialist?
+user: I'm looking for a general practitioner in Petaluma.
+function: 
+Thought: The user is looking for a general practitioner in Petaluma, and thus I will call the FindProvider API with these parameters.
+Action: FindProvider 
+Action Input: {'city': 'Petaluma', 'type': 'General Practitioner'}
+observation: : {'average_rating': '5.00', 'city': 'Petaluma', 'doctor_name': 'Dr. Fasih A. Hameed, MD', 'phone_number': '707-559-7510', 'street_address': '1301 Southpoint Boulevard', 'type': 'General Practitioner'}
+assistant: : Do you wish to consult with the doctor Dr. Fasih A. Hameed, MD , who is a General Practitioner located in Petaluma for he has a good ratings from his clients.
+user: Do you have their address? What is the numeric value of their rating?
+function: 
+Thought: The information already exists in the historical conversation. No Action.
+observation: : {'average_rating': '5.00', 'city': 'Petaluma', 'doctor_name': 'Dr. Fasih A. Hameed, MD', 'phone_number': '707-559-7510', 'street_address': '1301 Southpoint Boulevard', 'type': 'General Practitioner'}
+assistant: : The address is 1301 Southpoint Boulevard and they have a rating of 5.0.
+user: Do you know any other doctors for I'm looking for a Dermatologist in Danville.
+function: 
+Thought: The user is now looking for a dermatologist in Danville. I will call the FindProvider API with these new parameters.
+Action: FindProvider 
+Action Input: {'city': 'Danville', 'type': 'Dermatologist'}
+observation: : {'average_rating': '4.20', 'city': 'Danville', 'doctor_name': 'Dermatology and Laser Centre', 'phone_number': '925-820-3376', 'street_address': '4680 Tassajara Road', 'type': 'Dermatologist'}
+assistant: : Do you wish to have consultation with Dermatology and Laser Centre, for they are Dermatologist located in Danville?
+user: Yup, this would work for me.
+function: 
+observation: 
+assistant: : Do you wish to have consultation with Dermatology and Laser Centre, for they are Dermatologist located in Danville?
+user: Yup, Please can you book the appointment on 7th of this month at 4 in the evening. Yup, sounds good.
+function: 
+Thought: The user has agreed to book an appointment. I will call the BookAppointment API with the specified details.
+Action: BookAppointment 
+Action Input: {'appointment_date': '2024-01-07', 'appointment_time': '16:00', 'doctor_name': 'Dermatology and Laser Centre'}
+observation: : {'appointment_date': '2024-01-07', 'appointment_time': '16:00', 'average_rating': '4.20', 'doctor_name': 'Dermatology and Laser Centre', 'phone_number': '925-820-3376', 'street_address': '4680 Tassajara Road', 'type': 'Dermatologist'}
+assistant: : Okay! your appointment is scheduled successfully.
+User: Can I have the Centre's address?

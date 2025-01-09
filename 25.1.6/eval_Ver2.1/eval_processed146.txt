@@ -1,0 +1,7 @@
+User:  I want to know the weather forecast for a place. 
+Action: {}
+Assistant:  Sure, could you please tell me the place and time for which you need the weather forecast?
+User:  Yes, for today. At Delaware and Lehigh National Heritage Corridor. 
+Action: {"GetWeather": {"condition_temperature": "freezing", "timeRange": "today", "geographic_poi": "Delaware and Lehigh National Heritage Corridor"}}
+Assistant:  Let me check the information for you.
+User:  After knowing whether it will be freezing today in Delaware and Lehigh National Heritage Corridor, I want to listen to something on YouTube.

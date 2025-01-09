@@ -1,0 +1,62 @@
+{
+    "query": [
+        {
+            "user": "Find me a one way flight.",
+            "function": "",
+            "Thought": "Missing origin. I can't call the function.",
+            "observation": "",
+            "assistant": ": What city are you flying from?"
+        },
+        {
+            "user": "I'd like to leave from NY on the 1st of March and fly Economy.",
+            "function": "",
+            "Thought": "Missing destination. I can't call the function.",
+            "observation": "",
+            "assistant": ": Where are you heading?"
+        },
+        {
+            "user": "I'd like three tickets to London, UK.",
+            "function": "",
+            "Thought": "The user has provided origin, destination, departure date, number of passengers, and seating class. These details are sufficient to search for a one-way flight.",
+            "Action": "SearchOnewayFlight",
+            "Action Input": "{'departure_date': '2024-03-01', 'destination': 'London', 'origin': 'New York', 'passengers': '3', 'seating_class': 'Economy'}",
+            "observation": ": {'airlines': 'American Airlines', 'departure_date': '2024-03-01', 'destination': 'London', 'destination_airport': 'Heathrow International Airport', 'fare': '203', 'is_redeye': 'True', 'number_stops': '0', 'origin': 'New York', 'origin_airport': 'JFK International Airport', 'outbound_arrival_time': '06:37', 'outbound_departure_time': '18:15', 'passengers': '3', 'seating_class': 'Economy'}",
+            "assistant": ": I found a flight with American Airlines that costs $203 and takes off at 6:15 pm with 0 stops."
+        },
+        {
+            "user": "I'd actually prefer Southwest Airlines.",
+            "function": "",
+            "Thought": "The user prefers Southwest Airlines over the previous option provided. Need to search specifically for flights offered by Southwest Airlines using the same criteria as before.",
+            "Action": "SearchOnewayFlight",
+            "Action Input": "{'airlines': 'Southwest Airlines', 'departure_date': '2024-03-01', 'destination': 'London', 'origin': 'New York', 'passengers': '3', 'seating_class': 'Economy'}",
+            "observation": ": {'airlines': 'Southwest Airlines', 'departure_date': '2024-03-01', 'destination': 'London', 'destination_airport': 'Heathrow International Airport', 'fare': '267', 'is_redeye': 'True', 'number_stops': '0', 'origin': 'New York', 'origin_airport': 'JFK International Airport', 'outbound_arrival_time': '04:57', 'outbound_departure_time': '16:35', 'passengers': '3', 'seating_class': 'Economy'}",
+            "assistant": ": I found 1 flight with Southwest Airlines that costs $267, has 0 stops, and takes off at 4:35 pm."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchOnewayFlight",
+                "description": "Search for one-way flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for round-trip flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

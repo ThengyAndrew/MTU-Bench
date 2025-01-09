@@ -1,0 +1,53 @@
+{
+    "query": "I'm looking for a dermatologist in Walnut Creek with a high rating.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindEvents",
+                "description": "Find cultural events - concerts and plays - happening in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyEventTickets",
+                "description": "Buy tickets for a cultural event and date in a given city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindBus",
+                "description": "Search for a bus itinerary between two places on a certain date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyBusTicket",
+                "description": "Purchase the bus tickets",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

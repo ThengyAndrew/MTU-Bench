@@ -1,0 +1,102 @@
+[
+    {
+        "name": "searchAttraction",
+        "description": "To search for attractions based on name, type, and location, with the capability to specify returned fields.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the attraction."
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "The type of attraction."
+            },
+            {
+                "name": "area",
+                "type": "string",
+                "description": "The location area of the attraction."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "A list specifying the fields to be returned. Options can include various attributes of the attractions.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "SearchRestaurant",
+        "description": "Allows users to search for restaurant information based on various filters.",
+        "required_parameters": [
+            {
+                "name": "area",
+                "description": "The area where the restaurant is located."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "name",
+                "description": "The name of the restaurant."
+            },
+            {
+                "name": "priceRange",
+                "description": "The price range of the restaurant."
+            },
+            {
+                "name": "food",
+                "description": "Type of food or cuisine offered."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "BookRestaurant",
+        "description": "Allows users to make restaurant reservations.",
+        "required_parameters": [
+            {
+                "name": "name",
+                "description": "The name of the restaurant."
+            },
+            {
+                "name": "day",
+                "description": "The date for the reservation."
+            },
+            {
+                "name": "time",
+                "description": "The time for the reservation."
+            },
+            {
+                "name": "people",
+                "description": "Number of people for the reservation."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'.",
+                "items": {
+                    "type": "string"
+                },
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    }
+]

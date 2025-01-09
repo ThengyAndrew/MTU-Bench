@@ -1,0 +1,23 @@
+user: I need help with a world record?
+function: 
+Thought: The user needs information on a world record. I need to ask for more specifics so I can call the relevant API.
+observation: 
+assistant: : Sure. What can I answer for you?
+user: What is the biggest snake ever?
+function: 
+Thought: The user wants to know the world record for the biggest snake ever. I will need to use the "get_world_record" API with the "record_category" set to "biggest snake".
+Action: get_world_record
+Action Input: {"record_category": "biggest snake"}
+observation: : {"information": "Medusa is known as the biggest snake ever and is over 25 feet long. She is a reticulated python."}
+assistant: : The biggest snake ever, or the biggest type of snake?
+user: The biggest ever.
+function: 
+Thought: The user has confirmed that they are interested in the largest single snake, not the species. No further API calls are needed.
+observation: : {"information": "Medusa is known as the biggest snake ever and is over 25 feet long. She is a reticulated python."}
+assistant: : Sure, Medusa is known as the biggest snake ever and is over 25 feet long.
+user: What kind of snake was that?
+function: 
+Thought: The user is asking for additional information that we already provided, no need to call an API for this.
+observation: : {"information": "Medusa is known as the biggest snake ever and is over 25 feet long. She is a reticulated python."}
+assistant: : She is a reticulated python.
+User: Thanks!

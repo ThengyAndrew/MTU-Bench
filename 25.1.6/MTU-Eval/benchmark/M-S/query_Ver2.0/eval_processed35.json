@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you check my bank account, I think someone is messing with my account",
+        "function": "",
+        "Thought": "The user suspects that there is suspicious activity in their bank account. I need to call the API get_recent_transactions to overview the latest happenings on the user's account. But for that, I need to ask the user for their account number. ",
+        "observation": "",
+        "assistant": ": I'll check on that."
+    }
+]

@@ -1,0 +1,6 @@
+user: I'm searching for a flight.
+function: 
+Thought: Missing origin. I can't call the function.
+observation: 
+assistant: : Which metropolis do you wish to leave from?
+User: Search for flights from Washington.

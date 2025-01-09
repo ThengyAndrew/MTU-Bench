@@ -1,0 +1,6 @@
+user: I need some help with my appointments.
+function: 
+Thought: The user needs help with their appointments. Depending on what specifically they need help with, there might be a need to call the 'get_user_appointments' API to fetch the existing appointments.
+observation: 
+assistant: : What kind of help?
+User: I need to set a reminder for a dentist's appointment.

@@ -1,0 +1,117 @@
+{
+    "query": [
+        {
+            "User": "Hi, can you please help me check the balance in my account, then make a transfer of all the balance to my savings account? After the transfer, I also want to review my recent transactions, please. My account number is 17528472632."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "transfer_funds",
+                "description": "This tool is used to perform a monetary transfer between a user's bank accounts, such as from a checking account to a savings account.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "account_number": {
+                            "type": "string",
+                            "description": "The unique identifier for the user's bank account from which funds will be transferred."
+                        },
+                        "source_account": {
+                            "type": "string",
+                            "description": "Indicates the account type or identifier from which the money will be debited (e.g., 'checking')."
+                        },
+                        "destination_account": {
+                            "type": "string",
+                            "description": "Indicates the account type or identifier to which the money will be credited (e.g., 'savings')."
+                        },
+                        "amount": {
+                            "type": "float",
+                            "description": "The amount of money to be transferred between accounts."
+                        },
+                        "transfer_speed": {
+                            "type": "string",
+                            "description": "Specifies the speed at which the transfer is to be made. The transfer can be 'now' for immediate processing, or 'scheduled' for a deferred transfer."
+                        },
+                        "schedule_time": {
+                            "type": "string",
+                            "description": "If the transfer is scheduled, this parameter specifies the date and time for the transfer to happen. Should follow the YYYY-MM-DDTHH:MM:SS format."
+                        }
+                    },
+                    "required": [
+                        "account_number",
+                        "source_account",
+                        "destination_account",
+                        "amount",
+                        "transfer_speed"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "get_account_balance",
+                "description": "This tool retrieves the current balance for a specified bank account.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "account_number": {
+                            "type": "string",
+                            "description": "The unique identifier for the user's bank account for which the balance is to be retrieved."
+                        }
+                    },
+                    "required": [
+                        "account_number"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "get_recent_transactions",
+                "description": "This tool retrieves the most recent transactions for a specified bank account to identify regular activity and potential unauthorized transactions.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "account_number": {
+                            "type": "string",
+                            "description": "The unique identifier of the user's bank account from which recent transactions are to be fetched."
+                        },
+                        "transaction_type": {
+                            "type": "string",
+                            "description": "Optional filter to return transactions of a specific type. The default value is 'all', which includes every type of transaction."
+                        }
+                    },
+                    "required": [
+                        "account_number"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "freeze_bank_account",
+                "description": "This tool places a hold on the specified bank account to prevent new transactions, in response to suspected unauthorized access or fraudulent activity.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "account_number": {
+                            "type": "string",
+                            "description": "The unique identifier of the user's bank account that needs to be frozen to mitigate potential fraud."
+                        },
+                        "freeze_reason": {
+                            "type": "string",
+                            "description": "The reason for freezing the account, which helps the bank in further fraud assessment and investigation."
+                        }
+                    },
+                    "required": [
+                        "account_number"
+                    ]
+                }
+            }
+        }
+    ]
+}

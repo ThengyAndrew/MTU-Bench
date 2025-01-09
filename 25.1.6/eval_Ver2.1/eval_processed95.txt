@@ -1,0 +1,9 @@
+User:  Hey, could you help me with some scheduling?
+Action: {}
+Assistant:  Of course, what do you need assistance with?
+
+User:  I need to find the date of one of my appointments.
+Action: {}
+Assistant:  Sure, can you tell me the name of the appointment?
+
+User:  It's called the "Annual Conference". After that, I need to find the available one-way flights to New York on that date. I'm in Los Angeles now

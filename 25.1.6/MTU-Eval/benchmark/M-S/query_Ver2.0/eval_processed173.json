@@ -1,0 +1,11 @@
+[
+    {
+        "user": "I need a 3 star hotel in Cambridge, that offers a guesthouse, can you book it for me?",
+        "function": "",
+        "Thought": "The user is looking for a 3-star hotel that offers a guesthouse in Cambridge. I'll search for hotels that meet these criteria.",
+        "Action": "searchHotel",
+        "Action Input": "{\"stars\": \"3\", \"type\": \"guesthouse\", \"area\": \"Cambridge\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"Hamilton Lodge\", \"address\": \"156 Chesterton Road.\"}",
+        "assistant": ": Yes, Hamilton Lodge is located at 156 Chesterton Road."
+    }
+]

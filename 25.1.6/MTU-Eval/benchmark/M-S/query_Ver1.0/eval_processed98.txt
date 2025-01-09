@@ -1,0 +1,13 @@
+user: I need to erase a contact.
+function: 
+Thought: The user wants to delete a contact. The "delete_contact" API can fulfill this request, but first, I need to know the name of the contact to delete.
+observation: 
+assistant: : I can erase a contact for you. What is the name?
+user: Gary Glitter, oh sorry, Gary Glitterr.
+function: 
+Thought: The user has provided the name of the contact to delete. Now, I can call the "delete_contact" API with the name "Gary Glitterr" as input.
+Action: delete_contact
+Action Input: {"contact_name": "Gary Glitterr"}
+observation: : {"contact_name": "Gary Glitterr", "status": "deleted"}
+assistant: : There will be no retrieving the details.
+User: That is fine. I don't need it

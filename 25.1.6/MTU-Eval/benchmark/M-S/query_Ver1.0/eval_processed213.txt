@@ -1,0 +1,22 @@
+user: I am looking for a place to stay in the moderate price range. It must include free parking.
+function: 
+Thought: The user is looking for a hotel within a moderate price range that includes free parking. I need to search for hotels that meet these criteria.
+Action: searchHotel
+Action Input: {"parking": "true", "priceRange": "moderate", "return_info": ["all"]}
+observation: : {}
+assistant: : Is there a specific part of town you would like to stay in?
+user: I would prefer to stay in a 2 star hotel in the north.
+function: 
+Thought: The user has specified a preference for a 2 star hotel in the northern part of town with the previous requirements of free parking in a moderate price range. I need to modify the search criteria accordingly.
+Action: searchHotel
+Action Input: {"stars": "2", "parking": "true", "area": "north", "priceRange": "moderate", "return_info": ["all"]}
+observation: : {"name": "The Ashley hotel", "stars": "2", "parking": "true", "area": "north", "priceRange": "moderate"}
+assistant: : The Ashley hotel is a 2 star hotel in the north with free parking in the moderate price range. I can book this for you.
+user: That would be great! Can you let me know what the post code is? Thank you!
+function: 
+Thought: The user is requesting the postcode of The Ashley hotel. I need to retrieve this information.
+Action: searchHotel
+Action Input: {"name": "The Ashley hotel", "return_info": ["postcode"]}
+observation: : {"postcode": "cb41er"}
+assistant: : The postcode is cb41er. How long would you like to stay and how many should I book the hotel for?
+User: I don't need to book it at this time. Can you help me find a place to visit while I'm in town? I'd like a swimming pool in the North.

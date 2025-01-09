@@ -1,0 +1,50 @@
+{
+    "apis": [
+        {
+            "name": "order_pizza",
+            "description": "This API should be called when a user has decided on their preferred pizza and is ready to place an order. It enables users to select from various pizza options, sizes, and additional toppings before finalizing their order."
+        },
+        {
+            "name": "search_pizza",
+            "description": "This API should be used when a user is in the mood for pizza but isn't sure what type they want. It helps users explore different pizza varieties and ingredients to make an informed decision."
+        },
+        {
+            "name": "get_pizza_menu",
+            "description": "This API should be called when users want to see the complete menu offerings of a specific pizza store. It provides details about all available pizza options, including descriptions, sizes, and pricing, helping users decide what to order."
+        },
+        {
+            "name": "search_pizza_store",
+            "description": "This API should be called when a user is looking for pizza stores in their area. It aids in finding pizza places based on the user's requirement."
+        }
+    ],
+    "available_parameters": [
+        {
+            "name": "name_store",
+            "description": "The name of the pizza store where the order is being placed."
+        },
+        {
+            "name": "name_pizza",
+            "description": "The specific name or title of the pizza chosen by the user. "
+        },
+        {
+            "name": "size_pizza",
+            "description": "The size of the pizza being ordered. Sizes typically range from small to large."
+        },
+        {
+            "name": "type_topping",
+            "description": "The type of toppings requested on the pizza. Users can choose from a variety of toppings to customize their pizza according to their liking."
+        },
+        {
+            "name": "type_crust",
+            "description": "The crust type desired for the pizza. Different options such as thin crust, thick crust, stuffed crust, or gluten-free crust may be available, depending on the pizza store."
+        },
+        {
+            "name": "preference",
+            "description": "Any specific preferences or requests regarding the pizza order. This could include special instructions for preparation, such as 'extra cheese' or 'no onions'."
+        },
+        {
+            "name": "location_store",
+            "description": "The geographical location of the pizza store. "
+        }
+    ]
+}

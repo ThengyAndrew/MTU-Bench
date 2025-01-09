@@ -1,0 +1,384 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.stylist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "\"get_late_fees\"",
+        "arguments": {
+            "library_ID": 123456
+        }
+    },
+    {
+        "name": "\"make_payment\"",
+        "arguments": {
+            "account_number": "123456",
+            "payment_amount": "get_late_fees.late_fees",
+            "payment_method": "Credit Card"
+        }
+    },
+    {
+        "name": "\"reserve_book\"",
+        "arguments": {
+            "book_title": "War and Peace",
+            "card_number": 123456
+        }
+    },
+    {
+        "name": "\"FindProvider\"",
+        "arguments": {
+            "city": "San Francisco",
+            "offers_cosmetic_services": "true"
+        }
+    },
+    {
+        "name": "\"BookAppointment\"",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-09"
+        }
+    },
+    {
+        "name": "\"add_new_contact\"",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "\"set_appointment_reminder\"",
+        "arguments": {
+            "appointment_name": "Dental appointment",
+            "appointment_date": "2024-02-09",
+            "appointment_time": "10:00",
+            "appointment_address": "FindProvider.address",
+            "reminder_time": "2 hours before"
+        }
+    },
+    {
+        "name": "\"get_current_temperature\"",
+        "arguments": {
+            "location": "living room"
+        }
+    },
+    {
+        "name": "\"adjust_room_temperature\"",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "bedroom"
+        }
+    },
+    {
+        "name": "\"AddToPlaylist\"",
+        "arguments": {
+            "playlist": "Might and Myth Power Metal",
+            "music_item": "album"
+        }
+    },
+    {
+        "name": "\"RateBook\"",
+        "arguments": {
+            "rating_value": "1",
+            "object_name": "textbook"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "restaurant_name": "",
+            "party_size_number": "10",
+            "city": "New York City",
+            "poi": ""
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "country": "South Korea",
+            "condition_temperature": "Rain",
+            "timeRange": "1 hour from now"
+        }
+    },
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "doctor",
+            "date": ""
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "fromloc": "Los Angeles",
+            "toloc": "New York City",
+            "departure_date": "get_user_appointments.appointment_date"
+        }
+    },
+    {
+        "name": "\"LookupSong\"",
+        "arguments": {
+            "genre": "jazz"
+        }
+    },
+    {
+        "name": "\"PlaySong\"",
+        "arguments": {
+            "song_name": "LookupSong.song_name",
+            "artist": "LookupSong.artist",
+            "album": "LookupSong.album",
+            "playback_device": "TV"
+        }
+    },
+    {
+        "name": "\"BookRestaurant\"",
+        "arguments": {
+            "party_size_description": "party of ten"
+        }
+    },
+    {
+        "name": "\"GetWeather\"",
+        "arguments": {
+            "geographic_poi": "south korea",
+            "timeRange": "one hour from now",
+            "condition_description": "rain"
+        }
+    },
+    {
+        "name": "\"get_user_appointments\"",
+        "arguments": {
+            "name": "Go to swim"
+        }
+    },
+    {
+        "name": "\"set_alarm\"",
+        "arguments": {
+            "time": "19:00",
+            "label": "Workout"
+        }
+    },
+    {
+        "name": "\"change_alarm_sound\"",
+        "arguments": {
+            "time": "19:00",
+            "label": "Workout",
+            "sound": "Birdsong"
+        }
+    },
+    {
+        "name": "\"FindEvents\"",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "\"ShareLocation\"",
+        "arguments": {
+            "location": "FindEvents.venue_address",
+            "contact_name": "Alex"
+        }
+    },
+    {
+        "name": "\"SearchCreativeWork\"",
+        "arguments": {
+            "object_name": "switched"
+        }
+    },
+    {
+        "name": "\"PlayMusic\"",
+        "arguments": {
+            "service": "LastFM",
+            "album": "this is: miles davis"
+        }
+    },
+    {
+        "name": "\"SearchScreeningEvent\"",
+        "arguments": {
+            "current_location": "true"
+        }
+    },
+    {
+        "name": "\"get_account_balance\"",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    },
+    {
+        "name": "\"transfer_funds\"",
+        "arguments": {
+            "account_number": "239267492492",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    },
+    {
+        "name": "\"get_recent_transactions\"",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    },
+    {
+        "name": "\"SearchOnewayFlight\"",
+        "arguments": {
+            "origin_city": "San Francisco",
+            "destination_city": "New York",
+            "departure_date": "FindEvents.date_value"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "doctor_name": "FindProvider.doctor_name",
+            "appointment_date": "2024-02-03",
+            "appointment_time": "13:00"
+        }
+    },
+    {
+        "name": "SearchCreativeWork",
+        "arguments": {
+            "object_name": "free to play",
+            "object_type": "book"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "service": "youtube"
+        }
+    },
+    {
+        "name": "\"get_alarm\"",
+        "arguments": {
+            "time": "07:00",
+            "recurrence": [
+                "Friday"
+            ]
+        }
+    },
+    {
+        "name": "\"apply_for_membership\"",
+        "arguments": {
+            "city_of_residence": "New York"
+        }
+    },
+    {
+        "name": "\"get_book_status\"",
+        "arguments": {
+            "book_title": "Twenty Thousand Leagues Under the Sea"
+        }
+    },
+    {
+        "name": "\"FindRestaurants\"",
+        "arguments": {
+            "category": "Italian",
+            "location": "New York"
+        }
+    },
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "genre": "pop"
+        }
+    },
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "15:00",
+            "sound": "LookupSong.song_name"
+        }
+    },
+    {
+        "name": "\"MakePayment\"",
+        "arguments": {
+            "payment_method": "transfer",
+            "amount": "transfer_funds.amount",
+            "receiver": "John"
+        }
+    },
+    {
+        "name": "get_late_fees",
+        "arguments": {
+            "library_ID": "Akf47sef456dwd"
+        }
+    },
+    {
+        "name": "make_payment",
+        "arguments": {
+            "account_number": "Akf47sef456dwd",
+            "payment_amount": "get_late_fees.late_fees",
+            "payment_method": "Visa card"
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "A Series of Unfortunate Events",
+            "card_number": "Akf47sef456dwd"
+        }
+    },
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "12843272323"
+        }
+    },
+    {
+        "name": "transfer_funds",
+        "arguments": {
+            "account_number": "12843272323",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "12843272323"
+        }
+    },
+    {
+        "name": "'FindProvider'",
+        "arguments": {
+            "city": "San Francisco",
+            "offers_cosmetic_services": true
+        }
+    },
+    {
+        "name": "'BookAppointment'",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_date": "2024-05-01",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "15:00",
+            "sound": "LookupSong.song_name"
+        }
+    },
+    {
+        "name": "GetCarsAvailable",
+        "arguments": {
+            "pickup_city": "San Francisco",
+            "pickup_date": "get_user_appointments.appointment_date",
+            "pickup_time": "SearchOnewayFlight.outbound_arrival_time",
+            "dropoff_date": "2024-01-19"
+        }
+    }
+]

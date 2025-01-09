@@ -1,0 +1,9 @@
+User:  I need a certain kind of doctor within my city.
+Action: {}
+Assistant:  Of course, what kind of doctor do you need and which city?
+
+User:  I'm looking for a dermatologist and the city is New York.
+Action: {"FindProvider": {"city": "New York", "type": "dermatologist"}}
+Assistant:  I've found a list of dermatologists in New York. 
+
+User:  Great! Now, could you set an appointment with any of them at a specific date and time? After setting the appointment, could you also save the doctor's phone and address into my contact list?

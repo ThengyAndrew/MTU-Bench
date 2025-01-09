@@ -1,0 +1,5 @@
+User:  I want to know about the weather and music.
+Action: {}
+Assistant:  Sure. Could you specify which weather forecast you're interested in and what music you want to listen to? 
+
+User:  I want to know whether it would be hotter at southford falls state park. Also, I feel like listening to a symphony from 2013.

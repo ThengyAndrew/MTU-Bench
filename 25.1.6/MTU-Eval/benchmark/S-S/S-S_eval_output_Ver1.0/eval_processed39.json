@@ -1,0 +1,17 @@
+{
+    "query": "I want to find a sports event in Atlanta, GA and buy two tickets for it.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Find out interesting movies that you like",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

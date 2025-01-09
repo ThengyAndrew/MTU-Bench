@@ -1,0 +1,126 @@
+[
+    {
+        "name": "get_apartment_listings",
+        "description": "This tool is used to retrieve a list of available apartment listings based on user-specified criteria like location, number of bedrooms, apartment type, and price range.",
+        "required_parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The area or city where the user is looking to find an apartment."
+            },
+            {
+                "name": "bedrooms",
+                "type": "string",
+                "description": "The number of bedrooms in the apartment. Can be specified as a numerical value (e.g., '2' for two bedrooms)."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "apartment_type",
+                "type": "string",
+                "description": "The type of apartment the user is interested in (e.g., 'penthouse', 'studio')."
+            },
+            {
+                "name": "max_price",
+                "type": "string",
+                "description": "The maximum monthly rent the user is willing to pay for the apartment, specified in the local currency."
+            },
+            {
+                "name": "min_price",
+                "type": "string",
+                "description": "The minimum monthly rent the user is willing to pay for the apartment, specified in the local currency."
+            },
+            {
+                "name": "pet",
+                "type": "boolean",
+                "description": "Indicates whether the apartment must allow pets. Accepts two values: true (pet-friendly) or false (not pet-friendly)."
+            },
+            {
+                "name": "city",
+                "type": "string",
+                "description": "The city where the user is looking to find an apartment."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "apartment_id",
+                "type": "string",
+                "description": "A unique identifier for the specific apartment listing for which detailed information is being requested."
+            }
+        ]
+    },
+    {
+        "name": "get_apartment_specific_info",
+        "description": "This tool is used to retrieve detailed information about a specific apartment based on criteria such as location, number of rooms, price, size, and contact information for inquiries.",
+        "required_parameters": [
+            {
+                "name": "apartment_id",
+                "type": "string",
+                "description": "A unique identifier for the specific apartment listing for which detailed information is being requested."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "city",
+                "type": "string",
+                "description": "The city where the user is looking for an apartment if required to retrieve the specific apartment listing."
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The specific area or neighborhood of the city for the apartment, if needed for the detailed information request."
+            },
+            {
+                "name": "bedrooms",
+                "type": "int",
+                "description": "The number of bedrooms in the apartment, if this information is necessary to acquire the proper details."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "price",
+                "type": "float",
+                "description": "The monthly rent price of the apartment."
+            },
+            {
+                "name": "size",
+                "type": "int",
+                "description": "The size of the apartment in square feet."
+            },
+            {
+                "name": "contact_number",
+                "type": "string",
+                "description": "The phone number for contacting the leasing company or landlord for the apartment."
+            },
+            {
+                "name": "pet",
+                "type": "boolean",
+                "description": "Indicates whether the apartment must allow pets. Accepts two values: true (pet-friendly) or false (not pet-friendly)."
+            },
+            {
+                "name": "apartment_type",
+                "type": "string",
+                "description": "The type of apartment the user is interested in (e.g., 'penthouse', 'studio')."
+            }
+        ]
+    },
+    {
+        "name": "send_apartments_message",
+        "description": "This tool is responsible for sending detailed information regarding user-selected apartments to the user's email address.",
+        "required_parameters": [
+            {
+                "name": "apartment_id",
+                "type": "string",
+                "description": "A unique identifier for the specific apartment listing for which detailed information is being requested."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "email",
+                "type": "string",
+                "description": "The email address the user wants to send."
+            }
+        ],
+        "result_parameters": []
+    }
+]

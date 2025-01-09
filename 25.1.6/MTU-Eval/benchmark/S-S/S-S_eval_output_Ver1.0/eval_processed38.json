@@ -1,0 +1,29 @@
+{
+    "query": "Can you play a Pop song on my bedroom speaker?",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "BookAppointment",
+                "description": "Book an appointment at a hair stylist, The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindProvider",
+                "description": "Search for a hair stylist by city and optionally other attributes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

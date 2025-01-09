@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I would like to join a library.",
+        "Assistant": "Sure, can you tell me which city you currently live in?"
+    },
+    {
+        "User": "I live in San Francisco.",
+        "Assistant": "Great, I am applying for a library membership in San Francisco for you."
+    },
+    {
+        "User": "I see, Can I borrow a book if I'm a member of the library?"
+    }
+]

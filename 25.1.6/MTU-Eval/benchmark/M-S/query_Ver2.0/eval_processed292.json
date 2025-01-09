@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I am looking for some attractions to visit with some friends.",
+        "function": "",
+        "Thought": "Missing location. I can't call the function.",
+        "observation": "",
+        "assistant": ": What city should I search in?"
+    }
+]

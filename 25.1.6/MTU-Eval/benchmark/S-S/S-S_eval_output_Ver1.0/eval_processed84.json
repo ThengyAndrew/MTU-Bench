@@ -1,0 +1,41 @@
+{
+    "query": "I'm looking for a bus from Vancouver to Seattle on March 5th for three people. Do you have any options?",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindBus",
+                "description": "Find a bus itinerary between cities for a given date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyBusTicket",
+                "description": "Buy tickets for a bus itinerary",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindAttractions",
+                "description": "Browse attractions in a given city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

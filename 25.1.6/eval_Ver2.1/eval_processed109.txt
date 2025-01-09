@@ -1,0 +1,13 @@
+User:  Hey, can you assist me in some travel planning?
+Action: {}
+Assistant:  Of course, I'd be happy to help. Where are you planning to go, and is there any particular event you interested in?
+
+User:  I'm interested in going to some concerts.
+Action: {}
+Assistant:  Sure, in which city do you plan to attend a concert?
+
+User:  Los Angeles. And also, is there a way for you to search any flights for me?
+Action: {}
+Assistant:  Sure, I can do that. Where are you flying from and when do you want to fly?
+
+User:  From San Francisco and I want to fly on the date of the concert.

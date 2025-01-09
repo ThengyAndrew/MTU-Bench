@@ -1,0 +1,9 @@
+[
+    {
+        "User": "Can you help me setting up an alarm?",
+        "Assistant": "Sure, What time do you want the alarm for?"
+    },
+    {
+        "User": "I want it at 07:00 AM."
+    }
+]

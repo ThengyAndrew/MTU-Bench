@@ -1,0 +1,101 @@
+{
+    "query": [
+        {
+            "user": "I'm in the mood to watch a movie.",
+            "function": "",
+            "Thought": "Missing location. I can't call the function.",
+            "observation": "",
+            "assistant": ": Where would you like me to search?"
+        },
+        {
+            "user": "Look in SFO Please.",
+            "function": "",
+            "Thought": "The user wants to search for movies in San Francisco. I need to invoke the FindMovies API.",
+            "Action": "FindMovies",
+            "Action Input": "{'location': 'San Francisco'}",
+            "observation": ": {'genre': 'Crime', 'location': 'San Francisco', 'movie_name': 'Ash Is Purest White', 'price': '14', 'show_type': 'imax', 'street_address': '1 Embarcadero Center', 'theater_name': \"Landmark's Embarcadero Center Cinema\"}",
+            "assistant": ": I have found a few movies for you. Would you like to watch Ash Is Purest White, Captain Marvel or Citizen Kane?"
+        },
+        {
+            "user": "I haven't seen Captain Marvel yet so would love to see that.",
+            "function": "",
+            "Thought": "The user has chosen to see Captain Marvel but hasn't requested any further action yet.",
+            "observation": ": {'genre': 'Crime', 'location': 'San Francisco', 'movie_name': 'Ash Is Purest White', 'price': '14', 'show_type': 'imax', 'street_address': '1 Embarcadero Center', 'theater_name': \"Landmark's Embarcadero Center Cinema\"}",
+            "assistant": ": Okay great. Do you need help with anything else?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyMovieTickets",
+                "description": "Buy movie tickets for a particular show",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Search for movies by location, genre or other attributes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetTimesForMovie",
+                "description": "Get show times for a movie at a location on a given date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRestaurant",
+                "description": "Reserve a table at a restaurant",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindRestaurants",
+                "description": "Find a restaurant of a particular cuisine in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

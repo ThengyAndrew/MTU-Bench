@@ -1,0 +1,6 @@
+user: I need to erase a contact.
+function: 
+Thought: The user wants to delete a contact. The "delete_contact" API can fulfill this request, but first, I need to know the name of the contact to delete.
+observation: 
+assistant: : I can erase a contact for you. What is the name?
+User: Gary Glitter, oh sorry, Gary Glitterr.

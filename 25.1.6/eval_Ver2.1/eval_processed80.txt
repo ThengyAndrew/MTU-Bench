@@ -1,0 +1,7 @@
+User:  Can you help me with some alarm settings?
+Action: {}
+Assistant:  Of course. What do you need help with?
+User:  I would like to know if there is an alarm set for a specific time and day.
+Action: {}
+Assistant:  Sure, could you please specify the time and day?
+User:  Yes, time is 7 am and the day is Firday. Further, set a new alarm for 3 pm today with the same sound without the vibration.

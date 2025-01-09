@@ -1,0 +1,6 @@
+user: Find me a one way flight.
+function: 
+Thought: Missing origin. I can't call the function.
+observation: 
+assistant: : What city are you flying from?
+User: I'd like to leave from NY on the 1st of March and fly Economy.

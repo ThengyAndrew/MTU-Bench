@@ -1,0 +1,68 @@
+{
+    "query": [
+        {
+            "user": "i am looking for a rental car",
+            "function": "",
+            "Thought": "Missing dropoff_date, pickup_date, pickup_time. I can't call the function.",
+            "observation": "",
+            "assistant": ": when and what time do you need it? where are you picking up the car?"
+        },
+        {
+            "user": "I need it on later today picking up at 15:00 and return on 5th of January",
+            "function": "",
+            "Thought": "Missing pickup_city. I can't call the function.",
+            "observation": "",
+            "assistant": ": where are you picking it up from"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "GetCarsAvailable",
+                "description": "See available cars for rental in a particular city and a date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveCar",
+                "description": "Reserve a rental car for specified pickup location and dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Search for a hotel based on location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+User:  I need to find a healthcare provider.
+Action: {}
+Assistant:  Sure, what kind of healthcare provider are you looking for?
+
+User:  I need a dentist.
+Action: {}
+Assistant:  Okay, in which city are you looking for a dentist?
+
+User:  New York. After finding, I'd like to book an appointment with him/her on the 20th of this month at 10:00 AM.
+Action: {"FindProvider": {"city": "New York"}, " BookAppointment": {"dentist_name": "FindProvider.dentist_name", "appointment_time": "10:00", "appointment_date": "2024-01-20"}}
+Assistant:  Your appointment has been booked. 
+
+User:  Great! Now, Please add the dentist's contact information including phone and address to my contact list.

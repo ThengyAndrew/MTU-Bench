@@ -1,0 +1,9 @@
+[
+    {
+        "User": "Hello, I need to find a house.",
+        "Assistant": "Sure, could you please provide more details about the house you are looking for?"
+    },
+    {
+        "User": "Certainly. I am looking for a place to rent in San Francisco."
+    }
+]

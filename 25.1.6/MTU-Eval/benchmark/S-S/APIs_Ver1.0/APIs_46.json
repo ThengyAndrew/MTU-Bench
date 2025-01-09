@@ -1,0 +1,125 @@
+[
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve rooms at a selected place for given dates",
+        "required_parameters": [
+            "place_name",
+            "check_in_date",
+            "stay_length",
+            "location"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "check_in_date",
+            "stay_length",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Look for accommodation in a city of choice",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "smoking_allowed": "dontcare",
+            "star_rating": "dontcare",
+            "number_of_rooms": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "description": "Search for one way flights to the destination",
+        "required_parameters": [
+            "origin_airport",
+            "destination_airport",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "seating_class": "Economy",
+            "number_of_tickets": "1",
+            "airlines": "dontcare"
+        },
+        "result_parameters": [
+            "number_of_tickets",
+            "seating_class",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "is_nonstop",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "airlines"
+        ]
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "description": "Search for roundtrip flights for the trip",
+        "required_parameters": [
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date"
+        ],
+        "optional_parameters": {
+            "seating_class": "Economy",
+            "number_of_tickets": "1",
+            "airlines": "dontcare"
+        },
+        "result_parameters": [
+            "number_of_tickets",
+            "seating_class",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date",
+            "is_nonstop",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "airlines"
+        ]
+    },
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    }
+]

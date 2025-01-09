@@ -1,0 +1,6 @@
+user: I want to change my alarm
+function: 
+Thought: The user wants to make changes to their alarm, but it's not clear what kind of changes they want to make. I may need to ask for more information.
+observation: 
+assistant: : Which alarm can I change for you today?
+User: Rename my Walk Dog alarm Feed Cat

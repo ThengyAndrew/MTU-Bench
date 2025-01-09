@@ -1,0 +1,4 @@
+User:  Hi there! I could use some help to find some event details in my city.
+Action: {}
+Assistant:  Of course! What type of event are you looking for?
+User:  I am looking for a concert.

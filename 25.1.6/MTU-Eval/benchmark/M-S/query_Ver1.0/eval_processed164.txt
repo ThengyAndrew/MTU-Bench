@@ -1,0 +1,20 @@
+user: i 'm looking for a nightclub
+function: 
+Thought: The user is requesting information about a nightclub. I'll call the searchAttraction API to find details of a nightclub.
+Action: searchAttraction
+Action Input: {"type": "nightclub", "return_info": ["all"]}
+observation: : {"name": "Kambar", "type": "nightclub", "area": "centre", "address": "1 Wheeler Street", "entrance_fee": "5 pounds"}
+assistant: : I have a lot of nightclubs in the city center. Do you want me to recommend one to you?
+user: Yes please. And can you tell me what area it 's in and what the entrance fee is? And the address too, of course.
+function: 
+Thought: The user has requested more details about the nightclub, including the area, entrance fee, and address. I previously gathered this information so I can provide it without another API call.
+observation: : {"name": "Kambar", "type": "nightclub", "area": "centre", "address": "1 Wheeler Street", "entrance_fee": "5 pounds"}
+assistant: : Sure! The Kambar is a nightclub located in the centre. The address is 1 Wheeler Street in Cambridge. The entrance fee is 5 pounds.
+user: I need to travel saturday and get there by 14:45 from London.
+function: 
+Thought: The user needs to travel by train and arrive by a certain time. I will call the SearchTrain API to find a suitable train.
+Action: SearchTrain
+Action Input: {"day": "saturday", "arriveBy": "14:45", "departure": "London", "destination": "cambridge", "return_info": ["all"]}
+observation: : {"trainID": "TR5729", "ArriveBy": "14:08", "Ticket": "18.88 GBP"}
+assistant: : TR5729 arrives by 14:08. Would you like a ticket?
+User: I need 6 tickets and the reference number

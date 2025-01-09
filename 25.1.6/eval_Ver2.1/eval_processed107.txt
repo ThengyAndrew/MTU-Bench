@@ -1,0 +1,5 @@
+User:  Hey, can you assist me in some travel planning?
+Action: {}
+Assistant:  Of course, I'd be happy to help. Where are you planning to go, and is there any particular event you interested in?
+
+User:  I'm interested in going to some concerts.

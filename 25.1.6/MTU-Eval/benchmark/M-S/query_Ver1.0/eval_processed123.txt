@@ -1,0 +1,16 @@
+user: I need some help with managing my home.
+function: 
+Thought: The user needs help with managing their home, but it's unclear what specific tasks they need help with. I need more information to understand what APIs could be related.
+observation: 
+assistant: : Ok, go ahead.
+user: Turn up the heat!
+function: 
+Thought: The user wants to adjust the temperature, but I need to know in which rooms and to what temperature. I will need to call the adjust_room_temperature API.
+observation: 
+assistant: : In which rooms?
+user: Bedroom 1, no, Living Room.
+function: 
+Thought: The user has specified the locations but I still need to understand what temperature they want. I will need to call the 'adjust_room_temperature' API.
+observation: 
+assistant: : To what temperature?
+User: 50

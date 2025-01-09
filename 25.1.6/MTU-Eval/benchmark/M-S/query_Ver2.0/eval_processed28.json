@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I need help with a world record?",
+        "function": "",
+        "Thought": "The user needs information on a world record. I need to ask for more specifics so I can call the relevant API.",
+        "observation": "",
+        "assistant": ": Sure. What can I answer for you?"
+    }
+]

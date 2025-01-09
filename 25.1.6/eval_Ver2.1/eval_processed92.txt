@@ -1,0 +1,9 @@
+User:  Hey, I want to listen to a song.
+Action: {}
+Assistant:  Of course, which song would you like to listen to?
+
+User:  Hmm, let me think.
+Action: {}
+Assistant:  Sure, take your time.
+
+User:  I would like to listen to the song by Queen. Look up it for me. And can you play it for me on the TV, please?

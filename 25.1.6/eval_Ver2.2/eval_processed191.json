@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hi, I need some help about a plan I'm making.",
+        "Assistant": "Of course, what do plan to do?"
+    },
+    {
+        "User": "I plan to attend a concert.",
+        "Assistant": "Cool! Where will the concert be?"
+    },
+    {
+        "User": "It's in New York. But I don't remember the exact date of the concert. Can you help me find that out?"
+    }
+]

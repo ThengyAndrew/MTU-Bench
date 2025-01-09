@@ -1,0 +1,5 @@
+User:  Hey, can you assist me with some music-related stuff?
+Action: {}
+Assistant:  Absolutely, what do you need help with?
+
+User:  I want to listen to a song.

@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hey, can you assist me with some music-related stuff?",
+        "Assistant": "Absolutely, what do you need help with?"
+    },
+    {
+        "User": "I want to listen to a song.",
+        "Assistant": "Sure, which song or artist can I find for you?"
+    },
+    {
+        "User": "The song is by Red Hot Chili Peppers."
+    }
+]

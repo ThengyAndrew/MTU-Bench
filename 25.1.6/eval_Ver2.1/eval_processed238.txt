@@ -1,0 +1,4 @@
+User:  Hello, I am planning to go to a music event.
+Action: {}
+Assistant:  Sounds great! Where are you planning to go for that event?
+User:  I am thinking about New York.

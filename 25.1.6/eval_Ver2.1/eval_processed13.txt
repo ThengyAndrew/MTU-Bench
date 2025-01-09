@@ -1,0 +1,9 @@
+User:  Can you help me check something in the library?
+Action: {}
+Assistant:  Sure, how can I assist you with that?
+
+User:  I want to check if I have any late fees for the books I borrowed.
+Action: {"get_late_fees": {"library_ID": "123456"}}
+Assistant:  You have a late fee of 50 dollars.
+
+User:  Alright. I would like to pay them off. Can I make the payment by Credit Card?

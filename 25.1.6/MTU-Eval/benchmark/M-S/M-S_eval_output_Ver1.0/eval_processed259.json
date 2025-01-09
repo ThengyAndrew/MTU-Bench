@@ -1,0 +1,61 @@
+{
+    "query": [
+        {
+            "user": "I want to find some neat events coming up.",
+            "function": "",
+            "Thought": "The user is requesting information on upcoming events without specifying a category or location. To proceed, I need to clarify these details as the API requires both 'category' and 'city_of_event' parameters.",
+            "observation": "",
+            "assistant": ": Is there any particular category, like music or sports or movies? And what city or area should I look in?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "GetTrainTickets",
+                "description": "Reserve tickets for train journey",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindTrains",
+                "description": "Find trains to a given destination city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindEvents",
+                "description": "Find cultural events - concerts and plays - happening in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyEventTickets",
+                "description": "Buy tickets for a cultural event and date in a given city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

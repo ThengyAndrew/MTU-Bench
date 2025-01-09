@@ -1,0 +1,592 @@
+ID: M-S_1_1 | Action: searchAttraction
+ID: M-S_1_1 | Input: {"type": "theatre", "return_info": ["address", "postcode", "phone number"]}
+ID: M-S_0_0 | Action: LookupMusic
+ID: M-S_0_1 | Action: PlayMedia
+ID: M-S_0_1 | Input: {"song_name": "Be My Baby", "artist": "Ariana Grande"}
+ID: M-S_0_2 | Action: PlayMedia
+ID: M-S_0_2 | Input: {"song_name": "Be My Baby", "playback_device": "kitchen speaker"}
+ID: M-S_2_2 | Action: searchHotel
+ID: M-S_2_2 | Input: {"internet": true, "area": "centre", "priceRange": "cheap", "return_info": ["all"]}
+ID: M-S_4_0 | Action: GetWeather
+ID: M-S_4_0 | Input: {
+  "city": "Mountain View"
+}
+ID: M-S_4_1 | Action: FindRestaurants
+ID: M-S_4_1 | Input: {"city": "Mountain View", "cuisine": "dontcare"}
+ID: M-S_3_1 | Action: BookTrain
+ID: M-S_3_1 | Input: {"people": "6", "trainID": "TR9781", "return_info": ["reference", "Ticket"]}
+ID: M-S_3_0 | Action: SearchTrain
+ID: M-S_3_0 | Input: {
+    "departure": "Cambridge",
+    "destination": "London Kings Cross",
+    "day": "Wednesday",
+    "leaveAt": "10:45",
+    "return_info": ["all"]
+}
+ID: M-S_2_3 | Action: bookHotel
+ID: M-S_2_3 | Input: {"day": "2024-01-06", "name": "alexander bed and breakfast", "stay": "3", "people": "2","return_info": ["isSuccess", "reference"]}
+ID: M-S_2_0 | Action: searchAttraction
+ID: M-S_2_0 | Input: {
+"name": "Milton Country Park"
+}
+ID: M-S_4_3 | Action: ReserveRestaurant 
+ID: M-S_4_3 | Input: {'city': 'Mountain View', 'date': '2024-01-12', 'party_size': '4', 'restaurant_name': 'Chaat Paradise', 'time': '12:00'}
+ID: M-S_4_2 | Action: FindRestaurants
+ID: M-S_4_2 | Input: {'cuisine': 'Punjabi', 'city': 'Mountain View'}
+ID: M-S_5_0 | Action: SearchRestaurant
+ID: M-S_5_0 | Input: {"name": "Pizza Express Fen Ditton"}
+ID: M-S_6_3 | Action: SearchRoundtripFlights
+ID: M-S_6_3 | Input: {'origin_airport': 'London', 'destination_airport': 'NYC', 'departure_date': '2024-01-06', 'return_date': '2024-01-09'}
+ID: M-S_7_1 | Action: get_world_record
+ID: M-S_7_1 | Input: {"record_category": "biggest snake"}
+ID: M-S_8_1 | Action: searchHotel
+ID: M-S_8_1 | Input: {"stars": "0", "internet": "true", "type": "guesthouse", "return_info": ["all"]}
+ID: M-S_9_2 | Action: get_recent_transactions
+ID: M-S_9_2 | Input: {"account_number": "82746453535"}
+ID: M-S_8_0 | Action: searchHotel
+ID: M-S_8_0 | Input: {"stars": "0", "internet": true}
+ID: M-S_9_3 | Action: freeze_bank_account
+ID: M-S_9_3 | Input: {"account_number": "82746453535"}
+ID: M-S_11_0 | Action: GetTimesForMovie
+ID: M-S_11_0 | Input: {"movie_name": "Dumbo", "location": "Santa Rosa", "show_date": "2024-01-04"}
+ID: M-S_10_1 | Action: get_world_record
+ID: M-S_10_1 | Input: {"record_category": "loudest sound"}
+ID: M-S_6_1 | Action: SearchRoundtripFlights
+ID: M-S_6_1 | Input: {
+  "origin_airport": "Atlanta",
+  "destination_airport": "NYC",
+  "departure_date": "2024-01-06",
+  "return_date": "2024-01-09"
+}
+ID: M-S_9_0 | Action: get_recent_transactions
+ID: M-S_9_0 | Input: {"account_number": "<user's account number>"}
+ID: M-S_11_1 | Action: GetRide 
+ID: M-S_11_1 | Input: {"destination": "409 Aviation Boulevard", "number_of_riders": "1", "shared_ride": "false"}
+ID: M-S_13_1 | Action: get_late_fees
+ID: M-S_13_1 | Input: {"library_ID": 58965}
+ID: M-S_14_3 | Action: freeze_bank_account
+ID: M-S_14_3 | Input: {"account_number": "3838234", "freeze_reason": "suspected_fraud"}
+ID: M-S_14_2 | Action: get_recent_transactions
+ID: M-S_14_2 | Input: {"account_number": "3838234"}
+ID: M-S_14_4 | Action: freeze_bank_account
+ID: M-S_14_4 | Input: {"account_number": "3838234", "freeze_reason": "suspected_fraud"}
+ID: M-S_15_1 | Action: get_late_fees
+ID: M-S_15_1 | Input: {"library_ID": 3274}
+ID: M-S_16_2 | Action: query_restaurant
+ID: M-S_16_2 | Input: {"food_pref": "Thai", "loc": "Pittsburgh"}
+ID: M-S_17_0 | Action: update_contact_information
+ID: M-S_17_0 | Input: {"name": "<original_name>", "new_information": {"new_name": "<new_name>"}
+ID: M-S_16_3 | Action: query_restaurant
+ID: M-S_16_3 | Input: {"food_pref": "Thai", "loc": "Pittsburgh", "goals": ["open"]}
+ID: M-S_17_3 | Action: update_contact_information
+ID: M-S_17_3 | Input: {
+    "name": "angelee",
+    "new_information": {
+        "new_name": "bell"
+    }
+ID: M-S_18_2 | Action: get_book_status
+ID: M-S_18_2 | Input: {"book_title": "A Song of Fire and Ice"}
+ID: M-S_20_0 | Action: GetEvents
+ID: M-S_20_0 | Input: {"event_date": "2024-01-09"}
+ID: M-S_20_1 | Action: GetRide
+ID: M-S_20_1 | Input: {'destination': '500 San Pablo Avenue #300', 'number_of_riders': 4, 'shared_ride': False}
+ID: M-S_21_1 | Action: delete_contact
+ID: M-S_21_1 | Input: {"contact_name": "Gary Glitterr"}
+ID: M-S_20_2 | Action: GetRide
+ID: M-S_20_2 | Input: {'destination': '1327 East Monte Vista Avenue', 'number_of_riders': '4', 'shared_ride': 'true'}
+ID: M-S_19_2 | Action: delete_appointment
+ID: M-S_19_2 | Input: {"appointment_name": "Meeting", "appointment_date": "2024-01-11", "appointment_time": "14:00"}
+ID: M-S_23_1 | Action: delete_appointment
+ID: M-S_23_1 | Input: {"appointment_date": "2024-01-09", "appointment_time": "14:00"}
+ID: M-S_22_4 | Action: add_new_contact
+ID: M-S_22_4 | Input: {"contact_name": "Scott-cell", "phone_number": "569-566-5231"}
+ID: M-S_25_1 | Action: check_door_status
+ID: M-S_25_1 | Input: {"door_location": "home"}
+ID: M-S_25_2 | Action: check_door_status
+ID: M-S_25_2 | Input: {"door_location": "front"}
+ID: M-S_24_2 | Action: delete_contact_number
+ID: M-S_24_2 | Input: {"contact_name": "Kimberly Wright"}
+ID: M-S_25_3 | Action: check_door_status
+ID: M-S_25_3 | Input: {"door_location": "back"}
+ID: M-S_27_1 | Action: change_alarm_name
+ID: M-S_27_1 | Input: {'current_name': 'Walk Dog', 'new_name': 'Feed Cat'}
+ID: M-S_26_3 | Action: adjust_room_temperature
+ID: M-S_26_3 | Input: {"temperature": 50, "location": "Living Room"}
+ID: M-S_27_2 | Action: change_alarm_name
+ID: M-S_27_2 | Input: {"current_name": "Walk Dog", "new_name": "Feed Cat", "time": "10:30"}
+ID: M-S_28_3 | Action: change_alarm_time
+ID: M-S_28_3 | Input: {"current_time": "21:00", "new_time": "10:00", "current_recurrence": ["today"], "new_recurrence": ["tomorrow"]}
+ID: M-S_26_1 | Action: adjust_room_temperature
+ID: M-S_26_1 | Input: {
+  "location": "home",
+  "temperature": 75
+}
+ID: M-S_29_2 | Action: adjust_lighting
+ID: M-S_29_2 | Input: {"location": "back porch", "action": "on"}
+ID: M-S_31_1 | Action: get_current_temperature
+ID: M-S_31_1 | Input: {"location": "house"}
+ID: M-S_30_1 | Action: get_user_appointments
+ID: M-S_30_1 | Input: {"date": "2024-01-09"}
+ID: M-S_30_3 | Action: delete_appointment
+ID: M-S_30_3 | Input: {"appointment_date": "2024-01-05", "appointment_time": "14:00"}
+ID: M-S_29_1 | Action: check_light_status
+ID: M-S_29_1 | Input: {"location": "back porch"}
+ID: M-S_31_2 | Action: adjust_room_temperature
+ID: M-S_31_2 | Input: {"temperature": 70, "location": "house"}
+ID: M-S_33_4 | Action: set_appointment_reminder
+ID: M-S_33_4 | Input: {
+  "appointment_name": "dentist's appointment",
+  "appointment_date": "2024-01-25",
+  "appointment_time": "9:00", 
+  "appointment_address": "123 first street", 
+  "reminder_time": "night before"
+}
+ID: M-S_28_1 | Action: set_alarm
+ID: M-S_28_1 | Input: {
+    "time": "21:00",
+    "label": "My alarm"
+}
+ID: M-S_36_3 | Action: BookTrain
+ID: M-S_36_3 | Input: {"people": 6, "trainID": "TR5729", "return_info": ["isSuccess", "reference", "Ticket"]}
+ID: M-S_34_1 | Action: change_alarm_sound
+ID: M-S_34_1 | Input: {"time": "10:00", "sound": "screaming monkey"}
+ID: M-S_37_0 | Action: searchHotel
+ID: M-S_37_0 | Input: {"stars": "3", "type": "guesthouse", "area": "Cambridge"}
+ID: M-S_32_6 | Action: PlayMovie 
+ID: M-S_32_6 | Input: {"title": "Ash Is Purest White"}
+ID: M-S_35_4 | Action: bookHotel
+ID: M-S_35_4 | Input: {"day": "Tuesday", "name": "allenbell", "stay": "5 nights", "people": "2", "return_info": ["isSuccess", "reference"]}
+ID: M-S_32_4 | Action: CheckBalance
+ID: M-S_32_4 | Input: {"account_type": "savings"}
+ID: M-S_33_3 | Action: set_appointment_reminder
+ID: M-S_33_3 | Input: {
+    "appointment_name": "dentist's appointment",
+    "appointment_date": "2024-01-25", 
+    "appointment_time": "09:00", 
+    "appointment_address": "123 first street"
+}
+ID: M-S_35_3 | Action: searchHotel
+ID: M-S_35_3 | Input: {"type": "guesthouse", "internet": true, "area": "east", "return_info": ["all"]}
+ID: M-S_35_2 | Action: searchHotel
+ID: M-S_35_2 | Input: {"type": "Guesthouse", "priceRange": "high", "return_info": ["all"]}
+ID: M-S_32_5 | Action: FindMovies
+ID: M-S_32_5 | Input: {'genre': 'crime', 'directed_by': 'jia zhangke'}
+ID: M-S_35_0 | Action: searchAttraction
+ID: M-S_35_0 | Input: {"name": "kambar", "area": "Cambridge"}
+ID: M-S_36_2 | Action: SearchTrain
+ID: M-S_36_2 | Input: {
+  "departure": "London",
+  "destination": "Cambridge",
+  "arriveBy": "14:45",
+  "day": "Saturday",
+  "return_info": ["all"]
+}
+ID: M-S_36_0 | Action: searchAttraction
+ID: M-S_36_0 | Input: {"type": "nightclub"}
+ID: M-S_37_1 | Action: searchHotel
+ID: M-S_37_1 | Input: {"name": "Hamilton Lodge", "return_info": ["priceRange"]}
+ID: M-S_37_4 | Action: SearchRestaurant
+ID: M-S_37_4 | Input: {"food": "modern european", "area": "north", "priceRange": "moderate", "return_info": ["all"]}
+ID: M-S_37_2 | Action: bookHotel
+ID: M-S_37_2 | Input: {"day": "2024-01-08", "name": "Hamilton Lodge", "stay": "3", "people": "1", "return_info": ["isSuccess", "reference"]}
+ID: M-S_38_4 | Action: ReserveCar
+ID: M-S_38_4 | Input: {'pickup_location': 'PHL International Airport', 'pickup_date': '2024-01-04', 'pickup_time': '15:00', 'dropoff_date': '2024-01-05', 'car_type': 'Standard'}
+ID: M-S_38_2 | Action: GetCarsAvailable
+ID: M-S_38_2 | Input: {"pickup_city": "Philadelphia", "pickup_date": "2024-01-04", "pickup_time": "15:00", "dropoff_date": "2024-01-05"}
+ID: M-S_37_3 | Action: SearchRestaurant
+ID: M-S_37_3 | Input: {"area": "north", "priceRange": "moderate", "food": "barbeque"}
+ID: M-S_39_0 | Action: searchAttraction
+ID: M-S_39_0 | Input: {"area": "Cambridge"}
+ID: M-S_38_6 | Action: ReserveHotel
+ID: M-S_38_6 | Input: {'hotel_name': 'Aka University City', 'location': 'Philadelphia', 'check_in_date': '2024-01-04', 'check_out_date': '2024-01-05'}
+ID: M-S_38_5 | Action: SearchHotel
+ID: M-S_38_5 | Input: {"location": "Philadelphia"}
+ID: M-S_39_1 | Action: searchAttraction
+ID: M-S_39_1 | Input: {"type": "park", "area": "North Cambridge", "return_info": ["all"]}
+ID: M-S_38_1 | Action: GetCarsAvailable
+ID: M-S_38_1 | Input: {"pickup_city": "current_city", "pickup_date": "2024-01-04", "pickup_time": "15:00", "dropoff_date": "2024-01-05"}
+ID: M-S_39_3 | Action: SearchTrain
+ID: M-S_39_3 | Input: {"departure": "London Liverpool street", "destination": "Cambridge", "day": "Tuesday", "leaveAt": "18:00"}
+ID: M-S_40_2 | Action: searchHotel
+ID: M-S_40_2 | Input: {"name": "Lovell Lodge", "return_info": ["all"]}
+ID: M-S_42_2 | Action: SearchTrain
+ID: M-S_42_2 | Input: {"departure": "Cambridge", "destination": "Norwich", "day": "Saturday", "arriveBy": "12:15", "return_info": ["all"]}
+ID: M-S_41_2 | Action: searchHotel
+ID: M-S_41_2 | Input: {"name": "Leverton House", "return_info": ["internet"]}
+ID: M-S_43_1 | Action: searchAttraction
+ID: M-S_43_1 | Input: {"type": "college", "area": "Cambridge", "return_info": ["all"]}
+ID: M-S_42_0 | Action: searchAttraction
+ID: M-S_42_0 | Input: {
+  "name": "milton country park"
+}
+ID: M-S_41_1 | Action: bookHotel
+ID: M-S_41_1 | Input: {"name": "Leverton House"}
+ID: M-S_40_3 | Action: searchHotel
+ID: M-S_40_3 | Input: {"name": "Lovell Lodge", "return_info": ["internet", "stars"]}
+ID: M-S_44_0 | Action: SearchRestaurant
+ID: M-S_44_0 | Input: {"name" : "Lucky Star"}
+ID: M-S_44_2 | Action: searchAttraction
+ID: M-S_44_2 | Input: {"type": "nightclub", "return_info": ["all"]}
+ID: M-S_43_0 | Action: SearchTrain
+ID: M-S_43_0 | Input: {"departure": "Stansted Airport", "destination": "Cambridge", "day": "Sunday", "leaveAt": "11:00", "return_info": ["Ticket"]}
+ID: M-S_41_0 | Action: searchHotel
+ID: M-S_41_0 | Input: {
+  "type": "guesthouse",
+  "parking": true
+}
+ID: M-S_45_4 | Action: searchAttraction
+ID: M-S_45_4 | Input: {"name": "jesus green outdoor pool", "return_info": ["postcode", "phone number"]}
+ID: M-S_45_2 | Action: searchHotel
+ID: M-S_45_2 | Input: {"name": "The Ashley hotel", "return_info": ["postcode"]}
+ID: M-S_45_1 | Action: searchHotel
+ID: M-S_45_1 | Input: {"parking": true, "priceRange": "moderate", "stars": "2", "area": "north", "return_info": ["all"]}
+ID: M-S_40_0 | Action: searchAttraction
+ID: M-S_40_0 | Input: {"name": "Cambridge", "area": "west", "type": "museum"}
+ID: M-S_45_3 | Action: searchAttraction
+ID: M-S_45_3 | Input: {"type": "swimming pool", "area": "north", "return_info": ["all"]}
+ID: M-S_43_2 | Action: searchAttraction
+ID: M-S_43_2 | Input: {"type": "college", "area": "west", "return_info": ["all"]}
+ID: M-S_44_3 | Action: searchAttraction
+ID: M-S_44_3 | Input: {"type": "nightclub", "area": "centre", "return_info": ["address", "entrance_fee"]}
+ID: M-S_44_1 | Action: BookRestaurant
+ID: M-S_44_1 | Input: {"name": "Lucky Star", "time": "14:15", "people": "6"}
+ID: M-S_47_3 | Action: GetRide 
+ID: M-S_47_3 | Input: {'destination': '377 13th Street', 'number_of_riders': '4', 'shared_ride': True}
+ID: M-S_47_0 | Action: GetEvents
+ID: M-S_47_0 | Input: {"event_date": "2024-01-11"}
+ID: M-S_45_0 | Action: searchHotel
+ID: M-S_45_0 | Input: {"priceRange": "moderate", "parking": true}
+ID: M-S_46_0 | Action: LookupSong
+ID: M-S_46_0 | Input: {"genre": "country", "artist": "Shailesh Premi"}
+ID: M-S_47_2 | Action: GetRide
+ID: M-S_47_2 | Input: {'destination': '2525 Sand Creek Road', 'number_of_riders': 4, 'shared_ride': False}
+ID: M-S_46_2 | Action: PlaySong
+ID: M-S_46_2 | Input: {'song_name': 'Lahnga Lasar Ke', 'playback_device': 'speaker in the kitchen'}
+ID: M-S_48_2 | Action: searchAttraction
+ID: M-S_48_2 | Input: {"type": "College", "return_info": ["all"]}
+ID: M-S_49_2 | Action: SearchRestaurant
+ID: M-S_49_2 | Input: {"area": "all", "priceRange": "high", "food": "Chinese", "return_info": ["address", "postcode"]}
+ID: M-S_48_0 | Action: SearchTrain
+ID: M-S_48_0 | Input: {
+  "departure": "cambridge",
+  "destination": "Ely",
+  "day": "Tuesday",
+  "leaveAt": "16:45",
+  "return_info": ["all"]
+}
+ID: M-S_48_1 | Action: BookTrain
+ID: M-S_48_1 | Input: {"people": 8, "trainID": "TR7733", "return_info": ["reference"]}
+ID: M-S_49_0 | Action: SearchTrain
+ID: M-S_49_0 | Input: {
+  "departure": "Ely",
+  "destination": "Cambridge",
+  "arriveBy": "16:45",
+  "day": "Thursday",
+  "return_info": ["all"]
+}
+ID: M-S_49_3 | Action: BookRestaurant
+ID: M-S_49_3 | Input: {"name": "The Hotpot", "day": "friday", "time": "20:00", "people": "2", "return_info": ["all"]}
+ID: M-S_48_3 | Action: searchAttraction
+ID: M-S_48_3 | Input: {"type": "college", "area": "centre", "return_info": ["all"]}
+ID: M-S_50_2 | Action: searchAttraction
+ID: M-S_50_2 | Input: {"type": "architecture", "area": "centre", "return_info": ["all"]}
+ID: M-S_49_1 | Action: BookTrain
+ID: M-S_49_1 | Input: {"people": 2, "trainID": "TR3240", "return_info": ["all"]}
+ID: M-S_51_1 | Action: searchAttraction
+ID: M-S_51_1 | Input: {"name": "Cambridge University Botanic Gardens", "return_info": ["area", "postcode"]}
+ID: M-S_51_0 | Action: searchAttraction
+ID: M-S_51_0 | Input: {"name": "Cambridge University Botanic Gardens"}
+ID: M-S_51_2 | Action: SearchTrain
+ID: M-S_51_2 | Input: {"departure": "Cambridge", "destination": "Birmingham New Street", "arriveBy": "08:15", "return_info": ["all"]}
+ID: M-S_50_1 | Action: searchHotel
+ID: M-S_50_1 | Input: {"name": "hamilton lodge", "return_info": ["type", "postcode", "stars"]}
+ID: M-S_50_0 | Action: searchHotel
+ID: M-S_50_0 | Input: {"name": "hamilton lodge"}
+ID: M-S_50_3 | Action: searchAttraction
+ID: M-S_50_3 | Input: {"name": "Holy Trinity", "return_info": ["address"]}
+ID: M-S_51_3 | Action: SearchTrain
+ID: M-S_51_3 | Input: {"arriveBy": "08:15", "departure": "Cambridge", "destination": "Birmingham New Street", "day": "Wednesday", "return_info": ["all"]}
+ID: M-S_52_1 | Action: SearchRestaurant
+ID: M-S_52_1 | Input: {"area": "centre", "food": "gastropub", "return_info": ["all"]}
+ID: M-S_52_0 | Action: SearchRestaurant
+ID: M-S_52_0 | Input: {
+  "area": "centre",
+  "food": "world"
+}
+ID: M-S_51_4 | Action: BookTrain
+ID: M-S_51_4 | Input: {"people": 1, "trainID": "TR0115", "return_info": ["all"]}
+ID: M-S_53_2 | Action: searchHotel
+ID: M-S_53_2 | Input: {"stars": "0", "area": "north", "return_info": ["all"]}
+ID: M-S_51_5 | Action: SearchTrain
+ID: M-S_51_5 | Input: {"trainID": "TR0115", "return_info": ["leaveAt", "duration"], "departure": "Cambridge", "destination": "Birmingham New Street", "day": "Wednesday"}
+ID: M-S_52_4 | Action: SearchTrain
+ID: M-S_52_4 | Input: {"departure": "Stevenage", "destination": "Cambridge", "day": "Saturday", "leaveAt": "09:45", "return_info": ["all"]}
+ID: M-S_55_2 | Action: FindEvents 
+ID: M-S_55_2 | Input: {"event_type": "Sports", "city": "Vancouver, BC", "date": "2024-03-12"}
+ID: M-S_55_1 | Action: FindEvents
+ID: M-S_55_1 | Input: {
+  "event_type": "sports or games",
+  "city": "Seattle"
+}
+ID: M-S_53_0 | Action: SearchTrain
+ID: M-S_53_0 | Input: {"departure": "Cambridge", "destination": "Broxbourne", "return_info": ["all"], "day": "Friday"}
+ID: M-S_53_3 | Action: searchHotel
+ID: M-S_53_3 | Input: {"stars": "0", "priceRange": "cheap", "area": "north", "return_info": ["all"]}
+ID: M-S_52_5 | Action: BookTrain
+ID: M-S_52_5 | Input: {"people": "4", "trainID": "TR9024", "return_info": ["all"]}
+ID: M-S_54_2 | Action: SearchRestaurant
+ID: M-S_54_2 | Input: {"food": "Indian", "priceRange": "expensive", "area": "west", "return_info": ["all"]}
+ID: M-S_56_1 | Action: LookupMusic
+ID: M-S_54_1 | Action: SearchRestaurant
+ID: M-S_54_1 | Input: {"area": "west", "priceRange": "expensive", "return_info": ["all"]}
+ID: M-S_56_2 | Action: LookupMusic 
+ID: M-S_56_2 | Input: {'genre': 'Pop'}
+ID: M-S_54_0 | Action: SearchRestaurant
+ID: M-S_54_0 | Input: {"area": "west side of town", "food": "Afghan"}
+ID: M-S_53_1 | Action: SearchTrain
+ID: M-S_53_1 | Input: {"day": "friday", "departure": "cambridge", "destination": "broxbourne", "arriveBy": "18:15", "return_info": ["all"]}
+ID: M-S_55_4 | Action: BuyEventTickets
+ID: M-S_55_4 | Input: {"event_name": "Whitecaps Vs Kansas City", "number_of_tickets": 1, "date": "2024-03-12", "city": "Vancouver"}
+ID: M-S_56_4 | Action: PlayMedia
+ID: M-S_56_4 | Input: {"song_name": "African Beauty", "playback_device": "kitchen device"}
+ID: M-S_57_1 | Action: SearchOnewayFlight
+ID: M-S_57_1 | Input: {
+"origin_city": "unknown", 
+"destination_city": "Seattle, WA", 
+"departure_date": "2023-03-03",
+"airlines": "United Airlines"
+}
+ID: M-S_57_5 | Action: SearchHotel
+ID: M-S_57_5 | Input: {'destination': 'Seattle', 'has_wifi': 'True', 'star_rating': '2'}
+ID: M-S_58_2 | Action: FindBus
+ID: M-S_58_2 | Input: {"origin": "Fresno", "destination": "Vegas", "departure_date": "2024-01-11", "group_size": "1"}
+ID: M-S_59_5 | Action: GetRide
+ID: M-S_59_5 | Input: {'destination': '92nd Street Y', 'number_of_riders': '2', 'shared_ride': 'True'}
+ID: M-S_57_2 | Action: SearchOnewayFlight
+ID: M-S_57_2 | Input: {"origin_city": "ATL", "destination_city": "Seattle, WA", "departure_date": "2024-03-03", "airlines": "United Airlines"}
+ID: M-S_58_5 | Action: BuyBusTicket
+ID: M-S_58_5 | Input: {"origin": "Fresno", "destination": "Las Vegas",
+  "departure_date": "2024-01-11", "departure_time": "07:20", "group_size":"1"}
+ID: M-S_58_7 | Action: ReserveHotel
+ID: M-S_58_7 | Input: {'hotel_name':'Best Western Plus Las Vegas West', 'location':'Las Vegas', 'check_in_date':'2024-01-11', 'check_out_date':'2024-01-12'}
+ID: M-S_59_2 | Action: GetWeather
+ID: M-S_59_2 | Input: {'city': 'New York', 'date': '2024-03-10'}
+ID: M-S_59_1 | Action: FindAttractions
+ID: M-S_59_1 | Input: {"location": "New York", "category": "performance venue"}
+ID: M-S_61_5 | Action: GetRide
+ID: M-S_61_5 | Input: {"destination": "30 St Mary Axe (The Gherkin)", "number_of_riders": 3, "shared_ride": true}
+ID: M-S_61_3 | Action: GetWeather
+ID: M-S_61_3 | Input: {"city": "London", "date": "2024-01-09"}
+ID: M-S_61_1 | Action: FindAttractions
+ID: M-S_61_1 | Input: {"location": "London, England"}
+ID: M-S_62_1 | Action: SearchHotel
+ID: M-S_62_1 | Input: {"destination": "Vancouver", "star_rating": "2"}
+ID: M-S_62_4 | Action: FindBus
+ID: M-S_62_4 | Input: {"from_location": "Portland", "to_location": "Vancouver", "leaving_date": "2024-01-05", "travelers": "2"}
+ID: M-S_62_3 | Action: FindBus
+ID: M-S_62_3 | Input: {'from_location': 'Portland', 'to_location': 'Vancouver', 'leaving_date': '2024-01-05', 'travelers': '2'}
+ID: M-S_62_10 | Action: ReserveHotel 
+ID: M-S_62_10 | Input: {'hotel_name': 'Atrium Inn Vancouver', 'check_in_date': '2024-01-08', 'number_of_days': '1', 'destination': 'Vancouver'}
+ID: M-S_60_3 | Action: SearchRoundtripFlights
+ID: M-S_60_3 | Input: {"origin_airport": "Washington", "destination_airport": "Atlanta, GA", "departure_date": "2024-01-07", "return_date": "2024-01-12", "airlines": "United Airlines", "number_of_tickets": "1", "seating_class": "Economy"}
+ID: M-S_62_11 | Action: ReserveHotel
+ID: M-S_62_11 | Input: {'hotel_name': 'Atrium Inn Vancouver', 'check_in_date': '2024-01-08', 'number_of_days': '1', 'destination': 'Vancouver', 'number_of_rooms': '2'}
+ID: M-S_64_2 | Action: SearchTrain
+ID: M-S_64_2 | Input: {"departure": "Leicester", "destination": "Cambridge", "arriveBy": "13:00", "day": "2024-01-08", "return_info": ["all"]}
+ID: M-S_64_1 | Action: searchAttraction
+ID: M-S_64_1 | Input: {"type": "college", "return_info": ["entrance fee", "phone number", "postcode"]}
+ID: M-S_64_3 | Action: BookTrain
+ID: M-S_64_3 | Input: {"people": 2, "trainID": "TR1193", "return_info": ["all"]}
+ID: M-S_65_1 | Action: FindAttractions
+ID: M-S_65_1 | Input: {
+  "location": "Chicago"
+}
+ID: M-S_63_2 | Action: SearchHotel
+ID: M-S_63_2 | Input: {
+  "destination": "LAX",
+  "number_of_rooms": "1"
+}
+ID: M-S_64_0 | Action: searchAttraction
+ID: M-S_64_0 | Input: {"type": "boat", "area": "westside"}
+ID: M-S_67_0 | Action: LookupMusic
+ID: M-S_67_0 | Input: {"artist": "Grimes", "album": "Visions"}
+ID: M-S_67_1 | Action: PlayMedia
+ID: M-S_67_1 | Input: {"song_name": "Oblivion", "artist": "Grimes", "playback_device": "kitchen speaker"}
+ID: M-S_66_3 | Action: SearchOnewayFlight
+ID: M-S_66_3 | Input: {'departure_date': '2024-03-01', 'destination_city': 'London', 'origin_city': 'New York', 'passengers': '3', 'flight_class': 'Economy', 'airlines': 'Southwest Airlines'}
+ID: M-S_65_5 | Action: ReserveHotel
+ID: M-S_65_5 | Input: {"hotel_name": "Chicago Athletic Association", "check_in_date": "2024-01-11", "number_of_days": 3, "destination": "Chicago", "number_of_rooms": 1}
+ID: M-S_68_1 | Action: FindProvider
+ID: M-S_68_1 | Input: {"city": "Petaluma", "type": "General Practitioner"}
+ID: M-S_68_3 | Action: FindProvider 
+ID: M-S_68_3 | Input: {'city': 'Danville', 'type': 'Dermatologist'}
+ID: M-S_68_5 | Action: BookAppointment
+ID: M-S_68_5 | Input: {"doctor_name": "Dermatology and Laser Centre", "appointment_time": "16:00", "appointment_date": "2024-01-07"}
+ID: M-S_68_8 | Action: AddEvent
+ID: M-S_68_8 | Input: {'event_name': 'Doctor visit', 'event_date': '2024-01-07', 'event_location': '4680 Tassajara Road', 'event_time': '16:00'}
+ID: M-S_68_7 | Action: AddEvent
+ID: M-S_68_7 | Input: {'event_name': 'Doctor appointment with Dermatology and Laser Centre', 'event_date': '2024-01-07', 'event_location': '4680 Tassajara Road', 'event_time': '16:00'}
+ID: M-S_66_2 | Action: SearchOnewayFlight
+ID: M-S_66_2 | Input: {
+"origin_city": "NY", 
+"destination_city": "London, UK", 
+"departure_date": "2024-03-01", 
+"airlines": "dontcare", 
+"passengers": "3", 
+"flight_class": "Economy", 
+"number_checked_bags": "0"
+}
+ID: M-S_70_2 | Action: searchAttraction
+ID: M-S_70_2 | Input: {"type": "museum", "return_info": ["all"]}
+ID: M-S_69_4 | Action: GetTimesForMovie
+ID: M-S_69_4 | Input: {"movie_name": "Hellboy", "location": "Berkeley", "show_date": "2024-03-02", "show_type": "3D", "theater_name": "United Artists Berkeley 7"}
+ID: M-S_69_1 | Action: FindRestaurants
+ID: M-S_69_1 | Input: { "cuisine": "dontcare", "city": "Berkeley" }
+ID: M-S_70_0 | Action: SearchRestaurant
+ID: M-S_70_0 | Input: {"area": "centre", "food": "indian"}
+ID: M-S_70_1 | Action: BookRestaurant
+ID: M-S_70_1 | Input: {"name": "The Kohinoor", "day": "2024-01-06", "time": "15:30", "people": "7"}
+ID: M-S_71_3 | Action: searchHotel
+ID: M-S_71_3 | Input: {"priceRange": "high", "area": "centre", "return_info": ["all"]}
+ID: M-S_71_1 | Action: searchAttraction
+ID: M-S_71_1 | Input: {"type": "nightclub", "return_info": ["all"]}
+ID: M-S_69_3 | Action: GetTimesForMovie
+ID: M-S_69_3 | Input: {"movie_name": "Hellboy", "location": "Berkeley", "show_date": "2024-01-04", "show_type": "3D", "theater_name": "United Artists Berkeley 7"}
+ID: M-S_72_4 | Action: BookRestaurant
+ID: M-S_72_4 | Input: { "name": "Ali Baba", "day": "Friday", "time": "13:00", "people": "1", "return_info": ["all"]}
+ID: M-S_71_4 | Action: searchHotel
+ID: M-S_71_4 | Input: {"area": "centre", "priceRange": "moderate", "return_info": ["all"]}
+ID: M-S_73_2 | Action: FindRestaurants
+ID: M-S_73_2 | Input: {"cuisine": "Chinese", "city": "SF"}
+ID: M-S_72_0 | Action: searchHotel
+ID: M-S_72_0 | Input: {
+    "area": "center", 
+    "parking": true
+}
+ID: M-S_72_3 | Action: SearchRestaurant
+ID: M-S_72_3 | Input: {"area": "center", "food": "Lebanese", "return_info": ["all"]}
+ID: M-S_71_2 | Action: searchAttraction
+ID: M-S_71_2 | Input: {"name": "The Fez Club", "return_info": ["phone", "postcode", "entrance fee"]}
+ID: M-S_73_5 | Action: ReserveRestaurant
+ID: M-S_73_5 | Input: {'restaurant_name': "Alice's", 'city': 'San Francisco', 'time': '11 am'}
+ID: M-S_74_0 | Action: None
+ID: M-S_71_0 | Action: searchAttraction
+ID: M-S_71_0 | Input: {"type": "sports", "area": "centre"}
+ID: M-S_72_2 | Action: bookHotel
+ID: M-S_72_2 | Input: {"day": "Friday, January 8, 2024", "name": "Gonville Hotel", "stay": "4", "people": "1", "return_info": ["isSuccess", "reference"]}
+ID: M-S_74_1 | Action: SearchHotel
+ID: M-S_74_1 | Input: {"destination": "NY", "star_rating": "2"}
+ID: M-S_73_7 | Action: ReserveRestaurant 
+ID: M-S_73_7 | Input: {"city": "San Francisco", "date": "2024-01-04", "party_size": "2", "restaurant_name": "Alice's", "time": "12:00"}
+ID: M-S_74_4 | Action: SearchHotel
+ID: M-S_74_4 | Input: {'destination': 'New York', 'star_rating': '2'}
+ID: M-S_73_8 | Action: AddEvent
+ID: M-S_73_8 | Input: {'event_name': "Lunch at Alice's", 'event_date': '2024-01-04', 'event_location': '1599 Sanchez Street, San Francisco', 'event_time': '12:00'}
+ID: M-S_73_6 | Action: ReserveRestaurant
+ID: M-S_73_6 | Input: {"restaurant_name": "Alice's", "city": "San Francisco", "time": "12:15", "date": "2024-01-04", "party_size": "2"}
+ID: M-S_75_2 | Action: FindRestaurants
+ID: M-S_75_2 | Input: {"city": "San Francisco", "cuisine": "Shabu-shabu", "price_range": "moderate"}
+ID: M-S_75_1 | Action: FindRestaurants
+ID: M-S_75_1 | Input: {"cuisine": "Shabu-Shabu", "city": "SF"}
+ID: M-S_74_6 | Action: FindBus
+ID: M-S_74_6 | Input: {'from_location': 'Washington', 'to_location': 'New York', 'leaving_date': '2024-03-03', 'travelers': '3'}
+ID: M-S_75_4 | Action: ReserveRestaurant
+ID: M-S_75_4 | Input: {'restaurant_name': 'Shabu Club', 'city': 'San Francisco', 'time': '7pm', 'date': '2024-01-06', 'party_size': '3'}
+ID: M-S_76_1 | Action: LookupMusic
+ID: M-S_76_1 | Input: {"artist": "Our Last Night", "genre": "Metalcore"}
+ID: M-S_76_2 | Action: PlayMedia
+ID: M-S_76_2 | Input: {'song_name': 'Same Old War', 'artist': 'Our Last Night'}
+ID: M-S_74_7 | Action: ReserveHotel
+ID: M-S_74_7 | Input: {"hotel_name": "11 Howard Street", "check_in_date": "2024-03-09", "number_of_days": "2", "destination": "New York", "number_of_rooms": "2"}
+ID: M-S_77_2 | Action: FindRestaurants
+ID: M-S_77_2 | Input: {'cuisine': 'dontcare', 'city': 'San Francisco', 'price_range': 'affordable'}
+ID: M-S_75_6 | Action: ReserveRestaurant 
+ID: M-S_75_6 | Input: {'city': 'San Francisco', 'date': '2024-03-08', 'party_size': '4', 'restaurant_name': 'Shabu House', 'time': '13:30'}
+ID: M-S_76_0 | Action: LookupMusic
+ID: M-S_76_0 | Input: {"artist": "Jon Pardi"}
+ID: M-S_77_1 | Action: FindMovies
+ID: M-S_77_1 | Input: {"location":"SFO"}
+ID: M-S_77_3 | Action: FindRestaurants
+ID: M-S_77_3 | Input: {"cuisine": "Curry", "city": "San Francisco", "price_range": "moderate"}
+ID: M-S_78_3 | Action: FindRestaurants
+ID: M-S_78_3 | Input: {'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'expensive'}
+ID: M-S_78_1 | Action: FindRestaurants
+ID: M-S_78_1 | Input: {"cuisine": "brazilian", "city": "dontcare", "price_range": "intermediate"}
+ID: M-S_78_0 | Action: None. 
+ID: M-S_78_7 | Action: None
+ID: M-S_78_4 | Action: FindRestaurants
+ID: M-S_78_4 | Input: {"city": "San Francisco", "cuisine": "Lobster", "price_range": "moderate", "serves_alcohol": "True"}
+ID: M-S_75_5 | Action: ReserveRestaurant
+ID: M-S_75_5 | Input: {"restaurant_name": "Shabu Club", "city": "San Francisco", "time": "13:15", "date": "2024-03-09", "party_size": "4"}
+ID: M-S_79_1 | Action: FindAttractions
+ID: M-S_79_1 | Input: {"location": "LAX"}
+ID: M-S_79_2 | Action: FindAttractions 
+ID: M-S_79_2 | Input: {'location': 'Los Angeles', 'good_for_kids': 'True'}
+ID: M-S_79_3 | Action: SearchHotel
+ID: M-S_79_3 | Input: {'destination': 'Los Angeles', 'number_of_rooms': '1', 'star_rating': '2'}
+ID: M-S_78_8 | Action: GetRide
+ID: M-S_78_8 | Input: {"destination": "318 Columbus Avenue", "number_of_seats": "2", "ride_type": "regular"}
+ID: M-S_78_2 | Action: FindRestaurants
+ID: M-S_78_2 | Input: {"cuisine": "Brazilian", "city": "San Francisco", "price_range": "moderate"}
+ID: M-S_78_6 | Action: ReserveRestaurant
+ID: M-S_78_6 | Input: {'restaurant_name': "Betty Lou's Seafood & Grill", 'city': 'San Francisco', 'time': '19:30', 'date': '2024-01-04'}
+ID: M-S_80_5 | Action: SearchHotel
+ID: M-S_80_5 | Input: {'destination': 'Los Angeles', 'number_of_rooms': '1', 'has_wifi': 'true', 'star_rating': '1'}
+ID: M-S_80_2 | Action: SearchOnewayFlight
+ID: M-S_80_2 | Input: {'departure_date': '2024-01-09', 'destination_city': 'Los Angeles', 'origin_city': 'San Francisco'}
+ID: M-S_80_3 | Action: ReserveOnewayFlight
+ID: M-S_80_3 | Input: {"origin_city": "San Francisco", "destination_city": "Los Angeles", "airlines": "American Airlines", "departure_date": "2024-01-09"}
+ID: M-S_81_4 | Action: SearchRoundtripFlights
+ID: M-S_81_4 | Input: {"origin_city": "Portland", "destination_city": "Los Angeles", "departure_date": "2024-01-10", "return_date": "2024-01-13"}
+ID: M-S_80_6 | Action: ReserveHotel
+ID: M-S_80_6 | Input: {"hotel_name": "Ac Hotel By Marriott Beverly Hills", "check_in_date": "2024-01-09", "number_of_days": "1", "destination": "Los Angeles" }
+ID: M-S_81_0 | Action: No action as more information is needed.
+ID: M-S_80_1 | Action: SearchOnewayFlight
+ID: M-S_80_1 | Input: {"origin_city": "San Francisco", "destination_city": "LA", "departure_date": "2024-01-06"}
+ID: M-S_81_7 | Action: SearchHotel
+ID: M-S_81_7 | Input: {"location": "Los Angeles"}
+ID: M-S_82_0 | Action: None
+ID: M-S_81_8 | Action: ReserveHotel
+ID: M-S_81_8 | Input: {'hotel_name': 'Ac Hotel By Marriott Beverly Hills', 'location': 'Los Angeles', 'check_in_date': '2024-01-10', 'check_out_date': '2024-01-13'}
+ID: M-S_82_5 | Action: FindProvider
+ID: M-S_82_5 | Input: {"city": "San Francisco"}
+ID: M-S_81_6 | Action: ReserveRoundtripFlights
+ID: M-S_81_6 | Input: {'airlines': 'American Airlines', 'departure_date': '2024-01-10', 'destination_city': 'Los Angeles', 'origin_city': 'Portland', 'return_date': '2024-01-13', 'outbound_departure_time': '06:00', 'inbound_departure_time': '05:20', 'seating_class': 'Economy'}
+ID: M-S_81_5 | Action: SearchRoundtripFlights
+ID: M-S_81_5 | Input: {
+    "origin_city": "Portland",
+    "destination_city": "Los Angeles",
+    "departure_date": "2024-01-10",
+    "return_date": "2024-01-13",
+    "airlines": "Delta"
+}
+ID: M-S_82_1 | Action: FindRestaurants
+ID: M-S_82_1 | Input: {
+  "cuisine": "Mexican",
+  "city": "SF",
+  "has_live_music": true
+}
+ID: M-S_82_8 | Action: BookAppointment
+ID: M-S_82_8 | Input: {'appointment_date': '2024-01-05', 'appointment_time': '15:30', 'stylist_name': '1512 Barber Shop'}
+ID: M-S_81_3 | Action: SearchRoundtripFlights
+ID: M-S_81_3 | Input: {"origin_city": "Portland, OR", "destination_city": "LA", "departure_date": "10th", "return_date": "13th"}
+ID: M-S_83_1 | Action: FindBus
+ID: M-S_83_1 | Input: {"origin": "Vancouver, BC", "destination": "Seattle", "departure_date": "2024-01-05", "group_size": "3"}
+ID: M-S_82_7 | Action: BookAppointment
+ID: M-S_82_7 | Input: {'stylist_name': '1512 Barber Shop', 'appointment_date': '2024-01-05', 'appointment_time': '15:45'}
+ID: M-S_84_3 | Action: FindProvider
+ID: M-S_84_3 | Input: {'city': 'San Francisco'}
+ID: M-S_84_1 | Action: FindProvider
+ID: M-S_84_1 | Input: {"city": "San Fran"}
+ID: M-S_83_8 | Action: FindAttractions 
+ID: M-S_83_8 | Input: {'location': 'Seattle', 'category': 'Museum'}
+ID: M-S_84_10 | Action: ReserveRestaurant
+ID: M-S_84_10 | Input: {'restaurant_name': 'Alamo Square Seafood Grill', 'city': 'San Francisco', 'time': '12:15', 'date': '2024-01-06', 'party_size': '1'}
+ID: M-S_84_7 | Action: FindRestaurants
+ID: M-S_84_7 | Input: {'cuisine': 'Fish', 'city': 'San Francisco'}
+ID: M-S_83_7 | Action: FindAttractions
+ID: M-S_83_7 | Input: {'location': 'Seattle', 'good_for_kids': 'true', 'free_entry': 'true'}
+ID: M-S_83_6 | Action: BuyBusTicket
+ID: M-S_83_6 | Input: {"origin": "Vancouver", "destination": "Seattle", "departure_date": "2024-01-05", "departure_time": "08:30", "group_size": "3"}
+ID: M-S_84_6 | Action: BookAppointment
+ID: M-S_84_6 | Input: {'stylist_name': '20th Salon And Barber', 'appointment_time': '10:30', 'appointment_date': '2024-01-06'}

@@ -1,0 +1,9 @@
+[
+    {
+        "User": "I want to book an appointment.",
+        "Assistant": "Ok, what kind of appointment do you want to make?"
+    },
+    {
+        "User": "I need to schedule a visit to a dentist."
+    }
+]

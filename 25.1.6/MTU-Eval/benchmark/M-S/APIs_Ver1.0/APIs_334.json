@@ -1,0 +1,68 @@
+[
+    {
+        "name": "SearchOnewayFlight",
+        "description": "Search for one-way flights to the destination of choice",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "passengers": "1",
+            "flight_class": "Economy",
+            "number_checked_bags": "0"
+        },
+        "result_parameters": [
+            "passengers",
+            "flight_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport_name",
+            "destination_airport_name",
+            "departure_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "number_checked_bags",
+            "airlines",
+            "arrives_next_day"
+        ]
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "description": "Search for round-trip flights to the destination of choice",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date",
+            "return_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "passengers": "1",
+            "flight_class": "Economy",
+            "number_checked_bags": "0"
+        },
+        "result_parameters": [
+            "passengers",
+            "flight_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport_name",
+            "destination_airport_name",
+            "departure_date",
+            "return_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "number_checked_bags",
+            "airlines",
+            "arrives_next_day"
+        ]
+    }
+]

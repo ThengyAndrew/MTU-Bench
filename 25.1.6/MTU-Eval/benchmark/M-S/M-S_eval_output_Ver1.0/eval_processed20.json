@@ -1,0 +1,58 @@
+{
+    "query": [
+        {
+            "user": "Check for me please the weather in Mountain View.",
+            "function": "",
+            "Thought": "The user has requested weather information for Mountain View, which requires an API call to get the current weather data.",
+            "Action": "GetWeather ",
+            "Action Input": "{'city': 'Mountain View'}",
+            "observation": ": {'city': 'Mountain View', 'date': '2024-01-04', 'humidity': '28', 'precipitation': '9', 'temperature': '91', 'wind': '3'}",
+            "assistant": ": The average temperature for the day should be 91 degrees Fahrenheit and 9 percent chance of rain."
+        },
+        {
+            "user": "I understand.Find me a restaurant there.",
+            "function": "",
+            "Thought": "The user is requesting restaurant options in Mountain View without specifying a cuisine, so I need to ask for more details before I can call an API.",
+            "observation": ": {'city': 'Mountain View', 'date': '2024-01-04', 'humidity': '28', 'precipitation': '9', 'temperature': '91', 'wind': '3'}",
+            "assistant": ": You like a specific type of food.American, Chinese or something else?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "GetWeather",
+                "description": "Get the weather of a certain location on a date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRestaurant",
+                "description": "Reserve a table at a restaurant",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindRestaurants",
+                "description": "Find a restaurant of a particular cuisine in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

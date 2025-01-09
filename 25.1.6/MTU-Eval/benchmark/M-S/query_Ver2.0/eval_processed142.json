@@ -1,0 +1,41 @@
+[
+    {
+        "user": "Add alarms",
+        "function": "",
+        "Thought": "The user wants to add an alarm. I need to find out which alarm the user want to add.",
+        "observation": "",
+        "assistant": ": Alarm to add?"
+    },
+    {
+        "user": "one for 9 pm tonight",
+        "function": "",
+        "Thought": "The user wants to add an alarm set for 9 pm tonight.",
+        "Action": "set_alarm",
+        "Action Input": "{\"time\": \"21:00\", \"recurrence\": [\"today\"]}",
+        "observation": ": {\"alarm_time\": \"21:00\", \"alarm_recurrence\": [\"today\"], \"alarm_status\": \"created\"}",
+        "assistant": ": Alarm has been set. would you like to edit another?"
+    },
+    {
+        "user": "What percentage of the brain does a human typically use?",
+        "function": "",
+        "Thought": "The user's question doesn't require an API call but instead a factual response based on known scientific consensus.",
+        "observation": ": {\"alarm_time\": \"21:00\", \"alarm_recurrence\": [\"today\"], \"alarm_status\": \"created\"}",
+        "assistant": ": The myth that humans only use 10% of their brains is just that—a myth. In reality, humans use virtually all of their brains."
+    },
+    {
+        "user": "change it to 10 am tomorrow",
+        "function": "",
+        "Thought": "The user wants to change the previously set alarm to 10 am tomorrow. I should call the API to change the alarm time.",
+        "Action": "change_alarm_time",
+        "Action Input": "{\"current_time\": \"21:00\", \"new_time\": \"10:00\", \"current_recurrence\": [\"today\"], \"new_recurrence\": [\"tomorrow\"]}",
+        "observation": ": {\"previous_alarm_time\": \"21:00\", \"new_alarm_time\": \"10:00\", \"previous_alarm_recurrence\": [\"today\"], \"new_alarm_recurrence\": [\"tomorrow\"], \"alarm_status\": \"changed\"}",
+        "assistant": ": I have your alarm saved for 10 am tomorrow. Is this good?"
+    },
+    {
+        "user": "yes",
+        "function": "",
+        "Thought": "The user is satisfied with changing the alarm time.",
+        "observation": ": {\"previous_alarm_time\": \"21:00\", \"new_alarm_time\": \"10:00\", \"previous_alarm_recurrence\": [\"today\"], \"new_alarm_recurrence\": [\"tomorrow\"], \"alarm_status\": \"changed\"}",
+        "assistant": ": Thank you."
+    }
+]

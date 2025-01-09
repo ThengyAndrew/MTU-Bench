@@ -1,0 +1,314 @@
+{
+    "query": [
+        {
+            "User": "I think it deserves 3 stars. Plus, I am looking for another book to read.",
+            "Assistant": "Please, take your time."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "AddToPlaylist",
+                "description": "This tool allows the user to add a specific song to a specified playlist.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "playlist": {
+                            "type": "string",
+                            "description": "The name of the playlist to which the user wants to add the song."
+                        },
+                        "entity_name": {
+                            "type": "string",
+                            "description": "The name of the song that the user wants to add to the playlist."
+                        },
+                        "artist": {
+                            "type": "string",
+                            "description": "The name of the artist of the song that the user wants to add to the playlist."
+                        },
+                        "music_item": {
+                            "type": "string",
+                            "description": "The specific music item that the user wants to add to the playlist."
+                        },
+                        "playlist_owner": {
+                            "type": "string",
+                            "description": "The owner of the playlist to which the user wants to add the song."
+                        }
+                    },
+                    "required": [
+                        "playlist"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BookRestaurant",
+                "description": "This tool allows the user to make a reservation at a specified restaurant.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "poi": {
+                            "type": "string",
+                            "description": "The point of interest related to where the restaurant is located."
+                        },
+                        "party_size_description": {
+                            "type": "string",
+                            "description": "Description of the party size for the reservation."
+                        },
+                        "served_dish": {
+                            "type": "string",
+                            "description": "Specific dish the restaurant serves that the user is interested in."
+                        },
+                        "restaurant_name": {
+                            "type": "string",
+                            "description": "Name of the restaurant to make a reservation at."
+                        },
+                        "restaurant_type": {
+                            "type": "string",
+                            "description": "Type or style of the restaurant like Japanese, Italian, etc."
+                        },
+                        "facility": {
+                            "type": "string",
+                            "description": "Facilities provided by the restaurant like WiFi, parking, etc."
+                        },
+                        "spatial_relation": {
+                            "type": "string",
+                            "description": "The spatial or geographic relation of the restaurant in reference to another location."
+                        },
+                        "party_size_number": {
+                            "type": "string",
+                            "description": "Number of people included in the reservation."
+                        },
+                        "cuisine": {
+                            "type": "string",
+                            "description": "Type of cuisine the restaurant offers."
+                        },
+                        "country": {
+                            "type": "string",
+                            "description": "Country where the restaurant is located."
+                        },
+                        "sort": {
+                            "type": "string",
+                            "description": "Sorting order for restaurant search results."
+                        },
+                        "state": {
+                            "type": "string",
+                            "description": "State where the restaurant is located."
+                        },
+                        "city": {
+                            "type": "string",
+                            "description": "City where the restaurant is located."
+                        },
+                        "timeRange": {
+                            "type": "string",
+                            "description": "Desired time range for the reservation."
+                        }
+                    },
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMusic",
+                "description": "This tool allows the user to play music based on their preferences, including artist, genre, or era.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "artist": {
+                            "type": "string",
+                            "description": "The name of the artist whose music the user wants to play."
+                        },
+                        "album": {
+                            "type": "string",
+                            "description": "The name of the album from which the user wants to play music."
+                        },
+                        "music_item": {
+                            "type": "string",
+                            "description": "A specific music item that the user wants to play."
+                        },
+                        "track": {
+                            "type": "string",
+                            "description": "A specific track number that the user wants to play from an album."
+                        },
+                        "year": {
+                            "type": "string",
+                            "description": "The year of release for the music that the user wants to play."
+                        },
+                        "genre": {
+                            "type": "string",
+                            "description": "The genre of music that the user wants to play."
+                        },
+                        "service": {
+                            "type": "string",
+                            "description": "The music streaming service that the user wants to use to play music."
+                        },
+                        "sort": {
+                            "type": "string",
+                            "description": "The order in which the user wants to sort the music in the playlist."
+                        },
+                        "playlist": {
+                            "type": "string",
+                            "description": "The name of a pre-existing playlist that the user wants to play."
+                        }
+                    },
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchScreeningEvent",
+                "description": "This tool allows the user to search for screening events such as movies, plays, or performances.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "object_location_type": {
+                            "type": "string",
+                            "description": "Defines the type of the location where the screening event is held."
+                        },
+                        "movie_name": {
+                            "type": "string",
+                            "description": "The name of the movie or performance."
+                        },
+                        "location_name": {
+                            "type": "string",
+                            "description": "The name of the place where the event is screened."
+                        },
+                        "object_type": {
+                            "type": "string",
+                            "description": "Specifies the category of the screening event (movie, play, performance)."
+                        },
+                        "timeRange": {
+                            "type": "string",
+                            "description": "The range of time during which the event is screened."
+                        },
+                        "spatial_relation": {
+                            "type": "string",
+                            "description": "The relational context of the location where the event is screened."
+                        },
+                        "movie_type": {
+                            "type": "string",
+                            "description": "The type/genre of the movie or performance."
+                        }
+                    },
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchCreativeWork",
+                "description": "This tool allows the user to search for creative works such as movies, TV shows, music albums, books, or video games. It takes the name of the creative work as a required parameter and optionally, the type of the creative work. It returns information about the searched creative work, including details such as availability, platforms, genre, and purchase options.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "object_name": {
+                            "type": "string",
+                            "description": "The name of the creative work to be searched."
+                        },
+                        "object_type": {
+                            "type": "string",
+                            "description": "The type of the creative work to be searched. It could be a movie, TV show, music album, book, or video game."
+                        }
+                    },
+                    "required": [
+                        "object_name"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "RateBook",
+                "description": "This tool allows users to rate books or other literary works.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "rating_value": {
+                            "type": "string",
+                            "description": "The rating value provided by a user for a particular book or literary work."
+                        },
+                        "object_name": {
+                            "type": "string",
+                            "description": "The name or the title of the book or the literary work."
+                        },
+                        "object_select": {
+                            "type": "string",
+                            "description": "The specific object in the literary work that the rating is associated with."
+                        },
+                        "object_type": {
+                            "type": "string",
+                            "description": "The type or the category of the book or the literary work."
+                        },
+                        "rating_unit": {
+                            "type": "string",
+                            "description": "The unit or scale in which the rating is given."
+                        },
+                        "best_rating": {
+                            "type": "string",
+                            "description": "The best or maximum rating that can be given to a book or a work of literature."
+                        },
+                        "object_part_of_series_type": {
+                            "type": "string",
+                            "description": "Indicating whether the literary work is part of a series and, if so, the type of that series."
+                        }
+                    },
+                    "required": [
+                        "rating_value"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchFlights",
+                "description": "API for searching flight information.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "toloc": {
+                            "type": "string",
+                            "description": "Name of the departure city."
+                        },
+                        "fromloc": {
+                            "type": "string",
+                            "description": "Name of the arrival city."
+                        },
+                        "depart_date": {
+                            "type": "string",
+                            "description": "Departure date."
+                        },
+                        "depart_time": {
+                            "type": "string",
+                            "description": "Departure time."
+                        },
+                        "arrive_date": {
+                            "type": "string",
+                            "description": "Arrival date."
+                        },
+                        "arrive_time": {
+                            "type": "string",
+                            "description": "Arrival time."
+                        },
+                        "airline_name": {
+                            "type": "string",
+                            "description": "The name of airline."
+                        }
+                    },
+                    "required": [
+                        "toloc",
+                        "fromloc"
+                    ]
+                }
+            }
+        }
+    ]
+}

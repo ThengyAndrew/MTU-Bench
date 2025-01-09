@@ -1,0 +1,6 @@
+user: Can you help me find an intermediate priced place to eat?
+function: 
+Thought: Missing cuisine. I can't call the function.
+observation: 
+assistant: : Any food specifications? Chinese, American or something else?
+User: I love brazilian food actually

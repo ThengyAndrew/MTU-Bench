@@ -1,0 +1,110 @@
+[
+    {
+        "name": "FindEvents",
+        "description": "Find concerts and games happening in your area",
+        "required_parameters": [
+            "event_type",
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "dontcare",
+            "category": "dontcare"
+        },
+        "result_parameters": [
+            "event_type",
+            "category",
+            "event_name",
+            "date",
+            "time",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "GetEventDates",
+        "description": "Get dates on which a given event is taking place",
+        "required_parameters": [
+            "event_name",
+            "city"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_name",
+            "date",
+            "time",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "BuyEventTickets",
+        "description": "Buy tickets for an event",
+        "required_parameters": [
+            "event_name",
+            "number_of_tickets",
+            "date",
+            "city"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_name",
+            "date",
+            "time",
+            "number_of_tickets",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "ReserveRestaurant",
+        "description": "Reserve a table at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "city",
+            "time"
+        ],
+        "optional_parameters": {
+            "date": "2019-03-01",
+            "party_size": "2"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "party_size",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find a restaurant of a particular cuisine in a city",
+        "required_parameters": [
+            "cuisine",
+            "city"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_live_music": "dontcare",
+            "serves_alcohol": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "user": "Find me a one way flight.",
+        "function": "",
+        "Thought": "Missing origin. I can't call the function.",
+        "observation": "",
+        "assistant": ": What city are you flying from?"
+    },
+    {
+        "user": "I'd like to leave from NY on the 1st of March and fly Economy.",
+        "function": "",
+        "Thought": "Missing destination. I can't call the function.",
+        "observation": "",
+        "assistant": ": Where are you heading?"
+    }
+]

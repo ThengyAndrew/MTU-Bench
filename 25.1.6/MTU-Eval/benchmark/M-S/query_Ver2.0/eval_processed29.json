@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I need to find a round trip flight to NYC.",
+        "function": "",
+        "Thought": "Missing origin, departure_date, return_date. I can't call the function.",
+        "observation": "",
+        "assistant": ": What is the departure city and date? And when would you like to return?"
+    }
+]

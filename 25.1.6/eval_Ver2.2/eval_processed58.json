@@ -1,0 +1,21 @@
+[
+    {
+        "User": "I am looking for medical help.",
+        "Assistant": "Sure, can I assist you in finding a specialist doctor?"
+    },
+    {
+        "User": "Yes, I need a cardiologist.",
+        "Assistant": "Okay, could you also tell me the city where you are looking for the cardiologist?"
+    },
+    {
+        "User": "I am looking for one in New York.",
+        "Assistant": "Alright, I found a few doctors for you. Would you like me to book an appointment as well?"
+    },
+    {
+        "User": "Yes, can you book an appointment at 11 a.m. on January 5th?",
+        "Assistant": "Of course, I can do that. Do you want me to add the doctor's contact information to your list?"
+    },
+    {
+        "User": "Yes, please add the doctor to my contact list."
+    }
+]

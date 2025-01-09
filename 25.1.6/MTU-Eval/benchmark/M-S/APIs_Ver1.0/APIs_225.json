@@ -1,0 +1,63 @@
+[
+    {
+        "name": "GetEvents",
+        "description": "Get list of all calendar events for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetAvailableTime",
+        "description": "Get a list of available times for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "available_start_time",
+            "available_end_time"
+        ]
+    },
+    {
+        "name": "AddEvent",
+        "description": "Add event to the user's calendar",
+        "required_parameters": [
+            "event_name",
+            "event_date",
+            "event_location",
+            "event_time"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetRide",
+        "description": "Call a taxi to head to a given destination",
+        "required_parameters": [
+            "destination",
+            "number_of_riders",
+            "shared_ride"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "destination",
+            "shared_ride",
+            "ride_fare",
+            "approximate_ride_duration",
+            "number_of_riders"
+        ]
+    }
+]

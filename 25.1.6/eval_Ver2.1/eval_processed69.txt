@@ -1,0 +1,9 @@
+User:  I am thinking about moving to a new place.
+Action: {}
+Assistant:  That's great! Do you have any particular location in mind?
+
+User:  I'm considering Seattle.
+Action: {}
+Assistant:  Seattle is a beautiful city. What kind of residence are you looking for?
+
+User:  I want a house for rent with 3 bedrooms and 2 bathrooms.

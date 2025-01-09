@@ -1,0 +1,17 @@
+[
+    {
+        "User": "I am in need of your services.",
+        "Assistant": "Of course. What do you require assistance with?"
+    },
+    {
+        "User": "I am thinking of making a reservation for a meal.",
+        "Assistant": "Sure. How many people will be attending and where would you prefer the dining place?"
+    },
+    {
+        "User": "It's for four people, and we'd like to go to Somalia. Also, can you look for a tv show for me?",
+        "Assistant": "There's one more thing I need to know. What's the name of the TV show you want me to find?"
+    },
+    {
+        "User": "It's called 'Baby Blue'."
+    }
+]

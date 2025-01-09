@@ -1,0 +1,5 @@
+User:  I would like to join a library.
+Action: {}
+Assistant:  Sure, can you tell me which city you currently live in?
+
+User:  I live in San Francisco.

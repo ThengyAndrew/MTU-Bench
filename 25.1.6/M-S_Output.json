@@ -1,0 +1,1469 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "theatre",
+            "return_info": [
+                "address",
+                "postcode",
+                "phone number"
+            ]
+        }
+    },
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "song_name": "Be My Baby",
+            "artist": "Ariana Grande"
+        }
+    },
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "song_name": "Be My Baby",
+            "playback_device": "kitchen speaker"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "internet": true,
+            "area": "centre",
+            "priceRange": "cheap",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "Mountain View",
+            "cuisine": "dontcare"
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": "6",
+            "trainID": "TR9781",
+            "return_info": [
+                "reference",
+                "Ticket"
+            ]
+        }
+    },
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "2024-01-06",
+            "name": "alexander bed and breakfast",
+            "stay": "3",
+            "people": "2",
+            "return_info": [
+                "isSuccess",
+                "reference"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "name": "Pizza Express Fen Ditton"
+        }
+    },
+    {
+        "name": "get_world_record",
+        "arguments": {
+            "record_category": "biggest snake"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "internet": "true",
+            "type": "guesthouse",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "82746453535"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "internet": true
+        }
+    },
+    {
+        "name": "freeze_bank_account",
+        "arguments": {
+            "account_number": "82746453535"
+        }
+    },
+    {
+        "name": "GetTimesForMovie",
+        "arguments": {
+            "movie_name": "Dumbo",
+            "location": "Santa Rosa",
+            "show_date": "2024-01-04"
+        }
+    },
+    {
+        "name": "get_world_record",
+        "arguments": {
+            "record_category": "loudest sound"
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "<user's account number>"
+        }
+    },
+    {
+        "name": "GetRide ",
+        "arguments": {
+            "destination": "409 Aviation Boulevard",
+            "number_of_riders": "1",
+            "shared_ride": "false"
+        }
+    },
+    {
+        "name": "get_late_fees",
+        "arguments": {
+            "library_ID": 58965
+        }
+    },
+    {
+        "name": "freeze_bank_account",
+        "arguments": {
+            "account_number": "3838234",
+            "freeze_reason": "suspected_fraud"
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "3838234"
+        }
+    },
+    {
+        "name": "freeze_bank_account",
+        "arguments": {
+            "account_number": "3838234",
+            "freeze_reason": "suspected_fraud"
+        }
+    },
+    {
+        "name": "get_late_fees",
+        "arguments": {
+            "library_ID": 3274
+        }
+    },
+    {
+        "name": "query_restaurant",
+        "arguments": {
+            "food_pref": "Thai",
+            "loc": "Pittsburgh"
+        }
+    },
+    {
+        "name": "query_restaurant",
+        "arguments": {
+            "food_pref": "Thai",
+            "loc": "Pittsburgh",
+            "goals": [
+                "open"
+            ]
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "A Song of Fire and Ice"
+        }
+    },
+    {
+        "name": "GetEvents",
+        "arguments": {
+            "event_date": "2024-01-09"
+        }
+    },
+    {
+        "name": "delete_contact",
+        "arguments": {
+            "contact_name": "Gary Glitterr"
+        }
+    },
+    {
+        "name": "delete_appointment",
+        "arguments": {
+            "appointment_name": "Meeting",
+            "appointment_date": "2024-01-11",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": "delete_appointment",
+        "arguments": {
+            "appointment_date": "2024-01-09",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "Scott-cell",
+            "phone_number": "569-566-5231"
+        }
+    },
+    {
+        "name": "check_door_status",
+        "arguments": {
+            "door_location": "home"
+        }
+    },
+    {
+        "name": "check_door_status",
+        "arguments": {
+            "door_location": "front"
+        }
+    },
+    {
+        "name": "delete_contact_number",
+        "arguments": {
+            "contact_name": "Kimberly Wright"
+        }
+    },
+    {
+        "name": "check_door_status",
+        "arguments": {
+            "door_location": "back"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": 50,
+            "location": "Living Room"
+        }
+    },
+    {
+        "name": "change_alarm_name",
+        "arguments": {
+            "current_name": "Walk Dog",
+            "new_name": "Feed Cat",
+            "time": "10:30"
+        }
+    },
+    {
+        "name": "change_alarm_time",
+        "arguments": {
+            "current_time": "21:00",
+            "new_time": "10:00",
+            "current_recurrence": [
+                "today"
+            ],
+            "new_recurrence": [
+                "tomorrow"
+            ]
+        }
+    },
+    {
+        "name": "adjust_lighting",
+        "arguments": {
+            "location": "back porch",
+            "action": "on"
+        }
+    },
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "house"
+        }
+    },
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "date": "2024-01-09"
+        }
+    },
+    {
+        "name": "delete_appointment",
+        "arguments": {
+            "appointment_date": "2024-01-05",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": "check_light_status",
+        "arguments": {
+            "location": "back porch"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": 70,
+            "location": "house"
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": 6,
+            "trainID": "TR5729",
+            "return_info": [
+                "isSuccess",
+                "reference",
+                "Ticket"
+            ]
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "10:00",
+            "sound": "screaming monkey"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "3",
+            "type": "guesthouse",
+            "area": "Cambridge"
+        }
+    },
+    {
+        "name": "PlayMovie ",
+        "arguments": {
+            "title": "Ash Is Purest White"
+        }
+    },
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Tuesday",
+            "name": "allenbell",
+            "stay": "5 nights",
+            "people": "2",
+            "return_info": [
+                "isSuccess",
+                "reference"
+            ]
+        }
+    },
+    {
+        "name": "CheckBalance",
+        "arguments": {
+            "account_type": "savings"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "type": "guesthouse",
+            "internet": true,
+            "area": "east",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "type": "Guesthouse",
+            "priceRange": "high",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "kambar",
+            "area": "Cambridge"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Hamilton Lodge",
+            "return_info": [
+                "priceRange"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "modern european",
+            "area": "north",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "2024-01-08",
+            "name": "Hamilton Lodge",
+            "stay": "3",
+            "people": "1",
+            "return_info": [
+                "isSuccess",
+                "reference"
+            ]
+        }
+    },
+    {
+        "name": "GetCarsAvailable",
+        "arguments": {
+            "pickup_city": "Philadelphia",
+            "pickup_date": "2024-01-04",
+            "pickup_time": "15:00",
+            "dropoff_date": "2024-01-05"
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "north",
+            "priceRange": "moderate",
+            "food": "barbeque"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "area": "Cambridge"
+        }
+    },
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "location": "Philadelphia"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "park",
+            "area": "North Cambridge",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "GetCarsAvailable",
+        "arguments": {
+            "pickup_city": "current_city",
+            "pickup_date": "2024-01-04",
+            "pickup_time": "15:00",
+            "dropoff_date": "2024-01-05"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "London Liverpool street",
+            "destination": "Cambridge",
+            "day": "Tuesday",
+            "leaveAt": "18:00"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Lovell Lodge",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Cambridge",
+            "destination": "Norwich",
+            "day": "Saturday",
+            "arriveBy": "12:15",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Leverton House",
+            "return_info": [
+                "internet"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "area": "Cambridge",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "name": "Leverton House"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Lovell Lodge",
+            "return_info": [
+                "internet",
+                "stars"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "name": "Lucky Star"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Stansted Airport",
+            "destination": "Cambridge",
+            "day": "Sunday",
+            "leaveAt": "11:00",
+            "return_info": [
+                "Ticket"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "jesus green outdoor pool",
+            "return_info": [
+                "postcode",
+                "phone number"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "The Ashley hotel",
+            "return_info": [
+                "postcode"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "parking": true,
+            "priceRange": "moderate",
+            "stars": "2",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Cambridge",
+            "area": "west",
+            "type": "museum"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "swimming pool",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "area": "west",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "area": "centre",
+            "return_info": [
+                "address",
+                "entrance_fee"
+            ]
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "name": "Lucky Star",
+            "time": "14:15",
+            "people": "6"
+        }
+    },
+    {
+        "name": "GetEvents",
+        "arguments": {
+            "event_date": "2024-01-11"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "priceRange": "moderate",
+            "parking": true
+        }
+    },
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "genre": "country",
+            "artist": "Shailesh Premi"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "College",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "all",
+            "priceRange": "high",
+            "food": "Chinese",
+            "return_info": [
+                "address",
+                "postcode"
+            ]
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": 8,
+            "trainID": "TR7733",
+            "return_info": [
+                "reference"
+            ]
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "name": "The Hotpot",
+            "day": "friday",
+            "time": "20:00",
+            "people": "2",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "architecture",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": 2,
+            "trainID": "TR3240",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Cambridge University Botanic Gardens",
+            "return_info": [
+                "area",
+                "postcode"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Cambridge University Botanic Gardens"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Cambridge",
+            "destination": "Birmingham New Street",
+            "arriveBy": "08:15",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "hamilton lodge",
+            "return_info": [
+                "type",
+                "postcode",
+                "stars"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "hamilton lodge"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Holy Trinity",
+            "return_info": [
+                "address"
+            ]
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "arriveBy": "08:15",
+            "departure": "Cambridge",
+            "destination": "Birmingham New Street",
+            "day": "Wednesday",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "centre",
+            "food": "gastropub",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": 1,
+            "trainID": "TR0115",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "trainID": "TR0115",
+            "return_info": [
+                "leaveAt",
+                "duration"
+            ],
+            "departure": "Cambridge",
+            "destination": "Birmingham New Street",
+            "day": "Wednesday"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Stevenage",
+            "destination": "Cambridge",
+            "day": "Saturday",
+            "leaveAt": "09:45",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "FindEvents ",
+        "arguments": {
+            "event_type": "Sports",
+            "city": "Vancouver, BC",
+            "date": "2024-03-12"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Cambridge",
+            "destination": "Broxbourne",
+            "return_info": [
+                "all"
+            ],
+            "day": "Friday"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "priceRange": "cheap",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": "4",
+            "trainID": "TR9024",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "Indian",
+            "priceRange": "expensive",
+            "area": "west",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "west",
+            "priceRange": "expensive",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "west side of town",
+            "food": "Afghan"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "day": "friday",
+            "departure": "cambridge",
+            "destination": "broxbourne",
+            "arriveBy": "18:15",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "BuyEventTickets",
+        "arguments": {
+            "event_name": "Whitecaps Vs Kansas City",
+            "number_of_tickets": 1,
+            "date": "2024-03-12",
+            "city": "Vancouver"
+        }
+    },
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "song_name": "African Beauty",
+            "playback_device": "kitchen device"
+        }
+    },
+    {
+        "name": "FindBus",
+        "arguments": {
+            "origin": "Fresno",
+            "destination": "Vegas",
+            "departure_date": "2024-01-11",
+            "group_size": "1"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "ATL",
+            "destination_city": "Seattle, WA",
+            "departure_date": "2024-03-03",
+            "airlines": "United Airlines"
+        }
+    },
+    {
+        "name": "FindAttractions",
+        "arguments": {
+            "location": "New York",
+            "category": "performance venue"
+        }
+    },
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "30 St Mary Axe (The Gherkin)",
+            "number_of_riders": 3,
+            "shared_ride": true
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "London",
+            "date": "2024-01-09"
+        }
+    },
+    {
+        "name": "FindAttractions",
+        "arguments": {
+            "location": "London, England"
+        }
+    },
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "Vancouver",
+            "star_rating": "2"
+        }
+    },
+    {
+        "name": "FindBus",
+        "arguments": {
+            "from_location": "Portland",
+            "to_location": "Vancouver",
+            "leaving_date": "2024-01-05",
+            "travelers": "2"
+        }
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "origin_airport": "Washington",
+            "destination_airport": "Atlanta, GA",
+            "departure_date": "2024-01-07",
+            "return_date": "2024-01-12",
+            "airlines": "United Airlines",
+            "number_of_tickets": "1",
+            "seating_class": "Economy"
+        }
+    },
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Leicester",
+            "destination": "Cambridge",
+            "arriveBy": "13:00",
+            "day": "2024-01-08",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "return_info": [
+                "entrance fee",
+                "phone number",
+                "postcode"
+            ]
+        }
+    },
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": 2,
+            "trainID": "TR1193",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "boat",
+            "area": "westside"
+        }
+    },
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "artist": "Grimes",
+            "album": "Visions"
+        }
+    },
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "song_name": "Oblivion",
+            "artist": "Grimes",
+            "playback_device": "kitchen speaker"
+        }
+    },
+    {
+        "name": "ReserveHotel",
+        "arguments": {
+            "hotel_name": "Chicago Athletic Association",
+            "check_in_date": "2024-01-11",
+            "number_of_days": 3,
+            "destination": "Chicago",
+            "number_of_rooms": 1
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Petaluma",
+            "type": "General Practitioner"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "doctor_name": "Dermatology and Laser Centre",
+            "appointment_time": "16:00",
+            "appointment_date": "2024-01-07"
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "museum",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "GetTimesForMovie",
+        "arguments": {
+            "movie_name": "Hellboy",
+            "location": "Berkeley",
+            "show_date": "2024-03-02",
+            "show_type": "3D",
+            "theater_name": "United Artists Berkeley 7"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "dontcare",
+            "city": "Berkeley"
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "centre",
+            "food": "indian"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "name": "The Kohinoor",
+            "day": "2024-01-06",
+            "time": "15:30",
+            "people": "7"
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "priceRange": "high",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "GetTimesForMovie",
+        "arguments": {
+            "movie_name": "Hellboy",
+            "location": "Berkeley",
+            "show_date": "2024-01-04",
+            "show_type": "3D",
+            "theater_name": "United Artists Berkeley 7"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "name": "Ali Baba",
+            "day": "Friday",
+            "time": "13:00",
+            "people": "1",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "area": "centre",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "Chinese",
+            "city": "SF"
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "center",
+            "food": "Lebanese",
+            "return_info": [
+                "all"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "The Fez Club",
+            "return_info": [
+                "phone",
+                "postcode",
+                "entrance fee"
+            ]
+        }
+    },
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "sports",
+            "area": "centre"
+        }
+    },
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Friday, January 8, 2024",
+            "name": "Gonville Hotel",
+            "stay": "4",
+            "people": "1",
+            "return_info": [
+                "isSuccess",
+                "reference"
+            ]
+        }
+    },
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "NY",
+            "star_rating": "2"
+        }
+    },
+    {
+        "name": "ReserveRestaurant ",
+        "arguments": {
+            "city": "San Francisco",
+            "date": "2024-01-04",
+            "party_size": "2",
+            "restaurant_name": "Alice's",
+            "time": "12:00"
+        }
+    },
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "restaurant_name": "Alice's",
+            "city": "San Francisco",
+            "time": "12:15",
+            "date": "2024-01-04",
+            "party_size": "2"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "San Francisco",
+            "cuisine": "Shabu-shabu",
+            "price_range": "moderate"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "Shabu-Shabu",
+            "city": "SF"
+        }
+    },
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "artist": "Our Last Night",
+            "genre": "Metalcore"
+        }
+    },
+    {
+        "name": "ReserveHotel",
+        "arguments": {
+            "hotel_name": "11 Howard Street",
+            "check_in_date": "2024-03-09",
+            "number_of_days": "2",
+            "destination": "New York",
+            "number_of_rooms": "2"
+        }
+    },
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "artist": "Jon Pardi"
+        }
+    },
+    {
+        "name": "FindMovies",
+        "arguments": {
+            "location": "SFO"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "Curry",
+            "city": "San Francisco",
+            "price_range": "moderate"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "brazilian",
+            "city": "dontcare",
+            "price_range": "intermediate"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "San Francisco",
+            "cuisine": "Lobster",
+            "price_range": "moderate",
+            "serves_alcohol": "True"
+        }
+    },
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "restaurant_name": "Shabu Club",
+            "city": "San Francisco",
+            "time": "13:15",
+            "date": "2024-03-09",
+            "party_size": "4"
+        }
+    },
+    {
+        "name": "FindAttractions",
+        "arguments": {
+            "location": "LAX"
+        }
+    },
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "318 Columbus Avenue",
+            "number_of_seats": "2",
+            "ride_type": "regular"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "Brazilian",
+            "city": "San Francisco",
+            "price_range": "moderate"
+        }
+    },
+    {
+        "name": "ReserveOnewayFlight",
+        "arguments": {
+            "origin_city": "San Francisco",
+            "destination_city": "Los Angeles",
+            "airlines": "American Airlines",
+            "departure_date": "2024-01-09"
+        }
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "origin_city": "Portland",
+            "destination_city": "Los Angeles",
+            "departure_date": "2024-01-10",
+            "return_date": "2024-01-13"
+        }
+    },
+    {
+        "name": "ReserveHotel",
+        "arguments": {
+            "hotel_name": "Ac Hotel By Marriott Beverly Hills",
+            "check_in_date": "2024-01-09",
+            "number_of_days": "1",
+            "destination": "Los Angeles"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "San Francisco",
+            "destination_city": "LA",
+            "departure_date": "2024-01-06"
+        }
+    },
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "location": "Los Angeles"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "San Francisco"
+        }
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "origin_city": "Portland, OR",
+            "destination_city": "LA",
+            "departure_date": "10th",
+            "return_date": "13th"
+        }
+    },
+    {
+        "name": "FindBus",
+        "arguments": {
+            "origin": "Vancouver, BC",
+            "destination": "Seattle",
+            "departure_date": "2024-01-05",
+            "group_size": "3"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "San Fran"
+        }
+    },
+    {
+        "name": "BuyBusTicket",
+        "arguments": {
+            "origin": "Vancouver",
+            "destination": "Seattle",
+            "departure_date": "2024-01-05",
+            "departure_time": "08:30",
+            "group_size": "3"
+        }
+    }
+]

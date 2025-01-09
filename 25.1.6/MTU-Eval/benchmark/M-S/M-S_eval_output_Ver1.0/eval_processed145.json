@@ -1,0 +1,61 @@
+{
+    "query": [
+        {
+            "user": "I would like to check my balance.",
+            "function": "",
+            "Thought": "Missing account_type. I can't call the function.",
+            "observation": "",
+            "assistant": ": The balance in which account?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "CheckBalance",
+                "description": "Check the amount of money in a user's bank account",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "TransferMoney",
+                "description": "Transfer money from one bank account to another user's account",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Find movies by genre and optionally director",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMovie",
+                "description": "Play the selected movie",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

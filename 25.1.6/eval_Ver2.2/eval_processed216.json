@@ -1,0 +1,9 @@
+[
+    {
+        "User": "I'm considering renting a property.",
+        "Assistant": "Great. Could you provide me with a bit more detail? Like the location and the preferred number of bedrooms and bathrooms?"
+    },
+    {
+        "User": "I would like a place in New York, with 2 bedrooms and 2 bathrooms."
+    }
+]

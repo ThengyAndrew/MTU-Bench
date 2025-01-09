@@ -1,0 +1,5 @@
+User:  What's the temperature in a certain place?
+Action: {}
+Assistant:  Sure, could you please tell me the location of which you need the temperature?
+
+User:  Paris. Could you please set the temperature of my living room to match that of Paris?

@@ -1,0 +1,4 @@
+User:  I am looking to find a hair stylist.
+Action: {}
+Assistant:  Sure, I can help you with that. Where are you looking for a stylist?
+User:  In New York. And also, the stylist should cater to unisex clientele.

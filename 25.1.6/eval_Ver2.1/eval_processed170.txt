@@ -1,0 +1,19 @@
+User:  Can you tell me how the weather will be at a particular location later today?
+Action: {}
+Assistant:  Certainly, could you please specify the location and the time you are interested in?
+
+User:  I am planning to visit custer national forest. Will it be chillier there at seven pm?
+Action: {"GetWeather": {"geographic_poi": "custer national forest", "condition_temperature": "chillier", "timeRange": "seven pm"}}
+Assistant:  Yes, it's expected to be chillier at Custer National Forest at seven pm.
+
+User:  Thanks for that! Now I'd like to listen to music. Play something from the album 'Another Passenger' by Louis Nelson Delisle.
+Action: {"PlayMusic": {"album": "another passenger", "artist": "louis nelson delisle"}}
+Assistant:  Alright, playing 'Another Passenger' by Louis Nelson Delisle for you.
+
+In this example, Round 1 and Round 2 are separate calls to the virtual assistant. Requiring the assistant to perform two actions in a single turn is less common and will require a more complex user request. Here's an example of such a request:
+
+User:  What's the weather like at a certain time and could you also play some music for me at the same time?
+Action: {}
+Assistant:  Sure, could you tell me where you want to know the weather of and what song would you like to listen to?
+
+User:  I'm interested in the weather report for Custer National Forest at seven pm. At the same time, play something from the album 'Another Passenger' by Louis Nelson Delisle.

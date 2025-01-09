@@ -1,0 +1,22 @@
+user: I am traveling to Cambridge and excited to see local tourist attractions. I am looking for a museum in the west part of town.
+function: 
+Thought: The user is specifically looking for museums located in the west part of Cambridge. I'll use the searchAttraction API to find museums in that area.
+Action: searchAttraction
+Action Input: {"type": "museum", "area": "west", "return_info": ["all"]}
+observation: : [{"name": "cafe jello gallery", "address": "13 magdalene street", "phone": "01223312112"},...]
+assistant: : There are 7 options, the first is cafe jello gallery located at 13 magdalene street, phone number 01223312112. Would that work?
+user: That would work well for me can I get their entrance fee and postcode as well?
+function: 
+Thought: Since the user is interested in the cafe jello gallery, I'll use the same searchAttraction API to get more detailed information, particularly the entrance fee and postcode.
+Action: searchAttraction
+Action Input: {"name": "cafe jello gallery", "return_info": ["entrance fee", "postcode"]}
+observation: : {"entrance fee": "free", "postcode": "cb30af"}
+assistant: : Yes, the postcode is cb30af. Entrance is free! What else can I help you with today?
+user: Yes, I'm also looking for a hotel called the Lovell Lodge. Can you help me find information about this hotel?
+function: 
+Thought: The user now wants information about a specific hotel called Lovell Lodge. I'll use the searchHotel API to find details about this hotel.
+Action: searchHotel
+Action Input: {"name": "Lovell Lodge", "return_info": ["all"]}
+observation: : {"name": "Lovell Lodge", "address": "365 milton road", "area": "north"}
+assistant: : Sure thing! Lovell Lodge is located in the north at 365 milton road. What else would you like to know?
+User: Does Lovell Lodge have free internet, and may I ask what star rating it has? Thank you for checking this for me.

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment with a specific doctor for the given date and time",
+        "required_parameters": [
+            "doctor_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "appointment_date",
+            "appointment_time",
+            "type"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Find a medical service provider based on their location and speciality",
+        "required_parameters": [
+            "city",
+            "type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "city",
+            "type"
+        ]
+    },
+    {
+        "name": "GetEvents",
+        "description": "Get list of all calendar events for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetAvailableTime",
+        "description": "Get a list of available times for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "available_start_time",
+            "available_end_time"
+        ]
+    },
+    {
+        "name": "AddEvent",
+        "description": "Add event to the user's calendar",
+        "required_parameters": [
+            "event_name",
+            "event_date",
+            "event_location",
+            "event_time"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    }
+]

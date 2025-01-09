@@ -1,0 +1,5 @@
+User:  Hi, I am residing somewhere and I want to get some new services.
+Action: {}
+Assistant:  Sure, Could you please tell me where you are living and what kind of services you are looking for?
+
+User:  I live in New York and I want to open a library account.

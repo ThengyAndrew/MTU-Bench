@@ -1,0 +1,81 @@
+[
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    },
+    {
+        "name": "GetCarsAvailable",
+        "description": "Discover cars available for rent in a certain location and period. The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+        "required_parameters": [
+            "city",
+            "start_date",
+            "pickup_time",
+            "end_date"
+        ],
+        "optional_parameters": {
+            "car_type": "dontcare"
+        },
+        "result_parameters": [
+            "car_type",
+            "car_name",
+            "pickup_location",
+            "start_date",
+            "pickup_time",
+            "city",
+            "end_date",
+            "price_per_day"
+        ]
+    },
+    {
+        "name": "ReserveCar",
+        "description": "Make a rental car reservation",
+        "required_parameters": [
+            "pickup_location",
+            "start_date",
+            "pickup_time",
+            "end_date",
+            "car_type",
+            "add_insurance"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "car_type",
+            "car_name",
+            "pickup_location",
+            "start_date",
+            "pickup_time",
+            "end_date",
+            "price_per_day",
+            "add_insurance"
+        ]
+    },
+    {
+        "name": "ShareLocation",
+        "description": "Send your location to a contact",
+        "required_parameters": [
+            "location",
+            "contact_name"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "location",
+            "contact_name"
+        ]
+    }
+]

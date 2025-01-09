@@ -1,0 +1,21 @@
+[
+    {
+        "User": "Hey, could you assist me with couple of things?",
+        "Assistant": "Of course, what can I assist you with?"
+    },
+    {
+        "User": "Can you provide me with the weather forecast?",
+        "Assistant": "Sure, for which location you want the weather forecast for?"
+    },
+    {
+        "User": "For Nebraska. And also, I'd love to listen to some music.",
+        "Assistant": "Alright. What artist or genre are you interested in?"
+    },
+    {
+        "User": "Please play a song by Rahsaan Patterson.",
+        "Assistant": "Lovely choice! Playing a song by Rahsaan Patterson while providing you the weather forecast for Nebraska."
+    },
+    {
+        "User": "Thanks."
+    }
+]

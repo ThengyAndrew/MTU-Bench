@@ -1,0 +1,5 @@
+User:  I'd love to find a service provider for some personal care needs in a specific city.
+Action: {}
+Assistant:  Sure, what kind of service are you looking for and in which city?
+
+User:  I am searching for a hair stylist in New York.

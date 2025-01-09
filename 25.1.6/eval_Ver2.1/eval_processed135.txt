@@ -1,0 +1,9 @@
+User:  I am planning to move. Searching for a rental house in another city. Can you assist me? 
+Action: {}
+Assistant:  Sure, I'd be happy to help you out. Could you please provide me with the city and the number of bedrooms and bathrooms you need?
+
+User:  Yes, I'm looking for a house in Seattle with 3 bedrooms and 2 bathrooms.
+Action: {"FindHomeByArea": {"area": "Seattle", "intent": "rent", "number_of_beds": "3", "number_of_baths": "2"}}
+Assistant:  Alright, I have found a few options for you in Seattle with 3 bedrooms and 2 bathrooms.
+
+User:  Great, now could you also check the weather there? Plus, it would be great if you could send the location of the mentioned rental house to my friend John.

@@ -1,0 +1,5 @@
+User:  Could you assist me in finding a dental service? 
+Action: {}
+Assistant:  Sure, in which location are you looking for this service?
+
+User:  In New York City.

@@ -1,0 +1,5 @@
+User:  Hi, I am looking for a doctor.
+Action: {}
+Assistant:  Sure, could you tell me the exact specialty you are looking for?
+
+User:  I need a specialist in cardiology.

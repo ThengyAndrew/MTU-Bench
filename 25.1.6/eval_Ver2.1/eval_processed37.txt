@@ -1,0 +1,5 @@
+User:  I am thinking of having my hair done this coming weekend, can you assist me?
+Action: {}
+Assistant:  Absolutely, I can help with that. Would you prefer any specific city and any preferences for the stylist?
+
+User:  I am currently in New York City. Find for me a unisex stylist.

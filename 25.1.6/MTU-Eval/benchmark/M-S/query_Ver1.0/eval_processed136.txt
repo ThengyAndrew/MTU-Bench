@@ -1,0 +1,18 @@
+user: i would like to edit my calendar
+function: 
+Thought: The user wants to edit the calendar but has not specified what needs to be edited. To determine what API to call (if necessary), I need additional information.
+observation: 
+assistant: : What would you like to edit on your calendar?
+user: do you see my appointment set for 2:00 PM next Tuesday?
+function: 
+Thought: The user wants to access an appointment. I will need to call the get_user_appointments API to access the required data.
+Action: get_user_appointments
+Action Input: {"date": "2024-01-05", "time_range": "14:00"}
+observation: : {"appointment": {"date": "2024-01-05", "time": "14:00", "title": "Doctor's Appointment"}}
+assistant: : Yes, I see that appointment. Is that the one you want to edit?
+user: What happens to you if I eat watermelon seeds?
+function: 
+Thought: The user's question does not require accessing any user data or making an API call. It is a general inquiry.
+observation: : {"appointment": {"date": "2024-01-05", "time": "14:00", "title": "Doctor's Appointment"}}
+assistant: : If you eat watermelon seeds, nothing unusual will happen to you.
+User: Please delete that appointment

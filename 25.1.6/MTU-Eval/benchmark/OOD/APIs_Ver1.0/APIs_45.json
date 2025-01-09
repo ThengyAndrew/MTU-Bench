@@ -1,0 +1,41 @@
+[
+    {
+        "name": "get_world_record",
+        "description": "Fetches details for a world record, which may include the record holder's name, the nature of the record, the date it was set, and any other relevant information or statistics.",
+        "required_parameters": [
+            {
+                "name": "record_category",
+                "type": "string",
+                "description": "The category of the world record. Examples include 'tallest man', 'fastest swimmer in Olympics', 'oldest person', etc."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "record_holder",
+                "type": "string",
+                "description": "The name of the person or entity who holds the record."
+            },
+            {
+                "name": "record_detail",
+                "type": "string",
+                "description": "Details about the record. Can include height, speed, age, etc., depending on the type of record."
+            },
+            {
+                "name": "record_holder_status",
+                "type": "string",
+                "description": "The status of the record holder. For example, whether they are currently alive or not."
+            },
+            {
+                "name": "record_date",
+                "type": "string",
+                "description": "The date the record was set."
+            },
+            {
+                "name": "record_location",
+                "type": "string",
+                "description": "The location (nationality or residence) associated with the record holder."
+            }
+        ]
+    }
+]

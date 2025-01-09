@@ -1,0 +1,95 @@
+Action: BookRestaurant
+Input: {
+  "name": "The Slug and Lettuce",
+  "day": "Saturday",
+  "time": "18:42",
+  "people": 5
+}
+Action: SearchHotel
+Input: {"destination": "New York", "number_of_rooms": "1", "has_wifi": "yes", "star_rating": "2"}
+Action: transfer_funds
+Input: {
+  "account_number": "112233456",
+  "source_account": "checking",
+  "destination_account": "savings",
+  "amount": 500,
+  "transfer_speed": "now"
+}
+Action: SearchRoundtripFlights
+Input: {
+  "origin_city": "Atlanta, GA",
+  "destination_city": "London, UK",
+  "departure_date": "2024-01-07",
+  "return_date": "2024-01-09"
+}
+Action: searchHotel
+Input: {
+  "stars": "5",
+  "type": "guesthouse",
+  "parking": true,
+  "internet": true,
+  "area": "Tonight"
+}
+Action: FindBus
+Input: {"from_city": "Sacramento", "to_city": "San Diego", "departure_date": "2024-01-10", "num_passengers": "5", "category": "economy"}
+Action: apply_for_membership
+Input: {"city_of_residence": "Atlanta"}
+Action: FindRestaurants
+Input: {"cuisine": "Chinese", "city": "San Francisco"}
+Action: ReserveRestaurant
+Input: {"restaurant_name": "<retrieved_restaurant_name>", "city": "San Francisco", "time": "12 pm", "date": "2024-03-05", "party_size": "2"}
+Action: AddEvent
+Input: {"event_name": "Food", "event_date": "2024-03-05", "event_location": "<retrieved_restaurant_name>, San Francisco", "event_time": "12 pm"}
+Action: GetLibraryAccountLateFees
+Input: {"accountNumber": "1245521"}
+Action: eee
+Input: {
+  "dentist_name": "Yvonne Yang",
+  "appointment_time": "11:45",
+  "appointment_date": "11th"
+}
+Action: ttt
+Input: {"city": "San Francisco", "type": "Gynecologist"}
+Action: ccc
+Input: {"pickup_city": "Paris", "pickup_date": "2022-03-10", "pickup_time": "3 PM", "dropoff_date": "2022-03-13", "type": "Standard"}
+Action: aaa
+Input: {"area": "Vacaville", "number_of_beds": "3", "furnished": "true", "pets_allowed": "true"}
+Action: BuyBusTicket
+Input: {"from_location": "Las Vegas", "to_location": "Sacramento", "leaving_date": "2023-11-10", "leaving_time": "<any suitable time>", "travelers": "1"}
+Action: get_book_status
+Input: {"book_title": "A Song of Fire and Ice"}
+Action: SearchRestaurant
+Input: {"area": "centre", "food": "Indian"}
+Action: SearchTrain
+Input: {
+    "departure": "Cambridge",
+    "destination": "London Liverpool Street",
+    "leaveAt": "13:45",
+    "day": "Thursday"
+}
+Action: searchAttraction
+Input: {
+  "type": "theatre",
+  "area": "centre of town",
+  "return_info": ["address", "phone number", "entrance fee"]
+}
+Action: FindProvider
+Input: {"city": "Oakland", "type": "General Practitioner"}
+Action: CheckBalance
+Input: {"account_type": "savings"}
+Action: FindAttractions
+Input: {"location": "Chicago"}
+Action: FindEvents
+Input: {"event_type": "music", "city": "Chicago", "date": "March 12th"}
+Action: GetCarsAvailable
+Input: {"pickup_city": "Portland, OR", "pickup_date": "2024-03-08", "pickup_time": "15:30", "dropoff_date": "2024-03-12", "type": "Intermediate"}
+Action: FindApartment
+Input: {"area": "Richmond", "number_of_beds": 2, "furnished": "yes"}
+Action: GetRide
+Input: {"destination": "836 Alturas Avenue #7", "number_of_seats": 1, "ride_type": "regular"}
+Action: SearchOnewayFlight
+Input: {"origin_city": "Los Angeles", "destination_city": "San Diego", "departure_date": "2024-03-05"}
+Action: FindMovies
+Input: {"genre": "fantasy", "directed_by": "Neil Marshall"}
+Action: LookupMusic
+Input: {"genre": "Pop"}

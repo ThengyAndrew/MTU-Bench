@@ -1,0 +1,6 @@
+user: Could you please help me in searching a bus moving from Vancouver, BC on the 5th? I need it for three people.
+function: 
+Thought: The user is asking for a bus trip but has not specified a destination. It is necessary to obtain this information before making an API call.
+observation: 
+assistant: : Where do you want to go?
+User: I wish to go to Seattle.

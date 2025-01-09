@@ -1,0 +1,92 @@
+[
+    {
+        "name": "ccc",
+        "description": "Search for available rental cars by city and date",
+        "required_parameters": [
+            "pickup_city",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date"
+        ],
+        "optional_parameters": {
+            "type": "Standard"
+        },
+        "result_parameters": [
+            "type",
+            "car_name",
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "pickup_city",
+            "dropoff_date",
+            "total_price"
+        ]
+    },
+    {
+        "name": "ReserveCar",
+        "description": "Reserve car rental for given dates and location",
+        "required_parameters": [
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date",
+            "type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "type",
+            "car_name",
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date",
+            "total_price"
+        ]
+    },
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve a selected hotel for given dates",
+        "required_parameters": [
+            "hotel_name",
+            "location",
+            "check_in_date",
+            "check_out_date"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "check_in_date",
+            "check_out_date",
+            "average_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price",
+            "pets_welcome"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Search for a hotel based on location",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "dontcare",
+            "pets_welcome": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "average_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price",
+            "pets_welcome"
+        ]
+    }
+]

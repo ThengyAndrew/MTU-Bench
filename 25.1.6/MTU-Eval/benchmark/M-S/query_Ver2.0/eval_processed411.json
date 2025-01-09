@@ -1,0 +1,48 @@
+[
+    {
+        "user": "I'm in the mood to watch a movie.",
+        "function": "",
+        "Thought": "Missing location. I can't call the function.",
+        "observation": "",
+        "assistant": ": Where would you like me to search?"
+    },
+    {
+        "user": "Look in SFO Please.",
+        "function": "",
+        "Thought": "The user wants to search for movies in San Francisco. I need to invoke the FindMovies API.",
+        "Action": "FindMovies",
+        "Action Input": "{'location': 'San Francisco'}",
+        "observation": ": {'genre': 'Crime', 'location': 'San Francisco', 'movie_name': 'Ash Is Purest White', 'price': '14', 'show_type': 'imax', 'street_address': '1 Embarcadero Center', 'theater_name': \"Landmark's Embarcadero Center Cinema\"}",
+        "assistant": ": I have found a few movies for you. Would you like to watch Ash Is Purest White, Captain Marvel or Citizen Kane?"
+    },
+    {
+        "user": "I haven't seen Captain Marvel yet so would love to see that.",
+        "function": "",
+        "Thought": "The user has chosen to see Captain Marvel but hasn't requested any further action yet.",
+        "observation": ": {'genre': 'Crime', 'location': 'San Francisco', 'movie_name': 'Ash Is Purest White', 'price': '14', 'show_type': 'imax', 'street_address': '1 Embarcadero Center', 'theater_name': \"Landmark's Embarcadero Center Cinema\"}",
+        "assistant": ": Okay great. Do you need help with anything else?"
+    },
+    {
+        "user": "While I'm there I'd like to get something to eat at an affordable place.",
+        "function": "",
+        "Thought": "Missing cuisine. I can't call the function.",
+        "observation": ": {'genre': 'Crime', 'location': 'San Francisco', 'movie_name': 'Ash Is Purest White', 'price': '14', 'show_type': 'imax', 'street_address': '1 Embarcadero Center', 'theater_name': \"Landmark's Embarcadero Center Cinema\"}",
+        "assistant": ": Okay sure. What kind of food do you want to eat?"
+    },
+    {
+        "user": "I'm in the mood for Curry.",
+        "function": "",
+        "Thought": "The user is interested in eating Indian cuisine. I need to invoke the FindRestaurants API with defined parameters.",
+        "Action": "FindRestaurants",
+        "Action Input": "{'city': 'San Francisco', 'cuisine': 'Indian', 'price_range': 'moderate'}",
+        "observation": ": {'city': 'San Francisco', 'cuisine': 'Indian', 'has_live_music': 'False', 'phone_number': '415-771-5900', 'price_range': 'moderate', 'restaurant_name': 'August 1 Five', 'serves_alcohol': 'True', 'street_address': '524 Van Ness Avenue'}",
+        "assistant": ": How about a nice place called August 1 Five in San Francisco?"
+    },
+    {
+        "user": "Does this place have live music? Where is it located?",
+        "function": "",
+        "Thought": "The information already exists in the historical conversation. No Action.",
+        "observation": ": {'city': 'San Francisco', 'cuisine': 'Indian', 'has_live_music': 'False', 'phone_number': '415-771-5900', 'price_range': 'moderate', 'restaurant_name': 'August 1 Five', 'serves_alcohol': 'True', 'street_address': '524 Van Ness Avenue'}",
+        "assistant": ": They don't have live music. Their address is 524 Van Ness Avenue."
+    }
+]

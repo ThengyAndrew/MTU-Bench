@@ -1,0 +1,4 @@
+User:  Hi, Can you assist me with my bank account?
+Action: {}
+Assistant:  Of course! What do you need assistance with?
+User:  I am trying to check the balance of one of my accounts.

@@ -1,0 +1,9 @@
+[
+    {
+        "User": "Hey, could you help me with some temperature settings in my house?",
+        "Assistant": "Of course, how can I assist you with your temperature settings?"
+    },
+    {
+        "User": "Can you tell me the current temperature in a particular room?"
+    }
+]

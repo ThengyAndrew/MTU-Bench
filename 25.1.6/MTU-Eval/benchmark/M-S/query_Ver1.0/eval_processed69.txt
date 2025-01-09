@@ -1,0 +1,25 @@
+user: Hello robot. I need a restaurant.
+function: 
+Thought: The user is requesting restaurant options but hasn't provided specific preferences yet.
+observation: 
+assistant: : Well, what is the place?
+user: Pittsburgh.
+function: 
+Thought: The user has specified the city where they're looking for a restaurant.
+observation: 
+assistant: : What cuisine type are you interested in?
+user: Thai restaurant.
+function: 
+Thought: The user has expressed a preference for Thai cuisine in Pittsburgh. I should look up Thai restaurants in Pittsburgh.
+Action: query_restaurant 
+Action Input: {'food_pref': 'Thai', 'loc': 'Pittsburgh', 'goals': ['default']}
+observation: : {'default': '48'}
+assistant: : Let me look up in my database. A good choice is 48. Are you happy about my answer?
+user: Not done yet. Tell me if the restaurant is open.
+function: 
+Thought: The user is asking whether their recommended Thai restaurant named "48" in Pittsburgh is currently open. I need to check the restaurant's current status.
+Action: query_restaurant 
+Action Input: {'food_pref': 'Thai', 'loc': 'Pittsburgh', 'goals': ['open']}
+observation: : {'open': 'closed'}
+assistant: : Currently, this place is closed. Are you happy about my answer?
+User: I have all I need. See you.

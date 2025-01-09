@@ -1,0 +1,17 @@
+[
+    {
+        "User": "I need to arrange a dinner.",
+        "Assistant": "Sure. How many people are in your party?"
+    },
+    {
+        "User": "Party of 9 please.",
+        "Assistant": "Ok, I've booked for 9. Is there anything else you need?"
+    },
+    {
+        "User": "Will the sun be out in a minute in a specific location plus I need a suggestion for a new read.",
+        "Assistant": "Could you please specify the location for the weather forecast and what genre of book are you interested in?"
+    },
+    {
+        "User": "Searcy, Uganda. Also, search for \"Switched\"."
+    }
+]

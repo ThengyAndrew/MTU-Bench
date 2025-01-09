@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hey there, I need help with something.",
+        "Assistant": "Of course! I'm here to help. What do you need assistance with?"
+    },
+    {
+        "User": "Can you help me find out the date of my appointment. It's with someone.",
+        "Assistant": "Absolutely. Can you tell me the name of the person with whom you have the appointment?"
+    },
+    {
+        "User": "It's with a Dentist named \"Dentist\"."
+    }
+]

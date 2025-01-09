@@ -1,0 +1,8 @@
+user: Can you give me a hand finding some music?
+function: 
+Thought: The user is asking for music suggestions without specifying any preferences. I'll need to lookup and recommend music using a general search parameter.
+Action: LookupMusic 
+Action Input: {}
+observation: : {'album': 'Covers', 'artist': 'Alec Chambers', 'genre': 'Pop', 'song_name': 'Without Me'}
+assistant: : How about "Without Me" from the album "Covers" by Alec Chambers?
+User: Can you find me some Pop music instead?

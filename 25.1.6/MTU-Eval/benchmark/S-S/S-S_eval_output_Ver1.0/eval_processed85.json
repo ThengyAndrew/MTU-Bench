@@ -1,0 +1,41 @@
+{
+    "query": "Will you find a regular cab for 1 to 836 Alturas Avenue #7?",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "LookupSong",
+                "description": "Search for a song",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlaySong",
+                "description": "Play the selected song on the device",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

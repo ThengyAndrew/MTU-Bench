@@ -1,0 +1,129 @@
+Action: FindProvider
+Input: {"city": "New York"}
+Action: add_new_contact
+Input: { "contact_name": "FindProvider.stylist_name", "phone_number": "FindProvider.phone_number" }
+Action: "get_late_fees"
+Input: {"library_ID": 123456}
+Action: "make_payment"
+Input: {"account_number": "123456", "payment_amount": "get_late_fees.late_fees", "payment_method": "Credit Card"}
+Action: "reserve_book"
+Input: {"book_title": "War and Peace", "card_number": 123456}
+Action: "FindProvider"
+Input: {"city": "San Francisco", "offers_cosmetic_services": "true"}
+Action: "BookAppointment"
+Input: {"dentist_name": "FindProvider.dentist_name", "appointment_time": "10:00", "appointment_date": "2024-02-09"}
+Action: "add_new_contact"
+Input: {"contact_name": "FindProvider.dentist_name", "phone_number": "FindProvider.phone_number"}
+Action: "set_appointment_reminder"
+Input: {"appointment_name": "Dental appointment", "appointment_date": "2024-02-09", "appointment_time": "10:00", "appointment_address": "FindProvider.address", "reminder_time": "2 hours before"}
+Action: "get_current_temperature"
+Input: {"location": "living room"}
+Action: "adjust_room_temperature"
+Input: {"temperature": "get_current_temperature.temperature", "location": "bedroom"}
+Action: "AddToPlaylist"
+Input: {"playlist": "Might and Myth Power Metal", "music_item": "album"}
+Action: "RateBook"
+Input: {"rating_value": "1", "object_name": "textbook"}
+Action: BookRestaurant
+Input: {"restaurant_name": "", "party_size_number": "10", "city": "New York City", "poi": ""}
+Action: GetWeather
+Input: {"country": "South Korea", "condition_temperature": "Rain", "timeRange": "1 hour from now"}
+Action: get_user_appointments
+Input: {"name": "doctor", "date": "" }
+Action: SearchOnewayFlight
+Input: {"fromloc": "Los Angeles", "toloc": "New York City", "departure_date": "get_user_appointments.appointment_date" }
+Action: "LookupSong"
+Input: {"genre": "jazz"}
+Action: "PlaySong"
+Input: {"song_name": "LookupSong.song_name", "artist": "LookupSong.artist", "album": "LookupSong.album", "playback_device": "TV"}
+Action: "BookRestaurant"
+Input: {"party_size_description": "party of ten"}
+Action: "GetWeather"
+Input: {"geographic_poi": "south korea", "timeRange": "one hour from now", "condition_description": "rain"}
+Action: "get_user_appointments"
+Input: {"name": "Go to swim"}
+Action: "set_alarm"
+Input: {"time": "19:00", "label": "Workout"}
+Action: "change_alarm_sound"
+Input: {"time": "19:00", "label": "Workout", "sound": "Birdsong"}
+Action: "FindEvents"
+Input: {"event_type": "concert", "city": "New York"}
+Action: "ShareLocation"
+Input: {"location": "FindEvents.venue_address", "contact_name": "Alex"}
+Action: "SearchCreativeWork"
+Input: {"object_name": "switched"}
+Action: "PlayMusic"
+Input: {"service": "LastFM", "album": "this is: miles davis"}
+Action: "SearchScreeningEvent"
+Input: {"current_location": "true"}
+Action: "get_account_balance"
+Input: {"account_number": "239267492492"}
+Action: "transfer_funds"
+Input: {"account_number": "239267492492", "source_account": "checking", "destination_account": "savings", "amount": "get_account_balance.balance", "transfer_speed": "now"}
+Action: "get_recent_transactions"
+Input: {"account_number": "239267492492"}
+Action: "SearchOnewayFlight"
+Input: {"origin_city": "San Francisco", "destination_city": "New York", "departure_date": "FindEvents.date_value"}
+Action: BookAppointment
+Input: {"doctor_name": "FindProvider.doctor_name", "appointment_date": "2024-02-03", "appointment_time": "13:00"}
+Action: SearchCreativeWork
+Input: {"object_name": "free to play", "object_type": "book"}
+Action: PlayMusic
+Input: {"service": "youtube"}
+Action: "get_alarm"
+Input: {"time": "07:00", "recurrence": ["Friday"]}
+Action: "apply_for_membership"
+Input: {"city_of_residence": "New York"}
+Action: "get_book_status"
+Input: {"book_title": "Twenty Thousand Leagues Under the Sea"}
+Action: FindEvents
+Input: {
+  "event_type": "concert",
+  "city": "New York"
+}
+Action: ShareLocation
+Input: {
+  "location": "FindEvents.venue_address",
+  "contact_name": "Alex"
+}
+Action: "FindRestaurants"
+Input: {"category": "Italian", "location": "New York"}
+Action: LookupSong
+Input: {"genre": "pop"}
+Action: set_alarm
+Input: {"time": "15:00", "sound": "LookupSong.song_name"}
+Action: PlaySong
+Input: {
+  "artist": "The Beatles", 
+  "song_name": "Let it be"
+}
+Action: set_appointment_reminder
+Input: {
+                "appointment_name": "Dentist appointment",
+                "appointment_date": "2024-03-15",
+                "appointment_time": "10:30",
+                "appointment_address": "BookAppointment.address",
+                "reminder_time": "2 hours before"
+                }
+Action: "MakePayment"
+Input: {"payment_method": "transfer", "amount": "transfer_funds.amount", "receiver": "John"}
+Action: get_late_fees
+Input: {"library_ID": "Akf47sef456dwd"}
+Action: make_payment
+Input: {"account_number": "Akf47sef456dwd", "payment_amount": "get_late_fees.late_fees", "payment_method": "Visa card"}
+Action: reserve_book
+Input: {"book_title": "A Series of Unfortunate Events", "card_number": "Akf47sef456dwd"}
+Action: get_account_balance
+Input: {"account_number": "12843272323"}
+Action: transfer_funds
+Input: {"account_number": "12843272323", "source_account":"checking", "destination_account":"savings", "amount": "get_account_balance.balance", "transfer_speed": "now"}
+Action: get_recent_transactions
+Input: {"account_number": "12843272323"}
+Action: 'FindProvider'
+Input: {"city": "San Francisco", "offers_cosmetic_services": true}
+Action: 'BookAppointment'
+Input: {"dentist_name": "FindProvider.dentist_name", "appointment_date": "2024-05-01", "appointment_time": "14:00"}
+Action: change_alarm_sound
+Input: {"time": "15:00", "sound": "LookupSong.song_name"}
+Action: GetCarsAvailable
+Input: {"pickup_city": "San Francisco", "pickup_date": "get_user_appointments.appointment_date", "pickup_time": "SearchOnewayFlight.outbound_arrival_time", "dropoff_date": "2024-01-19"}

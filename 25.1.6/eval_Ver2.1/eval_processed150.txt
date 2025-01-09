@@ -1,0 +1,13 @@
+User:  Hey, could you assist me with couple of things?
+Action: {}
+Assistant:  Of course, what can I assist you with?
+
+User:  Can you provide me with the weather forecast?
+Action: {}
+Assistant:  Sure, for which location you want the weather forecast for?
+
+User:  For Nebraska. And also, I'd love to listen to some music.
+Action: {"GetWeather": {"state": "nebraska"}}
+Assistant:  Alright. What artist or genre are you interested in?
+
+User:  Please play a song by Rahsaan Patterson.

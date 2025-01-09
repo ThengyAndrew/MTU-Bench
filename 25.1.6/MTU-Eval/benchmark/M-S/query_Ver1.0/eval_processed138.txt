@@ -1,0 +1,6 @@
+user: I have a home automation request
+function: 
+Thought: The user has a home automation request but has not specified what it is yet. No API needs to be called at this point. I need more details to understand the request.
+observation: 
+assistant: : What is your home automation request?
+User: What is the current house temperature?

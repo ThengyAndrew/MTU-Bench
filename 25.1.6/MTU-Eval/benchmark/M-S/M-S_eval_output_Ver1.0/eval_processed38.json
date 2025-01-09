@@ -1,0 +1,24 @@
+{
+    "query": [],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_world_record",
+                "description": "Fetches details for a world record, which may include the record holder's name, the nature of the record, the date it was set, and any other relevant information or statistics.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "record_category": {
+                            "type": "string",
+                            "description": "The category of the world record. Examples include 'tallest man', 'fastest swimmer in Olympics', 'oldest person', etc."
+                        }
+                    },
+                    "required": [
+                        "record_category"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "User": "Hi, I'm living in San Francisco and I'm looking for a dentist.",
+        "Assistant": "Sure, I can help you with that. Are you interested in any specific services?"
+    },
+    {
+        "User": "Yes, I need one that can make my smile more beautiful. I have a wedding coming up soon.",
+        "Assistant": "I found some dentists that offer cosmetic services in San Francisco. Here they are...."
+    },
+    {
+        "User": "Great! I would like to book an appointment with one of them on February 9th at 10:00 am. Also, please add this dentist to my contacts.",
+        "Assistant": "I have booked an appointment for you and added the dentist to your contacts."
+    },
+    {
+        "User": "Could you also set up a reminder named \"Dental appointment\"  at 2 hours before for me for that appointment? Thanks!"
+    }
+]

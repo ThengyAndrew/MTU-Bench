@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hi, I am looking for a doctor.",
+        "Assistant": "Sure, could you tell me the exact specialty you are looking for?"
+    },
+    {
+        "User": "I need a specialist in cardiology.",
+        "Assistant": "Alright. Could you tell me your location?"
+    },
+    {
+        "User": "Yes, I am based in Phoenix. Once you find one for me, I also want to set an appointment for February 8th at 11 AM."
+    }
+]

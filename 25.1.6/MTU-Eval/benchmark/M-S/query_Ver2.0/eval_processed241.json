@@ -1,0 +1,20 @@
+[
+    {
+        "user": "Yes , I 'm looking for a restaurant in the centre what serves world food .",
+        "function": "",
+        "Thought": "The user is looking for a restaurant in the city centre that serves world food. I need to search for restaurants matching these criteria.",
+        "Action": "SearchRestaurant",
+        "Action Input": "{\"food\": \"world\", \"area\": \"centre\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"\", \"address\": \"\", \"phone\": \"\", \"priceRange\": \"\"}",
+        "assistant": ": I 'm sorry , but there are no foods in the centre that serve World Food . Would you like to try another area or a different type of food ?"
+    },
+    {
+        "user": "I would like a gastropub then if you have one open .",
+        "function": "",
+        "Thought": "The user now prefers a gastropub in the centre. I need to update the search criteria to find a suitable gastropub.",
+        "Action": "SearchRestaurant",
+        "Action Input": "{\"food\": \"gastropub\", \"area\": \"centre\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"The Cow Pizza Kitchen and Bar\", \"address\": \"Corn Exchange Street\"}",
+        "assistant": ": I would suggest The Cow Pizza Kitchen and Bar .   Great food .   It is located on Corn Exchange Street ."
+    }
+]

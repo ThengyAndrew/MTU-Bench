@@ -1,0 +1,47 @@
+[
+    {
+        "name": "query_restaurant",
+        "description": "The tool searches for a restaurant based on the user's preferences and provided criteria such as type of food, location, and other options.",
+        "required_parameters": [
+            {
+                "name": "food_pref",
+                "type": "string",
+                "description": "The preferred type of cuisine or food the user is looking for."
+            },
+            {
+                "name": "loc",
+                "type": "string",
+                "description": "The location where the user is searching for a restaurant. This can be a specific city or a general area."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "open",
+                "type": "boolean",
+                "description": "A criterion to find out if the restaurant is currently open."
+            },
+            {
+                "name": "parking",
+                "type": "boolean",
+                "description": "A criterion to inquire about the availability of parking at the restaurant."
+            },
+            {
+                "name": "price",
+                "type": "boolean",
+                "description": "A criterion to determine the price range or cost level of the restaurant."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "default",
+                "type": "string",
+                "description": "The default or top result returned from the search query, typically represented by a restaurant ID or name."
+            },
+            {
+                "name": "goals",
+                "type": "array",
+                "description": "Specifies which information the user is interested in, such as 'price', 'parking', or 'open'."
+            }
+        ]
+    }
+]

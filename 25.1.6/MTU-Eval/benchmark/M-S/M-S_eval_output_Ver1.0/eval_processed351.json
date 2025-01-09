@@ -1,0 +1,44 @@
+{
+    "query": [
+        {
+            "user": "Find me a one way flight.",
+            "function": "",
+            "Thought": "Missing origin. I can't call the function.",
+            "observation": "",
+            "assistant": ": What city are you flying from?"
+        },
+        {
+            "user": "I'd like to leave from NY on the 1st of March and fly Economy.",
+            "function": "",
+            "Thought": "Missing destination. I can't call the function.",
+            "observation": "",
+            "assistant": ": Where are you heading?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchOnewayFlight",
+                "description": "Search for one-way flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for round-trip flights to the destination of choice",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

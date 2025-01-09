@@ -1,0 +1,57 @@
+[
+    {
+        "name": "FindEvents",
+        "description": "Find cultural events - concerts and plays - happening in a city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "event_type",
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "dontcare"
+        },
+        "result_parameters": [
+            "event_type",
+            "event_name",
+            "date",
+            "time",
+            "price_per_ticket",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "BuyEventTickets",
+        "description": "Buy tickets for a cultural event and date in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "event_name",
+            "number_of_tickets",
+            "date",
+            "city"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_name",
+            "date",
+            "time",
+            "number_of_tickets",
+            "price_per_ticket",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "ShareLocation",
+        "description": "Send your location to a contact. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "location",
+            "contact_name"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "location",
+            "contact_name"
+        ]
+    }
+]

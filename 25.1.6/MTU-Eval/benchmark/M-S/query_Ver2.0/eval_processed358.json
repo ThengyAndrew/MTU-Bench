@@ -1,0 +1,20 @@
+[
+    {
+        "user": "Can you help me find a restaurant that serves indian food in the centre?",
+        "function": "",
+        "Thought": "The user is looking for an Indian restaurant in the center. An appropriate API call to the restaurant search service is required to find such a restaurant.",
+        "Action": "SearchRestaurant",
+        "Action Input": "{\"food\": \"indian\", \"area\": \"centre\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"The Kohinoor\", \"address\": \"15 Downing Street, Centre\", \"phone\": \"0123456789\", \"food\": \"indian\"}",
+        "assistant": ": Yes, I have found one. Can I get the price range you would like?"
+    },
+    {
+        "user": "I'm not concerned with price. I do need a reservation for 7 at 15:30 on Wednesday.",
+        "function": "",
+        "Thought": "The user wants to make a reservation for 7 people at 15:30 on Wednesday. I need to call the booking API to make a reservation at the restaurant found previously.",
+        "Action": "BookRestaurant",
+        "Action Input": "{\"day\": \"Wednesday\", \"time\": \"15:30\", \"name\": \"The Kohinoor\", \"people\": \"7\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"isSuccess\": true, \"reference\": \"MRRV4AHE\"}",
+        "assistant": ": I'll book you at the best -- The Kohinoor. Your booking was successful. The table will be reserved for 15 minutes. Your reference number is: MRRV4AHE. Anything else I can do for you?"
+    }
+]

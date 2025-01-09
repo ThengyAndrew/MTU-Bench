@@ -1,0 +1,5 @@
+User:  I am thinking about moving to a new place.
+Action: {}
+Assistant:  That's great! Do you have any particular location in mind?
+
+User:  I'm considering Seattle.

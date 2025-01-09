@@ -1,0 +1,44 @@
+{
+    "query": [
+        {
+            "user": "I need a place to sleep so I would like to book one room in a hotel.",
+            "function": "",
+            "Thought": "The user is requesting a hotel room booking but hasn't provided specific details such as check-in date or hotel name, which are necessary to proceed with a booking request.",
+            "observation": "",
+            "assistant": ": Can you tell me when you will be going there? Is there a specific hotel you would like to make a booking?"
+        },
+        {
+            "user": "I will be going at the hotel on Friday next week. I would enjoy having a room at Kimpton Hotel Palomar Los Angeles Beverly Hills.",
+            "function": "",
+            "Thought": "The user has provided a timeframe and hotel name but more details are needed like the number of days for the stay and the location to finalize the booking.",
+            "observation": "",
+            "assistant": ": Can you tell me the number of days you need the room for? Do you have a specific city where you would like the hotel to be situated?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Find a hotel at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

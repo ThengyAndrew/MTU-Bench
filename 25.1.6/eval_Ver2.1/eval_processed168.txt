@@ -1,0 +1,9 @@
+User:  Can you tell me how the weather will be at a particular location later today?
+Action: {}
+Assistant:  Certainly, could you please specify the location and the time you are interested in?
+
+User:  I am planning to visit custer national forest. Will it be chillier there at seven pm?
+Action: {"GetWeather": {"geographic_poi": "custer national forest", "condition_temperature": "chillier", "timeRange": "seven pm"}}
+Assistant:  Yes, it's expected to be chillier at Custer National Forest at seven pm.
+
+User:  Thanks for that! Now I'd like to listen to music. Play something from the album 'Another Passenger' by Louis Nelson Delisle.

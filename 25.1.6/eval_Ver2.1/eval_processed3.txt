@@ -1,0 +1,1 @@
+User:  I am wondering if you have functionality to fetch temperature from different rooms in my house?

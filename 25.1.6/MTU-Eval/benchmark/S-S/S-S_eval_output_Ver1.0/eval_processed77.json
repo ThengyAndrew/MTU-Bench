@@ -1,0 +1,29 @@
+{
+    "query": "I need a 1-star hotel with wifi in New Delhi.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Find a hotel at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

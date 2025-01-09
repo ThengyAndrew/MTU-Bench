@@ -1,0 +1,5 @@
+User:  I am troubled with a toothache. 
+Action: {}
+Assistant:  Oh, I'm sorry to hear that. Do you want me to find you a dentist?
+
+User:  Yes, please. I'm in New York

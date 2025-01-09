@@ -1,0 +1,7 @@
+User:  I am in a mood for some music and movies.
+Action: {}
+Assistant:  Sure, what can I help with that?
+User:  Could you play some music for me using a streaming service?
+Action: {}
+Assistant:  Of course, which service do you prefer to use?
+User:  Let's go with zvooq. Also, could you find the schedule for the movie 'The Great Gildersleeve' near a movie house?

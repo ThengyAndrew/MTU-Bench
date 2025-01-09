@@ -1,0 +1,4 @@
+User:  I am in a mood for some music and movies.
+Action: {}
+Assistant:  Sure, what can I help with that?
+User:  Could you play some music for me using a streaming service?

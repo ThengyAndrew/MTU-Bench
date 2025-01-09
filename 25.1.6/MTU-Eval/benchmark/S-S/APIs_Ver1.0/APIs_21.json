@@ -1,0 +1,175 @@
+[
+    {
+        "name": "sss",
+        "description": "Find a bus journey for a given pair of cities",
+        "required_parameters": [
+            "from_location",
+            "to_location",
+            "leaving_date"
+        ],
+        "optional_parameters": {
+            "travelers": "1"
+        },
+        "result_parameters": [
+            "from_location",
+            "to_location",
+            "from_station",
+            "to_station",
+            "leaving_date",
+            "leaving_time",
+            "fare",
+            "travelers",
+            "transfers"
+        ]
+    },
+    {
+        "name": "BuyBusTicket",
+        "description": "Buy tickets for a bus journey",
+        "required_parameters": [
+            "from_location",
+            "to_location",
+            "leaving_date",
+            "leaving_time",
+            "travelers"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "from_location",
+            "to_location",
+            "from_station",
+            "to_station",
+            "leaving_date",
+            "leaving_time",
+            "fare",
+            "travelers",
+            "transfers"
+        ]
+    },
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve a selected hotel for given dates",
+        "required_parameters": [
+            "hotel_name",
+            "location",
+            "check_in_date",
+            "check_out_date"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "check_in_date",
+            "check_out_date",
+            "average_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price",
+            "pets_welcome"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Search for a hotel based on location",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "dontcare",
+            "pets_welcome": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "average_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price",
+            "pets_welcome"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Find movies by genre and optionally director",
+        "required_parameters": [
+            "genre"
+        ],
+        "optional_parameters": {
+            "directed_by": "dontcare"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitles",
+            "directed_by"
+        ]
+    },
+    {
+        "name": "PlayMovie",
+        "description": "Play the selected movie",
+        "required_parameters": [
+            "title"
+        ],
+        "optional_parameters": {
+            "subtitles": "False"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitles",
+            "directed_by"
+        ]
+    },
+    {
+        "name": "ReserveRestaurant",
+        "description": "Reserve a table at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "city",
+            "time"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-01",
+            "party_size": "2"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "party_size",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find a restaurant of a particular cuisine in a city",
+        "required_parameters": [
+            "cuisine",
+            "city"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_live_music": "dontcare",
+            "serves_alcohol": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    }
+]

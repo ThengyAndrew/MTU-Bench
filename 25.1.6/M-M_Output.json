@@ -1,0 +1,191 @@
+[
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "living room"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "bedroom"
+        }
+    },
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "06:30",
+            "recurrence": [
+                "weekdays"
+            ]
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "War and Peace",
+            "card_number": 123456
+        }
+    },
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "genre": "jazz"
+        }
+    },
+    {
+        "name": "User_Prompt",
+        "arguments": {
+            "prompt_message": "Could you please provide me with your library ID?"
+        }
+    },
+    {
+        "name": "change_alarm_name",
+        "arguments": {
+            "time": "07:00",
+            "new_name": "Morning Workout"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "stylist_name": "FindProvider.stylist_name",
+            "appointment_date": "2022-06-18",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dental appointment",
+            "appointment_date": "BookAppointment.appointment_date",
+            "appointment_time": "BookAppointment.appointment_time",
+            "appointment_address": "BookAppointment.address",
+            "reminder_time": "2 hours before"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.doctor_name",
+            "phone_number": "BookAppointment.phone_number"
+        }
+    },
+    {
+        "name": "FindHomeByArea",
+        "arguments": {
+            "area": "Seattle",
+            "intent": "rent",
+            "number_of_beds": 3,
+            "number_of_baths": 2
+        }
+    },
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "User's account number"
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "Seattle"
+        }
+    },
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "New York"
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "Life of Pi"
+        }
+    },
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "Business Trip to San Francisco"
+        }
+    },
+    {
+        "name": "get_alarm",
+        "arguments": {
+            "time": "08:00",
+            "recurrence": [
+                "tomorrow"
+            ]
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "New York",
+            "destination_city": "San Francisco",
+            "departure_date": "previous_get_user_appointments.appointment_date"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "artist": "Rahsaan Patterson"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "The Great Gildersleeve",
+            "object_location_type": "movie house"
+        }
+    },
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "playlist": "Popular",
+            "entity_name": "Hands Up"
+        }
+    },
+    {
+        "name": "api_extract_info",
+        "arguments": {
+            "prompt": "Can you please tell me the city where you currently reside?"
+        }
+    },
+    {
+        "name": "PlaySong",
+        "arguments": {
+            "song_name": "LookupSong.song_name"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "poi": "seagoville",
+            "party_size_number": "5",
+            "restaurant_name": "restaurant name",
+            "timeRange": "time for reservation"
+        }
+    },
+    {
+        "name": "SearchCreativeWork",
+        "arguments": {
+            "object_type": "book"
+        }
+    }
+]

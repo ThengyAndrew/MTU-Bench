@@ -1,0 +1,87 @@
+[
+    {
+        "name": "RequestPayment",
+        "description": "Request payment from someone",
+        "required_parameters": [
+            "receiver",
+            "amount"
+        ],
+        "optional_parameters": {
+            "private_visibility": "False"
+        },
+        "result_parameters": [
+            "amount",
+            "receiver",
+            "private_visibility"
+        ]
+    },
+    {
+        "name": "MakePayment",
+        "description": "Send money to your friends",
+        "required_parameters": [
+            "payment_method",
+            "amount",
+            "receiver"
+        ],
+        "optional_parameters": {
+            "private_visibility": "False"
+        },
+        "result_parameters": [
+            "payment_method",
+            "amount",
+            "receiver",
+            "private_visibility"
+        ]
+    },
+    {
+        "name": "ReserveRestaurant",
+        "description": "Make a table reservation at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "location",
+            "time"
+        ],
+        "optional_parameters": {
+            "number_of_seats": "2",
+            "date": "2019-03-01"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "number_of_seats",
+            "price_range",
+            "location",
+            "category"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find restaurants by location and by category",
+        "required_parameters": [
+            "category",
+            "location"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_seating_outdoors": "dontcare",
+            "has_vegetarian_options": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "price_range",
+            "location",
+            "category"
+        ]
+    }
+]

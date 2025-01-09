@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hey, I'm in need of some assistance in finding a house for renting.",
+        "Assistant": "Absolutely! May I know the location where you are looking to find a house?"
+    },
+    {
+        "User": "In New York.",
+        "Assistant": "Got it! Let's narrow it down. How many bedrooms and bathrooms are you looking for in the house?"
+    },
+    {
+        "User": "Ideally with 2 bedrooms and 1 bathroom. Also, can you forward the address to my friend called John Doe?"
+    }
+]

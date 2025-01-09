@@ -1,0 +1,36 @@
+[
+    {
+        "name": "RequestPayment",
+        "description": "Request payment from someone",
+        "required_parameters": [
+            "receiver",
+            "amount"
+        ],
+        "optional_parameters": {
+            "private_visibility": "False"
+        },
+        "result_parameters": [
+            "amount",
+            "receiver",
+            "private_visibility"
+        ]
+    },
+    {
+        "name": "MakePayment",
+        "description": "Send money to your friends",
+        "required_parameters": [
+            "payment_method",
+            "amount",
+            "receiver"
+        ],
+        "optional_parameters": {
+            "private_visibility": "False"
+        },
+        "result_parameters": [
+            "payment_method",
+            "amount",
+            "receiver",
+            "private_visibility"
+        ]
+    }
+]

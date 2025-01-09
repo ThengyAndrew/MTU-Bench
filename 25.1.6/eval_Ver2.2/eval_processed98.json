@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hi, can you help me with something?",
+        "Assistant": "Of course! What do you need help with?"
+    },
+    {
+        "User": "I need assistance with my bank account.",
+        "Assistant": "Sure, I'm here to help. Could you please provide me with your account number?"
+    },
+    {
+        "User": "Yes, my account number is 17528472632. Can you please assist me with some activities?"
+    }
+]

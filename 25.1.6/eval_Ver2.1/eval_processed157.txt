@@ -1,0 +1,4 @@
+User:  hey, could you help me out with some information?
+Action: {}
+Assistant:  Sure, what information do you need?
+User:  I'm interested in the weather forecast for a particular date.

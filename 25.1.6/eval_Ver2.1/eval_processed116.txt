@@ -1,0 +1,9 @@
+User:  Hi, I'm living in San Francisco and I'm looking for a dentist. 
+Action: {}
+Assistant:  Sure, I can help you with that. Are you interested in any specific services?
+
+User:  Yes, I need one that can make my smile more beautiful. I have a wedding coming up soon.
+Action: {"FindProvider": {"city": "San Francisco", "offers_cosmetic_services": "true"}}
+Assistant:  I found some dentists that offer cosmetic services in San Francisco. Here they are....
+
+User:  Great! I would like to book an appointment with one of them on February 9th at 10:00 am. Also, please add this dentist to my contacts.

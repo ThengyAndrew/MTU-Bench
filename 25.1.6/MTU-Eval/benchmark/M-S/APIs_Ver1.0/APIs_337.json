@@ -1,0 +1,69 @@
+[
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    },
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve a selected hotel for given dates",
+        "required_parameters": [
+            "hotel_name",
+            "check_in_date",
+            "number_of_days",
+            "destination"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "destination",
+            "number_of_rooms",
+            "check_in_date",
+            "number_of_days",
+            "star_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "has_wifi"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Find a hotel at a given location",
+        "required_parameters": [
+            "destination"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "dontcare",
+            "has_wifi": "dontcare",
+            "star_rating": "dontcare"
+        },
+        "result_parameters": [
+            "destination",
+            "number_of_rooms",
+            "star_rating",
+            "hotel_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "has_wifi"
+        ]
+    }
+]

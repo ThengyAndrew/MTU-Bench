@@ -1,0 +1,6 @@
+user: I need some information please
+function: 
+Thought: It is not clear what information the user needs. I will need to ask for more details to determine whether an API call is necessary and which API to call.
+observation: 
+assistant: : about what?
+User: I'm looking for a book

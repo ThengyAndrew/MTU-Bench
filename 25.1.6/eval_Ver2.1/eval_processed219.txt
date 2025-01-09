@@ -1,0 +1,5 @@
+User:  Hi, I want to use some services of the library but I'm not a member yet.
+Action: {}
+Assistant:  Sure, would you like to apply for a library membership?
+
+User:  Yes, I want to apply for the membership. Also, I want to borrow a book.

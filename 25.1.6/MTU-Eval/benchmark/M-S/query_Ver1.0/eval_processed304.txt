@@ -1,0 +1,23 @@
+user: I'm searching for a flight.
+function: 
+Thought: Missing origin. I can't call the function.
+observation: 
+assistant: : Which metropolis do you wish to leave from?
+user: Search for flights from Washington.
+function: 
+Thought: Missing destination. I can't call the function.
+observation: 
+assistant: : What place are you planning on visiting?
+user: I am taking a plane to Atlanta, GA.
+function: 
+Thought: Missing return_date, departure_date. I can't call the function.
+observation: 
+assistant: : What date would you like to take the return flight? What day do you want to travel?
+user: I'd like to fly with United Airlines, starting by travel on the 7th and returning on 12th of this month.
+function: 
+Thought: Now that I have all the required information (origin, destination, departure_date, return_date, and airlines), I can proceed to call the API to search for roundtrip flights that match these criteria.
+Action: SearchRoundtripFlights
+Action Input: {'airlines': 'United Airlines', 'departure_date': '2024-01-07', 'destination': 'Atlanta', 'origin': 'Washington', 'return_date': '2024-01-12'}
+observation: : {'airlines': 'United Airlines', 'departure_date': '2024-01-07', 'destination': 'Atlanta', 'destination_airport': 'Hartsfield-Jackson International Airport', 'fare': '118', 'inbound_arrival_time': '20:21', 'inbound_departure_time': '18:30', 'is_redeye': 'False', 'number_stops': '0', 'origin': 'Washington', 'origin_airport': 'Dulles International Airport', 'outbound_arrival_time': '19:06', 'outbound_departure_time': '17:15', 'passengers': '1', 'return_date': '2024-01-12', 'seating_class': 'Economy'}
+assistant: : I got 1 flight for you. Do you want to fly with United Airlines, which takes off at 5:15 pm and returns on 6:30 pm? The ticket price is $118.
+User: How many passengers can take this?

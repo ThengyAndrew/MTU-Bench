@@ -1,0 +1,5 @@
+User:  Can you tell me how the weather will be at a particular location later today?
+Action: {}
+Assistant:  Certainly, could you please specify the location and the time you are interested in?
+
+User:  I am planning to visit custer national forest. Will it be chillier there at seven pm?

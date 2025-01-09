@@ -1,0 +1,65 @@
+{
+    "query": [
+        {
+            "user": "Can you help me find an intermediate priced place to eat?",
+            "function": "",
+            "Thought": "Missing cuisine. I can't call the function.",
+            "observation": "",
+            "assistant": ": Any food specifications? Chinese, American or something else?"
+        },
+        {
+            "user": "I love brazilian food actually",
+            "function": "",
+            "Thought": "Missing city. I can't call the function.",
+            "observation": "",
+            "assistant": ": Which city should I search for it?"
+        },
+        {
+            "user": "I want something in San Francisco.",
+            "function": "",
+            "Action": "FindRestaurants ",
+            "Action Input": "{'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'moderate'}",
+            "observation": "",
+            "Observation": "{'city': 'San Francisco', 'cuisine': 'Brazilian', 'has_live_music': 'False', 'phone_number': '415-626-8727', 'price_range': 'moderate', 'restaurant_name': 'Minas Brazilian', 'serves_alcohol': 'False', 'street_address': '41 Franklin Street'}",
+            "assistant": ": Which city should I search for it?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRestaurant",
+                "description": "Reserve a table at a restaurant",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindRestaurants",
+                "description": "Find a restaurant of a particular cuisine in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

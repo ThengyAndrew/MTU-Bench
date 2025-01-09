@@ -1,0 +1,6 @@
+user: I need a place to eat that has live music.
+function: 
+Thought: The user is requesting a recommendation for an eating place with live music but has not provided information about the preferred cuisine or location. To call the appropriate API, I need to gather this information.
+observation: 
+assistant: : In which city and what kind of cuisine? Would you like Indian, Mexican, or something else?
+User: I am in the mood to eat Mexican food in SF.

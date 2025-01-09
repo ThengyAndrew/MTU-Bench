@@ -1,0 +1,5 @@
+User:  I am looking for medical help in New York.
+Action: {}
+Assistant:  Sure, can I assist you in finding a specialist doctor?
+
+User:  Yes, I need a cardiologist.

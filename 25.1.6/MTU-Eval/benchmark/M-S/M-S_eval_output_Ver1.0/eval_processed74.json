@@ -1,0 +1,65 @@
+{
+    "query": [
+        {
+            "user": "Hello robot. I need a restaurant.",
+            "function": "",
+            "Thought": "The user is requesting restaurant options but hasn't provided specific preferences yet.",
+            "observation": "",
+            "assistant": ": Well, what is the place?"
+        },
+        {
+            "user": "Pittsburgh.",
+            "function": "",
+            "Thought": "The user has specified the city where they're looking for a restaurant.",
+            "observation": "",
+            "assistant": ": What cuisine type are you interested in?"
+        },
+        {
+            "user": "Thai restaurant.",
+            "function": "",
+            "Thought": "The user has expressed a preference for Thai cuisine in Pittsburgh. I should look up Thai restaurants in Pittsburgh.",
+            "Action": "query_restaurant ",
+            "Action Input": "{'food_pref': 'Thai', 'loc': 'Pittsburgh', 'goals': ['default']}",
+            "observation": ": {'default': '48'}",
+            "assistant": ": Let me look up in my database. A good choice is 48. Are you happy about my answer?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "query_restaurant",
+                "description": "The tool searches for a restaurant based on the user's preferences and provided criteria such as type of food, location, and other options.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "food_pref": {
+                            "type": "string",
+                            "description": "The preferred type of cuisine or food the user is looking for."
+                        },
+                        "loc": {
+                            "type": "string",
+                            "description": "The location where the user is searching for a restaurant. This can be a specific city or a general area."
+                        },
+                        "open": {
+                            "type": "boolean",
+                            "description": "A criterion to find out if the restaurant is currently open."
+                        },
+                        "parking": {
+                            "type": "boolean",
+                            "description": "A criterion to inquire about the availability of parking at the restaurant."
+                        },
+                        "price": {
+                            "type": "boolean",
+                            "description": "A criterion to determine the price range or cost level of the restaurant."
+                        }
+                    },
+                    "required": [
+                        "food_pref",
+                        "loc"
+                    ]
+                }
+            }
+        }
+    ]
+}

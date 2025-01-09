@@ -1,0 +1,65 @@
+{
+    "query": [
+        {
+            "User": "I'm considering renting a property.",
+            "Assistant": "Great. Could you provide me with a bit more detail? Like the location and the preferred number of bedrooms and bathrooms?"
+        },
+        {
+            "User": "I would like a place in New York, with 2 bedrooms and 2 bathrooms.",
+            "Assistant": "Alright. Let me look it up. Is there anything else you need?"
+        },
+        {
+            "User": "Yes, when you find a suitable property, could you share the address with my friend, Mark? Also, could you get a weather update for New York to see what the weather is like?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindHomeByArea",
+                "description": "Search for a property to rent or buy in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ScheduleVisit",
+                "description": "Schedule a visit to a property on a given date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetWeather",
+                "description": "Get the weather of a certain location on a date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ShareLocation",
+                "description": "Send your location to a contact. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

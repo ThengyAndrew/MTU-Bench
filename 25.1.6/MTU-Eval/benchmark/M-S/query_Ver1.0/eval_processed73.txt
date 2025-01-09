@@ -1,0 +1,11 @@
+user: Hello robot. I need a restaurant.
+function: 
+Thought: The user is requesting restaurant options but hasn't provided specific preferences yet.
+observation: 
+assistant: : Well, what is the place?
+user: Pittsburgh.
+function: 
+Thought: The user has specified the city where they're looking for a restaurant.
+observation: 
+assistant: : What cuisine type are you interested in?
+User: Thai restaurant.

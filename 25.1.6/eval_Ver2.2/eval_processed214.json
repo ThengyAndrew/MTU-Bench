@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I am really interested in watching some live performances.",
+        "Assistant": "That sounds great. Any particular type of live performances you wish to see?"
+    },
+    {
+        "User": "I am in the mood for a good drama. More so, a Shakespearean play.",
+        "Assistant": "Wonderful choice! May I know the city where you are looking for this play?"
+    },
+    {
+        "User": "New York. Also, I would like to share the location of the play with my friend Jack."
+    }
+]

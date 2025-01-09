@@ -1,0 +1,1 @@
+Can you fetch the current temperature in my living room and then set the temperature in my bedroom to whatever the temperature is in the living room? And add the album to the might and myth power metal playlist and rate this textbook a one.

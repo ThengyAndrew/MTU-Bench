@@ -1,0 +1,9 @@
+User:  Can you assist me with some of my tasks?
+Action: {}
+Assistant:  Of course, what do you need help with?
+
+User:  Can we start with something musical?
+Action: {}
+Assistant:  Sure, which song do you have in mind?
+
+User:  Can you find the song "Let it be" by The Beatles and play it?

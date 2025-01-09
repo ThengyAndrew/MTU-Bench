@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I am looking for a salon.",
+        "function": "",
+        "Thought": "Missing city. I can't call the function.",
+        "observation": "",
+        "assistant": ": What city are you interested in finding a salon?"
+    }
+]

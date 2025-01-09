@@ -1,0 +1,5 @@
+User:  I would like to manage my music.
+Action: {}
+Assistant:  Sure. What would you like to do with your music?
+
+User:  Add a track to my playlist.

@@ -1,0 +1,121 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "description": "Reserve a table at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "city",
+            "time"
+        ],
+        "optional_parameters": {
+            "date": "2019-03-01",
+            "party_size": "2"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "party_size",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find a restaurant of a particular cuisine in a city",
+        "required_parameters": [
+            "cuisine",
+            "city"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_live_music": "dontcare",
+            "serves_alcohol": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "BuyMovieTickets",
+        "description": "Buy movie tickets for a particular show",
+        "required_parameters": [
+            "movie_name",
+            "number_of_tickets",
+            "show_date",
+            "location",
+            "show_time",
+            "show_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "price",
+            "number_of_tickets",
+            "show_type",
+            "theater_name",
+            "show_time",
+            "show_date",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Search for movies by location, genre or other attributes",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "genre": "dontcare",
+            "show_type": "dontcare",
+            "theater_name": "dontcare"
+        },
+        "result_parameters": [
+            "price",
+            "show_type",
+            "theater_name",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    },
+    {
+        "name": "GetTimesForMovie",
+        "description": "Get show times for a movie at a location on a given date",
+        "required_parameters": [
+            "movie_name",
+            "location",
+            "show_date"
+        ],
+        "optional_parameters": {
+            "show_type": "dontcare",
+            "theater_name": "dontcare"
+        },
+        "result_parameters": [
+            "price",
+            "show_type",
+            "theater_name",
+            "show_time",
+            "show_date",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    }
+]

@@ -1,0 +1,6 @@
+user: I have a question about a world record
+function: 
+Thought: The user is interested in world records. The assistant should prepare to get information about the user's specific interest within world records. No API is needed yet.
+observation: 
+assistant: : Sure, what would you like for me to look up?
+User: What was the loudest sound?

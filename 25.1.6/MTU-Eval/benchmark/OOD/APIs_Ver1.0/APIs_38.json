@@ -1,0 +1,50 @@
+{
+    "apis": [
+        {
+            "name": "book_auto_repair",
+            "description": "This API should be called when a user has identified a car issue that needs professional service and is ready to book an auto repair service. It allows the user to select the type of repair needed, provide vehicle information, and choose an appointment time at a repair shop."
+        },
+        {
+            "name": "check_repair_availability",
+            "description": "This API should be called when a user is looking to find available time slots for vehicle repair. It helps users to determine when a repair shop can schedule their vehicle for service based on the shop's current bookings and opening hours."
+        },
+        {
+            "name": "search_repair_shop",
+            "description": "This API should be called when a user is in need of finding a repair shop nearby or wanting to compare different shops for services offered, location, pricing, and customer reviews. It assists the user in locating a convenient and suitable auto repair facility."
+        }
+    ],
+    "available_parameters": [
+        {
+            "name": "name_store",
+            "description": "The name of the auto repair store."
+        },
+        {
+            "name": "name_customer",
+            "description": "The name of the customer requesting the auto repair service."
+        },
+        {
+            "name": "date_appt",
+            "description": "The specific date the customer wishes to book for the auto repair appointment."
+        },
+        {
+            "name": "time_appt",
+            "description": "The specific time of day for the scheduled auto repair appointment."
+        },
+        {
+            "name": "reason_appt",
+            "description": "The reason for the auto repair appointment, which may include details about the type of service or repair needed."
+        },
+        {
+            "name": "name_vehicle",
+            "description": "The make or model name of the vehicle that requires repair."
+        },
+        {
+            "name": "year_vehicle",
+            "description": "The manufacturing year of the vehicle to provide context about its potential needs for the repair."
+        },
+        {
+            "name": "location_store",
+            "description": "The geographical location or address of the auto repair store."
+        }
+    ]
+}

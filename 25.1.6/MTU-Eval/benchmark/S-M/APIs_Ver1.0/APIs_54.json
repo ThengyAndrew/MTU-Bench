@@ -1,0 +1,157 @@
+[
+    {
+        "name": "get_book_status",
+        "description": "Retrieves the current availability status of a specific book, indicating whether it is in stock, checked out, or reserved.",
+        "required_parameters": [
+            {
+                "name": "book_title",
+                "type": "string",
+                "description": "The title of the book to check the availability status for."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "book_status",
+                "type": "string",
+                "description": "The current availability status of the specified book, indicating whether it is in stock, checked out, or reserved."
+            }
+        ]
+    },
+    {
+        "name": "renew_books",
+        "description": "Allows a user to extend the borrowing period for books currently checked out, subject to library policies and availability.",
+        "required_parameters": [
+            {
+                "name": "library_number",
+                "type": "integer",
+                "description": "The identifier of the library account."
+            },
+            {
+                "name": "book_names",
+                "type": "string",
+                "description": "The names of the books to be renewed."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "renewal_period",
+                "type": "integer",
+                "description": "The additional amount of time granted to return the book."
+            },
+            {
+                "name": "total_amount_due",
+                "type": "float",
+                "description": "The total amount the user has to pay, including late fees and renewal fees."
+            }
+        ]
+    },
+    {
+        "name": "reserve_book",
+        "description": "Enables a user to place a reservation on a book that is currently loaned out, notifying the user when the book becomes available.",
+        "required_parameters": [
+            {
+                "name": "book_title",
+                "type": "string",
+                "description": "The title of the book to be reserved"
+            },
+            {
+                "name": "card_number",
+                "type": "integer",
+                "description": "The card number of the user who is reserving the book"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "book_format",
+                "type": "string",
+                "description": "The desired format of the book, e.g. hardcover, paperback, ebook etc."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "reservation_status",
+                "type": "string",
+                "description": "Status of the reservation"
+            }
+        ]
+    },
+    {
+        "name": "get_late_fees",
+        "description": "Calculates any late fees accrued on a user¡¯s account for books not returned by their due date, potentially offering breakdowns by book or date range.",
+        "required_parameters": [
+            {
+                "name": "library_ID",
+                "type": "integer",
+                "description": "The unique identifier of a library user's account"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "late_fees",
+                "type": "float",
+                "description": "The total late fees owed by the user on their account"
+            }
+        ]
+    },
+    {
+        "name": "apply_for_membership",
+        "description": "Facilitates the process for users to apply for a new membership with the library or bookstore, which may include online forms and submission of required documents.",
+        "required_parameters": [
+            {
+                "name": "city_of_residence",
+                "type": "string",
+                "description": "The city that the user currently resides in"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "membership_status",
+                "type": "string",
+                "description": "The status of the user's membership application"
+            },
+            {
+                "name": "membership_fee",
+                "type": "float",
+                "description": "The cost of membership per month if the user does not reside in the library town"
+            },
+            {
+                "name": "application_link",
+                "type": "url",
+                "description": "The link to the membership application form"
+            }
+        ]
+    },
+    {
+        "name": "make_payment",
+        "description": "Processes payments made by users for various services, including late fees, membership fees, or purchasing books, offering multiple payment methods.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The library account number of the user making the payment."
+            },
+            {
+                "name": "payment_amount",
+                "type": "float",
+                "description": "The amount to be paid by the user."
+            },
+            {
+                "name": "payment_method",
+                "type": "string",
+                "description": "The method by which the user chooses to make the payment. Eg. Credit card, PayPal, etc."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "payment_status",
+                "type": "string",
+                "description": "The status of the payment that has been attempted. Could be successful or unsuccessful."
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hi, I am trying to look up some information. Could you assist me?",
+        "Assistant": "Of course! What's the information you want to look up?"
+    },
+    {
+        "User": "I have a schedule coming up. It's related to a business trip.",
+        "Assistant": "I can help you with that. Please tell me the name of the appointment."
+    },
+    {
+        "User": "It's called \"Business Trip to San Francisco\". I want to know its date and time. Oh, and could you search for one-way flights from New York to San Francisco on the same day?"
+    }
+]

@@ -1,0 +1,7 @@
+User:  Hello, I need your help to find something for me.
+Action: {}
+Assistant:  Sure, what are you looking for?
+User:  I would like to know where can I find a top-rated hair stylist.
+Action: {}
+Assistant:  Of course, could you please tell me the city you are in?
+User:  New York. Also, could you add their phone number to my contact list?

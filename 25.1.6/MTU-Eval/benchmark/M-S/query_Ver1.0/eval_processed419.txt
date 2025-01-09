@@ -1,0 +1,11 @@
+user: Can you help me find an moderate priced place to eat?
+function: 
+Thought: Missing cuisine. I can't call the function.
+observation: 
+assistant: : Any food specifications? Chinese, American or something else?
+user: I love brazilian food actually
+function: 
+Thought: Missing city. I can't call the function.
+observation: 
+assistant: : Which city should I search for it?
+User: I want something in San Francisco.

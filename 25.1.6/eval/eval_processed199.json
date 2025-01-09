@@ -1,0 +1,158 @@
+[
+    {
+        "name": "transfer_funds",
+        "description": "This tool is used to perform a monetary transfer between a user's bank accounts, such as from a checking account to a savings account.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier for the user's bank account from which funds will be transferred."
+            },
+            {
+                "name": "source_account",
+                "type": "string",
+                "description": "Indicates the account type or identifier from which the money will be debited (e.g., 'checking')."
+            },
+            {
+                "name": "destination_account",
+                "type": "string",
+                "description": "Indicates the account type or identifier to which the money will be credited (e.g., 'savings')."
+            },
+            {
+                "name": "amount",
+                "type": "float",
+                "description": "The amount of money to be transferred between accounts."
+            },
+            {
+                "name": "transfer_speed",
+                "type": "string",
+                "description": "Specifies the speed at which the transfer is to be made. The transfer can be 'now' for immediate processing, or 'scheduled' for a deferred transfer.",
+                "enum": [
+                    "now",
+                    "scheduled"
+                ],
+                "default": "now"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "schedule_time",
+                "type": "string",
+                "format": "datetime",
+                "description": "If the transfer is scheduled, this parameter specifies the date and time for the transfer to happen. Should follow the YYYY-MM-DDTHH:MM:SS format."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "transfer_status",
+                "type": "string",
+                "description": "Provides information on the status of the fund transfer, indicating success, in-progress, or failure."
+            }
+        ]
+    },
+    {
+        "name": "get_account_balance",
+        "description": "This tool retrieves the current balance for a specified bank account.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier for the user's bank account for which the balance is to be retrieved."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "balance",
+                "type": "string",
+                "description": "The current balance of the specified account presented in a string format, ideally including the currency symbol."
+            }
+        ]
+    },
+    {
+        "name": "get_recent_transactions",
+        "description": "This tool retrieves the most recent transactions for a specified bank account to identify regular activity and potential unauthorized transactions.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier of the user's bank account from which recent transactions are to be fetched."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "transaction_type",
+                "type": "string",
+                "enum": [
+                    "all",
+                    "deposit",
+                    "withdrawal",
+                    "transfer",
+                    "payment"
+                ],
+                "default": "all",
+                "description": "Optional filter to return transactions of a specific type. The default value is 'all', which includes every type of transaction."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "transactions",
+                "type": "array",
+                "description": "A list of transactions made within the specified time period, sorted by the most recent. Each transaction includes details such as date, type, amount, and description.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "transaction_date": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The date and time when the transaction occurred."
+                        },
+                        "transaction_type": {
+                            "type": "string",
+                            "description": "The type of the transaction (e.g., deposit, withdrawal, transfer, payment)."
+                        },
+                        "amount": {
+                            "type": "number",
+                            "description": "The monetary amount involved in the transaction."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "A brief description or memo provided for the transaction."
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "name": "freeze_bank_account",
+        "description": "This tool places a hold on the specified bank account to prevent new transactions, in response to suspected unauthorized access or fraudulent activity.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier of the user's bank account that needs to be frozen to mitigate potential fraud."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "freeze_reason",
+                "type": "string",
+                "enum": [
+                    "suspected_fraud",
+                    "lost_or_stolen_card",
+                    "account_owner_request",
+                    "other"
+                ],
+                "description": "The reason for freezing the account, which helps the bank in further fraud assessment and investigation."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "freeze_status",
+                "type": "string",
+                "description": "Confirmation of the account being frozen and the subsequent status message indicating that the account is secured."
+            }
+        ]
+    }
+]

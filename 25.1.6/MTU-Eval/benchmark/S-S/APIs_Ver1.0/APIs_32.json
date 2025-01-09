@@ -1,0 +1,26 @@
+[
+    {
+        "name": "GetAlarms",
+        "description": "Get the alarms user has already set",
+        "required_parameters": [],
+        "optional_parameters": {},
+        "result_parameters": [
+            "alarm_time",
+            "alarm_name"
+        ]
+    },
+    {
+        "name": "AddAlarm",
+        "description": "Set a new alarm",
+        "required_parameters": [
+            "new_alarm_time"
+        ],
+        "optional_parameters": {
+            "new_alarm_name": "New alarm"
+        },
+        "result_parameters": [
+            "new_alarm_time",
+            "new_alarm_name"
+        ]
+    }
+]

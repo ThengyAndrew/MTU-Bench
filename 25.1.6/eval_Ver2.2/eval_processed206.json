@@ -1,0 +1,17 @@
+[
+    {
+        "User": "I need a dental service.",
+        "Assistant": "Sure! What kind of dental service do you need?"
+    },
+    {
+        "User": "I need a dentist who can do some cosmetic works.",
+        "Assistant": "Alright. Which city do you prefer for your treatment?"
+    },
+    {
+        "User": "Near New York City. Once you find one, can you also make an appointment for me?",
+        "Assistant": "Absolutely! Could you please let me know the preferred date and time for the appointment?"
+    },
+    {
+        "User": "Yes, I prefer 2 p.m. on February 10th."
+    }
+]

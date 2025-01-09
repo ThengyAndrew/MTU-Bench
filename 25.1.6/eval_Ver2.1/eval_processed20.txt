@@ -1,0 +1,9 @@
+User:  Can you help me setting up an alarm?
+Action: {}
+Assistant:  Sure, What time do you want the alarm for?
+
+User:  I want it at 07:00 AM.
+Action: {"set_alarm": {"time": "07:00"}}
+Assistant:  Done. Anything else you would like for the alarm?
+
+User:  Could you label it "Morning Workout" and change its sound to "Bird Chirping"?

@@ -1,0 +1,42 @@
+{
+    "apis": [
+        {
+            "name": "order_coffee",
+            "description": "This API should be called when a user is ready to order their desired coffee beverage. It facilitates the process of selecting coffee types, sizes, and any custom preferences, and then processes the order for either pickup or delivery."
+        },
+        {
+            "name": "search_coffee_shop",
+            "description": "This API should be used when a user is looking for coffee shops. "
+        },
+        {
+            "name": "check_coffee_availability",
+            "description": "This API should be called when a user wants to ensure that a specific type of coffee or menu item is available before visiting the coffee shop or placing an order. It checks for product availability in real-time."
+        }
+    ],
+    "available_parameters": [
+        {
+            "name": "location_store",
+            "description": "The geographical location of the coffee shop from which the user intends to order or visit."
+        },
+        {
+            "name": "name_drink",
+            "description": "The specific name of the coffee drink that the user wishes to order. This might include options like espresso, latte, cappuccino, etc."
+        },
+        {
+            "name": "size_drink",
+            "description": "The size of the coffee drink that the user is ordering. Common sizes include small, medium, and large."
+        },
+        {
+            "name": "num_drink",
+            "description": "The number of coffee drinks the user wishes to order."
+        },
+        {
+            "name": "type_milk",
+            "description": "The type of milk the user prefers in their coffee drink. Options could include whole milk, skim milk, soy milk, almond milk, etc."
+        },
+        {
+            "name": "preference",
+            "description": "Any additional preferences or special instructions related to the coffee drink order."
+        }
+    ]
+}

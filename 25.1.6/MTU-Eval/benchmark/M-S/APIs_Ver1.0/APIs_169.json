@@ -1,0 +1,64 @@
+[
+    {
+        "name": "CheckBalance",
+        "description": "Check the amount of money in a user's bank account",
+        "required_parameters": [
+            "account_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "account_type",
+            "balance"
+        ]
+    },
+    {
+        "name": "TransferMoney",
+        "description": "Transfer money from one bank account to another user's account",
+        "required_parameters": [
+            "account_type",
+            "amount",
+            "recipient_account_name"
+        ],
+        "optional_parameters": {
+            "recipient_account_type": "checking"
+        },
+        "result_parameters": [
+            "account_type",
+            "recipient_account_type",
+            "amount",
+            "recipient_account_name"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Find movies by genre and optionally director",
+        "required_parameters": [
+            "genre"
+        ],
+        "optional_parameters": {
+            "directed_by": "dontcare"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitles",
+            "directed_by"
+        ]
+    },
+    {
+        "name": "PlayMovie",
+        "description": "Play the selected movie",
+        "required_parameters": [
+            "title"
+        ],
+        "optional_parameters": {
+            "subtitles": "False"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitles",
+            "directed_by"
+        ]
+    }
+]

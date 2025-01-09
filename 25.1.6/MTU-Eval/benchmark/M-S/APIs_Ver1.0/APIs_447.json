@@ -1,0 +1,125 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "description": "Reserve a table at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "city",
+            "time"
+        ],
+        "optional_parameters": {
+            "date": "2019-03-01",
+            "party_size": "2"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "party_size",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find a restaurant of a particular cuisine in a city",
+        "required_parameters": [
+            "cuisine",
+            "city"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_live_music": "dontcare",
+            "serves_alcohol": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment at a hair stylist, The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+        "required_parameters": [
+            "stylist_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "stylist_name",
+            "phone_number",
+            "average_rating",
+            "is_unisex",
+            "street_address",
+            "appointment_date",
+            "appointment_time"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Search for a hair stylist by city and optionally other attributes",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "is_unisex": "dontcare"
+        },
+        "result_parameters": [
+            "stylist_name",
+            "phone_number",
+            "average_rating",
+            "is_unisex",
+            "street_address",
+            "city"
+        ]
+    },
+    {
+        "name": "LookupSong",
+        "description": "Search for a song",
+        "required_parameters": [],
+        "optional_parameters": {
+            "genre": "dontcare",
+            "artist": "dontcare",
+            "album": "dontcare",
+            "year": "dontcare"
+        },
+        "result_parameters": [
+            "song_name",
+            "artist",
+            "album",
+            "genre",
+            "year"
+        ]
+    },
+    {
+        "name": "PlaySong",
+        "description": "Play the selected song on the device",
+        "required_parameters": [
+            "song_name"
+        ],
+        "optional_parameters": {
+            "artist": "dontcare",
+            "playback_device": "TV"
+        },
+        "result_parameters": [
+            "song_name",
+            "artist",
+            "album",
+            "genre",
+            "year",
+            "playback_device"
+        ]
+    }
+]

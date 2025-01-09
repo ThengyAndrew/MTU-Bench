@@ -1,0 +1,57 @@
+[
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    },
+    {
+        "name": "GetRide",
+        "description": "Call a taxi to head to a given destination",
+        "required_parameters": [
+            "destination",
+            "number_of_riders",
+            "shared_ride"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "destination",
+            "shared_ride",
+            "ride_fare",
+            "approximate_ride_duration",
+            "number_of_riders"
+        ]
+    }
+]

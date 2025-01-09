@@ -1,0 +1,20 @@
+user: Can you find me country songs by Shailesh Premi?
+function: 
+Thought: The user is asking for country songs by Shailesh Premi. I'll need to call an API to look up songs by genre and artist.
+Action: LookupSong 
+Action Input: {'artist': 'Shailesh Premi', 'genre': 'Country'}
+observation: : {'album': 'Maza Mar Liya Dhori Ke Niche', 'artist': 'Shailesh Premi', 'genre': 'Country', 'song_name': 'Lahnga Lasar Ke', 'year': '2019'}
+assistant: : There is 1 song by Shailesh Premi from the album Maza Mar Liya Dhori Ke Niche. Do you want to listen to Lahnga Lasar Ke?
+user: When was it released?
+function: 
+Thought: The user is inquiring about the release year of the song, which I already have from the API call. No additional action is necessary.
+observation: : {'album': 'Maza Mar Liya Dhori Ke Niche', 'artist': 'Shailesh Premi', 'genre': 'Country', 'song_name': 'Lahnga Lasar Ke', 'year': '2019'}
+assistant: : It is a recent song from 2019.
+user: Yes, I'd like to listen to it on any device. Actually, I'd prefer to listen it on the speaker in the kitchen. Right. That's perfect.
+function: 
+Thought: The user has requested to play the song on a specific device. I need to issue a command to start playback on the requested device.
+Action: PlaySong 
+Action Input: {'artist': 'Shailesh Premi', 'playback_device': 'Kitchen speaker', 'song_name': 'Lahnga Lasar Ke'}
+observation: : {'album': 'Maza Mar Liya Dhori Ke Niche', 'artist': 'Shailesh Premi', 'genre': 'Country', 'playback_device': 'Kitchen speaker', 'song_name': 'Lahnga Lasar Ke', 'year': '2019'}
+assistant: : Started playing the song. Enjoy your music!
+User: Thank you. That's all I need for now.

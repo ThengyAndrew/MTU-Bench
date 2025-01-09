@@ -1,0 +1,224 @@
+[
+    {
+        "name": "searchHotel",
+        "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "stars",
+                "type": "string",
+                "description": "The hotel rating based on stars."
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "The type of hotel."
+            },
+            {
+                "name": "parking",
+                "type": "boolean",
+                "description": "Availability of parking at the hotel."
+            },
+            {
+                "name": "internet",
+                "type": "boolean",
+                "description": "Availability of internet service at the hotel."
+            },
+            {
+                "name": "area",
+                "type": "string",
+                "description": "The location area of the hotel."
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the hotel."
+            },
+            {
+                "name": "priceRange",
+                "type": "string",
+                "description": "The price range of the hotel."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "A list specifying the fields to be returned.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "bookHotel",
+        "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "day",
+                "type": "string",
+                "description": "The booking date."
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The hotel name for the booking."
+            },
+            {
+                "name": "stay",
+                "type": "string",
+                "description": "The number of days to stay at the hotel."
+            },
+            {
+                "name": "people",
+                "type": "string",
+                "description": "The number of people for the booking."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Fields to be returned after booking.",
+                "options": [
+                    "isSuccess",
+                    "reference"
+                ],
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "SearchRestaurant",
+        "description": "Allows users to search for restaurant information based on various filters.",
+        "required_parameters": [
+            {
+                "name": "area",
+                "description": "The area where the restaurant is located."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "name",
+                "description": "The name of the restaurant."
+            },
+            {
+                "name": "priceRange",
+                "description": "The price range of the restaurant."
+            },
+            {
+                "name": "food",
+                "description": "Type of food or cuisine offered."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "BookRestaurant",
+        "description": "Allows users to make restaurant reservations.",
+        "required_parameters": [
+            {
+                "name": "name",
+                "description": "The name of the restaurant."
+            },
+            {
+                "name": "day",
+                "description": "The date for the reservation."
+            },
+            {
+                "name": "time",
+                "description": "The time for the reservation."
+            },
+            {
+                "name": "people",
+                "description": "Number of people for the reservation."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'.",
+                "items": {
+                    "type": "string"
+                },
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "searchTaxi",
+        "description": "Provides a taxi search service, allowing users to find available taxis and get pricing based on specific criteria.",
+        "required_parameters": [
+            {
+                "name": "departure",
+                "description": "The starting point of the journey"
+            },
+            {
+                "name": "destination",
+                "description": "The end point of the journey"
+            },
+            {
+                "name": "return_info",
+                "description": "A list of additional details the user wants to get back, with options including 'all', 'phone', 'license_plate', 'type'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "day",
+                "description": "The date for which the taxi service is required."
+            },
+            {
+                "name": "leaveAt",
+                "description": "The desired departure time (requires either leaveAt or arriveBy)"
+            },
+            {
+                "name": "arriveBy",
+                "description": "The time by which the user wants to arrive at the destination (requires either leaveAt or arriveBy)"
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "BookTaxi",
+        "description": "Allows users to book a taxi by providing the necessary details.",
+        "required_parameters": [
+            {
+                "name": "people",
+                "description": "Number of passengers"
+            },
+            {
+                "name": "license_plate",
+                "description": "License plate number of the taxi to be booked"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "return_info",
+                "description": "A list of details to be returned after booking, options include 'all', 'isSuccess', 'phone', 'type', 'reference'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    }
+]

@@ -1,0 +1,8 @@
+user: Milton Country Park
+function: 
+Thought: The user wants information about Milton Country Park, so I need to use the searchAttraction API to get the details.
+Action: searchAttraction
+Action Input: {"name": "Milton Country Park", "return_info": ["all"]}
+observation: : {"name": "Milton Country Park", "address": "milton country park, milton", "type": "park", "entrance_fee": "free"}
+assistant: : It's a free park on the north side of town. You can find it at milton country park, milton.
+User: Could I get the phone number for that?

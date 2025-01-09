@@ -1,0 +1,32 @@
+{
+    "query": [
+        {
+            "user": "I have a question about a world record",
+            "function": "",
+            "Thought": "The user is interested in world records. The assistant should prepare to get information about the user's specific interest within world records. No API is needed yet.",
+            "observation": "",
+            "assistant": ": Sure, what would you like for me to look up?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_world_record",
+                "description": "Fetches details for a world record, which may include the record holder's name, the nature of the record, the date it was set, and any other relevant information or statistics.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "record_category": {
+                            "type": "string",
+                            "description": "The category of the world record. Examples include 'tallest man', 'fastest swimmer in Olympics', 'oldest person', etc."
+                        }
+                    },
+                    "required": [
+                        "record_category"
+                    ]
+                }
+            }
+        }
+    ]
+}

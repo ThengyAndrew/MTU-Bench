@@ -1,0 +1,21 @@
+user: I need some help with my appointments.
+function: 
+Thought: The user needs help with their appointments. Depending on what specifically they need help with, there might be a need to call the 'get_user_appointments' API to fetch the existing appointments.
+observation: 
+assistant: : What kind of help?
+user: I need to set a reminder for a dentist's appointment.
+function: 
+Thought: User wants to set a reminder for a dentist's appointment. I need additional details like the date, time, and address of the appointment. We will be using 'set_appointment_reminder' API for this.
+observation: 
+assistant: : Which day?
+user: Three weeks from today.
+function: 
+Thought: The date for the appointment is three weeks from today. I still need the time and the address for the appointment to set the reminder.
+observation: 
+assistant: : Okay how about the time of day and the address?
+user: 9am at 123 first street.
+function: 
+Thought: Now I have the time for the appointment which is 9am and the address is 123 first street. But I need to know when the user wants the reminder.
+observation: 
+assistant: : Okay I have all that information do you want the reminder the morning of the appointment or the night before?
+User: The night before please and the name is "dentist's appointment"

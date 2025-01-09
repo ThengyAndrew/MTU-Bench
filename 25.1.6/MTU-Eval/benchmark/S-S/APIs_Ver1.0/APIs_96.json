@@ -1,0 +1,63 @@
+[
+    {
+        "name": "GetEvents",
+        "description": "Get list of all calendar events for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetAvailableTime",
+        "description": "Get a list of available times for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "available_start_time",
+            "available_end_time"
+        ]
+    },
+    {
+        "name": "AddEvent",
+        "description": "Add event to the user's calendar",
+        "required_parameters": [
+            "event_name",
+            "event_date",
+            "event_location",
+            "event_time"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetRide",
+        "description": "Book a cab for any destination, number of seats and ride type",
+        "required_parameters": [
+            "destination",
+            "number_of_seats",
+            "ride_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "destination",
+            "ride_type",
+            "ride_fare",
+            "wait_time",
+            "number_of_seats"
+        ]
+    }
+]

@@ -1,0 +1,6 @@
+user: I want to find some neat events coming up.
+function: 
+Thought: The user is requesting information on upcoming events without specifying a category or location. To proceed, I need to clarify these details as the API requires both 'category' and 'city_of_event' parameters.
+observation: 
+assistant: : Is there any particular category, like music or sports or movies? And what city or area should I look in?
+User: I'll be in Seattle. Maybe sports or games?

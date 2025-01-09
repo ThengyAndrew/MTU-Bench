@@ -1,0 +1,19 @@
+[
+    {
+        "name": "FindMovies",
+        "description": "Find out interesting movies that you like",
+        "required_parameters": [],
+        "optional_parameters": {
+            "directed_by": "dontcare",
+            "genre": "dontcare",
+            "cast": "dontcare"
+        },
+        "result_parameters": [
+            "movie_title",
+            "genre",
+            "percent_rating",
+            "cast",
+            "directed_by"
+        ]
+    }
+]

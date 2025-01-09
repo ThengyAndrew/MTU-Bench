@@ -1,0 +1,13 @@
+User:  I am thinking about moving to a new place.
+Action: {}
+Assistant:  That's great! Do you have any particular location in mind?
+
+User:  I'm considering Seattle.
+Action: {}
+Assistant:  Seattle is a beautiful city. What kind of residence are you looking for?
+
+User:  I want a house for rent with 3 bedrooms and 2 bathrooms.
+Action: {"FindHomeByArea": {"area": "Seattle", "intent": "rent", "number_of_beds": "3", "number_of_baths": "2"}}
+Assistant:  Okay, I found some options for you. 
+
+User:  Also, could you check the weather there and send the location to my friend John?

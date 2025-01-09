@@ -1,0 +1,56 @@
+{
+    "query": [
+        {
+            "user": "Can you help me find an moderate priced place to eat?",
+            "function": "",
+            "Thought": "Missing cuisine. I can't call the function.",
+            "observation": "",
+            "assistant": ": Any food specifications? Chinese, American or something else?"
+        },
+        {
+            "user": "I love brazilian food actually",
+            "function": "",
+            "Thought": "Missing city. I can't call the function.",
+            "observation": "",
+            "assistant": ": Which city should I search for it?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRestaurant",
+                "description": "Reserve a table at a restaurant",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindRestaurants",
+                "description": "Find a restaurant of a particular cuisine in a city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

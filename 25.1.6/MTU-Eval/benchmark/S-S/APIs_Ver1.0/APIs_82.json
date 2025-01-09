@@ -1,0 +1,225 @@
+[
+    {
+        "name": "GetCarsAvailable",
+        "description": "Search for available rental cars by city and date",
+        "required_parameters": [
+            "pickup_city",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date"
+        ],
+        "optional_parameters": {
+            "type": "Standard"
+        },
+        "result_parameters": [
+            "type",
+            "car_name",
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "pickup_city",
+            "dropoff_date",
+            "total_price"
+        ]
+    },
+    {
+        "name": "ReserveCar",
+        "description": "Reserve car rental for given dates and location",
+        "required_parameters": [
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date",
+            "type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "type",
+            "car_name",
+            "pickup_location",
+            "pickup_date",
+            "pickup_time",
+            "dropoff_date",
+            "total_price"
+        ]
+    },
+    {
+        "name": "FindBus",
+        "description": "Find a bus itinerary between cities for a given date",
+        "required_parameters": [
+            "origin",
+            "destination",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "fare_type": "Economy",
+            "group_size": "1"
+        },
+        "result_parameters": [
+            "origin",
+            "destination",
+            "origin_station_name",
+            "destination_station_name",
+            "departure_date",
+            "price",
+            "departure_time",
+            "group_size",
+            "fare_type"
+        ]
+    },
+    {
+        "name": "BuyBusTicket",
+        "description": "Buy tickets for a bus itinerary",
+        "required_parameters": [
+            "origin",
+            "destination",
+            "departure_date",
+            "departure_time",
+            "group_size"
+        ],
+        "optional_parameters": {
+            "fare_type": "Economy"
+        },
+        "result_parameters": [
+            "origin",
+            "destination",
+            "origin_station_name",
+            "destination_station_name",
+            "departure_date",
+            "price",
+            "departure_time",
+            "group_size",
+            "fare_type"
+        ]
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "description": "Search for one-way flights to a destination",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "SearchRoundtripFlights",
+        "description": "Search for round-trip flights to a destination",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "departure_date",
+            "return_date"
+        ],
+        "optional_parameters": {
+            "airlines": "dontcare",
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "ReserveOnewayFlight",
+        "description": "Reserve a one-way flight",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "airlines",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    },
+    {
+        "name": "ReserveRoundtripFlights",
+        "description": "Reserve a round-trip flight",
+        "required_parameters": [
+            "origin_city",
+            "destination_city",
+            "airlines",
+            "departure_date",
+            "return_date",
+            "outbound_departure_time",
+            "inbound_departure_time"
+        ],
+        "optional_parameters": {
+            "refundable": "dontcare",
+            "passengers": "1",
+            "seating_class": "Economy"
+        },
+        "result_parameters": [
+            "passengers",
+            "seating_class",
+            "origin_city",
+            "destination_city",
+            "origin_airport",
+            "destination_airport",
+            "departure_date",
+            "return_date",
+            "number_stops",
+            "outbound_departure_time",
+            "outbound_arrival_time",
+            "inbound_arrival_time",
+            "inbound_departure_time",
+            "price",
+            "refundable",
+            "airlines"
+        ]
+    }
+]

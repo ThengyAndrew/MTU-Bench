@@ -1,0 +1,11 @@
+user: I want to search for an one-way flight with United Airlines and I need to book it from March 3rd.
+function: 
+Thought: Missing destination_city. I can't call the function.
+observation: 
+assistant: : To which city do you want to plan to visit?
+user: search for the flight to Seattle, WA.
+function: 
+Thought: Missing origin_city. I can't call the function.
+observation: 
+assistant: : Let me know from which City do you want the flight to leave? so that I can search for the suitable one.
+User: I am planning to leave from ATL, search for the flight from here.

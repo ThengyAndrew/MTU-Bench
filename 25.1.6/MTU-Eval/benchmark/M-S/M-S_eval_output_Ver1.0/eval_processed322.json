@@ -1,0 +1,37 @@
+{
+    "query": [
+        {
+            "user": "I need a place to sleep so I would like to book one room in a hotel.",
+            "function": "",
+            "Thought": "The user is requesting a hotel room booking but hasn't provided specific details such as check-in date or hotel name, which are necessary to proceed with a booking request.",
+            "observation": "",
+            "assistant": ": Can you tell me when you will be going there? Is there a specific hotel you would like to make a booking?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Find a hotel at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I'm considering renting a property.",
+        "Assistant": "Great. Could you provide me with a bit more detail? Like the location and the preferred number of bedrooms and bathrooms?"
+    },
+    {
+        "User": "I would like a place in New York, with 2 bedrooms and 2 bathrooms.",
+        "Assistant": "Alright. Let me look it up. Is there anything else you need?"
+    },
+    {
+        "User": "Yes, when you find a suitable property, could you share the address with my friend, Mark? Also, could you get a weather update for New York to see what the weather is like?"
+    }
+]

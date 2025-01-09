@@ -1,0 +1,9 @@
+User:  I am thinking of having my hair done this coming weekend, can you assist me?
+Action: {}
+Assistant:  Absolutely, I can help with that. Would you prefer any specific city and any preferences for the stylist?
+
+User:  I am currently in New York City. Find for me a unisex stylist. 
+Action: {"FindProvider": {"city": "New York", "is_unisex": true}}
+Assistant:  I have found several suitable unisex stylists in New York. When do you want to schedule an appointment?
+
+User:  Set an appointment this coming Saturday at 2 PM. And please save the stylist's contact phone number for me for future use.

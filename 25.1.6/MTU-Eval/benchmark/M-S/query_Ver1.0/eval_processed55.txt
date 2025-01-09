@@ -1,0 +1,6 @@
+user: help me with my bank account are you there mr. bot?
+function: 
+Thought: The user requires assistance with his bank account. As an Assistant, I need an account number to proceed.
+observation: 
+assistant: : I need your bank account number first.
+User: it is 3838234

@@ -1,0 +1,29 @@
+{
+    "query": [],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "LookupMusic",
+                "description": "Search for a song based on the name and optionally other attributes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMedia",
+                "description": "Play a song by its name and optionally artist",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

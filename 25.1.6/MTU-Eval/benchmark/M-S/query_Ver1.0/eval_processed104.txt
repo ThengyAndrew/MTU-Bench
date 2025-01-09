@@ -1,0 +1,6 @@
+user: Hello. I need help managing my contacts.
+function: 
+Thought: The user wants to manage contacts. May need to engage APIs related to contact management depending on the specifics of the request.
+observation: 
+assistant: : What do you need?
+User: Could you please delete one of my phone numbers?

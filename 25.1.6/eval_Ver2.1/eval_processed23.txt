@@ -1,0 +1,9 @@
+User:  I'm in the mood for some music.
+Action: {}
+Assistant:  Sure thing! What genre of music are you in the mood for?
+
+User:  Hmm, let me think about it.
+Action: {}
+Assistant:  Take your time.
+
+User:  I'd love to listen to some jazz. And can you play it on my TV?

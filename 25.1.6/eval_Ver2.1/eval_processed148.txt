@@ -1,0 +1,5 @@
+User:  Hey, could you assist me with couple of things?
+Action: {}
+Assistant:  Of course, what can I assist you with?
+
+User:  Can you provide me with the weather forecast?

@@ -1,0 +1,4 @@
+User:  Hey, I want to give a rating to the book I just finished reading.
+Action: {}
+Assistant:  Sure, I can help with that. Which book do you want to rate?
+User:  The book is The Adventures of Augie March.

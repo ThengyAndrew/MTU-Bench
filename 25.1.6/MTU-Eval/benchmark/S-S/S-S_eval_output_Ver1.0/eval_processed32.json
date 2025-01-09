@@ -1,0 +1,29 @@
+{
+    "query": "Can you find and play some Metalcore music by Our Last Night on my TV?",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "GetAlarms",
+                "description": "Get the alarms user has already set",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "AddAlarm",
+                "description": "Set a new alarm",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

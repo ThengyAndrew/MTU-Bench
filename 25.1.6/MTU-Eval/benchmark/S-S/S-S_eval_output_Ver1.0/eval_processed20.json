@@ -1,0 +1,77 @@
+{
+    "query": "I need to search for a Gynecologist in San Francisco.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "BookAppointment",
+                "description": "Book an appointment with a specific doctor for the given date and time",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ttt",
+                "description": "Find a medical service provider based on their location and speciality",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "GetRide",
+                "description": "Book a cab for any destination, number of seats and ride type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Explore movies online based on your preferences",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMovie",
+                "description": "Watch the movie instantly online with your preferred subtitles",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Discover movies by genre, director and actors",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

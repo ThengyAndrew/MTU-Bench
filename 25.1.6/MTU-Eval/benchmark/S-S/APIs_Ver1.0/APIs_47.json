@@ -1,0 +1,90 @@
+[
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment at a hair stylist, The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+        "required_parameters": [
+            "stylist_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "stylist_name",
+            "phone_number",
+            "average_rating",
+            "is_unisex",
+            "street_address",
+            "appointment_date",
+            "appointment_time"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Search for a hair stylist by city and optionally other attributes",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "is_unisex": "dontcare"
+        },
+        "result_parameters": [
+            "stylist_name",
+            "phone_number",
+            "average_rating",
+            "is_unisex",
+            "street_address",
+            "city"
+        ]
+    },
+    {
+        "name": "ReserveRestaurant",
+        "description": "Make a table reservation at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "location",
+            "time"
+        ],
+        "optional_parameters": {
+            "number_of_seats": "2",
+            "date": "2019-03-01"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "number_of_seats",
+            "price_range",
+            "location",
+            "category"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find restaurants by location and by category",
+        "required_parameters": [
+            "category",
+            "location"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_seating_outdoors": "dontcare",
+            "has_vegetarian_options": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "has_seating_outdoors",
+            "has_vegetarian_options",
+            "phone_number",
+            "rating",
+            "address",
+            "price_range",
+            "location",
+            "category"
+        ]
+    }
+]

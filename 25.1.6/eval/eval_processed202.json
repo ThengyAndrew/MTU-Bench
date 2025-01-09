@@ -1,0 +1,38 @@
+[
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment with a specific doctor for the given date and time. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "doctor_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "appointment_date",
+            "appointment_time",
+            "type"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Find a medical service provider based on their location and speciality. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "city",
+            "type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "city",
+            "type"
+        ]
+    }
+]

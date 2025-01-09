@@ -1,0 +1,13 @@
+User:  I am looking for medical help.
+Action: {}
+Assistant:  Sure, can I assist you in finding a specialist doctor?
+
+User:  Yes, I need a cardiologist.
+Action: {"FindProvider": {"type": "cardiologist"}}
+Assistant:  Okay, could you also tell me the city where you are looking for the cardiologist?
+
+User:  I am looking for one in New York.
+Action: {"FindProvider": {"city": "New York", "type": "cardiologist"}}
+Assistant:  Alright, I found a few doctors for you. Would you like me to book an appointment as well?
+
+User:  Yes, can you book an appointment at 11 a.m. on January 5th?

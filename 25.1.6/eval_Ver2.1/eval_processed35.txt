@@ -1,0 +1,7 @@
+User:  Hey, I need some medical assistance.
+Action: {}
+Assistant:  Sure, How can I help you?
+User:  I am looking for a dentist.
+Action: {}
+Assistant:  Ok, may I know in which city are you looking for a dentist?
+User:  New York. Also, I need to book an appointment with them for February 3rd at 1 PM.

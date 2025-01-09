@@ -1,0 +1,18 @@
+user: I need a room at a two star hotel.
+function: 
+Thought: The user's request lacks a destination which is necessary to search for hotels. I can't proceed without this information.
+observation: 
+assistant: : In which city?
+user: I want a hotel in vancouver.
+function: 
+Thought: The user has now provided a destination, Vancouver. I need to search for a 2 star hotel in Vancouver.
+Action: SearchHotel 
+Action Input: {'destination': 'Vancouver', 'star_rating': '2'}
+observation: : {'destination': 'Vancouver', 'has_wifi': 'False', 'hotel_name': 'Atrium Inn Vancouver', 'number_of_rooms': '2', 'phone_number': '+1 604-254-1000', 'price_per_night': '204', 'star_rating': '2', 'street_address': '2889 East Hastings Street'}
+assistant: : Atrium Inn Vancouver is a nice 2 star hotel.
+user: That would be fine.
+function: 
+Thought: No API call required. The user seems satisfied with the hotel choice.
+observation: : {'destination': 'Vancouver', 'has_wifi': 'False', 'hotel_name': 'Atrium Inn Vancouver', 'number_of_rooms': '2', 'phone_number': '+1 604-254-1000', 'price_per_night': '204', 'star_rating': '2', 'street_address': '2889 East Hastings Street'}
+assistant: : Would you like to reserve the room?
+User: Yes, but not now. I need a bus for two people that would be leaving Portland on the 5th.

@@ -1,0 +1,6 @@
+user: Add alarms
+function: 
+Thought: The user wants to add an alarm. I need to find out which alarm the user want to add.
+observation: 
+assistant: : Alarm to add?
+User: one for 9 pm tonight

@@ -1,0 +1,9 @@
+User:  I am wondering if you have functionality to fetch temperature from different rooms in my house?
+Action: {}
+Assistant:  Of course, I can help with that. Which room are you interested in knowing the temperature of?
+
+User:  I want to know the temperature in my living room.
+Action: {"get_current_temperature": {"location": "living room"}}
+Assistant:  Sure, one moment while I fetch that information for you.
+
+User:  Once you get that, can you set the temperature of my bedroom to match that of the living room?

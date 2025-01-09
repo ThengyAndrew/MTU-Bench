@@ -1,0 +1,16 @@
+user: I would like to check my balance.
+function: 
+Thought: Missing account_type. I can't call the function.
+observation: 
+assistant: : The balance in which account?
+user: What is underneath the Denver Airport?
+function: 
+Thought: The user's question does not require an API call but rather general knowledge.
+observation: 
+assistant: : There are baggage transport tunnels underneath the Denver Airport.
+user: Are there any secret tunnels or bunkers?
+function: 
+Thought: The user's question does not require an API call but relates to conspiracy theories and specific knowledge.
+observation: 
+assistant: : Yes, there have been theories about secret tunnels and bunkers, but no verified evidence to support those claims.
+User: What's with the weird art in the airport?

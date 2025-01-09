@@ -1,0 +1,10 @@
+User:  Hey, can you tell me what the weather is like someplace?
+Action: {}
+Assistant:  Sure, where do you want to know the weather forecast for?
+User:  Milleville Beach. Also another thing, 
+Action: {"GetWeather": {"city": "milleville beach"}}
+Assistant:  Okay, The weather forecast for Milleville beach is.... What else can I assist you with?
+User:  Can you play some music? I want to hear something by Fink, from the top list on Zvooq.
+Action: {"PlayMusic": {"artist": "fink", "sort": "top", "service": "zvooq"}}
+Assistant:  Sure, playing top songs by Fink on Zvooq.
+User:  what will the weather be in milleville beach and then can you play top zvooq by fink

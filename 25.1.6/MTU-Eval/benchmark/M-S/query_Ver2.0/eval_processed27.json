@@ -1,0 +1,11 @@
+[
+    {
+        "user": "Hi! I need to find the restaurant Pizza Express Fen Ditton.",
+        "function": "",
+        "Thought": "The user wants to locate Pizza Express in Fen Ditton. To fulfill the request, I'll use the SearchRestaurant API with the restaurant's name as the input.",
+        "Action": "SearchRestaurant",
+        "Action Input": "{\"name\": \"Pizza Express Fen Ditton\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"Pizza Express Fen Ditton\"}",
+        "assistant": ": OK, I've found Pizza Express Fen Ditton. Would you like the phone number or address for that?"
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "name": "SearchTrain",
+        "description": "Searches for train information including pricing, schedules, and duration.",
+        "required_parameters": [
+            {
+                "name": "departure",
+                "description": "Starting location of the train journey"
+            },
+            {
+                "name": "destination",
+                "description": "Final destination of the train journey"
+            },
+            {
+                "name": "return_info",
+                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "day",
+                "description": "The date for the train search"
+            },
+            {
+                "name": "leaveAt",
+                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+            },
+            {
+                "name": "arriveBy",
+                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+            },
+            {
+                "name": "trainID",
+                "description": "Specific train identifier"
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "BookTrain",
+        "description": "Enables users to book train tickets.",
+        "required_parameters": [
+            {
+                "name": "people",
+                "description": "Number of passengers for the booking"
+            },
+            {
+                "name": "trainID",
+                "description": "The identifier of the train to be booked"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "return_info",
+                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array"
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "searchAttraction",
+        "description": "To search for attractions based on name, type, and location, with the capability to specify returned fields.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the attraction."
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "The type of attraction."
+            },
+            {
+                "name": "area",
+                "type": "string",
+                "description": "The location area of the attraction."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "A list specifying the fields to be returned. Options can include various attributes of the attractions.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    }
+]

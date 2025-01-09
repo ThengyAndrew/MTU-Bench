@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I would like to manage my music.",
+        "Assistant": "Sure. What would you like to do with your music?"
+    },
+    {
+        "User": "Add a track to my playlist.",
+        "Assistant": "Ok, what's the name of the track and the playlist?"
+    },
+    {
+        "User": "Add \"Hands Up\" to my playlist \"Popular\". And also, I want to hear a symphony from 2013."
+    }
+]

@@ -1,0 +1,13 @@
+User:  I would like to update one of my playlists and also play some music.
+Action: {}
+Assistant:  Of course, I can help with that. Which playlist would you like to update?
+
+User: Add My spotlight on country 2016 playlist.
+Action: {}
+Assistant:  Alright. Who is the artist you want to add?
+
+User:  And after, I would like to listen to some new music from a certain artist on Slacker.
+Action: {}
+Assistant:  Okay, could you tell me the name of the artist?
+
+User:  Les Vandyke.

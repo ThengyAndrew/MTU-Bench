@@ -1,0 +1,15 @@
+user: Can you help me find an Afghan restaurant on the west side of town?
+function: 
+Thought: The user has requested to find an Afghan restaurant on the west side of the city. I need to search the restaurant database with the specified parameters.
+Action: SearchRestaurant
+Action Input: {"food": "Afghan", "area": "west", "return_info": ["all"]}
+observation: : {"name": "", "address": "", "phone": ""}
+assistant: : There are no listings for an Afghan restaurant on the west side. Would you like to try a different area or cuisine?
+user: Try a different cuisine. Just an expensive restaurant.
+function: 
+Thought: The user wants to find an expensive restaurant on the west side but is open to different cuisines. I will search for such restaurants based on price range and location.
+Action: SearchRestaurant
+Action Input: {"priceRange": "expensive", "area": "west", "return_info": ["all"]}
+observation: : {"food": ["Thai","European", "Indian", "British"]]]}
+assistant: : I have restaurants specializing in Thai food, Indian, European or British food. Which would you prefer?
+User: Indian food please. What are the options?

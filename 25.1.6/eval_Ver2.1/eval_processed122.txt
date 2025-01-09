@@ -1,0 +1,4 @@
+User:  Hi, could you assist me with finding a rental property?
+Action: {}
+Assistant:  Of course, I'd be happy to help. Could you provide me with some details about the kind of property you're looking for?
+User:  Yes, I'm particularly interested in a house with 3 bedrooms and 2 bathrooms. Also, it's important for me that it has a garage but doesn't have in-unit laundry.

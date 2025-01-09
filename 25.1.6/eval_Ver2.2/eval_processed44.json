@@ -1,0 +1,13 @@
+[
+    {
+        "User": "Hey, I need some help finding a local dental professional.",
+        "Assistant": "Sure, where are you located? And do you need any specific kind of dental work?"
+    },
+    {
+        "User": "Yes, I'm in San Francisco and I need a dentist who can do cosmetic dental procedures.",
+        "Assistant": "I found a few options for you. Would you like to book an appointment with any of them?"
+    },
+    {
+        "User": "Yes, I would like to book an appointment. Also, can you help me set a reminder for this appointment?"
+    }
+]

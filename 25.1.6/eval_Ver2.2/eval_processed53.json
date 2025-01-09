@@ -1,0 +1,21 @@
+[
+    {
+        "User": "I want to book an appointment.",
+        "Assistant": "Ok, what kind of appointment do you want to make?"
+    },
+    {
+        "User": "I need to schedule a visit to a dentist.",
+        "Assistant": "Sure, where do you want to schedule your dentist appointment?"
+    },
+    {
+        "User": "Book it in New York City. Also, I need a dentist who provides cosmetic services.",
+        "Assistant": "I found a dentist that matches your requirements. Would you like to book the appointment now?"
+    },
+    {
+        "User": "Yes, I want the appointment for 2 pm on 2024-05-05. Can you also please add the dentist's contact to my contact list?",
+        "Assistant": "I have booked your appointment and added the contact to your list. Do you need to set a reminder for this appointment?"
+    },
+    {
+        "User": "Yes, please set the reminder 2 hours  with address before the appointment."
+    }
+]

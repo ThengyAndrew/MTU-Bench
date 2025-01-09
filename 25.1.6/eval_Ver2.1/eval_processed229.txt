@@ -1,0 +1,5 @@
+User:  Hi, I need assistance with two tasks.
+Action: {}
+Assistant:  Of course. Can you please tell me what you want me to do?
+
+User:  Firstly, I need you to fetch an appointment for a specific user.

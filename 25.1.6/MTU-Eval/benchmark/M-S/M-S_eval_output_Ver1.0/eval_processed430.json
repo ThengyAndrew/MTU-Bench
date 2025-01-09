@@ -1,0 +1,104 @@
+{
+    "query": [
+        {
+            "user": "Would you search round trip flights for me?",
+            "function": "",
+            "Thought": "The user wants to search for round-trip flights, but the departure date is missing. I can't call the function without it.",
+            "observation": "",
+            "assistant": ": When are you leaving?"
+        },
+        {
+            "user": "I am leaving to LA on 10th.",
+            "function": "",
+            "Thought": "Now I have the departure date, but I still need to know the origin city before I can search for flights.",
+            "observation": "",
+            "assistant": ": Where are you departing from?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchOnewayFlight",
+                "description": "Search for one-way flights to a destination",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for round-trip flights to a destination",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveOnewayFlight",
+                "description": "Reserve a one-way flight",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRoundtripFlights",
+                "description": "Reserve a round-trip flight",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Search for a hotel based on location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "FindAttractions",
+                "description": "Browse attractions in a given city",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

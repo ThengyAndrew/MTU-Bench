@@ -1,0 +1,17 @@
+[
+    {
+        "User": "Could you assist me with a couple of tasks involving music and a book?",
+        "Assistant": "Of course. Could you please specify what you need help with?"
+    },
+    {
+        "User": "Well, I have this album I'd like to add to my playlist.",
+        "Assistant": "Sure, could you please tell me which playlist you want to add the album to?"
+    },
+    {
+        "User": "It's the might and myth power metal playlist. Also, I just finished reading this textbook and I want to rate it.",
+        "Assistant": "Ok. Please let me know how would you like to rate the textbook."
+    },
+    {
+        "User": "I want to rate it a one."
+    }
+]

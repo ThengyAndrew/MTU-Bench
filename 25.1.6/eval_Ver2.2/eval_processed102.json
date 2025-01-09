@@ -1,0 +1,13 @@
+[
+    {
+        "User": "I need your help to manage my plans.",
+        "Assistant": "Sure, what can I assist you with?"
+    },
+    {
+        "User": "Can you check if there is a schedule in my diary?",
+        "Assistant": "Yes, I can do that. Do you know the name of this schedule?"
+    },
+    {
+        "User": "Yes, the name of the event is \"Go to swim\". When that event is there, I also need you to set an alarm for 3:00 PM of that day."
+    }
+]

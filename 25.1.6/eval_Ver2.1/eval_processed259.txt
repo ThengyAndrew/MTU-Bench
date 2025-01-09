@@ -1,0 +1,9 @@
+User:  I need to arrange a dinner.
+Action: {}
+Assistant:  Sure. How many people are in your party?
+
+User:  Party of 9 please.
+Action: {"BookRestaurant": {"party_size_number": "9"}}
+Assistant:  Ok, I've booked for 9. Is there anything else you need?
+
+User:  Will the sun be out in a minute in a specific location plus I need a suggestion for a new read.

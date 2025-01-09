@@ -1,0 +1,8 @@
+user: Can you help me find a restaurant that serves indian food in the centre?
+function: 
+Thought: The user is looking for an Indian restaurant in the center. An appropriate API call to the restaurant search service is required to find such a restaurant.
+Action: SearchRestaurant
+Action Input: {"food": "indian", "area": "centre", "return_info": ["all"]}
+observation: : {"name": "The Kohinoor", "address": "15 Downing Street, Centre", "phone": "0123456789", "food": "indian"}
+assistant: : Yes, I have found one. Can I get the price range you would like?
+User: I'm not concerned with price. I do need a reservation for 7 at 15:30 on Wednesday.

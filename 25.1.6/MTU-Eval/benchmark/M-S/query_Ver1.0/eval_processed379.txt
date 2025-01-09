@@ -1,0 +1,6 @@
+user: I'd like to find a room at at two star hotel.
+function: 
+Thought: The user wants to find a room at a two-star hotel, but the destination is missing. I can't provide hotel options without knowing the location.
+observation: 
+assistant: : Where will you be staying?
+User: I will be in NY.

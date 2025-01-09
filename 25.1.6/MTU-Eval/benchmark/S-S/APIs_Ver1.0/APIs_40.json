@@ -1,0 +1,58 @@
+[
+    {
+        "name": "PlayMedia",
+        "description": "Play the music",
+        "required_parameters": [
+            "track"
+        ],
+        "optional_parameters": {
+            "artist": "dontcare",
+            "device": "Living room",
+            "album": "dontcare"
+        },
+        "result_parameters": [
+            "track",
+            "artist",
+            "album",
+            "genre",
+            "year",
+            "device"
+        ]
+    },
+    {
+        "name": "LookupMusic",
+        "description": "Discover songs matching your taste",
+        "required_parameters": [],
+        "optional_parameters": {
+            "artist": "dontcare",
+            "album": "dontcare",
+            "genre": "dontcare",
+            "year": "dontcare"
+        },
+        "result_parameters": [
+            "track",
+            "artist",
+            "album",
+            "genre",
+            "year"
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    }
+]

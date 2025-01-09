@@ -1,0 +1,13 @@
+User:  Hello, I need to find a house.
+Action: {}
+Assistant:  Sure, could you please provide more details about the house you are looking for?
+
+User:  Certainly. I am looking for a place to rent in San Francisco. It should have 3 bedrooms and 2 bathrooms.
+Action: {}
+Assistant:  Okay. And do you require any specific amenities, such as a garage or in-unit laundry?
+
+User:  Yes, that would be nice. I need a garage and in-unit laundry.
+Action: {}
+Assistant:  Okay. I will find a house that meets your requirements.
+
+User:  Once you find it, please share the location with my friend John and let me know the weather there.

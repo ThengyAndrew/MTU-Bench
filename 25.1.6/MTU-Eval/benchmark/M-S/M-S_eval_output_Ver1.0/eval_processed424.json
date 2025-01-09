@@ -1,0 +1,94 @@
+{
+    "query": [
+        {
+            "user": "Can you find me one-way flights?",
+            "function": "",
+            "Thought": "Missing destination_city, origin_city, departure_date. I can't call the function.",
+            "observation": "",
+            "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+        },
+        {
+            "user": "I will be leaving from San Fran and going to LA this Saturday.",
+            "function": "",
+            "Thought": "The user wants to find one-way flights from San Francisco to Los Angeles on a specific date. I need to use the provided information to make an API call.",
+            "Action": "SearchOnewayFlight",
+            "Action Input": "{'departure_date': '2024-01-09', 'destination_city': 'Los Angeles', 'origin_city': 'San Francisco'}",
+            "observation": ": {'airlines': 'Alaska Airlines', 'departure_date': '2024-01-09', 'destination_airport': 'LAX International Airport', 'destination_city': 'Los Angeles', 'number_stops': '0', 'origin_airport': 'SFO International Airport', 'origin_city': 'San Francisco', 'outbound_arrival_time': '21:45', 'outbound_departure_time': '20:20', 'passengers': '1', 'price': '100', 'refundable': 'False', 'seating_class': 'Economy'}",
+            "assistant": ": There is an Alaska Airlines flight available. The outbound flight leaves at 8:20 pm with 0 stops. This tickets costs $100."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchOnewayFlight",
+                "description": "Search for one-way flights to a destination",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for round-trip flights to a destination",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveOnewayFlight",
+                "description": "Reserve a one-way flight",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveRoundtripFlights",
+                "description": "Reserve a round-trip flight",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Find a hotel at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

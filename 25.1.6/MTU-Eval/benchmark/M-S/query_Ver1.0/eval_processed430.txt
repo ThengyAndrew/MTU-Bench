@@ -1,0 +1,11 @@
+user: Would you search round trip flights for me?
+function: 
+Thought: The user wants to search for round-trip flights, but the departure date is missing. I can't call the function without it.
+observation: 
+assistant: : When are you leaving?
+user: I am leaving to LA on 10th.
+function: 
+Thought: Now I have the departure date, but I still need to know the origin city before I can search for flights.
+observation: 
+assistant: : Where are you departing from?
+User: I am departing Portland, OR.

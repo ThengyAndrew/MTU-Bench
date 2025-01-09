@@ -1,0 +1,156 @@
+ID: M-M_1_1 | Action: get_current_temperature
+ID: M-M_1_1 | Input: {"location": "living room"}
+ID: M-M_1_2 | Action: adjust_room_temperature
+ID: M-M_1_2 | Input: {"temperature": "get_current_temperature.temperature", "location": "bedroom"}
+ID: M-M_2_2 | Action: set_alarm
+ID: M-M_2_2 | Input: {"time": "06:30", "recurrence": ["weekdays"]}
+ID: M-M_3_3 | Action: reserve_book
+ID: M-M_3_3 | Input: {"book_title": "War and Peace", "card_number": 123456}
+ID: M-M_3_2 | Input: {"account_number": "123456", "payment_amount": 50.0, "payment_method": "credit card"}
+ID: M-M_2_3 | Input: {
+    "time": "06:30", 
+    "recurrence": ["weekdays"],
+    "sound": "waves"
+}
+ID: M-M_4_1 | Input: {"time": "19:00"}
+ID: M-M_5_1 | Input: {"time": "07:00"}
+ID: M-M_6_2 | Action: LookupSong
+ID: M-M_6_2 | Input: {"genre": "jazz"}
+ID: M-M_3_1 | Action: User_Prompt
+ID: M-M_3_1 | Input: {"prompt_message": "Could you please provide me with your library ID?"}
+ID: M-M_7_1 | Input: {"city": "user_defined_city"}
+ID: M-M_5_2 | Action: change_alarm_name
+ID: M-M_5_2 | Input: {"time": "07:00", "new_name": "Morning Workout"}
+ID: M-M_4_2 | Input: {"time": "19:00", "current_name": "My alarm", "new_name": "Workout"}
+ID: M-M_7_2 | Action: FindProvider
+ID: M-M_7_2 | Input: {"city": "New York"}
+ID: M-M_9_2 | Input: {
+  "city": "New York",
+  "type": "Cardiologist"
+}
+ID: M-M_11_1 | Input: {"city": "New York City", "is_unisex": true}
+ID: M-M_10_2 | Input: {"city": "New York", "type": "dentist"}
+ID: M-M_8_2 | Action: FindEvents
+ID: M-M_8_2 | Input: {"event_type": "concert", "city": "New York"}
+ID: M-M_12_0 | Input: {"city":"Seattle"}
+ID: M-M_13_1 | Input: {"city":"San Francisco", "offers_cosmetic_services": true}
+ID: M-M_11_2 | Action: BookAppointment
+ID: M-M_11_2 | Input: {"stylist_name": "FindProvider.stylist_name", "appointment_date": "2022-06-18", "appointment_time": "14:00"}
+ID: M-M_12_2 | Input: {"dentist_name": "FindProvider.dentist_name", "appointment_time": "10:00", "appointment_date": "2022-02-02"}
+ID: M-M_13_3 | Input: {"dentist_name": "FindProvider.dentist_name", "appointment_time": "14:00", "appointment_date": "2022-03-01"}
+ID: M-M_15_3 | Input: {"dentist_name": "FindProvider.dentist_name", "appointment_date": "2024-05-05", "appointment_time": "2 pm"}
+ID: M-M_16_1 | Input: {"city": "New York", "type": "Cardiologist"}
+ID: M-M_15_2 | Input: {"city": "New York", "offers_cosmetic_services": true}
+ID: M-M_15_4 | Action: set_appointment_reminder
+ID: M-M_15_4 | Input: {"appointment_name": "Dental appointment", "appointment_date": "BookAppointment.appointment_date", "appointment_time": "BookAppointment.appointment_time", "appointment_address": "BookAppointment.address", "reminder_time": "2 hours before"}
+ID: M-M_16_3 | Input: {"doctor_name": "FindProvider.doctor_name", "appointment_time": "11:00", "appointment_date": "2022-01-05"}
+ID: M-M_16_4 | Action: add_new_contact
+ID: M-M_16_4 | Input: {"contact_name": "FindProvider.doctor_name", "phone_number": "BookAppointment.phone_number"}
+ID: M-M_17_1 | Input: {"city": "New York", "type": "dermatologist"}
+ID: M-M_16_2 | Input: {"city": "New York", "type": "cardiologist"}
+ID: M-M_19_2 | Action: FindHomeByArea
+ID: M-M_19_2 | Input: {"area": "Seattle", "intent": "rent", "number_of_beds": 3, "number_of_baths": 2}
+ID: M-M_17_2 | Input: {"doctor_name": "FindProvider.doctor_name", "appointment_time": "user-provided appointment time", "appointment_date": "user-provided appointment date"}
+ID: M-M_18_3 | Input: {"time": "15:00", "sound": "Let it be by The Beatles"}
+ID: M-M_17_3 | Input: {"doctor_name": "FindProvider.doctor_name", "appointment_time": "9:00", "appointment_date": "2022-04-23"}
+ID: M-M_18_2 | Input: {"artist": "The Beatles", "song_name": "Let it be"}
+ID: M-M_21_1 | Action: get_account_balance
+ID: M-M_21_1 | Input: {"account_number": "User's account number"}
+ID: M-M_19_3 | Action: GetWeather
+ID: M-M_19_3 | Input: {"city": "Seattle"}
+ID: M-M_21_3 | Input: {"account_number": "123456"}
+ID: M-M_20_2 | Input: {"area": "San Francisco", "intent": "rent", "number_of_beds": 3, "number_of_baths": 2, "has_garage": true, "in_unit_laundry": true}
+ID: M-M_24_1 | Action: apply_for_membership
+ID: M-M_24_1 | Input: {"city_of_residence": "New York"}
+ID: M-M_24_2 | Action: get_book_status
+ID: M-M_24_2 | Input: {"book_title": "Life of Pi"}
+ID: M-M_25_2 | Action: get_user_appointments
+ID: M-M_25_2 | Input: {"name": "Business Trip to San Francisco"}
+ID: M-M_22_2 | Input: {"time": "07:00", "recurrence": ["Friday"]}
+ID: M-M_23_2 | Action: get_alarm
+ID: M-M_23_2 | Input: {"time": "08:00", "recurrence": ["tomorrow"]}
+ID: M-M_26_2 | Input: {"artist": "Queen"}
+ID: M-M_30_1 | Input: {"city": "New York", "is_unisex": true}
+ID: M-M_27_2 | Input: {"name": "Annual Conference"}
+ID: M-M_28_3 | Input: {"account_number": "17528472632"}
+ID: M-M_29_2 | Input: {"name": "Go to swim"}
+ID: M-M_30_2 | Input: {"stylist_name": "FindProvider.stylist_name", "appointment_time": "14:00", "appointment_date": "2022-09-30"}
+ID: M-M_31_3 | Input: {"event_type": "concert", "city": "Los Angeles"}
+ID: M-M_33_0 | Input: {"city": "San Francisco"}
+ID: M-M_33_1 | Input: {"city": "San Francisco", "offers_cosmetic_services": true}
+ID: M-M_32_2 | Input: {"name": "Dentist"}
+ID: M-M_32_3 | Action: SearchOnewayFlight
+ID: M-M_32_3 | Input: {"origin_city": "New York", "destination_city": "San Francisco", "departure_date": "previous_get_user_appointments.appointment_date"}
+ID: M-M_35_2 | Input: {
+  "area": "Boston",
+  "intent": "rent",
+  "number_of_beds": 3,
+  "number_of_baths": 2,
+  "has_garage": true,
+  "in_unit_laundry": false
+}
+ID: M-M_33_2 | Input: {"dentist_name": "FindProvider.dentist_name", "appointment_time": "10:00", "appointment_date": "2022-02-09"}
+ID: M-M_36_2 | Input: {"city": "Toronto","type": "Dermatology"}
+ID: M-M_34_2 | Input: {"artist": "Taylor Swift"}
+ID: M-M_33_3 | Input: {"appointment_name": "Dental appointment", "appointment_date": "BookAppointment.appointment_date", "appointment_time": "BookAppointment.appointment_time", "reminder_time": "2 hours before"}
+ID: M-M_37_2 | Input: {"year": "2019"}
+ID: M-M_38_2 | Input: {"area": "New York", "intent": "rent", "number_of_beds": 2, "number_of_baths": 1}
+ID: M-M_43_3 | Action: PlayMusic
+ID: M-M_43_3 | Input: {"artist": "Rahsaan Patterson"}
+ID: M-M_42_2 | Input: {
+  "geographic_poi": "Delaware and Lehigh National Heritage Corridor"
+}
+ID: M-M_40_2 | Input: {"event_type": "play", "city": "New York", "event_name": "Romeo and Juliet"}
+ID: M-M_44_2 | Input: {"artist": "{artist_name}
+ID: M-M_47_1 | Input: {"service": "streaming service"}
+ID: M-M_47_2 | Action: SearchScreeningEvent
+ID: M-M_47_2 | Input: {"movie_name": "The Great Gildersleeve", "object_location_type": "movie house"}
+ID: M-M_49_2 | Input: {"artist": "Louis Nelson Delisle", "album": "Another Passenger"}
+ID: M-M_49_1 | Input: {"geographic_poi": "Custer National Forest", "timeRange": "seven pm"}
+ID: M-M_48_2 | Action: AddToPlaylist
+ID: M-M_48_2 | Input: {"playlist": "Popular", "entity_name": "Hands Up"}
+ID: M-M_49_4 | Input: {"timeRange": "seven pm", "geographic_poi": "Custer National Forest"}
+ID: M-M_51_2 | Input: {"artist": "Fink", "service": "Zvooq"}
+ID: M-M_51_3 | Input: {"city": "Milleville beach"}
+ID: M-M_52_2 | Input: {"movie_name": "What a Wonderful Place", "location_name": "Cinemark Theatres"}
+ID: M-M_54_1 | Input: {"city": "User_Location", "is_unisex": true}
+ID: M-M_56_1 | Input: {"city": "New York City"}
+ID: M-M_58_1 | Input: {"city": "user_city", "type": "cardiology"}
+ID: M-M_56_2 | Input: {
+  "city": "New York City",
+  "offers_cosmetic_services": true
+}
+ID: M-M_59_1 | Input: {"offers_cosmetic_services": true}
+ID: M-M_55_3 | Input: {"city": "New York", "date": "FindEvents.date"}
+ID: M-M_56_3 | Input: {"city": "New York City", "offers_cosmetic_services": true}
+ID: M-M_58_2 | Input: {"city": "Phoenix", "type": "cardiology"}
+ID: M-M_61_3 | Input: {"contact_name": "FindProvider.dentist_name", "phone_number": "FindProvider.phone_number", "address": "FindProvider.address"}
+ID: M-M_63_1 | Input: {"area": "New York", "intent": "rent", "number_of_beds": 2, "number_of_baths": 2}
+ID: M-M_57_2 | Input: {"account_number": "239267492492"}
+ID: M-M_64_0 | Input: {"city_of_residence": "user_city_residence"}
+ID: M-M_62_2 | Input: {"event_type": "drama", "city": "New York"}
+ID: M-M_66_0 | Action: api_extract_info
+ID: M-M_66_0 | Input: {"prompt": "Can you please tell me the city where you currently reside?"}
+ID: M-M_64_2 | Input: {"book_title": "Twenty Thousand Leagues Under the Sea."}
+ID: M-M_65_2 | Action: PlaySong
+ID: M-M_65_2 | Input: {"song_name": "LookupSong.song_name"}
+ID: M-M_66_1 | Input: {"city_of_residence": "San Francisco"}
+ID: M-M_66_3 | Input: {"book_title": "To Kill a Mockingbird"}
+ID: M-M_65_1 | Input: {"genre": "pop"}
+ID: M-M_68_2 | Input: {"stylist_name": "FindProvider.stylist_name", "appointment_date": "2023-01-08", "appointment_time": "08:00"}
+ID: M-M_70_1 | Input: {"event_type": "music", "city": "New York"}
+ID: M-M_71_2 | Input: {"artist": "Red Hot Chili Peppers"}
+ID: M-M_67_2 | Input: {"name": "xxx"}
+ID: M-M_72_2 | Input: {"playlist": "Masters of Metal", "entity_name": "A Very Cellular Song"}
+ID: M-M_72_4 | Input: {"object_name": "To Lose My Life"}
+ID: M-M_71_3 | Input: {"song_name": "LookupSong.song_name", "artist": "LookupSong.artist"}
+ID: M-M_74_1 | Input: {"geographic_poi": "Southford Falls State Park"}
+ID: M-M_73_1 | Action: BookRestaurant
+ID: M-M_73_1 | Input: {"poi": "seagoville","party_size_number": "5","restaurant_name":"restaurant name","timeRange":"time for reservation"}
+ID: M-M_75_2 | Input: {
+    "playlist": "beryl's party on fridays", 
+    "entity_name": "abacab"
+}
+ID: M-M_76_2 | Action: SearchCreativeWork
+ID: M-M_76_2 | Input: {"object_type": "book"}
+ID: M-M_78_1 | Input: {"location": "Paris"}

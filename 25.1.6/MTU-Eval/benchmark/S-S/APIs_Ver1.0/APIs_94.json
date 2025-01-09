@@ -1,0 +1,45 @@
+[
+    {
+        "name": "BookHouse",
+        "description": "Book the selected house for given dates and number of adults",
+        "required_parameters": [
+            "where_to",
+            "number_of_adults",
+            "check_in_date",
+            "check_out_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "where_to",
+            "number_of_adults",
+            "check_in_date",
+            "check_out_date",
+            "rating",
+            "address",
+            "phone_number",
+            "total_price",
+            "has_laundry_service"
+        ]
+    },
+    {
+        "name": "SearchHouse",
+        "description": "Find a house at a given location",
+        "required_parameters": [
+            "where_to"
+        ],
+        "optional_parameters": {
+            "rating": "dontcare",
+            "has_laundry_service": "dontcare",
+            "number_of_adults": "dontcare"
+        },
+        "result_parameters": [
+            "where_to",
+            "number_of_adults",
+            "rating",
+            "address",
+            "phone_number",
+            "total_price",
+            "has_laundry_service"
+        ]
+    }
+]

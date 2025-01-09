@@ -1,0 +1,5 @@
+User:  I need to find a healthcare provider.
+Action: {}
+Assistant:  Sure, what kind of healthcare provider are you looking for?
+
+User:  I need a dentist.

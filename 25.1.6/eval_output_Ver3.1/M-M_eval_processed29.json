@@ -1,0 +1,41 @@
+{
+    "query": [
+        {
+            "User": "Hi, I need some assistance with a music concert.",
+            "Assistant": "Sure! How can I assist you with that?"
+        },
+        {
+            "User": "I need to know when a concert is happening in a city.",
+            "Assistant": "Okay, which city are you referring to?"
+        },
+        {
+            "User": "In New York. Also, could you check the weather forecast for that day?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindEvents",
+                "description": "Find cultural events - concerts and plays - happening in a city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "BuyEventTickets",
+                "description": "Buy tickets for a cultural event and date in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

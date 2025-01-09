@@ -1,0 +1,182 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "New York",
+            "number_of_rooms": "1",
+            "has_wifi": "yes",
+            "star_rating": "2"
+        }
+    },
+    {
+        "name": "FindBus",
+        "arguments": {
+            "from_city": "Sacramento",
+            "to_city": "San Diego",
+            "departure_date": "2024-01-10",
+            "num_passengers": "5",
+            "category": "economy"
+        }
+    },
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "Atlanta"
+        }
+    },
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "cuisine": "Chinese",
+            "city": "San Francisco"
+        }
+    },
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "restaurant_name": "<retrieved_restaurant_name>",
+            "city": "San Francisco",
+            "time": "12 pm",
+            "date": "2024-03-05",
+            "party_size": "2"
+        }
+    },
+    {
+        "name": "AddEvent",
+        "arguments": {
+            "event_name": "Food",
+            "event_date": "2024-03-05",
+            "event_location": "<retrieved_restaurant_name>, San Francisco",
+            "event_time": "12 pm"
+        }
+    },
+    {
+        "name": "GetLibraryAccountLateFees",
+        "arguments": {
+            "accountNumber": "1245521"
+        }
+    },
+    {
+        "name": "ttt",
+        "arguments": {
+            "city": "San Francisco",
+            "type": "Gynecologist"
+        }
+    },
+    {
+        "name": "ccc",
+        "arguments": {
+            "pickup_city": "Paris",
+            "pickup_date": "2022-03-10",
+            "pickup_time": "3 PM",
+            "dropoff_date": "2022-03-13",
+            "type": "Standard"
+        }
+    },
+    {
+        "name": "aaa",
+        "arguments": {
+            "area": "Vacaville",
+            "number_of_beds": "3",
+            "furnished": "true",
+            "pets_allowed": "true"
+        }
+    },
+    {
+        "name": "BuyBusTicket",
+        "arguments": {
+            "from_location": "Las Vegas",
+            "to_location": "Sacramento",
+            "leaving_date": "2023-11-10",
+            "leaving_time": "<any suitable time>",
+            "travelers": "1"
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "A Song of Fire and Ice"
+        }
+    },
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "centre",
+            "food": "Indian"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Oakland",
+            "type": "General Practitioner"
+        }
+    },
+    {
+        "name": "CheckBalance",
+        "arguments": {
+            "account_type": "savings"
+        }
+    },
+    {
+        "name": "FindAttractions",
+        "arguments": {
+            "location": "Chicago"
+        }
+    },
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "music",
+            "city": "Chicago",
+            "date": "March 12th"
+        }
+    },
+    {
+        "name": "GetCarsAvailable",
+        "arguments": {
+            "pickup_city": "Portland, OR",
+            "pickup_date": "2024-03-08",
+            "pickup_time": "15:30",
+            "dropoff_date": "2024-03-12",
+            "type": "Intermediate"
+        }
+    },
+    {
+        "name": "FindApartment",
+        "arguments": {
+            "area": "Richmond",
+            "number_of_beds": 2,
+            "furnished": "yes"
+        }
+    },
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "836 Alturas Avenue #7",
+            "number_of_seats": 1,
+            "ride_type": "regular"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "Los Angeles",
+            "destination_city": "San Diego",
+            "departure_date": "2024-03-05"
+        }
+    },
+    {
+        "name": "FindMovies",
+        "arguments": {
+            "genre": "fantasy",
+            "directed_by": "Neil Marshall"
+        }
+    },
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "genre": "Pop"
+        }
+    }
+]

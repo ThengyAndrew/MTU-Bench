@@ -1,0 +1,8 @@
+user: I'm in the mood for some music. Can you find me some Jon Pardi songs?
+function: 
+Thought: The user is asking for songs by Jon Pardi. I should look up music by this artist.
+Action: LookupMusic
+Action Input: {'artist': 'Jon Pardi'}
+observation: : {'album': 'California Sunrise', 'artist': 'Jon Pardi', 'genre': 'Country', 'song_name': 'Head Over Boots'}
+assistant: : Sure, what about Head Over Boots by Jon Pardi off the California Sunrise album?
+User: Let's try something else. Do you have anything by Our Last Night? I like Metalcore music.
