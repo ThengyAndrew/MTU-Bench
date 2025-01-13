@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-Version = 2.0
+Version = 3.0
 
 folder_path = f'query_Ver{Version}'
 
@@ -31,18 +31,29 @@ while number <=472:
 
                     # 提取角色和消息
 
+                    # for part in parts:
+                    #     if part.startswith("user:") or part.startswith("User:"):
+                    #         role_message = {}
+                    #         role_message["user"] = part[len("user:"):].strip()
+                    #     elif part.startswith("assistant:"):
+                    #         role_message["assistant"] =  part[len("assistant:"):].strip()
+                    #         dialog_history.append(role_message)
+                    #     else:
+                    #         name = re.match(f'([^:]+):(.+)', part)
+                    #         print(name.group(1))
+                    #         print(name.group(2))
+                    #         role_message[name.group(1)] = name.group(2)[1:]
+                    role_message = {}
                     for part in parts:
                         if part.startswith("user:") or part.startswith("User:"):
+                            if role_message:
+                                dialog_history.append(role_message)
                             role_message = {}
                             role_message["user"] = part[len("user:"):].strip()
                         elif part.startswith("assistant:"):
                             role_message["assistant"] =  part[len("assistant:"):].strip()
-                            dialog_history.append(role_message)
-                        else:
-                            name = re.match(f'([^:]+):(.+)', part)
-                            print(name.group(1))
-                            print(name.group(2))
-                            role_message[name.group(1)] = name.group(2)[1:]
+                    if role_message:
+                        dialog_history.append(role_message)
 
             json.dump(dialog_history, json_file, indent=4, ensure_ascii=False)
 

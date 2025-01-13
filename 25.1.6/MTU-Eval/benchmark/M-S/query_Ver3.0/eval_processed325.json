@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I'm interested in any boats on the westside.",
+        "assistant": ": There are no boats on the west side of town right now, do you have something else you'd like to try?"
+    },
+    {
+        "user": "Okay what about any attraction that is in the type of college and if available may i have the entrance fee, phone number and postcode.",
+        "assistant": ": There are a number of colleges in the west. I suggest Magdalene College on Magdalene Street, CB30AG. The phone is 01223332138. Entrance is free."
+    },
+    {
+        "user": "Sure, I am going to be travelling from Leicester to Cambridge on Monday. I need to arrive by 13:00.",
+        "assistant": ": I found 7 trains that match your criteria. How early do you want to leave? We have trains running every hour from 05:09 to 11:09."
+    },
+    {
+        "user": "Can you book 2 tickets for a train that arrives closest to 13:00 please?"
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "Los Angeles",
+            "has_wifi": "True",
+            "number_of_rooms": "1",
+            "star_rating": "1"
+        }
+    }
+]

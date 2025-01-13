@@ -1,0 +1,8 @@
+[
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "genre": "Pop"
+        }
+    }
+]

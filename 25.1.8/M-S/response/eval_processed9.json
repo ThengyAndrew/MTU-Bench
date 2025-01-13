@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Milton Country Park",
+            "return_info": [
+                "phone"
+            ]
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I'm looking for a hotel called hamilton lodge.",
+        "assistant": ": Hamilton Lodge is on the north side of town, in the moderate price range and awarded 3 stars. Do you need more information?"
+    },
+    {
+        "user": "What's the hotel type, postcode, and star of the hotel?"
+    }
+]

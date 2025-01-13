@@ -1,0 +1,93 @@
+[
+    {
+        "query": [
+            {
+                "user": "Find me a place to eat at?",
+                "assistant": ": Do you like American, Indian or some other type of food?"
+            },
+            {
+                "user": "I want some Chinese food.",
+                "assistant": ": What city do you want?"
+            },
+            {
+                "user": "Search in SF.",
+                "assistant": ": Search revealed 10 locations. Alice's serves Chinese in San Francisco."
+            },
+            {
+                "user": "That is great.",
+                "assistant": ": Do you need more help?"
+            },
+            {
+                "user": "Reserve me a table there."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRestaurant",
+                    "description": "Reserve a table at a restaurant",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindRestaurants",
+                    "description": "Find a restaurant of a particular cuisine in a city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetEvents",
+                    "description": "Get list of all calendar events for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetAvailableTime",
+                    "description": "Get a list of available times for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "AddEvent",
+                    "description": "Add event to the user's calendar",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

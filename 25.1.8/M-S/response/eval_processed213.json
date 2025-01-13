@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "swimming pool",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

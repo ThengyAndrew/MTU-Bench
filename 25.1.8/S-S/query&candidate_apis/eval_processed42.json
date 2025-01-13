@@ -1,0 +1,29 @@
+{
+    "query": "I'm looking for a country music event in Chicago.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindMovies",
+                "description": "Explore movies online based on your preferences",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlayMovie",
+                "description": "Watch the movie instantly online with your preferred subtitles",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

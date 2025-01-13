@@ -1,0 +1,29 @@
+[
+    {
+        "user": "Can you help me find a bus?",
+        "assistant": ": Where are you leaving from?"
+    },
+    {
+        "user": "I need 1 ticket from Fresno, CA to Vegas.",
+        "assistant": ": When are you leaving?"
+    },
+    {
+        "user": "I am leaving next Monday.",
+        "assistant": ": I found 10 options. First, an economy seat on a bus leaving at 7:20 am. The ticket cost is $44."
+    },
+    {
+        "user": "What is the name of the station I am leaving from?",
+        "assistant": ": You are leaving from Fresno Station."
+    },
+    {
+        "user": "Which station does the bus arrive at?",
+        "assistant": ": You will arrive at Union Plaza."
+    },
+    {
+        "user": "That sound great. I need bus tickets. Yes, that is perfect!",
+        "assistant": ": Your ticket is confirmed."
+    },
+    {
+        "user": "Thank you! I need a hotel too."
+    }
+]

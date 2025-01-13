@@ -1,0 +1,9 @@
+[
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "playback_device": "kitchen speaker",
+            "song_name": "Oblivion"
+        }
+    }
+]

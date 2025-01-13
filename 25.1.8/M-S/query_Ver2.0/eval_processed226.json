@@ -1,0 +1,11 @@
+[
+    {
+        "user": "Tuesday and I need a train to leave after 16:45 from cambridge to Ely please .",
+        "function": "",
+        "Thought": "The user is requesting a train schedule for a departure on Tuesday after 16:45. I need to query the train schedule database to find available trains that match this requirement.",
+        "Action": "SearchTrain",
+        "Action Input": "{\"day\": \"Tuesday\", \"leaveAt\": \"16:45\", \"departure\": \"cambridge\", \"destination\": \"ely\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"trainID\": \"TR7733\", \"leaveAt\": \"17:50\"}",
+        "assistant": ": Yes, there is a train available, the TR7733, and leaves at 17:50. Would you like me to book this?"
+    }
+]

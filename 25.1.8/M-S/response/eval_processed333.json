@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "airlines": "Southwest Airlines",
+            "departure_date": "2024-03-01",
+            "destination_city": "London",
+            "origin_city": "New York",
+            "passengers": "3",
+            "flight_class": "Economy"
+        }
+    }
+]

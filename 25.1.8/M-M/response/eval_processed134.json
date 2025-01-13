@@ -1,0 +1,11 @@
+[
+    {
+        "name": "FindHomeByArea",
+        "arguments": {
+            "area": "Seattle",
+            "intent": "rent",
+            "number_of_beds": "3",
+            "number_of_baths": "2"
+        }
+    }
+]

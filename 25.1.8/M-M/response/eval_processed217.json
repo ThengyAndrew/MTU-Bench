@@ -1,0 +1,15 @@
+[
+    {
+        "name": "ShareLocation",
+        "arguments": {
+            "location": "FindHomeByArea.address",
+            "contact_name": "Mark"
+        }
+    },
+    {
+        "name": " GetWeather",
+        "arguments": {
+            "city": "New York"
+        }
+    }
+]

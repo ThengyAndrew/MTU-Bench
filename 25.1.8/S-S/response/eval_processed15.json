@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "internet": "True",
+            "parking": "True",
+            "type": "guesthouse",
+            "priceRange": "cheap",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

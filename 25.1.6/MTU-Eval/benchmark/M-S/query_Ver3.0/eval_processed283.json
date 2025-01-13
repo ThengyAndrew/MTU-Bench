@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you help me find a bus?",
+        "assistant": ": Where are you leaving from?"
+    },
+    {
+        "user": "I need 1 ticket from Fresno, CA to Vegas."
+    }
+]

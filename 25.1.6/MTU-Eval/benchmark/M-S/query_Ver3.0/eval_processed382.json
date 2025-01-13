@@ -1,0 +1,25 @@
+[
+    {
+        "user": "I'd like to find a room at at two star hotel.",
+        "assistant": ": Where will you be staying?"
+    },
+    {
+        "user": "I will be in NY.",
+        "assistant": ": There are 10 2 star hotels you might like. May I suggest 1 Hotel Brooklyn Bridge?"
+    },
+    {
+        "user": "Can you tell me where it is located and what the price per night is?",
+        "assistant": ": It is $240 per night and is located at 60 Furman Street, Brooklyn."
+    },
+    {
+        "user": "What other options are there?",
+        "assistant": ": 1 Hotel Central Park is another 2 star hotel."
+    },
+    {
+        "user": "I'm not crazy about that location. What else is available?",
+        "assistant": ": 11 Howard street has a 2 star rating."
+    },
+    {
+        "user": "That will work. Can you help me find three bus tickets there on the 3rd of March?"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "jesus green outdoor pool",
+            "return_info": [
+                "phone",
+                "postcode"
+            ]
+        }
+    }
+]

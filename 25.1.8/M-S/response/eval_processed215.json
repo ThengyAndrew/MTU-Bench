@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "parking": "true",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

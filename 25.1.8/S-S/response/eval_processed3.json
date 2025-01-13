@@ -1,0 +1,14 @@
+[
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "day": "Saturday",
+            "time": "18:42",
+            "name": "The Slug and Lettuce",
+            "people": 5,
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

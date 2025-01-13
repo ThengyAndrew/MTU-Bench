@@ -1,0 +1,25 @@
+[
+    {
+        "user": "I want to find some neat events coming up.",
+        "assistant": ": Is there any particular category, like music or sports or movies? And what city or area should I look in?"
+    },
+    {
+        "user": "I'll be in Seattle. Maybe sports or games?",
+        "assistant": ": The Huskies vs Cougars basketball game is happening at Husky Stadium next Tuesday, starting at 8 pm."
+    },
+    {
+        "user": "That sounds okay, but could you look for something else? Maybe something on the 12th around Vancouver, BC.",
+        "assistant": ": There is 1 event at BC Place on March 12th. The game is the Whitecaps vs Kansas City starting at 6 pm."
+    },
+    {
+        "user": "That sounds like a great game.",
+        "assistant": ": Would you like to purchase tickets for that event?"
+    },
+    {
+        "user": "Yes, and I'll just need one ticket. Yes, that sounds perfect.",
+        "assistant": ": Your ticket has been purchased. Enjoy the game."
+    },
+    {
+        "user": "Great. Thanks. I don't think I need anything else."
+    }
+]

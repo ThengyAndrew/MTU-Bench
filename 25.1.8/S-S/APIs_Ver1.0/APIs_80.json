@@ -1,0 +1,91 @@
+[
+    {
+        "name": "FindEvents",
+        "description": "Find concerts and games happening in your area",
+        "required_parameters": [
+            "event_type",
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "dontcare",
+            "category": "dontcare"
+        },
+        "result_parameters": [
+            "event_type",
+            "category",
+            "event_name",
+            "date",
+            "time",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "GetEventDates",
+        "description": "Get dates on which a given event is taking place",
+        "required_parameters": [
+            "event_name",
+            "city"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_name",
+            "date",
+            "time",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "BuyEventTickets",
+        "description": "Buy tickets for an event",
+        "required_parameters": [
+            "event_name",
+            "number_of_tickets",
+            "date",
+            "city"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_name",
+            "date",
+            "time",
+            "number_of_tickets",
+            "city",
+            "venue",
+            "venue_address"
+        ]
+    },
+    {
+        "name": "CheckBalance",
+        "description": "Check the amount of money in a user's bank account",
+        "required_parameters": [
+            "account_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "account_type",
+            "balance"
+        ]
+    },
+    {
+        "name": "TransferMoney",
+        "description": "Transfer money from one bank account to another user's account",
+        "required_parameters": [
+            "account_type",
+            "amount",
+            "recipient_account_name"
+        ],
+        "optional_parameters": {
+            "recipient_account_type": "checking"
+        },
+        "result_parameters": [
+            "account_type",
+            "recipient_account_type",
+            "amount",
+            "recipient_account_name"
+        ]
+    }
+]

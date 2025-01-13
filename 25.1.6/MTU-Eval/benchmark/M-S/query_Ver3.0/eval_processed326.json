@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I need a place to sleep so I would like to book one room in a hotel.",
+        "assistant": ": Can you tell me when you will be going there? Is there a specific hotel you would like to make a booking?"
+    },
+    {
+        "user": "I will be going at the hotel on Friday next week. I would enjoy having a room at Kimpton Hotel Palomar Los Angeles Beverly Hills.",
+        "assistant": ": Can you tell me the number of days you need the room for? Do you have a specific city where you would like the hotel to be situated?"
+    },
+    {
+        "user": "I will need the room for 2 days and for the hotel to be in LAX. That suits me well. Do they have a phone number I can use to call them? Can you tell me if the hotel has wifi?"
+    }
+]

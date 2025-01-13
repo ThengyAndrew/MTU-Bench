@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": 9,
+            "parking": "True",
+            "internet": "True",
+            "type": "guesthouse",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "departure_date": "2024-01-10",
+            "return_date": "2024-01-13",
+            "destination_city": "Mexico",
+            "origin_city": "Washington",
+            "passengers": "4",
+            "seating_class": "Economy"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "park",
+            "area": "north",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

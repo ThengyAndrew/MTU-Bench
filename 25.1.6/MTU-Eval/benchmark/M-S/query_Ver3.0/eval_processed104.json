@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Hello. I need help managing my contacts.",
+        "assistant": ": What do you need?"
+    },
+    {
+        "user": "Could you please delete one of my phone numbers?"
+    }
+]

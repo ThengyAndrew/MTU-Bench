@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveHotel",
+        "arguments": {
+            "check_in_date": "2024-01-15",
+            "destination": "Los Angeles",
+            "hotel_name": "Kimpton Hotel Palomar Los Angeles Beverly Hills",
+            "number_of_days": "2",
+            "number_of_rooms": "1"
+        }
+    }
+]

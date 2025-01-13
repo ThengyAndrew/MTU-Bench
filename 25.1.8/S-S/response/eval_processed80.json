@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "city": "Chicago",
+            "date": "2024-03-12",
+            "event_type": "Music"
+        }
+    }
+]

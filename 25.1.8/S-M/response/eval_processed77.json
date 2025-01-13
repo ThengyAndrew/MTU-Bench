@@ -1,0 +1,16 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "category": "Chinese",
+            "location": "New York"
+        }
+    },
+    {
+        "name": "ShareLocation",
+        "arguments": {
+            "location": "FindRestaurants.address",
+            "contact_name": "Bob"
+        }
+    }
+]

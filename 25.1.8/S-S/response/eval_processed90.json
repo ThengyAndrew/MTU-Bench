@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "Campbell",
+            "cuisine": "Italian",
+            "price_range": "moderate"
+        }
+    }
+]

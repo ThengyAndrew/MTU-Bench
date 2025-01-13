@@ -1,0 +1,9 @@
+[
+    {
+        "name": "delete_appointment",
+        "arguments": {
+            "appointment_date": "2024-01-12",
+            "appointment_time": "14:00"
+        }
+    }
+]

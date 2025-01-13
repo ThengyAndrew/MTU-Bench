@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "3",
+            "type": "guesthouse",
+            "area": "Cambridge",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

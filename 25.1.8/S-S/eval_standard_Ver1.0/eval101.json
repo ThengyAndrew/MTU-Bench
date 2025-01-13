@@ -1,0 +1,68 @@
+[
+    {
+        "query": "I need to find an affordable round trip flight from Washington to Mexico for 4 people, departing on the 10th and returning on the 13th of this month.",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one-way flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for round-trip flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveOnewayFlight",
+                    "description": "Reserve a one-way flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRoundtripFlights",
+                    "description": "Reserve a round-trip flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchRoundtripFlights",
+                "arguments": {
+                    "departure_date": "2024-01-10",
+                    "return_date": "2024-01-13",
+                    "destination_city": "Mexico",
+                    "origin_city": "Washington",
+                    "passengers": "4",
+                    "seating_class": "Economy"
+                }
+            }
+        ]
+    }
+]

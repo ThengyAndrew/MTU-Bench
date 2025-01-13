@@ -1,0 +1,45 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.stylist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "sort": "highly rated",
+            "party_size_number": 10
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "condition_description": "rain",
+            "timeRange": "one hour from now",
+            "country": "south korea"
+        }
+    },
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "doctor"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "New York",
+            "destination_city": "Los Angeles",
+            "departure_date": "get_user_appointments.appointment_date",
+            "passengers": "1"
+        }
+    }
+]

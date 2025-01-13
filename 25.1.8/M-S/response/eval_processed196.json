@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "parking": true,
+            "type": "guesthouse",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

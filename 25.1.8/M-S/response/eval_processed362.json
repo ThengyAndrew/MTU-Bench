@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

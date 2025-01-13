@@ -1,0 +1,16 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "New York",
+            "date": "FindEvents.date"
+        }
+    }
+]

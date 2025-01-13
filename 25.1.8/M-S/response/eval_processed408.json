@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "San Francisco",
+            "cuisine": "Brazilian",
+            "price_range": "expensive"
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "30 St Mary Axe (The Gherkin)",
+            "number_of_riders": "3",
+            "shared_ride": "True"
+        }
+    }
+]

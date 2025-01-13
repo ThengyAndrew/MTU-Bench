@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "638 El Camino Real",
+            "number_of_seats": "1",
+            "ride_type": "Luxury"
+        }
+    }
+]

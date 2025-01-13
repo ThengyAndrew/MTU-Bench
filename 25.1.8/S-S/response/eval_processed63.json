@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "area": "west side of town",
+            "priceRange": "expensive",
+            "food": "Indian",
+            "return_info": [
+                "postcode",
+                "name"
+            ]
+        }
+    }
+]

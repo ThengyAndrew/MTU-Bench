@@ -1,0 +1,11 @@
+[
+    {
+        "name": "FindBus",
+        "arguments": {
+            "from_location": "Portland",
+            "leaving_date": "2024-01-05",
+            "to_location": "Vancouver",
+            "travelers": "2"
+        }
+    }
+]

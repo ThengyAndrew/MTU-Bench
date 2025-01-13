@@ -8,7 +8,7 @@ Upper_limit = 472
 
 OBJECT = f"M-S"
 
-query_folder_path = f"query_Ver2.0"
+query_folder_path = f"query_Ver3.0"
 folder_path = f'{OBJECT}_eval_output_Ver{Version}'
 
 # 检查文件夹是否存在，不存在则创建

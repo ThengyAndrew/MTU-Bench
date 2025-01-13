@@ -1,0 +1,83 @@
+[
+    {
+        "query": [
+            {
+                "user": "I would like to check my balance.",
+                "assistant": ": The balance in which account?"
+            },
+            {
+                "user": "What is underneath the Denver Airport?",
+                "assistant": ": There are baggage transport tunnels underneath the Denver Airport."
+            },
+            {
+                "user": "Are there any secret tunnels or bunkers?",
+                "assistant": ": Yes, there have been theories about secret tunnels and bunkers, but no verified evidence to support those claims."
+            },
+            {
+                "user": "What's with the weird art in the airport?",
+                "assistant": ": The art at Denver Airport, including murals and sculptures, has sparked various interpretations and conspiracy theories, but it primarily aims to celebrate Colorado's history and the natural beauty of the American West."
+            },
+            {
+                "user": "I would like the balance of my savings account."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "CheckBalance",
+                    "description": "Check the amount of money in a user's bank account",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "TransferMoney",
+                    "description": "Transfer money from one bank account to another user's account",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindMovies",
+                    "description": "Find movies by genre and optionally director",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "PlayMovie",
+                    "description": "Play the selected movie",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "CheckBalance",
+                "arguments": {
+                    "account_type": "savings"
+                }
+            }
+        ]
+    }
+]

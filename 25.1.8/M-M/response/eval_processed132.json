@@ -1,0 +1,18 @@
+[
+    {
+        "name": "FindHomeByArea",
+        "arguments": {
+            "area": "New York",
+            "intent": "rent",
+            "number_of_beds": "2",
+            "number_of_baths": "1"
+        }
+    },
+    {
+        "name": " ShareLocation",
+        "arguments": {
+            "location": "FindHomeByArea.address",
+            "contact_name": "John Doe"
+        }
+    }
+]

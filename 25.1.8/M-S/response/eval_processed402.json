@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "San Francisco",
+            "date": "2024-03-08",
+            "party_size": "4",
+            "restaurant_name": "Shabu House",
+            "time": "13:30"
+        }
+    }
+]

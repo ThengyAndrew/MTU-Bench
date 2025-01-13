@@ -1,0 +1,21 @@
+[
+    {
+        "user": "Find me a place to eat at?",
+        "assistant": ": Do you like American, Indian or some other type of food?"
+    },
+    {
+        "user": "I want some Chinese food.",
+        "assistant": ": What city do you want?"
+    },
+    {
+        "user": "Search in SF.",
+        "assistant": ": Search revealed 10 locations. Alice's serves Chinese in San Francisco."
+    },
+    {
+        "user": "That is great.",
+        "assistant": ": Do you need more help?"
+    },
+    {
+        "user": "Reserve me a table there."
+    }
+]

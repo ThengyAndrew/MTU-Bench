@@ -1,0 +1,156 @@
+[
+    {
+        "name": "SearchTrain",
+        "description": "Searches for train information including pricing, schedules, and duration.",
+        "required_parameters": [
+            {
+                "name": "departure",
+                "description": "Starting location of the train journey"
+            },
+            {
+                "name": "destination",
+                "description": "Final destination of the train journey"
+            },
+            {
+                "name": "return_info",
+                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "day",
+                "description": "The date for the train search"
+            },
+            {
+                "name": "leaveAt",
+                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+            },
+            {
+                "name": "arriveBy",
+                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+            },
+            {
+                "name": "trainID",
+                "description": "Specific train identifier"
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "BookTrain",
+        "description": "Enables users to book train tickets.",
+        "required_parameters": [
+            {
+                "name": "people",
+                "description": "Number of passengers for the booking"
+            },
+            {
+                "name": "trainID",
+                "description": "The identifier of the train to be booked"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "return_info",
+                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name.",
+                "type": "array"
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "searchHotel",
+        "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "stars",
+                "type": "string",
+                "description": "The hotel rating based on stars."
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "The type of hotel."
+            },
+            {
+                "name": "parking",
+                "type": "boolean",
+                "description": "Availability of parking at the hotel."
+            },
+            {
+                "name": "internet",
+                "type": "boolean",
+                "description": "Availability of internet service at the hotel."
+            },
+            {
+                "name": "area",
+                "type": "string",
+                "description": "The location area of the hotel."
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the hotel."
+            },
+            {
+                "name": "priceRange",
+                "type": "string",
+                "description": "The price range of the hotel."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "A list specifying the fields to be returned.",
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "bookHotel",
+        "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "day",
+                "type": "string",
+                "description": "The booking date."
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The hotel name for the booking."
+            },
+            {
+                "name": "stay",
+                "type": "string",
+                "description": "The number of days to stay at the hotel."
+            },
+            {
+                "name": "people",
+                "type": "string",
+                "description": "The number of people for the booking."
+            },
+            {
+                "name": "return_info",
+                "type": "array",
+                "description": "Fields to be returned after booking.",
+                "options": [
+                    "isSuccess",
+                    "reference"
+                ],
+                "default": [
+                    "all"
+                ]
+            }
+        ],
+        "result_parameters": []
+    }
+]

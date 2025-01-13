@@ -1,0 +1,29 @@
+{
+    "query": "I'm looking for sports events this Saturday in Sydney, Australia, and I need 3 tickets.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "RequestPayment",
+                "description": "Request payment from someone",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "MakePayment",
+                "description": "Send money to your friends",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

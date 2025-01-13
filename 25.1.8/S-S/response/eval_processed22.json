@@ -1,0 +1,11 @@
+[
+    {
+        "name": "aaa",
+        "arguments": {
+            "area": "Vacaville",
+            "number_of_beds": 3,
+            "furnished": "True",
+            "pets_allowed": "True"
+        }
+    }
+]

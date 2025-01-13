@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I have a home automation request",
+        "assistant": ": What is your home automation request?"
+    },
+    {
+        "user": "What is the current house temperature?",
+        "assistant": ": The current house temperature is 80 degrees Fahrenheit."
+    },
+    {
+        "user": "Wow no wonder I'm so warm can you set it to 70?",
+        "assistant": ": I have set the house temperature to 70 degrees Fahrenheit. Would you like to modify it still?"
+    },
+    {
+        "user": "How long will it take for it to feel 70 degrees in here?",
+        "assistant": ": The estimated time is around 5 minutes for the temperature to change to 70 degrees Fahrenheit."
+    },
+    {
+        "user": "Thank you"
+    }
+]

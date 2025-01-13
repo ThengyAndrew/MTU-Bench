@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "type": "guesthouse",
+            "area": "east",
+            "internet": true,
+            "priceRange": "expensive"
+        }
+    }
+]

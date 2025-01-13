@@ -1,0 +1,147 @@
+{
+    "query": [
+        {
+            "User": "Hi, I am residing somewhere and I want to get some new services."
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_book_status",
+                "description": "Retrieves the current availability status of a specific book, indicating whether it is in stock, checked out, or reserved.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "book_title": {
+                            "type": "string",
+                            "description": "The title of the book to check the availability status for."
+                        }
+                    },
+                    "required": [
+                        "book_title"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "renew_books",
+                "description": "Allows a user to extend the borrowing period for books currently checked out, subject to library policies and availability.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "library_number": {
+                            "type": "integer",
+                            "description": "The identifier of the library account."
+                        },
+                        "book_names": {
+                            "type": "string",
+                            "description": "The names of the books to be renewed."
+                        }
+                    },
+                    "required": [
+                        "library_number",
+                        "book_names"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "reserve_book",
+                "description": "Enables a user to place a reservation on a book that is currently loaned out, notifying the user when the book becomes available.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "book_title": {
+                            "type": "string",
+                            "description": "The title of the book to be reserved"
+                        },
+                        "card_number": {
+                            "type": "integer",
+                            "description": "The card number of the user who is reserving the book"
+                        },
+                        "book_format": {
+                            "type": "string",
+                            "description": "The desired format of the book, e.g. hardcover, paperback, ebook etc."
+                        }
+                    },
+                    "required": [
+                        "book_title",
+                        "card_number"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "get_late_fees",
+                "description": "Calculates any late fees accrued on a user¡¯s account for books not returned by their due date, potentially offering breakdowns by book or date range.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "library_ID": {
+                            "type": "integer",
+                            "description": "The unique identifier of a library user's account"
+                        }
+                    },
+                    "required": [
+                        "library_ID"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "apply_for_membership",
+                "description": "Facilitates the process for users to apply for a new membership with the library or bookstore, which may include online forms and submission of required documents.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "city_of_residence": {
+                            "type": "string",
+                            "description": "The city that the user currently resides in"
+                        }
+                    },
+                    "required": [
+                        "city_of_residence"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "make_payment",
+                "description": "Processes payments made by users for various services, including late fees, membership fees, or purchasing books, offering multiple payment methods.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "account_number": {
+                            "type": "string",
+                            "description": "The library account number of the user making the payment."
+                        },
+                        "payment_amount": {
+                            "type": "float",
+                            "description": "The amount to be paid by the user."
+                        },
+                        "payment_method": {
+                            "type": "string",
+                            "description": "The method by which the user chooses to make the payment. Eg. Credit card, PayPal, etc."
+                        }
+                    },
+                    "required": [
+                        "account_number",
+                        "payment_amount",
+                        "payment_method"
+                    ]
+                }
+            }
+        }
+    ]
+}

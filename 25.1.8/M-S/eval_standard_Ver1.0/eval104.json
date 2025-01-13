@@ -1,0 +1,179 @@
+[
+    {
+        "query": [
+            {
+                "user": "Hello. I need help managing my contacts.",
+                "assistant": ": What do you need?"
+            },
+            {
+                "user": "Could you please delete one of my phone numbers?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact",
+                    "description": "This tool permanently removes a contact from the user's contact list by name. It is important to note that once a contact is deleted, it cannot be recovered.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the contact to be deleted from the user's contact list."
+                            }
+                        },
+                        "required": [
+                            "contact_name"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact_number",
+                    "description": "This tool is designed to remove a phone number from a specified contact's detail within the user's contact list. It allows for precise deletion based on the phone number itself or its order among multiple numbers.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The name of the contact from whom the phone number is to be deleted. The full name is required."
+                            },
+                            "contact_number": {
+                                "type": "string",
+                                "description": "The specific phone number to be deleted. If provided, this number is directly targeted for deletion."
+                            },
+                            "number_order": {
+                                "type": "integer",
+                                "description": "If the contact has multiple numbers and no specific number is provided, this parameter specifies the order of the number to delete (e.g., the first number, second number, etc.)."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact_email",
+                    "description": "This tool deletes an email address associated with a specified contact in the user's contact list. This action is irreversible, and the email address cannot be retrieved once deleted.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the contact whose email address is to be deleted."
+                            },
+                            "contact_email": {
+                                "type": "string",
+                                "description": "The specific email address to be deleted, if known. If not provided, the default operation will assume the only or primary email is to be deleted."
+                            },
+                            "email_order": {
+                                "type": "integer",
+                                "description": "Specifies the order of the email address to be deleted if the contact has multiple email addresses. For example, '1' for the primary email, '2' for the secondary, and so on."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "update_contact_information",
+                    "description": "This tool allows for the modification of existing contact information or add more contact details within a user's contact list, such as updating a contact name, phone number, or email address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "The original name of the contact as currently stored in the contact list."
+                            },
+                            "new_information": {
+                                "type": "Dict",
+                                "description": "An object containing the new contact details that need to be updated."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The original phone number of the contact that needs to be replaced."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The original email number of the contact that needs to be replaced."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "new_information"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "add_new_contact",
+                    "description": "This tool allows for the creation of a brand-new contact entry in the user's contact list, using the provided personal information such as name, phone number, email address, and potentially a physical address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the new contact to be added to the contact list."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The phone number associated with the new contact."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The email address of the new contact, if available."
+                            },
+                            "address": {
+                                "type": "string",
+                                "description": "The physical address of the new contact."
+                            }
+                        },
+                        "required": [
+                            "contact_name",
+                            "phone_number"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "search_contact",
+                    "description": "This tool searches the user's contact list for a specific contact based on provided search criteria such as the contact's name, phone number, or email address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name or partial name of the contact to search for."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The phone number of the contact to search for."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The email address of the contact to search for."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

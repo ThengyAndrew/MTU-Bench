@@ -1,0 +1,11 @@
+[
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "departure_date": "2024-03-05",
+            "destination_city": "Atlanta",
+            "origin_city": "Las Vegas",
+            "passengers": "3"
+        }
+    }
+]

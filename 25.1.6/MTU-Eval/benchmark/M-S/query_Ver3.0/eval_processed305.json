@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I'm searching for a flight.",
+        "assistant": ": Which metropolis do you wish to leave from?"
+    },
+    {
+        "user": "Search for flights from Washington.",
+        "assistant": ": What place are you planning on visiting?"
+    },
+    {
+        "user": "I am taking a plane to Atlanta, GA."
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "FindBooks",
+        "arguments": {
+            "book_title": "A Song of Fire and Ice"
+        }
+    }
+]

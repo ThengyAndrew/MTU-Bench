@@ -1,0 +1,9 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "San Jose",
+            "cuisine": "German"
+        }
+    }
+]

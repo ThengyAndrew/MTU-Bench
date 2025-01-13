@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "origin_city": "San Diego",
+            "destination_city": "Sydney",
+            "departure_date": "2024-03-01",
+            "return_date": "2024-03-08",
+            "number_stops": 0
+        }
+    }
+]

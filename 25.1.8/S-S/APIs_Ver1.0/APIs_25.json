@@ -1,0 +1,67 @@
+[
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve rooms at a selected place for given dates",
+        "required_parameters": [
+            "place_name",
+            "check_in_date",
+            "stay_length",
+            "location"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "check_in_date",
+            "stay_length",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Look for accommodation in a city of choice",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "smoking_allowed": "dontcare",
+            "star_rating": "dontcare",
+            "number_of_rooms": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    }
+]

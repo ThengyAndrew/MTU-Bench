@@ -1,0 +1,31 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "type": "Cardiologist"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.doctor_name",
+            "phone_number": "FindProvider.phone_number",
+            "email": "FindProvider.email",
+            "address": "FindProvider.street_address"
+        }
+    },
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "Paris"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "living room"
+        }
+    }
+]

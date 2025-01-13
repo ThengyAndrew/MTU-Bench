@@ -1,0 +1,25 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "type": "dermatologist"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "doctor_name": "FindProvider.doctor_name",
+            "appointment_time": "09:00",
+            "appointment_date": "2024-04-23"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "BookAppointment.doctor_name",
+            "phone_number": "BookAppointment.phone_number",
+            "address": "BookAppointment.street_address"
+        }
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Los Angeles",
+            "offers_cosmetic_services": "true"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "14:00",
+            "appointment_date": "2024-06-15"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist Appointment",
+            "appointment_date": "2024-06-15",
+            "appointment_time": "14:00",
+            "appointment_address": "BookAppointment.address",
+            "reminder_time": "2 hours before"
+        }
+    }
+]

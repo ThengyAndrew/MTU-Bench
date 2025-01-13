@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Hello robot. I need a restaurant.",
+        "assistant": ": Well, what is the place?"
+    },
+    {
+        "user": "Pittsburgh.",
+        "assistant": ": What cuisine type are you interested in?"
+    },
+    {
+        "user": "Thai restaurant."
+    }
+]

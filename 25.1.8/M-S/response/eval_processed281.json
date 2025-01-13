@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "92nd Street Y",
+            "number_of_riders": "2",
+            "shared_ride": "True"
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I need a 3 star hotel in Cambridge, that offers a guesthouse, can you book it for me?",
+        "assistant": ": Yes, Hamilton Lodge is located at 156 Chesterton Road."
+    },
+    {
+        "user": "Before I book, is the guesthouse located in the south part of town and at what price range?",
+        "assistant": ": The hotel is found in the Northern part of town and it is in the moderate price range."
+    },
+    {
+        "user": "Great, can you book that for 1 person for 3 nights starting Friday?"
+    }
+]

@@ -1,0 +1,46 @@
+{
+    "query": [
+        {
+            "User": "Yes, I'm particularly interested in a house with 3 bedrooms and 2 bathrooms. Also, it's important for me that it has a garage but doesn't have in-unit laundry.",
+            "Assistant": "Of course, I'd be happy to help. Could you provide me with some details about the kind of property you're looking for?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "FindHomeByArea",
+                "description": "Search for a property to rent or buy in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ScheduleVisit",
+                "description": "Schedule a visit to a property on a given date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ShareLocation",
+                "description": "Send your location to a contact. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Help me find a hotel in center, I need free parking.",
+        "assistant": ": There are eight results. Is there a certain price range you'd like?"
+    },
+    {
+        "user": "Could you find me one with a star rating of 3?"
+    }
+]

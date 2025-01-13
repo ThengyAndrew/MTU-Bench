@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "museum",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

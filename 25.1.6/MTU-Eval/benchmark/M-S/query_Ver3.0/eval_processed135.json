@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Hi, I have a question.",
+        "assistant": ": What is your question?"
+    },
+    {
+        "user": "Can you check if my back porch light is on?",
+        "assistant": ": I see your back porch light is off."
+    },
+    {
+        "user": "Can you turn it on?"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "3",
+            "priceRange": "cheap",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

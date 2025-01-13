@@ -1,0 +1,9 @@
+[
+    {
+        "name": "FindAttractions",
+        "arguments": {
+            "category": "Performing Venue",
+            "location": "New York"
+        }
+    }
+]

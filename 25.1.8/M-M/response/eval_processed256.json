@@ -1,0 +1,17 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "entity_name": "abacab",
+            "playlist": "beryl's party on fridays"
+        }
+    },
+    {
+        "name": " GetWeather",
+        "arguments": {
+            "condition_description": "humidity",
+            "spatial_relation": "not far from colorado city",
+            "timeRange": "November the 7th 2024"
+        }
+    }
+]

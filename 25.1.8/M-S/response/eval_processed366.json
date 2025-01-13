@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "The Fez Club",
+            "return_info": [
+                "phone",
+                "address",
+                "postcode"
+            ]
+        }
+    }
+]

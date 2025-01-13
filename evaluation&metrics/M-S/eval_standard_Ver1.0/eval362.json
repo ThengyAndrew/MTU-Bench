@@ -1,0 +1,134 @@
+[
+    {
+        "query": [
+            {
+                "user": "i want a place i can watch multiple sports in the centre.",
+                "assistant": ": I did not find any places in the Centre of town. Would you like to try another area?"
+            },
+            {
+                "user": "Are there any nightclubs that I could visit, instead?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchAttraction",
+                    "description": "To search for attractions based on name, type, and location, with the capability to specify returned fields.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the attraction."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of attraction."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the attraction."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned. Options can include various attributes of the attractions."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchHotel",
+                    "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "stars": {
+                                "type": "string",
+                                "description": "The hotel rating based on stars."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of hotel."
+                            },
+                            "parking": {
+                                "type": "boolean",
+                                "description": "Availability of parking at the hotel."
+                            },
+                            "internet": {
+                                "type": "boolean",
+                                "description": "Availability of internet service at the hotel."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the hotel."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the hotel."
+                            },
+                            "priceRange": {
+                                "type": "string",
+                                "description": "The price range of the hotel."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "bookHotel",
+                    "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "day": {
+                                "type": "string",
+                                "description": "The booking date."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The hotel name for the booking."
+                            },
+                            "stay": {
+                                "type": "string",
+                                "description": "The number of days to stay at the hotel."
+                            },
+                            "people": {
+                                "type": "string",
+                                "description": "The number of people for the booking."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Fields to be returned after booking."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "searchAttraction",
+                "arguments": {
+                    "type": "nightclub",
+                    "area": "centre",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

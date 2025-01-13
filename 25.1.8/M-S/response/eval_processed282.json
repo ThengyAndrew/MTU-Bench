@@ -1,0 +1,13 @@
+[
+    {
+        "name": "ReserveOnewayFlight",
+        "arguments": {
+            "airlines": "United Airlines",
+            "departure_date": "2024-03-03",
+            "destination_city": "Seattle",
+            "origin_city": "Atlanta",
+            "passengers": "2",
+            "seating_class": "Economy"
+        }
+    }
+]

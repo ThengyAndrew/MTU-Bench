@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "leverton house",
+            "return_info": [
+                "postcode",
+                "priceRange"
+            ]
+        }
+    }
+]

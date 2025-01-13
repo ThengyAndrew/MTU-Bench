@@ -1,0 +1,105 @@
+[
+    {
+        "query": [
+            {
+                "user": "I need a place to eat that has live music.",
+                "assistant": ": In which city and what kind of cuisine? Would you like Indian, Mexican, or something else?"
+            },
+            {
+                "user": "I am in the mood to eat Mexican food in SF.",
+                "assistant": ": There is 1 such restaurant in San Francisco. I recommend Los Yaquis."
+            },
+            {
+                "user": "Is alcohol served there? What are they located?",
+                "assistant": ": The address is 324 South Van Ness Avenue, and I'm sorry for the confusion but alcohol is not served there."
+            },
+            {
+                "user": "Yes, that would be great.",
+                "assistant": ": Would you like to reserve a table there?"
+            },
+            {
+                "user": "Not right now."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRestaurant",
+                    "description": "Reserve a table at a restaurant",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindRestaurants",
+                    "description": "Find a restaurant of a particular cuisine in a city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookAppointment",
+                    "description": "Book an appointment at a hair stylist, The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindProvider",
+                    "description": "Search for a hair stylist by city and optionally other attributes",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "LookupSong",
+                    "description": "Search for a song",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "PlaySong",
+                    "description": "Play the selected song on the device",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

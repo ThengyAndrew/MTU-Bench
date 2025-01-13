@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "holy trinity",
+            "return_info": [
+                "address"
+            ]
+        }
+    }
+]

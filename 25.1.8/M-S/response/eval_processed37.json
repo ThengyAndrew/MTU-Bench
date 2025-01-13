@@ -1,0 +1,8 @@
+[
+    {
+        "name": "freeze_bank_account",
+        "arguments": {
+            "account_number": "82746453535"
+        }
+    }
+]

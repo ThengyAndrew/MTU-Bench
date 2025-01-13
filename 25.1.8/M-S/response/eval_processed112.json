@@ -1,0 +1,8 @@
+[
+    {
+        "name": "delete_contact_number",
+        "arguments": {
+            "contact_name": "Kimberly Wright"
+        }
+    }
+]

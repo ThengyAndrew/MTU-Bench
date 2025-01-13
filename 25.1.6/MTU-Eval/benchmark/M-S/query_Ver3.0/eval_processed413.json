@@ -1,0 +1,21 @@
+[
+    {
+        "user": "Can you help me find an intermediate priced place to eat?",
+        "assistant": ": Any food specifications? Chinese, American or something else?"
+    },
+    {
+        "user": "I love brazilian food actually",
+        "assistant": ": Which city should I search for it?"
+    },
+    {
+        "user": "I want something in San Francisco.",
+        "assistant": ": Which city should I search for it?"
+    },
+    {
+        "user": "Do you have something expensive?",
+        "assistant": ": Which city should I search for it?"
+    },
+    {
+        "user": "How about some lobster at a place that serves alcohol that in moderate price?"
+    }
+]

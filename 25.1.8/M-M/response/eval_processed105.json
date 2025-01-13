@@ -1,0 +1,18 @@
+[
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "stylist_name": "FindProvider.stylist_name",
+            "appointment_date": "Friday",
+            "appointment_time": "14:00"
+        }
+    },
+    {
+        "name": " add_new_contact",
+        "arguments": {
+            "contact_name": "BookAppointment.stylist_name",
+            "phone_number": "BookAppointment.phone_number",
+            "address": "BookAppointment.street_address"
+        }
+    }
+]

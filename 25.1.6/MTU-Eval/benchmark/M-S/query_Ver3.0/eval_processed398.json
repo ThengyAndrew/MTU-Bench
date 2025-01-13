@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Where can I eat?",
+        "assistant": ": What kind of food do you want? You can say Sushi, Mexican, Italian or another kind of food. Which city shall check in?"
+    },
+    {
+        "user": "Shabu-Shabu is great! Look in SF."
+    }
+]

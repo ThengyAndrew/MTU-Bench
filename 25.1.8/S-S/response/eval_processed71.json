@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Bridge Guest House",
+            "return_info": [
+                "parking"
+            ]
+        }
+    }
+]

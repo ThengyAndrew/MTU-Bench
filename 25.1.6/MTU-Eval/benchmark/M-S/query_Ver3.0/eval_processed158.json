@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I would like to check my balance.",
+        "assistant": ": The balance in which account?"
+    },
+    {
+        "user": "What is underneath the Denver Airport?",
+        "assistant": ": There are baggage transport tunnels underneath the Denver Airport."
+    },
+    {
+        "user": "Are there any secret tunnels or bunkers?",
+        "assistant": ": Yes, there have been theories about secret tunnels and bunkers, but no verified evidence to support those claims."
+    },
+    {
+        "user": "What's with the weird art in the airport?"
+    }
+]

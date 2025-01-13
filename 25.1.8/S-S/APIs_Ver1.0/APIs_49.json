@@ -1,0 +1,34 @@
+[
+    {
+        "name": "FindMovies",
+        "description": "Explore movies online based on your preferences",
+        "required_parameters": [
+            "genre"
+        ],
+        "optional_parameters": {
+            "starring": "dontcare"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitle_language",
+            "starring"
+        ]
+    },
+    {
+        "name": "PlayMovie",
+        "description": "Watch the movie instantly online with your preferred subtitles",
+        "required_parameters": [
+            "title"
+        ],
+        "optional_parameters": {
+            "subtitle_language": "English"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitle_language",
+            "starring"
+        ]
+    }
+]

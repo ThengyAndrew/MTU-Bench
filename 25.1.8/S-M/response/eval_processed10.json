@@ -1,0 +1,42 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "offers_cosmetic_services": "true"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.stylist_name",
+            "phone_number": "FindProvider.phone_number",
+            "address": "FindProvider.street_address"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "i think i do",
+            "timeRange": "7 pm"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "15:00",
+            "appointment_date": "2024-06-15"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist appointment",
+            "appointment_date": "2024-06-15",
+            "appointment_time": "15:00",
+            "appointment_address": "BookAppointment.address",
+            "reminder_time": "2 hours before"
+        }
+    }
+]

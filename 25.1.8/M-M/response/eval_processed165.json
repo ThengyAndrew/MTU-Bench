@@ -1,0 +1,16 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "music_item": "Hands Up",
+            "playlist": "popular"
+        }
+    },
+    {
+        "name": " PlayMusic",
+        "arguments": {
+            "music_item": "symphony",
+            "year": "2013"
+        }
+    }
+]

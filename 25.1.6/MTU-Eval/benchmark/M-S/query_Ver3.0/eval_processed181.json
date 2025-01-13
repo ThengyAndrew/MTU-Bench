@@ -1,0 +1,17 @@
+[
+    {
+        "user": "i am looking for a rental car",
+        "assistant": ": when and what time do you need it? where are you picking up the car?"
+    },
+    {
+        "user": "I need it on later today picking up at 15:00 and return on 5th of January",
+        "assistant": ": where are you picking it up from"
+    },
+    {
+        "user": "i need it in philadelphia",
+        "assistant": ": there is a standard Chevrolet Cruze available on January 4th at PHL International Airport"
+    },
+    {
+        "user": "what would the total be"
+    }
+]

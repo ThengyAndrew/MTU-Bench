@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I would like to check my calendar for the 9th.",
+        "assistant": ": You have a general practitioner appointment that starts at 3 pm."
+    },
+    {
+        "user": "Okay, can you get me a cab there for 4 people?"
+    }
+]

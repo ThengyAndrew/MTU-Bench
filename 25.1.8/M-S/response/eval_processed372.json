@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "Lebanese",
+            "area": "center",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

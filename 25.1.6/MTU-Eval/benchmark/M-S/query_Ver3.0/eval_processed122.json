@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I need some help with managing my home.",
+        "assistant": ": Ok, go ahead."
+    },
+    {
+        "user": "Turn up the heat!",
+        "assistant": ": In which rooms?"
+    },
+    {
+        "user": "Bedroom 1, no, Living Room.",
+        "assistant": ": To what temperature?"
+    },
+    {
+        "user": "50",
+        "assistant": ": Ok, I've turned up the heat for you."
+    },
+    {
+        "user": "Thanks."
+    }
+]

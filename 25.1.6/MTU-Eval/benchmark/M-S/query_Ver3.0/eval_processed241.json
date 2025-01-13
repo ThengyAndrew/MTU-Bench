@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Yes , I 'm looking for a restaurant in the centre what serves world food .",
+        "assistant": ": I 'm sorry , but there are no foods in the centre that serve World Food . Would you like to try another area or a different type of food ?"
+    },
+    {
+        "user": "I would like a gastropub then if you have one open .",
+        "assistant": ": I would suggest The Cow Pizza Kitchen and Bar .   Great food .   It is located on Corn Exchange Street ."
+    },
+    {
+        "user": "What is the price range ?"
+    }
+]

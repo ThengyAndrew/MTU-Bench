@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "sports",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

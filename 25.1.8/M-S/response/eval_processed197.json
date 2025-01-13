@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "day": "Sunday",
+            "leaveAt": "11:00",
+            "departure": "Stansted Airport",
+            "destination": "Cambridge",
+            "return_info": [
+                "Ticket"
+            ]
+        }
+    }
+]

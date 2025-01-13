@@ -1,0 +1,8 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "state": "nebraska"
+        }
+    }
+]

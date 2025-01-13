@@ -1,0 +1,17 @@
+[
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-09"
+        }
+    },
+    {
+        "name": " add_new_contact",
+        "arguments": {
+            "contact_name": "BookAppointment.dentist_name",
+            "phone_number": "BookAppointment.phone_number"
+        }
+    }
+]

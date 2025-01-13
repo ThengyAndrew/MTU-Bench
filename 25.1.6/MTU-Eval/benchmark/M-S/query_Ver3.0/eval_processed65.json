@@ -1,0 +1,13 @@
+[
+    {
+        "user": "help me with my bank account are you there mr. bot?",
+        "assistant": ": I need your bank account number first."
+    },
+    {
+        "user": "it is 3838234",
+        "assistant": ": What do you need from me?"
+    },
+    {
+        "user": "I think someone hacked my bank account. can you check to make sure everything is alright?"
+    }
+]

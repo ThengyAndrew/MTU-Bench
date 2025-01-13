@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I'd like to find a room at at two star hotel.",
+        "assistant": ": Where will you be staying?"
+    },
+    {
+        "user": "I will be in NY."
+    }
+]

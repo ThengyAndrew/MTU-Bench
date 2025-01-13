@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "barbeque",
+            "area": "north",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you show me some attractions I can visit?",
+        "assistant": ": In which city?"
+    },
+    {
+        "user": "In London, England please."
+    }
+]

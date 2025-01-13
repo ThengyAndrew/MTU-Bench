@@ -1,0 +1,17 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Toronto",
+            "type": "Dermatology"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.doctor_name",
+            "phone_number": "FindProvider.phone_number",
+            "address": "FindProvider.street_address"
+        }
+    }
+]

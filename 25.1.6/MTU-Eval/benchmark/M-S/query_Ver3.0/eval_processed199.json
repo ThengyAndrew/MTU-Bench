@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you find me a guesthouse with free parking?",
+        "assistant": ": I have a few guesthouses that offer parking, is there a certain price range you are looking for?"
+    },
+    {
+        "user": "No, anything with availability is fine. I also don't care if it has internet or not."
+    }
+]

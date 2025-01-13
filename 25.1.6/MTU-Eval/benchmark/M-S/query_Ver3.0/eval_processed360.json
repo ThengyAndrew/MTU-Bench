@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you help me find a restaurant that serves indian food in the centre?",
+        "assistant": ": Yes, I have found one. Can I get the price range you would like?"
+    },
+    {
+        "user": "I'm not concerned with price. I do need a reservation for 7 at 15:30 on Wednesday."
+    }
+]

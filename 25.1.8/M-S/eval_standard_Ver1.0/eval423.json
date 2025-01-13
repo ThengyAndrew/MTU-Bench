@@ -1,0 +1,108 @@
+[
+    {
+        "query": [
+            {
+                "user": "Can you find me one-way flights?",
+                "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+            },
+            {
+                "user": "I will be leaving from San Fran and going to LA this Saturday.",
+                "assistant": ": There is an Alaska Airlines flight available. The outbound flight leaves at 8:20 pm with 0 stops. This tickets costs $100."
+            },
+            {
+                "user": "Are there any other flight options?",
+                "assistant": ": There is an American Airlines flight that leaves at 3:50 pm with 0 stops. The ticket will cost $104."
+            },
+            {
+                "user": "That flight seems pretty good to me. Can you help buy me a one-way flight ticket? Yes, that sounds good to me. Just one passenger."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one-way flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for round-trip flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveOnewayFlight",
+                    "description": "Reserve a one-way flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRoundtripFlights",
+                    "description": "Reserve a round-trip flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve a selected hotel for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Find a hotel at a given location",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "ReserveOnewayFlight",
+                "arguments": {
+                    "airlines": "American Airlines",
+                    "departure_date": "2024-01-09",
+                    "destination_city": "Los Angeles",
+                    "origin_city": "San Francisco",
+                    "passengers": "1",
+                    "seating_class": "Economy"
+                }
+            }
+        ]
+    }
+]

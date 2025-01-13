@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "318 Columbus Avenue",
+            "number_of_seats": "2",
+            "ride_type": "Regular"
+        }
+    }
+]

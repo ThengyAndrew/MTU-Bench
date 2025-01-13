@@ -1,0 +1,12 @@
+[
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "dentist's appointment",
+            "appointment_date": "2024-01-25",
+            "appointment_time": "09:00",
+            "appointment_address": "123 first street",
+            "reminder_time": "The night before"
+        }
+    }
+]

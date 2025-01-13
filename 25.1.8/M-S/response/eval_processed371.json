@@ -1,0 +1,14 @@
+[
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "day": "Friday",
+            "time": "13:00",
+            "name": "Ali Baba",
+            "people": "1",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

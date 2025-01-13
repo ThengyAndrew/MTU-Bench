@@ -1,0 +1,17 @@
+[
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_name": "the adventures of augie march",
+            "rating_value": "one",
+            "rating_unit": "points"
+        }
+    },
+    {
+        "name": " SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "what a wonderful place",
+            "location_name": "cinemark theatres"
+        }
+    }
+]

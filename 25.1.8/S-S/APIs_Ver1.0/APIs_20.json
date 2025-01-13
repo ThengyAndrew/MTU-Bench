@@ -1,0 +1,104 @@
+[
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment with a specific doctor for the given date and time",
+        "required_parameters": [
+            "doctor_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "appointment_date",
+            "appointment_time",
+            "type"
+        ]
+    },
+    {
+        "name": "ttt",
+        "description": "Find a medical service provider based on their location and speciality",
+        "required_parameters": [
+            "city",
+            "type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "doctor_name",
+            "phone_number",
+            "average_rating",
+            "street_address",
+            "city",
+            "type"
+        ]
+    },
+    {
+        "name": "GetRide",
+        "description": "Book a cab for any destination, number of seats and ride type",
+        "required_parameters": [
+            "destination",
+            "number_of_seats",
+            "ride_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "destination",
+            "ride_type",
+            "ride_fare",
+            "wait_time",
+            "number_of_seats"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Explore movies online based on your preferences",
+        "required_parameters": [
+            "genre"
+        ],
+        "optional_parameters": {
+            "starring": "dontcare"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitle_language",
+            "starring"
+        ]
+    },
+    {
+        "name": "PlayMovie",
+        "description": "Watch the movie instantly online with your preferred subtitles",
+        "required_parameters": [
+            "title"
+        ],
+        "optional_parameters": {
+            "subtitle_language": "English"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "subtitle_language",
+            "starring"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Discover movies by genre, director and actors",
+        "required_parameters": [],
+        "optional_parameters": {
+            "starring": "dontcare",
+            "director": "dontcare",
+            "genre": "dontcare"
+        },
+        "result_parameters": [
+            "title",
+            "genre",
+            "aggregate_rating",
+            "starring",
+            "director"
+        ]
+    }
+]

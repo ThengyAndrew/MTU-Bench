@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Is Dumbo playing today in Santa Rosa.",
+        "assistant": ": Yes. 1 show at 10 pm at Airport Stadium 12."
+    },
+    {
+        "user": "Could you get me a taxi there? How long is that? What's the fare?",
+        "assistant": ": The car is coming. The ride is 26 minutes and will run you $15.31."
+    },
+    {
+        "user": "Ok great. I'm good to go for now."
+    }
+]

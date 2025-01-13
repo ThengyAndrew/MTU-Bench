@@ -1,0 +1,113 @@
+[
+    {
+        "query": [
+            {
+                "user": "I want to search for an one-way flight with United Airlines and I need to book it from March 3rd.",
+                "assistant": ": To which city do you want to plan to visit?"
+            },
+            {
+                "user": "search for the flight to Seattle, WA.",
+                "assistant": ": Let me know from which City do you want the flight to leave? so that I can search for the suitable one."
+            },
+            {
+                "user": "I am planning to leave from ATL, search for the flight from here.",
+                "assistant": ": Got 1 result. How about an outbound flight with United Airlines with leaves at 5:20 pm with 0 stops for which the ticket cost is $223."
+            },
+            {
+                "user": "Can you check whether the ticket is refundable or not and also let me know about the origin Airport from which the flight will leave.",
+                "assistant": ": Yes, the ticket is refundable and the origin Airport names is Hartsfield-Jackson International Airport."
+            },
+            {
+                "user": "I can select this flight as it is the convenient one. Can you help me to purchase two tickets in that flight? That is okay to proceed. What is the date of arrival of onward flight.",
+                "assistant": ": The onward flight will arrive at 7:52 pm and your tickets are confirmed successfully."
+            },
+            {
+                "user": "Thank you. I need one more help and I want to book rooms in a Hotel with two stars and wifi connection. Please search for the good one.",
+                "assistant": ": How about a hotel like Ace Hotel Seattle with 2 stars?"
+            },
+            {
+                "user": "What is the cost per night in that hotel?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one-way flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for round-trip flights to a destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveOnewayFlight",
+                    "description": "Reserve a one-way flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRoundtripFlights",
+                    "description": "Reserve a round-trip flight",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve a selected hotel for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Find a hotel at a given location",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

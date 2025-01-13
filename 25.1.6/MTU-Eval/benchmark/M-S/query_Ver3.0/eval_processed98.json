@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I need to erase a contact.",
+        "assistant": ": I can erase a contact for you. What is the name?"
+    },
+    {
+        "user": "Gary Glitter, oh sorry, Gary Glitterr.",
+        "assistant": ": There will be no retrieving the details."
+    },
+    {
+        "user": "That is fine. I don't need it"
+    }
+]

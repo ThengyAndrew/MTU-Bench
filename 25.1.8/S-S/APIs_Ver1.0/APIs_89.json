@@ -1,0 +1,63 @@
+[
+    {
+        "name": "FindApartment",
+        "description": "Find an apartment in a city for a given number of bedrooms",
+        "required_parameters": [
+            "area",
+            "number_of_beds"
+        ],
+        "optional_parameters": {
+            "furnished": "dontcare",
+            "pets_allowed": "dontcare",
+            "number_of_baths": "dontcare"
+        },
+        "result_parameters": [
+            "area",
+            "address",
+            "property_name",
+            "phone_number",
+            "furnished",
+            "pets_allowed",
+            "rent",
+            "number_of_beds",
+            "number_of_baths"
+        ]
+    },
+    {
+        "name": "ScheduleVisit",
+        "description": "Schedule a visit for a given property on a particular date",
+        "required_parameters": [
+            "property_name",
+            "visit_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "address",
+            "property_name",
+            "phone_number",
+            "furnished",
+            "pets_allowed",
+            "rent",
+            "visit_date",
+            "number_of_beds",
+            "number_of_baths"
+        ]
+    },
+    {
+        "name": "GetRide",
+        "description": "Book a cab for any destination, number of seats and ride type",
+        "required_parameters": [
+            "destination",
+            "number_of_seats",
+            "ride_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "destination",
+            "ride_type",
+            "ride_fare",
+            "wait_time",
+            "number_of_seats"
+        ]
+    }
+]

@@ -1,5 +1,9 @@
 {
-    "query": [],
+    "query": [
+        {
+            "user": "I need help with my appointments"
+        }
+    ],
     "candidate_apis": [
         {
             "type": "function",

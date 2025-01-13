@@ -1,0 +1,54 @@
+[
+    {
+        "name": "GetTrainTickets",
+        "description": "Reserve tickets for train journey",
+        "required_parameters": [
+            "from",
+            "to",
+            "date_of_journey",
+            "journey_start_time",
+            "number_of_adults",
+            "trip_protection"
+        ],
+        "optional_parameters": {
+            "class": "Value"
+        },
+        "result_parameters": [
+            "from",
+            "to",
+            "from_station",
+            "to_station",
+            "date_of_journey",
+            "journey_start_time",
+            "total",
+            "number_of_adults",
+            "class",
+            "trip_protection"
+        ]
+    },
+    {
+        "name": "FindTrains",
+        "description": "Find trains to a given destination city",
+        "required_parameters": [
+            "from",
+            "to",
+            "date_of_journey"
+        ],
+        "optional_parameters": {
+            "class": "Value",
+            "number_of_adults": "1"
+        },
+        "result_parameters": [
+            "from",
+            "to",
+            "from_station",
+            "to_station",
+            "date_of_journey",
+            "journey_start_time",
+            "total",
+            "number_of_adults",
+            "class",
+            "trip_protection"
+        ]
+    }
+]

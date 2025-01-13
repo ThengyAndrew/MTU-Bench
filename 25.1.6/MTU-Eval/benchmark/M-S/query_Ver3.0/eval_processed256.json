@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Yes , I 'm looking for a restaurant in the centre what serves world food .",
+        "assistant": ": I 'm sorry , but there are no foods in the centre that serve World Food . Would you like to try another area or a different type of food ?"
+    },
+    {
+        "user": "I would like a gastropub then if you have one open .",
+        "assistant": ": I would suggest The Cow Pizza Kitchen and Bar .   Great food .   It is located on Corn Exchange Street ."
+    },
+    {
+        "user": "What is the price range ?",
+        "assistant": ": It is moderately priced . Would you like me to make a reservation ?"
+    },
+    {
+        "user": "no , just give me the address",
+        "assistant": ": Sure , the address is on Corn Exchange Street , post code cb23qf . Can I do anything else for you today ?"
+    },
+    {
+        "user": "I do need to get from Stevenage to Cambridge on Saturday . I 'd like to leave shortly after 09:45 , if possible .",
+        "assistant": ": TR9024 leaves at 09:54 , would that one work ?"
+    },
+    {
+        "user": "Yes , that would work out great .   I need to book the trip for four people .   Can I get a reference number too please ?"
+    }
+]

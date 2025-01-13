@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "San Francisco",
+            "date": "2024-01-04",
+            "party_size": "2",
+            "restaurant_name": "Betty Lou's Seafood & Grill",
+            "time": "19:30"
+        }
+    }
+]

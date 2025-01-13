@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Hello, how much in late fees do I owe you",
+        "assistant": ": What's your library ID?"
+    },
+    {
+        "user": "It's 58965.",
+        "assistant": ": You currently owe $15"
+    },
+    {
+        "user": "Can I pay this in cash?",
+        "assistant": ": Now we only accept credit cards or debit cards."
+    },
+    {
+        "user": "What? What business doesn't accept cash?",
+        "assistant": ": We are the government."
+    },
+    {
+        "user": "Why don't you accept cash?",
+        "assistant": ": Too much book work. It is easier to do electronic transactions."
+    },
+    {
+        "user": "Oh okay, well thanks anyways."
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "user": "i want a place i can watch multiple sports in the centre.",
+        "assistant": ": I did not find any places in the Centre of town. Would you like to try another area?"
+    },
+    {
+        "user": "Are there any nightclubs that I could visit, instead?",
+        "assistant": ": Sure! I recommend The Fez Club. Their address is 8 market passage."
+    },
+    {
+        "user": "I need to have the phone number, entrance fee, and postcode please.",
+        "assistant": ": Those would be 01223519224, 5 pounds, and cb23hx in that order. Anything else I can do for you?"
+    },
+    {
+        "user": "Yes please, I would love if you could help me find an expensive hotel located in the centre.",
+        "assistant": ": There are two hotels in the centre. Gonville hotel has 3 stars. University arms hotel has 4 stars. Both have wifi and parking."
+    },
+    {
+        "user": "If the expensive isn't available, let's try something in a moderate price range."
+    }
+]

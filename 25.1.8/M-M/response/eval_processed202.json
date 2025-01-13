@@ -1,0 +1,17 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Phoenix",
+            "type": "cardiology"
+        }
+    },
+    {
+        "name": " BookAppointment",
+        "arguments": {
+            "doctor_name": "FindProvider.doctor_name",
+            "appointment_date": "2024-02-08",
+            "appointment_time": "11:00"
+        }
+    }
+]

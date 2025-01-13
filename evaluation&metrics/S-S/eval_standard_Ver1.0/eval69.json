@@ -1,0 +1,151 @@
+[
+    {
+        "query": "I'm leaving from Kings Lynn and headed to Cambridge on Wednesday at 11:45. Can you help me find a train?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchTrain",
+                    "description": "Searches for train information including pricing, schedules, and duration.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "departure": {
+                                "description": "Starting location of the train journey"
+                            },
+                            "destination": {
+                                "description": "Final destination of the train journey"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            },
+                            "day": {
+                                "description": "The date for the train search"
+                            },
+                            "leaveAt": {
+                                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+                            },
+                            "arriveBy": {
+                                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+                            },
+                            "trainID": {
+                                "description": "Specific train identifier"
+                            }
+                        },
+                        "required": [
+                            "departure",
+                            "destination",
+                            "return_info"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookTrain",
+                    "description": "Enables users to book train tickets.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "people": {
+                                "description": "Number of passengers for the booking"
+                            },
+                            "trainID": {
+                                "description": "The identifier of the train to be booked"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            }
+                        },
+                        "required": [
+                            "people",
+                            "trainID"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRestaurant",
+                    "description": "Allows users to search for restaurant information based on various filters.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "description": "The area where the restaurant is located."
+                            },
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "priceRange": {
+                                "description": "The price range of the restaurant."
+                            },
+                            "food": {
+                                "description": "Type of food or cuisine offered."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'."
+                            }
+                        },
+                        "required": [
+                            "area"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookRestaurant",
+                    "description": "Allows users to make restaurant reservations.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "day": {
+                                "description": "The date for the reservation."
+                            },
+                            "time": {
+                                "description": "The time for the reservation."
+                            },
+                            "people": {
+                                "description": "Number of people for the reservation."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "day",
+                            "time",
+                            "people"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchTrain",
+                "arguments": {
+                    "day": "Wednesday",
+                    "leaveAt": "11:45",
+                    "departure": "Kings Lynn",
+                    "destination": "Cambridge",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

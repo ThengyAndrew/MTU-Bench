@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "world",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

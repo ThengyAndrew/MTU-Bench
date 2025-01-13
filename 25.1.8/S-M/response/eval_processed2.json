@@ -1,0 +1,66 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "06:30",
+            "recurrence": [
+                "Weekdays"
+            ]
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "06:30",
+            "sound": "waves sound",
+            "recurrence": [
+                "Weekdays"
+            ]
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Los Angeles",
+            "offers_cosmetic_services": "true"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "14:00",
+            "appointment_date": "2024-06-15"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist Appointment",
+            "appointment_date": "2024-06-15",
+            "appointment_time": "14:00",
+            "appointment_address": "BookAppointment.address",
+            "reminder_time": "2 hours before"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "cuisine": "souvlaki",
+            "state": "ne"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "playlist": "this is: miles davis",
+            "service": "lastfm"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "spatial_relation": "nearby"
+        }
+    }
+]

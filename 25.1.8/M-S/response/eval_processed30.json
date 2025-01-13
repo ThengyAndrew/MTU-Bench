@@ -1,0 +1,15 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "area": "centre",
+            "stars": "0",
+            "internet": "true",
+            "type": "guesthouse",
+            "return_info": [
+                "priceRange",
+                "address"
+            ]
+        }
+    }
+]

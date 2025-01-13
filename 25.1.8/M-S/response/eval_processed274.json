@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindBus",
+        "arguments": {
+            "departure_date": "2024-01-11",
+            "destination": "Vegas",
+            "origin": "Fresno"
+        }
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "query": [
+            {
+                "user": "Can you give me a hand finding some music?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyMovieTickets",
+                    "description": "Buy movie tickets for a particular show",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindMovies",
+                    "description": "Search for movies by location, genre or other attributes",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetTimesForMovie",
+                    "description": "Get show times for a movie at a location on a given date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "LookupMusic",
+                    "description": "Search for a song based on the name and optionally other attributes",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "PlayMedia",
+                    "description": "Play a song by its name and optionally artist",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "LookupMusic",
+                "arguments": {}
+            }
+        ]
+    }
+]

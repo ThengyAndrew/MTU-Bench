@@ -1,0 +1,24 @@
+[
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    },
+    {
+        "name": " transfer_funds",
+        "arguments": {
+            "account_number": "239267492492",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    },
+    {
+        "name": " get_recent_transactions",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    }
+]

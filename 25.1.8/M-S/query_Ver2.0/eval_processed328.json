@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Find me a one way flight.",
+        "function": "",
+        "Thought": "Missing origin. I can't call the function.",
+        "observation": "",
+        "assistant": ": What city are you flying from?"
+    }
+]

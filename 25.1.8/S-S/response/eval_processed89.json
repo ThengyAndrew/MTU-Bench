@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindApartment",
+        "arguments": {
+            "area": "Richmond",
+            "number_of_beds": "2",
+            "furnished": "True"
+        }
+    }
+]

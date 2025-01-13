@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "departure": "Cambridge",
+            "destination": "London Kings Cross",
+            "day": "Wednesday",
+            "leaveAt": "10:45",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

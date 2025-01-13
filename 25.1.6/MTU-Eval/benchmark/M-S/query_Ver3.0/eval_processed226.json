@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Tuesday and I need a train to leave after 16:45 from cambridge to Ely please .",
+        "assistant": ": Yes, there is a train available, the TR7733, and leaves at 17:50. Would you like me to book this?"
+    },
+    {
+        "user": "Yes please book it for 8 people and provide the reference number."
+    }
+]

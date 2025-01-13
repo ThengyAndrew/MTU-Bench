@@ -1,0 +1,13 @@
+[
+    {
+        "user": "It does n't matter what time I leave as long as I 'm there by 16:45. A train from Ely to Cambridge on Thursday.",
+        "assistant": ": There are 6 trains leaving that will get you there by 16:45 , the closest TR3240 arriving at 15:52 . Would you like to make a reservation ?"
+    },
+    {
+        "user": "Yes , please make me a reservation for two people on TR3240 arriving at 15:52 .",
+        "assistant": ": Booking was successful, the total fee is 8.8 GBP payable at the station. Reference number is: T4I7L6BG. Can I help with anything else today?"
+    },
+    {
+        "user": "Choose your favorite Chinese restaurant, which is expensive. I do need an address and post code, please."
+    }
+]

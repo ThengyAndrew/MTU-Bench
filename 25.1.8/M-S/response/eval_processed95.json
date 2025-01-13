@@ -1,0 +1,8 @@
+[
+    {
+        "name": "delete_contact",
+        "arguments": {
+            "contact_name": "Gary Glitterr"
+        }
+    }
+]

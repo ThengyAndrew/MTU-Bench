@@ -1,0 +1,399 @@
+[
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment at a dentist for a given time and date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "dentist_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "appointment_date",
+            "appointment_time",
+            "offers_cosmetic_services"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Find a dentist by location and optionally by services offered. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "offers_cosmetic_services": "dontcare"
+        },
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "city",
+            "offers_cosmetic_services"
+        ]
+    },
+    {
+        "name": "delete_contact",
+        "description": "This tool permanently removes a contact from the user's contact list by name. It is important to note that once a contact is deleted, it cannot be recovered.",
+        "required_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the contact to be deleted from the user's contact list."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "A message confirming whether the contact has been successfully deleted or an error message if the deletion could not be processed."
+            }
+        ]
+    },
+    {
+        "name": "delete_contact_number",
+        "description": "This tool is designed to remove a phone number from a specified contact's detail within the user's contact list. It allows for precise deletion based on the phone number itself or its order among multiple numbers.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The name of the contact from whom the phone number is to be deleted. The full name is required."
+            },
+            {
+                "name": "contact_number",
+                "type": "string",
+                "description": "The specific phone number to be deleted. If provided, this number is directly targeted for deletion."
+            },
+            {
+                "name": "number_order",
+                "type": "integer",
+                "description": "If the contact has multiple numbers and no specific number is provided, this parameter specifies the order of the number to delete (e.g., the first number, second number, etc.).",
+                "default": 1
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "Confirms the successful removal of the phone number or provides details if the operation couldn't be completed."
+            }
+        ]
+    },
+    {
+        "name": "delete_contact_email",
+        "description": "This tool deletes an email address associated with a specified contact in the user's contact list. This action is irreversible, and the email address cannot be retrieved once deleted.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the contact whose email address is to be deleted."
+            },
+            {
+                "name": "contact_email",
+                "type": "string",
+                "format": "email",
+                "description": "The specific email address to be deleted, if known. If not provided, the default operation will assume the only or primary email is to be deleted."
+            },
+            {
+                "name": "email_order",
+                "type": "integer",
+                "description": "Specifies the order of the email address to be deleted if the contact has multiple email addresses. For example, '1' for the primary email, '2' for the secondary, and so on."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "Confirms the successful removal of the email address or informs about any issues that prevented the deletion."
+            }
+        ]
+    },
+    {
+        "name": "update_contact_information",
+        "description": "This tool allows for the modification of existing contact information or add more contact details within a user's contact list, such as updating a contact name, phone number, or email address.",
+        "required_parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The original name of the contact as currently stored in the contact list."
+            },
+            {
+                "name": "new_information",
+                "type": "Dict",
+                "description": "An object containing the new contact details that need to be updated.",
+                "properties": {
+                    "new_name": {
+                        "type": "string",
+                        "description": "The new name to assign to the contact, if changing the contact's name."
+                    },
+                    "new_phone_number": {
+                        "type": "string",
+                        "description": "The new phone number to be added to the contact list."
+                    },
+                    "new_email": {
+                        "type": "string",
+                        "format": "email",
+                        "description": "The new email to be added to the contact list."
+                    }
+                }
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The original phone number of the contact that needs to be replaced."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "description": "The original email number of the contact that needs to be replaced."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "update_status",
+                "type": "string",
+                "description": "Confirms the successful update of the contact's information or informs about any issues that prevented the update."
+            }
+        ]
+    },
+    {
+        "name": "add_new_contact",
+        "description": "This tool allows for the creation of a brand-new contact entry in the user's contact list, using the provided personal information such as name, phone number, email address, and potentially a physical address.",
+        "required_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the new contact to be added to the contact list."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number associated with the new contact."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the new contact, if available."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "description": "The physical address of the new contact."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "creation_status",
+                "type": "string",
+                "description": "Confirms the successful creation of the new contact or provides details if there were any issues during the process."
+            }
+        ]
+    },
+    {
+        "name": "search_contact",
+        "description": "This tool searches the user's contact list for a specific contact based on provided search criteria such as the contact's name, phone number, or email address.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name or partial name of the contact to search for."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number of the contact to search for."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the contact to search for."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name or partial name of the contact to search for."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number of the contact to search for."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the contact to search for."
+            }
+        ]
+    },
+    {
+        "name": "transfer_funds",
+        "description": "This tool is used to perform a monetary transfer between a user's bank accounts, such as from a checking account to a savings account.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier for the user's bank account from which funds will be transferred."
+            },
+            {
+                "name": "source_account",
+                "type": "string",
+                "description": "Indicates the account type or identifier from which the money will be debited (e.g., 'checking')."
+            },
+            {
+                "name": "destination_account",
+                "type": "string",
+                "description": "Indicates the account type or identifier to which the money will be credited (e.g., 'savings')."
+            },
+            {
+                "name": "amount",
+                "type": "float",
+                "description": "The amount of money to be transferred between accounts."
+            },
+            {
+                "name": "transfer_speed",
+                "type": "string",
+                "description": "Specifies the speed at which the transfer is to be made. The transfer can be 'now' for immediate processing, or 'scheduled' for a deferred transfer.",
+                "enum": [
+                    "now",
+                    "scheduled"
+                ],
+                "default": "now"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "schedule_time",
+                "type": "string",
+                "format": "datetime",
+                "description": "If the transfer is scheduled, this parameter specifies the date and time for the transfer to happen. Should follow the YYYY-MM-DDTHH:MM:SS format."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "transfer_status",
+                "type": "string",
+                "description": "Provides information on the status of the fund transfer, indicating success, in-progress, or failure."
+            }
+        ]
+    },
+    {
+        "name": "get_account_balance",
+        "description": "This tool retrieves the current balance for a specified bank account.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier for the user's bank account for which the balance is to be retrieved."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "balance",
+                "type": "string",
+                "description": "The current balance of the specified account presented in a string format, ideally including the currency symbol."
+            }
+        ]
+    },
+    {
+        "name": "get_recent_transactions",
+        "description": "This tool retrieves the most recent transactions for a specified bank account to identify regular activity and potential unauthorized transactions.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier of the user's bank account from which recent transactions are to be fetched."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "transaction_type",
+                "type": "string",
+                "enum": [
+                    "all",
+                    "deposit",
+                    "withdrawal",
+                    "transfer",
+                    "payment"
+                ],
+                "default": "all",
+                "description": "Optional filter to return transactions of a specific type. The default value is 'all', which includes every type of transaction."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "transactions",
+                "type": "array",
+                "description": "A list of transactions made within the specified time period, sorted by the most recent. Each transaction includes details such as date, type, amount, and description.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "transaction_date": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The date and time when the transaction occurred."
+                        },
+                        "transaction_type": {
+                            "type": "string",
+                            "description": "The type of the transaction (e.g., deposit, withdrawal, transfer, payment)."
+                        },
+                        "amount": {
+                            "type": "number",
+                            "description": "The monetary amount involved in the transaction."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "A brief description or memo provided for the transaction."
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "name": "freeze_bank_account",
+        "description": "This tool places a hold on the specified bank account to prevent new transactions, in response to suspected unauthorized access or fraudulent activity.",
+        "required_parameters": [
+            {
+                "name": "account_number",
+                "type": "string",
+                "description": "The unique identifier of the user's bank account that needs to be frozen to mitigate potential fraud."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "freeze_reason",
+                "type": "string",
+                "enum": [
+                    "suspected_fraud",
+                    "lost_or_stolen_card",
+                    "account_owner_request",
+                    "other"
+                ],
+                "description": "The reason for freezing the account, which helps the bank in further fraud assessment and investigation."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "freeze_status",
+                "type": "string",
+                "description": "Confirmation of the account being frozen and the subsequent status message indicating that the account is secured."
+            }
+        ]
+    }
+]

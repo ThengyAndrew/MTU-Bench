@@ -1,0 +1,15 @@
+[
+    {
+        "name": "change_alarm_time",
+        "arguments": {
+            "current_time": "21:00",
+            "new_time": "10:00",
+            "current_recurrence": [
+                "today"
+            ],
+            "new_recurrence": [
+                "tomorrow"
+            ]
+        }
+    }
+]

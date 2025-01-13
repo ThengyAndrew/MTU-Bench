@@ -1,0 +1,10 @@
+[
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "appointment_date": "2024-01-07",
+            "appointment_time": "16:00",
+            "doctor_name": "Dermatology and Laser Centre"
+        }
+    }
+]

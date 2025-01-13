@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Add alarms",
+        "assistant": ": Alarm to add?"
+    },
+    {
+        "user": "one for 9 pm tonight",
+        "assistant": ": Alarm has been set. would you like to edit another?"
+    },
+    {
+        "user": "What percentage of the brain does a human typically use?",
+        "assistant": ": The myth that humans only use 10% of their brains is just that—a myth. In reality, humans use virtually all of their brains."
+    },
+    {
+        "user": "change it to 10 am tomorrow",
+        "assistant": ": I have your alarm saved for 10 am tomorrow. Is this good?"
+    },
+    {
+        "user": "yes",
+        "assistant": ": Thank you."
+    },
+    {
+        "user": "bye"
+    }
+]

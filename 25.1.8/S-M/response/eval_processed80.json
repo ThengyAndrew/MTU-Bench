@@ -1,0 +1,15 @@
+[
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "artist": "John Lennon"
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "15:00",
+            "sound": "LookupSong.song_name"
+        }
+    }
+]

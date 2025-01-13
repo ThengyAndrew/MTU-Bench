@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Can you check my bank account, I think someone is messing with my account",
+        "assistant": ": I'll check on that."
+    },
+    {
+        "user": "Thanks",
+        "assistant": ": What is your account number?"
+    },
+    {
+        "user": "82746453535",
+        "assistant": ": It seems there have been recent transactions at Burger King for $25 and a $1000 purchase at the Apple Store. Does this look correct to you?"
+    },
+    {
+        "user": "Can you freeze my account?",
+        "assistant": ": Your account has been frozen due to suspected fraud, as per your request."
+    },
+    {
+        "user": "And send me a new debit card",
+        "assistant": ": Unfortunately, I'm unable to directly issue a new debit card. You'll need to contact your bank directly to request a new debit card."
+    },
+    {
+        "user": "Thanks"
+    }
+]

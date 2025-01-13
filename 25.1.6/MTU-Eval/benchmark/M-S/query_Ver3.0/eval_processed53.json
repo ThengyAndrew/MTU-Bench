@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I would like to know about fees.",
+        "assistant": ": Could you please provide me with your Library ID?"
+    },
+    {
+        "user": "What is the amount of fees I currently owe?",
+        "assistant": ": Could you please provide me with your library ID so that I can assist you further?"
+    },
+    {
+        "user": "How much do I owe in fees. Okay, thats fine."
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "New York",
+            "date": "FindEvents.date"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-02"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    }
+]

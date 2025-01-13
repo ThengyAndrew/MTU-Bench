@@ -1,0 +1,225 @@
+[
+    {
+        "query": [
+            {
+                "User": "Hi, I am trying to look up some information. Could you assist me?",
+                "Assistant": "Of course! What's the information you want to look up?"
+            },
+            {
+                "User": "I have a schedule coming up. It's related to a business trip.",
+                "Assistant": "I can help you with that. Please tell me the name of the appointment."
+            },
+            {
+                "User": "It's called \"Business Trip to San Francisco\". I want to know its date and time. Oh, and could you search for one-way flights from New York to San Francisco on the same day?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "set_appointment_reminder",
+                    "description": "This tool is used to create a reminder for a user-specified appointment. It requires details such as the appointment name, date, time, and optionally, the address and reminder time.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            },
+                            "appointment_address": {
+                                "type": "string",
+                                "description": "The address of the appointment location, if applicable."
+                            },
+                            "reminder_time": {
+                                "type": "string",
+                                "description": "The time at which the reminder should trigger. Should be provided in a relative format such as '2 hours before' or an exact time format such as HH:MM."
+                            },
+                            "appointment_information": {
+                                "type": "string",
+                                "description": "Provides detailed summary or specific information about the appointment. This could include purpose, participants, location, or any other important details relevant to the appointment."
+                            }
+                        },
+                        "required": [
+                            "appointment_name",
+                            "appointment_date",
+                            "appointment_time",
+                            "appointment_address",
+                            "reminder_time"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_user_appointments",
+                    "description": "This tool is designed to retrieve a list of scheduled appointments for the user. It can filter appointments by various criteria such as date, name, and type of appointment.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string",
+                                "description": "The specific date for which the user wants to retrieve appointments. It should follow the YYYY-MM-DD format."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name or description of the appointment to help narrow down the search."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of appointment, such as 'dentist', 'doctor', 'work meeting', etc., to filter the appointments list."
+                            },
+                            "time_range": {
+                                "type": "string",
+                                "description": "A time range within the specified date to retrieve appointments for, such as 'morning' or 'afternoon'."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_appointment",
+                    "description": "This tool is used to delete a specific appointment from a user's schedule based on provided identifiers such as appointment ID or date and time.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "change_appointment",
+                    "description": "This tool is used to modify the details of an existing appointment. It requires the appointment ID along with the new information to be updated.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            },
+                            "new_appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "new_appointment_date": {
+                                "type": "string",
+                                "description": "The new date for the appointment, in the format YYYY-MM-DD."
+                            },
+                            "new_appointment_time": {
+                                "type": "string",
+                                "description": "The new time for the appointment, provided in a standard time format such as HH:MM."
+                            },
+                            "new_appointment_location": {
+                                "type": "string",
+                                "description": "Optional. The new location or address for the appointment if it has changed."
+                            },
+                            "new_appointment_information": {
+                                "type": "string",
+                                "description": "Optional. A new description for the appointment if additional details need to be specified."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one-way flights to a destination. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for round-trip flights to a destination. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveOnewayFlight",
+                    "description": "Reserve a one-way flight. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRoundtripFlights",
+                    "description": "Reserve a round-trip flight. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "get_user_appointments",
+                "arguments": {
+                    "name": "Business Trip to San Francisco"
+                }
+            },
+            {
+                "name": " SearchOnewayFlight",
+                "arguments": {
+                    "origin_city": "New York",
+                    "destination_city": "San Francisco",
+                    "departure_date": "get_user_appointments.appointment_date"
+                }
+            }
+        ]
+    }
+]

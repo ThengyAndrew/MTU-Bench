@@ -1,0 +1,89 @@
+[
+    {
+        "query": [
+            {
+                "user": "Could you please help me in searching a bus moving from Vancouver, BC on the 5th? I need it for three people.",
+                "assistant": ": Where do you want to go?"
+            },
+            {
+                "user": "I wish to go to Seattle.",
+                "assistant": ": What do you think about the bus moving at 6:40 am? It is an Economy ticket and the cost is $28."
+            },
+            {
+                "user": "Is there any other buses available?",
+                "assistant": ": What do you think about the bus moving at 8:10 am? It is an Economy ticket and the cost is $30."
+            },
+            {
+                "user": "Is there any other buses available?",
+                "assistant": ": What do you think about the bus moving at 8:30 am? It is an Economy ticket and the cost is $28."
+            },
+            {
+                "user": "From which station the bus moves?",
+                "assistant": ": The starting station is Pacific Central Station."
+            },
+            {
+                "user": "To which station the bus reaches?",
+                "assistant": ": The reaching station is King Street Station."
+            },
+            {
+                "user": "It is nice. I am searching for the bus tickets. yes. it is good for me.",
+                "assistant": ": Your ticket has been booked."
+            },
+            {
+                "user": "Is there any attractive places which is child-friendly? I don't want to pay any fee.",
+                "assistant": ": Check out the Museum Chihuly Garden and Glass."
+            },
+            {
+                "user": "Is there any attractive places? I want to see Museum.",
+                "assistant": ": I searched and found 3 attractions for you. It is a Museum. Check out the Museum of History & Industry (MOHAI)"
+            },
+            {
+                "user": "What is their contact phone number?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindBus",
+                    "description": "Find a bus itinerary between cities for a given date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyBusTicket",
+                    "description": "Buy tickets for a bus itinerary",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

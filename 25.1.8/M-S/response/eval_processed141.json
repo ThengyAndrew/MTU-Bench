@@ -1,0 +1,8 @@
+[
+    {
+        "name": "check_light_status",
+        "arguments": {
+            "location": "back porch"
+        }
+    }
+]

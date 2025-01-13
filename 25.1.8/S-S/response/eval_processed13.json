@@ -1,0 +1,15 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "internet": "True",
+            "people": "6",
+            "day": "monday",
+            "stay": "2",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

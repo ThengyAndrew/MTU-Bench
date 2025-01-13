@@ -1,0 +1,10 @@
+[
+    {
+        "name": "PlaySong",
+        "arguments": {
+            "artist": "Shailesh Premi",
+            "playback_device": "speaker in the kitchen",
+            "song_name": "Lahnga Lasar Ke"
+        }
+    }
+]

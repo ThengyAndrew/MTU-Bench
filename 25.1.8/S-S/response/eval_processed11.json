@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "2",
+            "parking": "True",
+            "internet": "True",
+            "area": "Cambridge",
+            "return_info": [
+                "address"
+            ]
+        }
+    }
+]

@@ -1,0 +1,29 @@
+{
+    "query": "I am looking for a hip hop music event in Philadelphia.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "BookHouse",
+                "description": "Book the selected house for given dates and number of adults",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHouse",
+                "description": "Find a house at a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

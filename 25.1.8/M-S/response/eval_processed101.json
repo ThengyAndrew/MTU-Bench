@@ -1,0 +1,9 @@
+[
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "Scott-cell",
+            "phone_number": "569-566-5231"
+        }
+    }
+]

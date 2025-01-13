@@ -1,0 +1,33 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "Phoenix",
+            "type": "cardiology"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "doctor_name": "FindProvider.doctor_name",
+            "appointment_date": "2024-02-08",
+            "appointment_time": "11:00"
+        }
+    },
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_select": "current",
+            "object_type": "novel",
+            "rating_value": "3",
+            "rating_unit": "stars"
+        }
+    },
+    {
+        "name": "SearchCreativeWork",
+        "arguments": {
+            "object_type": "book",
+            "object_name": "free to play"
+        }
+    }
+]

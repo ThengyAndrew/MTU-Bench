@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need help with a world record?",
+        "assistant": ": Sure. What can I answer for you?"
+    },
+    {
+        "user": "What is the biggest snake ever?",
+        "assistant": ": The biggest snake ever, or the biggest type of snake?"
+    },
+    {
+        "user": "The biggest ever.",
+        "assistant": ": Sure, Medusa is known as the biggest snake ever and is over 25 feet long."
+    },
+    {
+        "user": "What kind of snake was that?"
+    }
+]

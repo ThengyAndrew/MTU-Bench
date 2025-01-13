@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I need help with my contacts",
+        "assistant": ": Sure."
+    },
+    {
+        "user": "I want to add a new contact",
+        "assistant": ": Okay."
+    },
+    {
+        "user": "Name is Scott-cell",
+        "assistant": ": I see. And what's the phone number for Scott-cell?"
+    },
+    {
+        "user": "My new contact",
+        "assistant": ": Understood. Can you tell me Scott-cell's phone number?"
+    },
+    {
+        "user": "Number is 569-566-5231"
+    }
+]

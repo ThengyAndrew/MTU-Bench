@@ -1,0 +1,360 @@
+[
+    {
+        "query": [
+            {
+                "User": "Hi, I'm living in San Francisco and I'm looking for a dentist.",
+                "Assistant": "Sure, I can help you with that. Are you interested in any specific services?"
+            },
+            {
+                "User": "Yes, I need one that can make my smile more beautiful. I have a wedding coming up soon.",
+                "Assistant": "I found some dentists that offer cosmetic services in San Francisco. Here they are...."
+            },
+            {
+                "User": "Great! I would like to book an appointment with one of them on February 9th at 10:00 am. Also, please add this dentist to my contacts."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookAppointment",
+                    "description": "Book an appointment at a dentist for a given time and date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindProvider",
+                    "description": "Find a dentist by location and optionally by services offered. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "set_appointment_reminder",
+                    "description": "This tool is used to create a reminder for a user-specified appointment. It requires details such as the appointment name, date, time, and optionally, the address and reminder time.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            },
+                            "appointment_address": {
+                                "type": "string",
+                                "description": "The address of the appointment location, if applicable."
+                            },
+                            "reminder_time": {
+                                "type": "string",
+                                "description": "The time at which the reminder should trigger. Should be provided in a relative format such as '2 hours before' or an exact time format such as HH:MM."
+                            },
+                            "appointment_information": {
+                                "type": "string",
+                                "description": "Provides detailed summary or specific information about the appointment. This could include purpose, participants, location, or any other important details relevant to the appointment."
+                            }
+                        },
+                        "required": [
+                            "appointment_name",
+                            "appointment_date",
+                            "appointment_time",
+                            "appointment_address",
+                            "reminder_time"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_user_appointments",
+                    "description": "This tool is designed to retrieve a list of scheduled appointments for the user. It can filter appointments by various criteria such as date, name, and type of appointment.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string",
+                                "description": "The specific date for which the user wants to retrieve appointments. It should follow the YYYY-MM-DD format."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name or description of the appointment to help narrow down the search."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of appointment, such as 'dentist', 'doctor', 'work meeting', etc., to filter the appointments list."
+                            },
+                            "time_range": {
+                                "type": "string",
+                                "description": "A time range within the specified date to retrieve appointments for, such as 'morning' or 'afternoon'."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_appointment",
+                    "description": "This tool is used to delete a specific appointment from a user's schedule based on provided identifiers such as appointment ID or date and time.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "change_appointment",
+                    "description": "This tool is used to modify the details of an existing appointment. It requires the appointment ID along with the new information to be updated.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "appointment_date": {
+                                "type": "string",
+                                "description": "The date of the appointment in the format YYYY-MM-DD."
+                            },
+                            "appointment_time": {
+                                "type": "string",
+                                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM."
+                            },
+                            "new_appointment_name": {
+                                "type": "string",
+                                "description": "A descriptive name of the appointment for which a reminder is being set."
+                            },
+                            "new_appointment_date": {
+                                "type": "string",
+                                "description": "The new date for the appointment, in the format YYYY-MM-DD."
+                            },
+                            "new_appointment_time": {
+                                "type": "string",
+                                "description": "The new time for the appointment, provided in a standard time format such as HH:MM."
+                            },
+                            "new_appointment_location": {
+                                "type": "string",
+                                "description": "Optional. The new location or address for the appointment if it has changed."
+                            },
+                            "new_appointment_information": {
+                                "type": "string",
+                                "description": "Optional. A new description for the appointment if additional details need to be specified."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact",
+                    "description": "This tool permanently removes a contact from the user's contact list by name. It is important to note that once a contact is deleted, it cannot be recovered.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the contact to be deleted from the user's contact list."
+                            }
+                        },
+                        "required": [
+                            "contact_name"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact_number",
+                    "description": "This tool is designed to remove a phone number from a specified contact's detail within the user's contact list. It allows for precise deletion based on the phone number itself or its order among multiple numbers.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The name of the contact from whom the phone number is to be deleted. The full name is required."
+                            },
+                            "contact_number": {
+                                "type": "string",
+                                "description": "The specific phone number to be deleted. If provided, this number is directly targeted for deletion."
+                            },
+                            "number_order": {
+                                "type": "integer",
+                                "description": "If the contact has multiple numbers and no specific number is provided, this parameter specifies the order of the number to delete (e.g., the first number, second number, etc.)."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "delete_contact_email",
+                    "description": "This tool deletes an email address associated with a specified contact in the user's contact list. This action is irreversible, and the email address cannot be retrieved once deleted.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the contact whose email address is to be deleted."
+                            },
+                            "contact_email": {
+                                "type": "string",
+                                "description": "The specific email address to be deleted, if known. If not provided, the default operation will assume the only or primary email is to be deleted."
+                            },
+                            "email_order": {
+                                "type": "integer",
+                                "description": "Specifies the order of the email address to be deleted if the contact has multiple email addresses. For example, '1' for the primary email, '2' for the secondary, and so on."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "update_contact_information",
+                    "description": "This tool allows for the modification of existing contact information or add more contact details within a user's contact list, such as updating a contact name, phone number, or email address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "The original name of the contact as currently stored in the contact list."
+                            },
+                            "new_information": {
+                                "type": "Dict",
+                                "description": "An object containing the new contact details that need to be updated."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The original phone number of the contact that needs to be replaced."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The original email number of the contact that needs to be replaced."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "new_information"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "add_new_contact",
+                    "description": "This tool allows for the creation of a brand-new contact entry in the user's contact list, using the provided personal information such as name, phone number, email address, and potentially a physical address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name of the new contact to be added to the contact list."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The phone number associated with the new contact."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The email address of the new contact, if available."
+                            },
+                            "address": {
+                                "type": "string",
+                                "description": "The physical address of the new contact."
+                            }
+                        },
+                        "required": [
+                            "contact_name",
+                            "phone_number"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "search_contact",
+                    "description": "This tool searches the user's contact list for a specific contact based on provided search criteria such as the contact's name, phone number, or email address.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "contact_name": {
+                                "type": "string",
+                                "description": "The full name or partial name of the contact to search for."
+                            },
+                            "phone_number": {
+                                "type": "string",
+                                "description": "The phone number of the contact to search for."
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "The email address of the contact to search for."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "BookAppointment",
+                "arguments": {
+                    "dentist_name": "FindProvider.dentist_name",
+                    "appointment_time": "10:00",
+                    "appointment_date": "2024-02-09"
+                }
+            },
+            {
+                "name": " add_new_contact",
+                "arguments": {
+                    "contact_name": "BookAppointment.dentist_name",
+                    "phone_number": "BookAppointment.phone_number"
+                }
+            }
+        ]
+    }
+]

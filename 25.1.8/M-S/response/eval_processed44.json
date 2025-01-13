@@ -1,0 +1,8 @@
+[
+    {
+        "name": "get_world_record",
+        "arguments": {
+            "record_category": "loudest sound"
+        }
+    }
+]

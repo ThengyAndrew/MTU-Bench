@@ -1,0 +1,9 @@
+[
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": 50,
+            "location": "Living Room"
+        }
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "user": "I am looking for a salon.",
+        "assistant": ": What city are you interested in finding a salon?"
+    },
+    {
+        "user": "I'm looking for a salon in San Fran.",
+        "assistant": ": Ok, I found 10 of them. There is one very nice one in San Francisco called 1512 Barber Shop."
+    },
+    {
+        "user": "Can you tell me if it is unisex and give me the address please?",
+        "assistant": ": Yes, it is a unisex salon and it is at 1532 20th Street."
+    },
+    {
+        "user": "Are there any other salons in the area?",
+        "assistant": ": There is another nice one in San Francisco called 20th Salon And Barber."
+    },
+    {
+        "user": "That one sounds good!",
+        "assistant": ": Do you want me to make an appointment for you?"
+    },
+    {
+        "user": "Yes, that would be great!",
+        "assistant": ": At what time and date would you like your appointment on?"
+    },
+    {
+        "user": "I would like my appointment on the 6th at half past 10 in the morning if possible. That sounds great! Do you know what their average rating is by the way?"
+    }
+]

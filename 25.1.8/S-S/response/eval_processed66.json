@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "4",
+            "parking": "True",
+            "area": "east",
+            "priceRange": "cheap"
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Can you find me a guesthouse with free parking?",
+        "assistant": ": I have a few guesthouses that offer parking, is there a certain price range you are looking for?"
+    },
+    {
+        "user": "No, anything with availability is fine. I also don't care if it has internet or not.",
+        "assistant": ": How about Leverton House? They are located in Cambridge and are affordably priced."
+    },
+    {
+        "user": "I changed my mind about the internet. Does Leverton House have free wifi?"
+    }
+]

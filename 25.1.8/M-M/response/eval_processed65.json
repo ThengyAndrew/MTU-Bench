@@ -1,0 +1,15 @@
+[
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "artist": "The Beatles",
+            "song_name": "Let it be"
+        }
+    },
+    {
+        "name": " PlaySong",
+        "arguments": {
+            "song_name": "Let it be"
+        }
+    }
+]

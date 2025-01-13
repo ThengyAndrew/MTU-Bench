@@ -1,0 +1,90 @@
+[
+    {
+        "name": "aaa",
+        "description": "Find an apartment in a city for a given number of bedrooms",
+        "required_parameters": [
+            "area",
+            "number_of_beds"
+        ],
+        "optional_parameters": {
+            "furnished": "true or false",
+            "pets_allowed": "true or false",
+            "number_of_baths": "dontcare"
+        },
+        "result_parameters": [
+            "area",
+            "address",
+            "property_name",
+            "phone_number",
+            "furnished",
+            "pets_allowed",
+            "rent",
+            "number_of_beds",
+            "number_of_baths"
+        ]
+    },
+    {
+        "name": "ScheduleVisit",
+        "description": "Schedule a visit for a given property on a particular date",
+        "required_parameters": [
+            "property_name",
+            "visit_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "address",
+            "property_name",
+            "phone_number",
+            "furnished",
+            "pets_allowed",
+            "rent",
+            "visit_date",
+            "number_of_beds",
+            "number_of_baths"
+        ]
+    },
+    {
+        "name": "GetEvents",
+        "description": "Get list of all calendar events for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    },
+    {
+        "name": "GetAvailableTime",
+        "description": "Get a list of available times for the user on a given day",
+        "required_parameters": [
+            "event_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "available_start_time",
+            "available_end_time"
+        ]
+    },
+    {
+        "name": "AddEvent",
+        "description": "Add event to the user's calendar",
+        "required_parameters": [
+            "event_name",
+            "event_date",
+            "event_location",
+            "event_time"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "event_date",
+            "event_time",
+            "event_location",
+            "event_name"
+        ]
+    }
+]

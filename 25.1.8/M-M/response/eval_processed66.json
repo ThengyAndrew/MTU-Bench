@@ -1,0 +1,12 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "15:00",
+            "sound": "Let it be",
+            "recurrence": [
+                "today"
+            ]
+        }
+    }
+]

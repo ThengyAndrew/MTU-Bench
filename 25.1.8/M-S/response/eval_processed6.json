@@ -1,0 +1,14 @@
+[
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Wednesday",
+            "name": "alexander bed and breakfast",
+            "stay": "3",
+            "people": "2",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

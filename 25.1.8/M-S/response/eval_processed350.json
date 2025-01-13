@@ -1,0 +1,11 @@
+[
+    {
+        "name": "AddEvent",
+        "arguments": {
+            "event_date": "2024-01-07",
+            "event_location": "4680 Tassajara Road",
+            "event_name": "Doctor visit",
+            "event_time": "16:00"
+        }
+    }
+]

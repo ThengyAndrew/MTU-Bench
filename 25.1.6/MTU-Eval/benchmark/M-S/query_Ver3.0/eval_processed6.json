@@ -1,0 +1,17 @@
+[
+    {
+        "user": "Milton Country Park",
+        "assistant": ": It's a free park on the north side of town. You can find it at milton country park, milton."
+    },
+    {
+        "user": "Could I get the phone number for that?",
+        "assistant": ": The phone number is 01223420060. Anything else?"
+    },
+    {
+        "user": "Can I get the address for Milton County Park and the entrance fee? I would also like to look for a cheap hotel in the centre with free wifi.",
+        "assistant": ": There is no entrance fee to the park. The only address I am showing is Milton County Park, Milton. The hotel name is alexander bed and breakfast."
+    },
+    {
+        "user": "Ok, I would like it booked for 2 people for 3 nights starting on Wednesday please."
+    }
+]

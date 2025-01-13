@@ -1,0 +1,16 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "Annual Conference"
+        }
+    },
+    {
+        "name": " SearchOnewayFlight.",
+        "arguments": {
+            "origin_city": "Los Angeles",
+            "destination_city": "New York",
+            "departure_date": "get_user_appointments.appointment_date"
+        }
+    }
+]

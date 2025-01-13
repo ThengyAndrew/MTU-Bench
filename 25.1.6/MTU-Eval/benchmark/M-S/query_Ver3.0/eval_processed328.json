@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Find me a one way flight.",
+        "assistant": ": What city are you flying from?"
+    },
+    {
+        "user": "I'd like to leave from NY on the 1st of March and fly Economy."
+    }
+]

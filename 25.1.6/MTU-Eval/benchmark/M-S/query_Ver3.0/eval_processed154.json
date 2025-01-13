@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need to change my alarm settings at 10:00 AM. today.",
+        "assistant": ": What did you want to change?"
+    },
+    {
+        "user": "I need to change it from French tickler vibration to screaming monkey.",
+        "assistant": ": Screaming monkey sound is set."
+    },
+    {
+        "user": "Great i will miss french tickler.",
+        "assistant": ": Are you sure you want to change it?"
+    },
+    {
+        "user": "I have to."
+    }
+]

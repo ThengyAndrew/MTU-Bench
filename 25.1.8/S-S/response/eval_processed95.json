@@ -1,0 +1,10 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "location": "New York",
+            "pets_welcome": "True",
+            "number_of_rooms": "2"
+        }
+    }
+]

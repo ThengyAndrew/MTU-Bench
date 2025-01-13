@@ -1,0 +1,17 @@
+[
+    {
+        "name": "change_alarm_name",
+        "arguments": {
+            "time": "19:00",
+            "new_name": "Workout"
+        }
+    },
+    {
+        "name": " change_alarm_sound",
+        "arguments": {
+            "time": "19:00",
+            "label": "Workout",
+            "sound": "Birdsong"
+        }
+    }
+]

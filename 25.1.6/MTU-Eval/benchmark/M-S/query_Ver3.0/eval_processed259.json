@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I want to find some neat events coming up.",
+        "assistant": ": Is there any particular category, like music or sports or movies? And what city or area should I look in?"
+    },
+    {
+        "user": "I'll be in Seattle. Maybe sports or games?"
+    }
+]

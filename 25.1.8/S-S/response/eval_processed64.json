@@ -1,0 +1,15 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "4",
+            "area": "centre",
+            "type": "guesthouse",
+            "parking": "True",
+            "return_info": [
+                "priceRange",
+                "postcode"
+            ]
+        }
+    }
+]

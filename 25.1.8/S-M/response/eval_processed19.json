@@ -1,0 +1,35 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "entity_name": "a very cellular song",
+            "playlist": "masters of metal"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "doa: dead or alive",
+            "location_name": "loews cineplex entertainment"
+        }
+    },
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "New York"
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "Twenty Thousand Leagues Under the Sea"
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "Twenty Thousand Leagues Under the Sea",
+            "card_number": "apply_for_membership.library_number"
+        }
+    }
+]

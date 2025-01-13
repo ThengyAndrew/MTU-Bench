@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "internet": "true",
+            "area": "centre",
+            "priceRange": "cheap",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

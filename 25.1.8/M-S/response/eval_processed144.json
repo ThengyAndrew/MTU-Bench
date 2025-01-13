@@ -1,0 +1,11 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "21:00",
+            "recurrence": [
+                "today"
+            ]
+        }
+    }
+]

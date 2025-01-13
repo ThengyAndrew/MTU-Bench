@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "hamilton lodge",
+            "return_info": [
+                "type",
+                "postcode",
+                "stars"
+            ]
+        }
+    }
+]

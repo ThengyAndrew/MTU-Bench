@@ -1,0 +1,14 @@
+[
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "day": "Wednesday",
+            "time": "15:30",
+            "name": "The Kohinoor",
+            "people": "7",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

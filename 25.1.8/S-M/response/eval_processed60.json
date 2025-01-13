@@ -1,0 +1,21 @@
+[
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "New York"
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "Life of Pi"
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "Life of Pi",
+            "card_number": "apply_for_membership.library_number"
+        }
+    }
+]

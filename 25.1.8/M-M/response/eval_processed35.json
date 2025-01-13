@@ -1,0 +1,17 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "type": "dentist"
+        }
+    },
+    {
+        "name": " BookAppointment",
+        "arguments": {
+            "doctor_name": "FindProvider.doctor_name",
+            "appointment_time": "13:00",
+            "appointment_date": "2024-02-03"
+        }
+    }
+]

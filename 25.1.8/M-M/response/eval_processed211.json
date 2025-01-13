@@ -1,0 +1,10 @@
+[
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number",
+            "address": "FindProvider.address"
+        }
+    }
+]

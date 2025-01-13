@@ -1,0 +1,77 @@
+[
+    {
+        "query": [
+            {
+                "user": "I want to find some neat events coming up.",
+                "assistant": ": Is there any particular category, like music or sports or movies? And what city or area should I look in?"
+            },
+            {
+                "user": "I'll be in Seattle. Maybe sports or games?",
+                "assistant": ": The Huskies vs Cougars basketball game is happening at Husky Stadium next Tuesday, starting at 8 pm."
+            },
+            {
+                "user": "That sounds okay, but could you look for something else? Maybe something on the 12th around Vancouver, BC.",
+                "assistant": ": There is 1 event at BC Place on March 12th. The game is the Whitecaps vs Kansas City starting at 6 pm."
+            },
+            {
+                "user": "That sounds like a great game."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetTrainTickets",
+                    "description": "Reserve tickets for train journey",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindTrains",
+                    "description": "Find trains to a given destination city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindEvents",
+                    "description": "Find cultural events - concerts and plays - happening in a city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyEventTickets",
+                    "description": "Buy tickets for a cultural event and date in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

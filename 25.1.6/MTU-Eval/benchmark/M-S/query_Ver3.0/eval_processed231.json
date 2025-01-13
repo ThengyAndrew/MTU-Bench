@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I'm looking for a hotel called hamilton lodge.",
+        "assistant": ": Hamilton Lodge is a guesthouse, on the north side of town, in the moderate price range and awarded 3 stars. Do you need more information?"
+    },
+    {
+        "user": "What's the hotel type, postcode, and star of the hotel?",
+        "assistant": ": It is a moderately-priced guesthouse with 3 stars. The postcode is CB41DA."
+    },
+    {
+        "user": "Thank you!! Can you also recommend places to go around the centre. My wife is really into architecture."
+    }
+]

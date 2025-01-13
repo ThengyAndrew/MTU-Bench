@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "architecture",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

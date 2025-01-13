@@ -1,0 +1,13 @@
+[
+    {
+        "name": "BuyBusTicket",
+        "arguments": {
+            "departure_date": "2024-01-11",
+            "departure_time": "07:20",
+            "destination": "Las Vegas",
+            "fare_type": "Economy",
+            "group_size": "1",
+            "origin": "Fresno"
+        }
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "query": [
+            {
+                "user": "I am looking for some attractions to visit with some friends.",
+                "assistant": ": What city should I search in?"
+            },
+            {
+                "user": "I am looking for a performance venue in New York.",
+                "assistant": ": How about 92nd Street Y? It is a Performing Arts Venue."
+            },
+            {
+                "user": "Okay, that sounds good. What is the weather looking like on the March 10th?",
+                "assistant": ": The average temperature should be around 59 degrees Fahrenheit with a 0 percent chance of rain."
+            },
+            {
+                "user": "How windy and humid will it be?",
+                "assistant": ": The wind speed should be 5 miles per hour with 15 percent humidity."
+            },
+            {
+                "user": "Great! I'd like to get a cab to go there.",
+                "assistant": ": How many people will be riding in the cab?"
+            },
+            {
+                "user": "The cab is for two people and I am okay with a shared ride. Yes, that is correct.",
+                "assistant": ": I have booked the cab and it is on the way."
+            },
+            {
+                "user": "Thank you for your help."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetRide",
+                    "description": "Call a taxi to head to a given destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

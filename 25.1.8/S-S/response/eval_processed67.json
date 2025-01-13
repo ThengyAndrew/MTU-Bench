@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "theatre",
+            "area": "centre",
+            "return_info": [
+                "address",
+                "postcode",
+                "phone number"
+            ]
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRoundtripFlights",
+        "arguments": {
+            "departure_date": "2024-01-06",
+            "destination_airport": "New York",
+            "origin_airport": "London",
+            "return_date": "2025-01-09",
+            "seating_class": "Economy"
+        }
+    }
+]

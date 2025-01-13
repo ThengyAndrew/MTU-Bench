@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "kambar",
+            "return_info": [
+                "postcode",
+                "phone",
+                "address"
+            ]
+        }
+    }
+]

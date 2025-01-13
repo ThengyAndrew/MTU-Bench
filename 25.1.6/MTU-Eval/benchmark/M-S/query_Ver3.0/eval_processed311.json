@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I'm searching for a flight.",
+        "assistant": ": Which metropolis do you wish to leave from?"
+    },
+    {
+        "user": "Search for flights from Washington.",
+        "assistant": ": What place are you planning on visiting?"
+    },
+    {
+        "user": "I am taking a plane to Atlanta, GA.",
+        "assistant": ": What date would you like to take the return flight? What day do you want to travel?"
+    },
+    {
+        "user": "I'd like to fly with United Airlines, starting by travel on the 7th and returning on 12th of this month."
+    }
+]

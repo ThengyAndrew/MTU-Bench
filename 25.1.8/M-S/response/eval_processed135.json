@@ -1,0 +1,9 @@
+[
+    {
+        "name": "adjust_lighting",
+        "arguments": {
+            "location": "back porch",
+            "action": "on"
+        }
+    }
+]

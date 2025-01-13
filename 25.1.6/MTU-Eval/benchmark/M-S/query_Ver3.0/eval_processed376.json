@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Help me find a hotel in center, I need free parking.",
+        "assistant": ": There are eight results. Is there a certain price range you'd like?"
+    },
+    {
+        "user": "Could you find me one with a star rating of 3?",
+        "assistant": ": Sure, there is one in the centre area. I have the gonville and the lensfield hotels. When would you like the room?"
+    },
+    {
+        "user": "It seems we are on different pages here. Ok, just please book a room for at the Gonville Hotel, 1 person, 4 nights, starting Friday."
+    }
+]

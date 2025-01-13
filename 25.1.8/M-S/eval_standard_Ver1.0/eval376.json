@@ -1,0 +1,176 @@
+[
+    {
+        "query": [
+            {
+                "user": "Help me find a hotel in center, I need free parking.",
+                "assistant": ": There are eight results. Is there a certain price range you'd like?"
+            },
+            {
+                "user": "Could you find me one with a star rating of 3?",
+                "assistant": ": Sure, there is one in the centre area. I have the gonville and the lensfield hotels. When would you like the room?"
+            },
+            {
+                "user": "It seems we are on different pages here. Ok, just please book a room for at the Gonville Hotel, 1 person, 4 nights, starting Friday."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchHotel",
+                    "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "stars": {
+                                "type": "string",
+                                "description": "The hotel rating based on stars."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of hotel."
+                            },
+                            "parking": {
+                                "type": "boolean",
+                                "description": "Availability of parking at the hotel."
+                            },
+                            "internet": {
+                                "type": "boolean",
+                                "description": "Availability of internet service at the hotel."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the hotel."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the hotel."
+                            },
+                            "priceRange": {
+                                "type": "string",
+                                "description": "The price range of the hotel."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "bookHotel",
+                    "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "day": {
+                                "type": "string",
+                                "description": "The booking date."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The hotel name for the booking."
+                            },
+                            "stay": {
+                                "type": "string",
+                                "description": "The number of days to stay at the hotel."
+                            },
+                            "people": {
+                                "type": "string",
+                                "description": "The number of people for the booking."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Fields to be returned after booking."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRestaurant",
+                    "description": "Allows users to search for restaurant information based on various filters.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "description": "The area where the restaurant is located."
+                            },
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "priceRange": {
+                                "description": "The price range of the restaurant."
+                            },
+                            "food": {
+                                "description": "Type of food or cuisine offered."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'."
+                            }
+                        },
+                        "required": [
+                            "area"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookRestaurant",
+                    "description": "Allows users to make restaurant reservations.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "day": {
+                                "description": "The date for the reservation."
+                            },
+                            "time": {
+                                "description": "The time for the reservation."
+                            },
+                            "people": {
+                                "description": "Number of people for the reservation."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "day",
+                            "time",
+                            "people"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "bookHotel",
+                "arguments": {
+                    "day": "Friday",
+                    "name": "gonville hotel",
+                    "stay": "4",
+                    "people": "1",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "cafe jello gallery",
+            "return_info": [
+                "entrance fee",
+                "postcode"
+            ]
+        }
+    }
+]

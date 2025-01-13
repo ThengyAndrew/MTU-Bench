@@ -1,0 +1,10 @@
+[
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "appointment_date": "2024-01-05",
+            "appointment_time": "15:30",
+            "stylist_name": "1512 Barber Shop"
+        }
+    }
+]

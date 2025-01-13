@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "area": "Cambridge",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

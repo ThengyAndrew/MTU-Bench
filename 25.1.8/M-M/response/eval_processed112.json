@@ -1,0 +1,8 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "Dentist"
+        }
+    }
+]

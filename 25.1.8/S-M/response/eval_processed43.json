@@ -1,0 +1,27 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "offers_cosmetic_services": true
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:30",
+            "appointment_date": "2024-03-15"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist appointment",
+            "appointment_date": "2024-03-15",
+            "appointment_time": "10:30",
+            "appointment_address": "FindProvider.address",
+            "reminder_time": "2 hours before"
+        }
+    }
+]

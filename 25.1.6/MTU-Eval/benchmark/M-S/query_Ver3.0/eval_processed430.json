@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Would you search round trip flights for me?",
+        "assistant": ": When are you leaving?"
+    },
+    {
+        "user": "I am leaving to LA on 10th.",
+        "assistant": ": Where are you departing from?"
+    },
+    {
+        "user": "I am departing Portland, OR."
+    }
+]

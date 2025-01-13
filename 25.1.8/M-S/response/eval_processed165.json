@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "type": "guesthouse",
+            "internet": "true",
+            "area": "east",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "123456"
+        }
+    }
+]

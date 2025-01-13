@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "milton country park",
+            "return_info": [
+                "area"
+            ]
+        }
+    }
+]

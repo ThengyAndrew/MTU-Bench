@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I want to search for some attractive places to visit. Can you help me to find something suit to me?",
+        "assistant": ": Yes, in which City do you like to search for the attraction, any particular place you like to visit?"
+    },
+    {
+        "user": "Yes, search it in Chicago."
+    }
+]

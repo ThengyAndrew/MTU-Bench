@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I want to find some neat events coming up.",
+        "assistant": ": Is there any particular category, like music or sports or movies? And what city or area should I look in?"
+    },
+    {
+        "user": "I'll be in Seattle. Maybe sports or games?",
+        "assistant": ": The Huskies vs Cougars basketball game is happening at Husky Stadium next Tuesday, starting at 8 pm."
+    },
+    {
+        "user": "That sounds okay, but could you look for something else? Maybe something on the 12th around Vancouver, BC."
+    }
+]

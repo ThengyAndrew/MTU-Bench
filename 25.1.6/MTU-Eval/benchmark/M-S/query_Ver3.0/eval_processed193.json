@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Can I get some information on milton country park ?",
+        "assistant": ": Yes, it's free admission and the address is Milton Country Park, Milton with the post code CB46AZ."
+    },
+    {
+        "user": "Can you tell me what area Milton Country Park is?",
+        "assistant": ": It's in the north and has free entry. Will that be all?"
+    },
+    {
+        "user": "I also need a train for Saturday, traveling from Cambridge to Norwich and I'd like to arrive by 12:15. Can you help with that?"
+    }
+]

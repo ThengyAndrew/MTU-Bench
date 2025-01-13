@@ -1,0 +1,1089 @@
+[
+    {
+        "name": "get_current_temperature",
+        "description": "Retrieves the current ambient temperature from a specified location, such as a room, building, or outdoor environment.",
+        "required_parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The specified location, such as a room, building, or outdoor environment from where the current ambient temperature is to be retrieved."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "temperature",
+                "type": "integer",
+                "description": "The current ambient temperature at the specified location."
+            }
+        ]
+    },
+    {
+        "name": "check_door_status",
+        "description": "Queries the status of a door to determine if it is currently open or closed, and may provide additional security information.",
+        "required_parameters": [
+            {
+                "name": "door_location",
+                "type": "string",
+                "description": "The location of the door that the user wants to check the status of"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "door_status",
+                "type": "string",
+                "description": "The current status of the door: locked or unlocked"
+            }
+        ]
+    },
+    {
+        "name": "play_music",
+        "description": "Initiates the playback of music on a connected audio system, including options to select playlists, songs, or streaming services.",
+        "required_parameters": [
+            {
+                "name": "song/playlist",
+                "type": "string",
+                "description": "The specific song or playlist that the user wants to play."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "volume",
+                "type": "float",
+                "description": "The volume at which the music should be played."
+            },
+            {
+                "name": "music_service",
+                "type": "string",
+                "description": "The specific music or streaming service, e.g. Spotify."
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location where the user wants the music to be played."
+            },
+            {
+                "name": "music_genre",
+                "type": "string",
+                "description": "The specific genre of music the user wants to play."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "A confirmation message that the music has been played as per user's instruction."
+            }
+        ]
+    },
+    {
+        "name": "lock_door",
+        "description": "Commands a smart lock to secure a door, ensuring the door is locked and reporting the lock status.",
+        "required_parameters": [
+            {
+                "name": "door_name",
+                "type": "string",
+                "description": "The name or location of the door that needs to be locked"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "lock_status",
+                "type": "string",
+                "description": "The status of the door lock after the 'lock_door' action"
+            }
+        ]
+    },
+    {
+        "name": "adjust_room_temperature",
+        "description": "Controls the thermostat or heating/cooling system to set a specific temperature for a room or area.",
+        "required_parameters": [
+            {
+                "name": "temperature",
+                "type": "integer",
+                "description": "The desired temperature to set the thermostat or heating/cooling system to."
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The specific room or area where the temperature should be adjusted."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "A confirmation message that the temperature has been set as per user's instruction."
+            }
+        ]
+    },
+    {
+        "name": "adjust_lighting",
+        "description": "Modifies the lighting conditions in a specified area, which can include dimming, color changes, or turning lights on or off.",
+        "required_parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "description": "Specifies the area where the lighting conditions are to be modified"
+            },
+            {
+                "name": "action",
+                "type": "string",
+                "description": "Determines the action to be executed on the specified lighting conditions such as turning on or off lights or dimming"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "intensity",
+                "type": "float",
+                "description": "Represents the level of brightness to be set if the lights are to be dimmed or brightened"
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "status",
+                "type": "string",
+                "description": "Returns the status of the action performed on the specified lighting conditions"
+            }
+        ]
+    },
+    {
+        "name": "adjust_music_volume",
+        "description": "Changes the volume of the music currently being played on a connected audio system.",
+        "required_parameters": [
+            {
+                "name": "volume",
+                "type": "float",
+                "description": "A numerical representation of the desired music volume"
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "confirmation",
+                "type": "string",
+                "description": "Confirmation message that the volume adjustment has been made accordingly"
+            }
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "Get the weather of a certain location on a date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "date": "2024-01-04"
+        },
+        "result_parameters": [
+            "precipitation",
+            "humidity",
+            "wind",
+            "temperature",
+            "city",
+            "date"
+        ]
+    },
+    {
+        "name": "AddToPlaylist",
+        "description": "This tool allows the user to add a specific song to a specified playlist.",
+        "required_parameters": [
+            {
+                "name": "playlist",
+                "type": "string",
+                "description": "The name of the playlist to which the user wants to add the song."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "entity_name",
+                "type": "string",
+                "description": "The name of the song that the user wants to add to the playlist."
+            },
+            {
+                "name": "artist",
+                "type": "string",
+                "description": "The name of the artist of the song that the user wants to add to the playlist."
+            },
+            {
+                "name": "music_item",
+                "type": "string",
+                "description": "The specific music item that the user wants to add to the playlist."
+            },
+            {
+                "name": "playlist_owner",
+                "type": "string",
+                "description": "The owner of the playlist to which the user wants to add the song."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "confirmation_message",
+                "type": "string",
+                "description": "A message confirming that the song has been added to the playlist."
+            },
+            {
+                "name": "playlist_content",
+                "type": "array",
+                "description": "The current list of songs in the playlist after the addition.",
+                "items": {
+                    "type": "string",
+                    "description": "The title and artist of each song in the playlist."
+                }
+            }
+        ]
+    },
+    {
+        "name": "BookRestaurant",
+        "description": "This tool allows the user to make a reservation at a specified restaurant.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "poi",
+                "type": "string",
+                "description": "The point of interest related to where the restaurant is located."
+            },
+            {
+                "name": "party_size_description",
+                "type": "string",
+                "description": "Description of the party size for the reservation."
+            },
+            {
+                "name": "served_dish",
+                "type": "string",
+                "description": "Specific dish the restaurant serves that the user is interested in."
+            },
+            {
+                "name": "restaurant_name",
+                "type": "string",
+                "description": "Name of the restaurant to make a reservation at."
+            },
+            {
+                "name": "restaurant_type",
+                "type": "string",
+                "description": "Type or style of the restaurant like Japanese, Italian, etc."
+            },
+            {
+                "name": "facility",
+                "type": "string",
+                "description": "Facilities provided by the restaurant like WiFi, parking, etc."
+            },
+            {
+                "name": "spatial_relation",
+                "type": "string",
+                "description": "The spatial or geographic relation of the restaurant in reference to another location."
+            },
+            {
+                "name": "party_size_number",
+                "type": "string",
+                "description": "Number of people included in the reservation."
+            },
+            {
+                "name": "cuisine",
+                "type": "string",
+                "description": "Type of cuisine the restaurant offers."
+            },
+            {
+                "name": "country",
+                "type": "string",
+                "description": "Country where the restaurant is located."
+            },
+            {
+                "name": "sort",
+                "type": "string",
+                "description": "Sorting order for restaurant search results."
+            },
+            {
+                "name": "state",
+                "type": "string",
+                "description": "State where the restaurant is located."
+            },
+            {
+                "name": "city",
+                "type": "string",
+                "description": "City where the restaurant is located."
+            },
+            {
+                "name": "timeRange",
+                "type": "string",
+                "description": "Desired time range for the reservation."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "reservation_confirmation",
+                "type": "string",
+                "description": "A confirmation message including the reservation details."
+            },
+            {
+                "name": "restaurant_details",
+                "type": "object",
+                "description": "Details about the restaurant including address, contact information, and any special notes.",
+                "properties": {
+                    "address": {
+                        "type": "string",
+                        "description": "The address of the restaurant."
+                    },
+                    "contact": {
+                        "type": "string",
+                        "description": "The contact information for the restaurant."
+                    },
+                    "special_notes": {
+                        "type": "string",
+                        "description": "Any special notes or additional information about the restaurant."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "name": "GetWeather",
+        "description": "This tool provides current, historical, or forecasted weather information based on the user's location and specified time.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "condition_description",
+                "type": "string",
+                "description": "Descriptive phrase pertaining to weather condition"
+            },
+            {
+                "name": "geographic_poi",
+                "type": "string",
+                "description": "Geographic point of interest for the weather information"
+            },
+            {
+                "name": "country",
+                "type": "string",
+                "description": "Country for which the weather information is required"
+            },
+            {
+                "name": "condition_temperature",
+                "type": "string",
+                "description": "Weather condition based on temperature"
+            },
+            {
+                "name": "spatial_relation",
+                "type": "string",
+                "description": "Spatial relation for the given geographic point of interest"
+            },
+            {
+                "name": "state",
+                "type": "string",
+                "description": "State for which the weather information is required"
+            },
+            {
+                "name": "city",
+                "type": "string",
+                "description": "City for which the weather information is required"
+            },
+            {
+                "name": "timeRange",
+                "type": "string",
+                "description": "Specific time range for the weather data"
+            },
+            {
+                "name": "current_location",
+                "type": "string",
+                "description": "Current location of the user"
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "temperature",
+                "type": "string",
+                "description": "The temperature at the specified location and time."
+            },
+            {
+                "name": "humidity",
+                "type": "string",
+                "description": "The humidity level at the specified location and time."
+            },
+            {
+                "name": "conditions",
+                "type": "string",
+                "description": "The weather conditions (e.g., clear, cloudy, rainy) at the specified location and time."
+            },
+            {
+                "name": "wind_speed",
+                "type": "string",
+                "description": "The wind speed at the specified location and time."
+            },
+            {
+                "name": "precipitation",
+                "type": "string",
+                "description": "The precipitation information at the specified location and time, if any."
+            }
+        ]
+    },
+    {
+        "name": "PlayMusic",
+        "description": "This tool allows the user to play music based on their preferences, including artist, genre, or era.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "artist",
+                "type": "string",
+                "description": "The name of the artist whose music the user wants to play."
+            },
+            {
+                "name": "album",
+                "type": "string",
+                "description": "The name of the album from which the user wants to play music."
+            },
+            {
+                "name": "music_item",
+                "type": "string",
+                "description": "A specific music item that the user wants to play."
+            },
+            {
+                "name": "track",
+                "type": "string",
+                "description": "A specific track number that the user wants to play from an album."
+            },
+            {
+                "name": "year",
+                "type": "string",
+                "description": "The year of release for the music that the user wants to play."
+            },
+            {
+                "name": "genre",
+                "type": "string",
+                "description": "The genre of music that the user wants to play."
+            },
+            {
+                "name": "service",
+                "type": "string",
+                "description": "The music streaming service that the user wants to use to play music."
+            },
+            {
+                "name": "sort",
+                "type": "string",
+                "description": "The order in which the user wants to sort the music in the playlist."
+            },
+            {
+                "name": "playlist",
+                "type": "string",
+                "description": "The name of a pre-existing playlist that the user wants to play."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "playlist",
+                "type": "array",
+                "description": "A playlist containing the selected music based on user's preferences.",
+                "items": {
+                    "type": "string",
+                    "description": "The title and artist of each song in the playlist."
+                }
+            }
+        ]
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "description": "This tool allows the user to search for screening events such as movies, plays, or performances.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "object_location_type",
+                "type": "string",
+                "description": "Defines the type of the location where the screening event is held."
+            },
+            {
+                "name": "movie_name",
+                "type": "string",
+                "description": "The name of the movie or performance."
+            },
+            {
+                "name": "location_name",
+                "type": "string",
+                "description": "The name of the place where the event is screened."
+            },
+            {
+                "name": "object_type",
+                "type": "string",
+                "description": "Specifies the category of the screening event (movie, play, performance)."
+            },
+            {
+                "name": "timeRange",
+                "type": "string",
+                "description": "The range of time during which the event is screened."
+            },
+            {
+                "name": "spatial_relation",
+                "type": "string",
+                "description": "The relational context of the location where the event is screened."
+            },
+            {
+                "name": "movie_type",
+                "type": "string",
+                "description": "The type/genre of the movie or performance."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "screening_events",
+                "type": "array",
+                "description": "A list of screening events available based on the user's search criteria.",
+                "items": {
+                    "type": "string",
+                    "description": "The title and screening times of each event."
+                }
+            }
+        ]
+    },
+    {
+        "name": "SearchCreativeWork",
+        "description": "This tool allows the user to search for creative works such as movies, TV shows, music albums, books, or video games. It takes the name of the creative work as a required parameter and optionally, the type of the creative work. It returns information about the searched creative work, including details such as availability, platforms, genre, and purchase options.",
+        "required_parameters": [
+            {
+                "name": "object_name",
+                "type": "string",
+                "description": "The name of the creative work to be searched."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "object_type",
+                "type": "string",
+                "description": "The type of the creative work to be searched. It could be a movie, TV show, music album, book, or video game."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "creative_work_info",
+                "type": "string",
+                "description": "Information about the searched creative work, including details such as availability, platforms, genre, and purchase options."
+            }
+        ]
+    },
+    {
+        "name": "RateBook",
+        "description": "This tool allows users to rate books or other literary works.",
+        "required_parameters": [
+            {
+                "name": "rating_value",
+                "type": "string",
+                "description": "The rating value provided by a user for a particular book or literary work."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "object_name",
+                "type": "string",
+                "description": "The name or the title of the book or the literary work."
+            },
+            {
+                "name": "object_select",
+                "type": "string",
+                "description": "The specific object in the literary work that the rating is associated with."
+            },
+            {
+                "name": "object_type",
+                "type": "string",
+                "description": "The type or the category of the book or the literary work."
+            },
+            {
+                "name": "rating_unit",
+                "type": "string",
+                "description": "The unit or scale in which the rating is given."
+            },
+            {
+                "name": "best_rating",
+                "type": "string",
+                "description": "The best or maximum rating that can be given to a book or a work of literature."
+            },
+            {
+                "name": "object_part_of_series_type",
+                "type": "string",
+                "description": "Indicating whether the literary work is part of a series and, if so, the type of that series."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "user_review",
+                "type": "string",
+                "description": "The user's review of the book or literary work, including the rating, review text, reviewer name, and review date."
+            }
+        ]
+    },
+    {
+        "name": "SearchFlights",
+        "description": "API for searching flight information.",
+        "required_parameters": [
+            {
+                "name": "toloc",
+                "type": "string",
+                "description": "Name of the departure city."
+            },
+            {
+                "name": "fromloc",
+                "type": "string",
+                "description": "Name of the arrival city."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "depart_date",
+                "type": "string",
+                "description": "Departure date."
+            },
+            {
+                "name": "depart_time",
+                "type": "string",
+                "description": "Departure time."
+            },
+            {
+                "name": "arrive_date",
+                "type": "string",
+                "description": "Arrival date."
+            },
+            {
+                "name": "arrive_time",
+                "type": "string",
+                "description": "Arrival time."
+            },
+            {
+                "name": "airline_name",
+                "type": "string",
+                "description": "The name of airline."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "flight_details",
+                "type": "string",
+                "description": "Flight details including flight number, departure, destination, date, departure time, arrival time, cabin class, and price."
+            }
+        ]
+    },
+    {
+        "name": "BookAppointment",
+        "description": "Book an appointment at a dentist for a given time and date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "dentist_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "appointment_date",
+            "appointment_time",
+            "offers_cosmetic_services"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Find a dentist by location and optionally by services offered. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "offers_cosmetic_services": "dontcare"
+        },
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "city",
+            "offers_cosmetic_services"
+        ]
+    },
+    {
+        "name": "set_appointment_reminder",
+        "description": "This tool is used to create a reminder for a user-specified appointment. It requires details such as the appointment name, date, time, and optionally, the address and reminder time.",
+        "required_parameters": [
+            {
+                "name": "appointment_name",
+                "type": "string",
+                "description": "A descriptive name of the appointment for which a reminder is being set."
+            },
+            {
+                "name": "appointment_date",
+                "type": "string",
+                "description": "The date of the appointment in the format YYYY-MM-DD.",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+                "name": "appointment_time",
+                "type": "string",
+                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM.",
+                "format": "time"
+            },
+            {
+                "name": "appointment_address",
+                "type": "string",
+                "description": "The address of the appointment location, if applicable."
+            },
+            {
+                "name": "reminder_time",
+                "type": "string",
+                "description": "The time at which the reminder should trigger. Should be provided in a relative format such as '2 hours before' or an exact time format such as HH:MM.",
+                "format": "string"
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "appointment_information",
+                "type": "string",
+                "description": "Provides detailed summary or specific information about the appointment. This could include purpose, participants, location, or any other important details relevant to the appointment."
+            }
+        ],
+        "result_parameters": []
+    },
+    {
+        "name": "get_user_appointments",
+        "description": "This tool is designed to retrieve a list of scheduled appointments for the user. It can filter appointments by various criteria such as date, name, and type of appointment.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "date",
+                "type": "string",
+                "description": "The specific date for which the user wants to retrieve appointments. It should follow the YYYY-MM-DD format.",
+                "format": "date",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name or description of the appointment to help narrow down the search."
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "The type of appointment, such as 'dentist', 'doctor', 'work meeting', etc., to filter the appointments list."
+            },
+            {
+                "name": "time_range",
+                "type": "string",
+                "description": "A time range within the specified date to retrieve appointments for, such as 'morning' or 'afternoon'."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "appointment_name",
+                "type": "string",
+                "description": "The name of the appointment."
+            },
+            {
+                "name": "appointment_date",
+                "type": "string",
+                "description": "The date of the appointment.",
+                "format": "date",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+                "name": "appointment_time",
+                "type": "string",
+                "description": "The time of the appointment.",
+                "format": "time"
+            },
+            {
+                "name": "appointment_address",
+                "type": "string",
+                "description": "The location or address of the appointment."
+            }
+        ]
+    },
+    {
+        "name": "delete_appointment",
+        "description": "This tool is used to delete a specific appointment from a user's schedule based on provided identifiers such as appointment ID or date and time.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "appointment_name",
+                "type": "string",
+                "description": "A descriptive name of the appointment for which a reminder is being set."
+            },
+            {
+                "name": "appointment_date",
+                "type": "string",
+                "description": "The date of the appointment in the format YYYY-MM-DD.",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+                "name": "appointment_time",
+                "type": "string",
+                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM.",
+                "format": "time"
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "Status of the deletion operation, indicating success or failure."
+            }
+        ]
+    },
+    {
+        "name": "change_appointment",
+        "description": "This tool is used to modify the details of an existing appointment. It requires the appointment ID along with the new information to be updated.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "appointment_name",
+                "type": "string",
+                "description": "A descriptive name of the appointment for which a reminder is being set."
+            },
+            {
+                "name": "appointment_date",
+                "type": "string",
+                "description": "The date of the appointment in the format YYYY-MM-DD.",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+                "name": "appointment_time",
+                "type": "string",
+                "description": "The time of the appointment for which a reminder is being set. Should be provided in a standard time format such as HH:MM.",
+                "format": "time"
+            },
+            {
+                "name": "new_appointment_name",
+                "type": "string",
+                "description": "A descriptive name of the appointment for which a reminder is being set."
+            },
+            {
+                "name": "new_appointment_date",
+                "type": "string",
+                "format": "date",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                "description": "The new date for the appointment, in the format YYYY-MM-DD."
+            },
+            {
+                "name": "new_appointment_time",
+                "type": "string",
+                "format": "time",
+                "description": "The new time for the appointment, provided in a standard time format such as HH:MM."
+            },
+            {
+                "name": "new_appointment_location",
+                "type": "string",
+                "description": "Optional. The new location or address for the appointment if it has changed."
+            },
+            {
+                "name": "new_appointment_information",
+                "type": "string",
+                "description": "Optional. A new description for the appointment if additional details need to be specified."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "update_status",
+                "type": "string",
+                "description": "Indicates whether the appointment was successfully updated or not."
+            }
+        ]
+    },
+    {
+        "name": "delete_contact",
+        "description": "This tool permanently removes a contact from the user's contact list by name. It is important to note that once a contact is deleted, it cannot be recovered.",
+        "required_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the contact to be deleted from the user's contact list."
+            }
+        ],
+        "optional_parameters": [],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "A message confirming whether the contact has been successfully deleted or an error message if the deletion could not be processed."
+            }
+        ]
+    },
+    {
+        "name": "delete_contact_number",
+        "description": "This tool is designed to remove a phone number from a specified contact's detail within the user's contact list. It allows for precise deletion based on the phone number itself or its order among multiple numbers.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The name of the contact from whom the phone number is to be deleted. The full name is required."
+            },
+            {
+                "name": "contact_number",
+                "type": "string",
+                "description": "The specific phone number to be deleted. If provided, this number is directly targeted for deletion."
+            },
+            {
+                "name": "number_order",
+                "type": "integer",
+                "description": "If the contact has multiple numbers and no specific number is provided, this parameter specifies the order of the number to delete (e.g., the first number, second number, etc.).",
+                "default": 1
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "Confirms the successful removal of the phone number or provides details if the operation couldn't be completed."
+            }
+        ]
+    },
+    {
+        "name": "delete_contact_email",
+        "description": "This tool deletes an email address associated with a specified contact in the user's contact list. This action is irreversible, and the email address cannot be retrieved once deleted.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the contact whose email address is to be deleted."
+            },
+            {
+                "name": "contact_email",
+                "type": "string",
+                "format": "email",
+                "description": "The specific email address to be deleted, if known. If not provided, the default operation will assume the only or primary email is to be deleted."
+            },
+            {
+                "name": "email_order",
+                "type": "integer",
+                "description": "Specifies the order of the email address to be deleted if the contact has multiple email addresses. For example, '1' for the primary email, '2' for the secondary, and so on."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "deletion_status",
+                "type": "string",
+                "description": "Confirms the successful removal of the email address or informs about any issues that prevented the deletion."
+            }
+        ]
+    },
+    {
+        "name": "update_contact_information",
+        "description": "This tool allows for the modification of existing contact information or add more contact details within a user's contact list, such as updating a contact name, phone number, or email address.",
+        "required_parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The original name of the contact as currently stored in the contact list."
+            },
+            {
+                "name": "new_information",
+                "type": "Dict",
+                "description": "An object containing the new contact details that need to be updated.",
+                "properties": {
+                    "new_name": {
+                        "type": "string",
+                        "description": "The new name to assign to the contact, if changing the contact's name."
+                    },
+                    "new_phone_number": {
+                        "type": "string",
+                        "description": "The new phone number to be added to the contact list."
+                    },
+                    "new_email": {
+                        "type": "string",
+                        "format": "email",
+                        "description": "The new email to be added to the contact list."
+                    }
+                }
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The original phone number of the contact that needs to be replaced."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "description": "The original email number of the contact that needs to be replaced."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "update_status",
+                "type": "string",
+                "description": "Confirms the successful update of the contact's information or informs about any issues that prevented the update."
+            }
+        ]
+    },
+    {
+        "name": "add_new_contact",
+        "description": "This tool allows for the creation of a brand-new contact entry in the user's contact list, using the provided personal information such as name, phone number, email address, and potentially a physical address.",
+        "required_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name of the new contact to be added to the contact list."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number associated with the new contact."
+            }
+        ],
+        "optional_parameters": [
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the new contact, if available."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "description": "The physical address of the new contact."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "creation_status",
+                "type": "string",
+                "description": "Confirms the successful creation of the new contact or provides details if there were any issues during the process."
+            }
+        ]
+    },
+    {
+        "name": "search_contact",
+        "description": "This tool searches the user's contact list for a specific contact based on provided search criteria such as the contact's name, phone number, or email address.",
+        "required_parameters": [],
+        "optional_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name or partial name of the contact to search for."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number of the contact to search for."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the contact to search for."
+            }
+        ],
+        "result_parameters": [
+            {
+                "name": "contact_name",
+                "type": "string",
+                "description": "The full name or partial name of the contact to search for."
+            },
+            {
+                "name": "phone_number",
+                "type": "string",
+                "description": "The phone number of the contact to search for."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "format": "email",
+                "description": "The email address of the contact to search for."
+            }
+        ]
+    }
+]

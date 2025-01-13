@@ -1,0 +1,8 @@
+[
+    {
+        "name": "check_door_status",
+        "arguments": {
+            "door_location": "back"
+        }
+    }
+]

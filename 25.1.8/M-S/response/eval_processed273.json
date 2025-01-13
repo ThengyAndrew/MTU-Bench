@@ -1,0 +1,9 @@
+[
+    {
+        "name": "PlayMedia",
+        "arguments": {
+            "playback_device": "kitchen device",
+            "song_name": "African Beauty"
+        }
+    }
+]

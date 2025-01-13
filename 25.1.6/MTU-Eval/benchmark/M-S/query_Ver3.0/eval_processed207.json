@@ -1,0 +1,13 @@
+[
+    {
+        "user": "What is the price for a train departing Stansted Airport after 11:00 on Sunday, heading to Cambridge? I don't need a ticket, just the price.",
+        "assistant": ": They all look to be 8.08 pounds."
+    },
+    {
+        "user": "Great, I also need something to do, a college maybe. What type of college attractions are available?",
+        "assistant": ": There are over 15 colleges located in Cambridge. All quite amazing. Were you looking to visit one in the west or centre?"
+    },
+    {
+        "user": "In the west and I will need the entrance fee if there is one, please."
+    }
+]

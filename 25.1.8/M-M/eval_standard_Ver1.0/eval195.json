@@ -1,0 +1,52 @@
+[
+    {
+        "query": [
+            {
+                "User": "Could you assist me in finding a dental service?",
+                "Assistant": "Sure, in which location are you looking for this service?"
+            },
+            {
+                "User": "In New York City.",
+                "Assistant": "Alright. Any specific services you are looking for?"
+            },
+            {
+                "User": "Yes, the dentist should offer cosmetic services. After finding, could you also set up an appointment for me?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookAppointment",
+                    "description": "Book an appointment at a dentist for a given time and date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindProvider",
+                    "description": "Find a dentist by location and optionally by services offered. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "FindProvider",
+                "arguments": {
+                    "city": "New York",
+                    "offers_cosmetic_services": true
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Tuesday",
+            "name": "Gonville hotel",
+            "stay": "4",
+            "people": "8",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

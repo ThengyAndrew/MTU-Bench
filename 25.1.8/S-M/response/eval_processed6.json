@@ -1,0 +1,52 @@
+[
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    },
+    {
+        "name": "transfer_funds",
+        "arguments": {
+            "account_number": "239267492492",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "239267492492"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-02"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_name": "the american scene",
+            "rating_value": "2"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "name": "Cambridge University Botanic Gardens",
+            "return_info": [
+                "area",
+                "postcode"
+            ]
+        }
+    }
+]

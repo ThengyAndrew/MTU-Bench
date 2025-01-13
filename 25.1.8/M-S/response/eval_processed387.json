@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "San Francisco",
+            "date": "2024-01-04",
+            "party_size": "2",
+            "restaurant_name": "Alice's",
+            "time": "12:00"
+        }
+    }
+]

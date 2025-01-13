@@ -1,0 +1,37 @@
+[
+    {
+        "user": "I need a room at a two star hotel.",
+        "assistant": ": In which city?"
+    },
+    {
+        "user": "I want a hotel in vancouver.",
+        "assistant": ": Atrium Inn Vancouver is a nice 2 star hotel."
+    },
+    {
+        "user": "That would be fine.",
+        "assistant": ": Would you like to reserve the room?"
+    },
+    {
+        "user": "Yes, but not now. I need a bus for two people that would be leaving Portland on the 5th.",
+        "assistant": ": There is a bus that leaves at 6:50 am. The cost is $39 and there 0 transfers."
+    },
+    {
+        "user": "That is too early for me. Is there anything else leaving a little later?",
+        "assistant": ": There is a bus that leaves at 8:10 am. The cost is $38 and there 0 transfers."
+    },
+    {
+        "user": "Is there anything a little later? That is still too early for me.",
+        "assistant": ": There is a bus that leaves at 10:20 am. The cost is $40 and there 0 transfers."
+    },
+    {
+        "user": "What station would it be leaving from and which one would it be stopping off at?",
+        "assistant": ": It would be leaving Portland Bus Station and stopping off at Pacific Central Station."
+    },
+    {
+        "user": "That would be fine.",
+        "assistant": ": Would you like tickets?"
+    },
+    {
+        "user": "Not right now."
+    }
+]

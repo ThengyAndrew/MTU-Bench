@@ -1,0 +1,9 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "Vancouver",
+            "star_rating": "2"
+        }
+    }
+]

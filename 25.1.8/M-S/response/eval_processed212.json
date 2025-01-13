@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "area": "centre",
+            "return_info": [
+                "name",
+                "address",
+                "entrance fee"
+            ]
+        }
+    }
+]

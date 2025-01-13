@@ -1,0 +1,12 @@
+[
+    {
+        "name": "BookTrain",
+        "arguments": {
+            "people": "6",
+            "trainID": "TR5729",
+            "return_info": [
+                "reference"
+            ]
+        }
+    }
+]

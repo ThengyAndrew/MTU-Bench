@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Can you find me one-way flights?",
+        "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+    },
+    {
+        "user": "I will be leaving from San Fran and going to LA this Saturday.",
+        "assistant": ": There is an Alaska Airlines flight available. The outbound flight leaves at 8:20 pm with 0 stops. This tickets costs $100."
+    },
+    {
+        "user": "Are there any other flight options?",
+        "assistant": ": There is an American Airlines flight that leaves at 3:50 pm with 0 stops. The ticket will cost $104."
+    },
+    {
+        "user": "That flight seems pretty good to me. Can you help buy me a one-way flight ticket? Yes, that sounds good to me.",
+        "assistant": ": Your one-way ticket is now reserved."
+    },
+    {
+        "user": "Is the ticket refundable? Also, which airport will the flight arrive at?",
+        "assistant": ": Unfortunately, the ticket is not refundable. The flight will arrive at LAX International Airport."
+    },
+    {
+        "user": "Thank you for the help. I would also like to find a hotel room there. I want one room at a one star hotel with wifi."
+    }
+]

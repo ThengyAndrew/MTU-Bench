@@ -1,0 +1,10 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "New Delhi",
+            "star_rating": "1",
+            "has_wifi": "True"
+        }
+    }
+]

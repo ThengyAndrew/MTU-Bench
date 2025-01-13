@@ -1,0 +1,57 @@
+[
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "living room"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "bedroom"
+        }
+    },
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "entity_name": "muzika za decu",
+            "playlist": "crash course"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "country": "niger",
+            "party_size_number": "7"
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "milleville beach"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "is_unisex": "true"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "stylist_name": "FindProvider.stylist_name",
+            "appointment_time": "8:00",
+            "appointment_date": "2024-01-08"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.stylist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    }
+]

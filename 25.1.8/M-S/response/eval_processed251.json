@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "City Center B&B|El Shaddai",
+            "return_info": [
+                "address",
+                "postcode",
+                "parking"
+            ]
+        }
+    }
+]

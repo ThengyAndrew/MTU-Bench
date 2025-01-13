@@ -1,0 +1,9 @@
+[
+    {
+        "user": "It does n't matter what time I leave as long as I 'm there by 16:45. A train from Ely to Cambridge on Thursday.",
+        "assistant": ": There are 6 trains leaving that will get you there by 16:45 , the closest TR3240 arriving at 15:52 . Would you like to make a reservation ?"
+    },
+    {
+        "user": "Yes , please make me a reservation for two people on TR3240 arriving at 15:52 ."
+    }
+]

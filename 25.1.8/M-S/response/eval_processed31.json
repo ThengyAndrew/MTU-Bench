@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "internet": "true",
+            "type": "guesthouse",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

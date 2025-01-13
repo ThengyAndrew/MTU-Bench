@@ -1,0 +1,17 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "music_item": "album",
+            "playlist": "might and myth power metal"
+        }
+    },
+    {
+        "name": " RateBook",
+        "arguments": {
+            "object_select": "this textbook",
+            "object_type": "book",
+            "rating_value": "one"
+        }
+    }
+]

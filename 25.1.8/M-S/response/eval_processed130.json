@@ -1,0 +1,9 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "date": "2024-01-12",
+            "time_range": "14:00"
+        }
+    }
+]

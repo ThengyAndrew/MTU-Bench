@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I am looking for some attractions to visit with some friends.",
+        "assistant": ": What city should I search in?"
+    },
+    {
+        "user": "I am looking for a performance venue in New York.",
+        "assistant": ": How about 92nd Street Y? It is a Performing Arts Venue."
+    },
+    {
+        "user": "Okay, that sounds good. What is the weather looking like on the March 10th?",
+        "assistant": ": The average temperature should be around 59 degrees Fahrenheit with a 0 percent chance of rain."
+    },
+    {
+        "user": "How windy and humid will it be?"
+    }
+]

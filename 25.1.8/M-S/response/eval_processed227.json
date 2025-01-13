@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "priceRange": "expensive",
+            "food": "Chinese",
+            "return_info": [
+                "address",
+                "postcode"
+            ]
+        }
+    }
+]

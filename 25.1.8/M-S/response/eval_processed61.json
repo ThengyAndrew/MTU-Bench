@@ -1,0 +1,9 @@
+[
+    {
+        "name": "freeze_bank_account",
+        "arguments": {
+            "account_number": "3838234",
+            "freeze_reason": "suspected_fraud"
+        }
+    }
+]

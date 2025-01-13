@@ -1,0 +1,14 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "state": "nebraska"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "artist": "rahsaan patterson"
+        }
+    }
+]

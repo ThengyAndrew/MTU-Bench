@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "type": "guesthouse",
+            "area": "centre",
+            "parking": true,
+            "internet": true,
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

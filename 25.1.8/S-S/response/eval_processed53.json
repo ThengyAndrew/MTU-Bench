@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "indian",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "New York",
+            "star_rating": "2",
+            "has_wifi": "True"
+        }
+    }
+]

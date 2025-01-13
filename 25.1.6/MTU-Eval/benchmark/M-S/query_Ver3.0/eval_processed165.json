@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I 'd like to find out if there 's a particular attraction in Cambridge called kambar",
+        "assistant": ": Yes, Kambar is a nightclub in the centre of town. Can I give you some information on it?"
+    },
+    {
+        "user": "Yes please, can I get the postcode, phone number, and address?",
+        "assistant": ": Sure the address is 1 wheeler street, postcode is cb23qb and the phone number is 01223842725."
+    },
+    {
+        "user": "I am also looking for a really pricey Guesthouse.",
+        "assistant": ": I'm sorry, I don't know of any expensive guest houses. Can I look for something else for you?"
+    },
+    {
+        "user": "Hmm. Do you have any guest houses in the east with free wifi?"
+    }
+]

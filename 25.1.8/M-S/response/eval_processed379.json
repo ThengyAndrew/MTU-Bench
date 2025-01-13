@@ -1,0 +1,9 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "New York",
+            "star_rating": "2"
+        }
+    }
+]

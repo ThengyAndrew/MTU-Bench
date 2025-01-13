@@ -1,0 +1,9 @@
+[
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "album": "Visions",
+            "artist": "Grimes"
+        }
+    }
+]

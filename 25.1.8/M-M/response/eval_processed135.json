@@ -1,0 +1,15 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "Seattle"
+        }
+    },
+    {
+        "name": " ShareLocation",
+        "arguments": {
+            "location": "FindHomeByArea.address",
+            "contact_name": "John"
+        }
+    }
+]

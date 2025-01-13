@@ -1,0 +1,53 @@
+{
+    "query": "I need to rent a small car in Paris from the 10th to the 13th of March, picking it up at 3 in the afternoon.",
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "ccc",
+                "description": "Search for available rental cars by city and date",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveCar",
+                "description": "Reserve car rental for given dates and location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "ReserveHotel",
+                "description": "Reserve a selected hotel for given dates",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "SearchHotel",
+                "description": "Search for a hotel based on location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

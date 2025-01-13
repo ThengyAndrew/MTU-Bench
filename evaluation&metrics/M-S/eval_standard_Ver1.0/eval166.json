@@ -1,0 +1,229 @@
+[
+    {
+        "query": [
+            {
+                "user": "I need a 3 star hotel in Cambridge, that offers a guesthouse, can you book it for me?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchHotel",
+                    "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "stars": {
+                                "type": "string",
+                                "description": "The hotel rating based on stars."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of hotel."
+                            },
+                            "parking": {
+                                "type": "boolean",
+                                "description": "Availability of parking at the hotel."
+                            },
+                            "internet": {
+                                "type": "boolean",
+                                "description": "Availability of internet service at the hotel."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the hotel."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the hotel."
+                            },
+                            "priceRange": {
+                                "type": "string",
+                                "description": "The price range of the hotel."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "bookHotel",
+                    "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "day": {
+                                "type": "string",
+                                "description": "The booking date."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The hotel name for the booking."
+                            },
+                            "stay": {
+                                "type": "string",
+                                "description": "The number of days to stay at the hotel."
+                            },
+                            "people": {
+                                "type": "string",
+                                "description": "The number of people for the booking."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Fields to be returned after booking."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRestaurant",
+                    "description": "Allows users to search for restaurant information based on various filters.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "description": "The area where the restaurant is located."
+                            },
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "priceRange": {
+                                "description": "The price range of the restaurant."
+                            },
+                            "food": {
+                                "description": "Type of food or cuisine offered."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'."
+                            }
+                        },
+                        "required": [
+                            "area"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookRestaurant",
+                    "description": "Allows users to make restaurant reservations.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "day": {
+                                "description": "The date for the reservation."
+                            },
+                            "time": {
+                                "description": "The time for the reservation."
+                            },
+                            "people": {
+                                "description": "Number of people for the reservation."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "day",
+                            "time",
+                            "people"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchTaxi",
+                    "description": "Provides a taxi search service, allowing users to find available taxis and get pricing based on specific criteria.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "departure": {
+                                "description": "The starting point of the journey"
+                            },
+                            "destination": {
+                                "description": "The end point of the journey"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list of additional details the user wants to get back, with options including 'all', 'phone', 'license_plate', 'type'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            },
+                            "day": {
+                                "description": "The date for which the taxi service is required."
+                            },
+                            "leaveAt": {
+                                "description": "The desired departure time (requires either leaveAt or arriveBy)"
+                            },
+                            "arriveBy": {
+                                "description": "The time by which the user wants to arrive at the destination (requires either leaveAt or arriveBy)"
+                            }
+                        },
+                        "required": [
+                            "departure",
+                            "destination",
+                            "return_info"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookTaxi",
+                    "description": "Allows users to book a taxi by providing the necessary details.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "people": {
+                                "description": "Number of passengers"
+                            },
+                            "license_plate": {
+                                "description": "License plate number of the taxi to be booked"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list of details to be returned after booking, options include 'all', 'isSuccess', 'phone', 'type', 'reference'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            }
+                        },
+                        "required": [
+                            "people",
+                            "license_plate"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "searchHotel",
+                "arguments": {
+                    "stars": "3",
+                    "type": "guesthouse",
+                    "area": "Cambridge",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

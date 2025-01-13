@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "trainID": "TR0115",
+            "return_info": [
+                "leaveAt",
+                "arriveBy"
+            ]
+        }
+    }
+]

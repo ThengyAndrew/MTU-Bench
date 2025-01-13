@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "1069 B Street",
+            "number_of_seats": "3",
+            "ride_type": "Regular"
+        }
+    }
+]

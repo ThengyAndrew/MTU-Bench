@@ -1,0 +1,52 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "19:00",
+            "label": "Workout"
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "19:00",
+            "label": "Workout",
+            "sound": "Birdsong"
+        }
+    },
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "ShareLocation",
+        "arguments": {
+            "location": "FindEvents.venue_address",
+            "contact_name": "Alex"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "party_size_number": "9"
+        }
+    },
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "condition_description": "sun be out",
+            "timeRange": "1 minute",
+            "city": "searcy",
+            "country": "uganda"
+        }
+    },
+    {
+        "name": "SearchCreativeWork",
+        "arguments": {
+            "object_name": "switched"
+        }
+    }
+]

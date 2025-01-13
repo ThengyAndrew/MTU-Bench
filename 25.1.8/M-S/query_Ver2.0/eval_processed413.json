@@ -1,0 +1,34 @@
+[
+    {
+        "user": "Can you help me find an intermediate priced place to eat?",
+        "function": "",
+        "Thought": "Missing cuisine. I can't call the function.",
+        "observation": "",
+        "assistant": ": Any food specifications? Chinese, American or something else?"
+    },
+    {
+        "user": "I love brazilian food actually",
+        "function": "",
+        "Thought": "Missing city. I can't call the function.",
+        "observation": "",
+        "assistant": ": Which city should I search for it?"
+    },
+    {
+        "user": "I want something in San Francisco.",
+        "function": "",
+        "Action": "FindRestaurants ",
+        "Action Input": "{'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'moderate'}",
+        "observation": "",
+        "Observation": "{'city': 'San Francisco', 'cuisine': 'Brazilian', 'has_live_music': 'False', 'phone_number': '415-626-8727', 'price_range': 'moderate', 'restaurant_name': 'Minas Brazilian', 'serves_alcohol': 'False', 'street_address': '41 Franklin Street'}",
+        "assistant": ": Which city should I search for it?"
+    },
+    {
+        "user": "Do you have something expensive?",
+        "function": "",
+        "Action": "FindRestaurants ",
+        "Action Input": "{'city': 'San Francisco', 'cuisine': 'Brazilian', 'price_range': 'expensive'}",
+        "observation": "",
+        "Observation": "{}",
+        "assistant": ": Which city should I search for it?"
+    }
+]

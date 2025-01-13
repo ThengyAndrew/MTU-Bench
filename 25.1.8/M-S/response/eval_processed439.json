@@ -1,0 +1,16 @@
+[
+    {
+        "name": "ReserveRoundtripFlights",
+        "arguments": {
+            "airlines": "Delta Airlines",
+            "departure_date": "2024-01-10",
+            "destination_city": "Los Angeles",
+            "inbound_departure_time": "06:50",
+            "origin_city": "Portland",
+            "outbound_departure_time": "09:35",
+            "passengers": "1",
+            "return_date": "2024-01-13",
+            "seating_class": "Economy"
+        }
+    }
+]

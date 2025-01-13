@@ -1,0 +1,13 @@
+[
+    {
+        "user": "What are some places I could visit that are in Cambridge?",
+        "assistant": ": There are several great places to visit in Cambridge. What type of attraction do you prefer?"
+    },
+    {
+        "user": "I would like to visit a park on the north side.",
+        "assistant": ": Sure, we have Milton Country Park located in the north in Milton. Their phone number is 01223420060 & postcode is cb46az."
+    },
+    {
+        "user": "Ok, great thanks. I also need to find a train going to Cambridge."
+    }
+]

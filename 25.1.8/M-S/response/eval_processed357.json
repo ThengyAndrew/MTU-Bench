@@ -1,0 +1,12 @@
+[
+    {
+        "name": "GetTimesForMovie",
+        "arguments": {
+            "movie_name": "Hellboy",
+            "location": "Berkeley",
+            "show_date": "2024-01-04",
+            "show_type": "3D",
+            "theater_name": "United Artists Berkeley 7"
+        }
+    }
+]

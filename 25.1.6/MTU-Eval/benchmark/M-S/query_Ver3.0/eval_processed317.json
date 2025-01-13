@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need a room at a two star hotel.",
+        "assistant": ": In which city?"
+    },
+    {
+        "user": "I want a hotel in vancouver.",
+        "assistant": ": Atrium Inn Vancouver is a nice 2 star hotel."
+    },
+    {
+        "user": "That would be fine.",
+        "assistant": ": Would you like to reserve the room?"
+    },
+    {
+        "user": "Yes, but not now. I need a bus for two people that would be leaving Portland on the 5th."
+    }
+]

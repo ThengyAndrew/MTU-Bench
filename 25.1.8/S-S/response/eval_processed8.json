@@ -1,0 +1,12 @@
+[
+    {
+        "name": "transfer_funds",
+        "arguments": {
+            "account_number": "112233456",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": 500,
+            "transfer_speed": "now"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "category": "India",
+            "location": "New York"
+        }
+    },
+    {
+        "name": "ShareLocation",
+        "arguments": {
+            "location": "FindRestaurants.address",
+            "contact_name": "Jessica"
+        }
+    }
+]

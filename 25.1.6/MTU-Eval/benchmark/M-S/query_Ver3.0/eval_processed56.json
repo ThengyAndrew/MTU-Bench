@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Hello, how much in late fees do I owe you",
+        "assistant": ": What's your library ID?"
+    },
+    {
+        "user": "It's 58965.",
+        "assistant": ": You currently owe $15"
+    },
+    {
+        "user": "Can I pay this in cash?"
+    }
+]

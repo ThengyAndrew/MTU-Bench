@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I would like to check my balance.",
+        "assistant": ": The balance in which account?"
+    },
+    {
+        "user": "What is underneath the Denver Airport?",
+        "assistant": ": There are baggage transport tunnels underneath the Denver Airport."
+    },
+    {
+        "user": "Are there any secret tunnels or bunkers?",
+        "assistant": ": Yes, there have been theories about secret tunnels and bunkers, but no verified evidence to support those claims."
+    },
+    {
+        "user": "What's with the weird art in the airport?",
+        "assistant": ": The art at Denver Airport, including murals and sculptures, has sparked various interpretations and conspiracy theories, but it primarily aims to celebrate Colorado's history and the natural beauty of the American West."
+    },
+    {
+        "user": "I would like the balance of my savings account."
+    }
+]

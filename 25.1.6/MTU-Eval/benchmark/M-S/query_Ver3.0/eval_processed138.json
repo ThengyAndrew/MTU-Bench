@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I have a home automation request",
+        "assistant": ": What is your home automation request?"
+    },
+    {
+        "user": "What is the current house temperature?"
+    }
+]

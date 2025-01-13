@@ -1,0 +1,15 @@
+[
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "living room"
+        }
+    },
+    {
+        "name": " adjust_room_temperature",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "bedroom"
+        }
+    }
+]

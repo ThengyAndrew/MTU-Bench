@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I am looking for a salon.",
+        "assistant": ": What city are you interested in finding a salon?"
+    },
+    {
+        "user": "I'm looking for a salon in San Fran."
+    }
+]

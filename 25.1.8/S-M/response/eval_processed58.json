@@ -1,0 +1,22 @@
+[
+    {
+        "name": "get_late_fees",
+        "arguments": {
+            "library_ID": "123456"
+        }
+    },
+    {
+        "name": "make_payment",
+        "arguments": {
+            "account_number": "123456",
+            "payment_amount": "get_late_fees.late_fees",
+            "payment_method": "Visa card"
+        }
+    },
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "To Kill a Mockingbird"
+        }
+    }
+]

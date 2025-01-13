@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I need some information please",
+        "assistant": ": about what?"
+    },
+    {
+        "user": "I'm looking for a book",
+        "assistant": ": which book is it?"
+    },
+    {
+        "user": "A Song of Fire and Ice. Do you have this book？"
+    }
+]

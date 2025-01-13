@@ -1,0 +1,17 @@
+[
+    {
+        "user": "i 'm looking for a nightclub",
+        "assistant": ": I have a lot of nightclubs in the city center. Do you want me to recommend one to you?"
+    },
+    {
+        "user": "Yes please. And can you tell me what area it 's in and what the entrance fee is? And the address too, of course.",
+        "assistant": ": Sure! The Kambar is a nightclub located in the centre. The address is 1 Wheeler Street in Cambridge. The entrance fee is 5 pounds."
+    },
+    {
+        "user": "I need to travel saturday and get there by 14:45 from London.",
+        "assistant": ": TR5729 arrives by 14:08. Would you like a ticket?"
+    },
+    {
+        "user": "I need 6 tickets and the reference number"
+    }
+]

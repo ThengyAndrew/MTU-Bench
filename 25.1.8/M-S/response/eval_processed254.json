@@ -1,0 +1,11 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "name": "Maharajah Tandoori",
+            "return_info": [
+                "postcode"
+            ]
+        }
+    }
+]

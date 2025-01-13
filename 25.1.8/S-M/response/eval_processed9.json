@@ -1,0 +1,15 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.stylist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    }
+]

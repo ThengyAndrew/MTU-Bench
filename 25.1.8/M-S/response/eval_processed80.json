@@ -1,0 +1,11 @@
+[
+    {
+        "name": "update_contact_information",
+        "arguments": {
+            "name": "angelee",
+            "new_information": {
+                "new_name": "bell"
+            }
+        }
+    }
+]

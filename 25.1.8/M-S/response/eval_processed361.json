@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "Berkeley",
+            "date": "2024-03-14",
+            "party_size": "2",
+            "restaurant_name": "Kirin Restaurant",
+            "time": "11:30"
+        }
+    }
+]

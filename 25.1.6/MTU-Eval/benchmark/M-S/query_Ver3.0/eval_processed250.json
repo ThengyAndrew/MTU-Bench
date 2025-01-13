@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I am leaving Cambridge and need to go to Broxbourne on Friday .",
+        "assistant": ": There are 19 trains for Friday that fit your needs, would you like to narrow that down with a time you would like to depart?"
+    },
+    {
+        "user": "I need to arrive by 18:15 please .",
+        "assistant": ": The first one arrives at 10:01, how many tickets please?"
+    },
+    {
+        "user": "I also want a cheap hotel with star 0 in north."
+    }
+]

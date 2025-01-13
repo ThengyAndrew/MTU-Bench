@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "area": "centre",
+            "parking": "True",
+            "internet": "True",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

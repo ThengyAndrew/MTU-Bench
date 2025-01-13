@@ -1,0 +1,9 @@
+[
+    {
+        "name": "LookupMusic",
+        "arguments": {
+            "artist": "Our Last Night",
+            "genre": "Metalcore"
+        }
+    }
+]

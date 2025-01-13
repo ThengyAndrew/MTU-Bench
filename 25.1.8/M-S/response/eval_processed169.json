@@ -1,0 +1,8 @@
+[
+    {
+        "name": "CheckBalance",
+        "arguments": {
+            "account_type": "savings"
+        }
+    }
+]

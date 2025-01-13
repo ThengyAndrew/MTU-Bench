@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I would like to check my balance.",
+        "function": "",
+        "Thought": "Missing account_type. I can't call the function.",
+        "observation": "",
+        "assistant": ": The balance in which account?"
+    }
+]

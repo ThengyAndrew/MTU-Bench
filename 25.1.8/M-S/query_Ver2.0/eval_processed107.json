@@ -1,0 +1,23 @@
+[
+    {
+        "user": "I need help with my contacts",
+        "function": "",
+        "Thought": "The user needs help with contacts, I should be prepared to provide assistance with contacts related actions like adding, deleting, updating or finding a contact. No need to call any API at this point.",
+        "observation": "",
+        "assistant": ": Sure."
+    },
+    {
+        "user": "I want to add a new contact",
+        "function": "",
+        "Thought": "The user wants to add a new contact. I need to collect necessary information like contact name and phone number to add a new contact. The API to call would be 'add_new_contact' after collecting the required information. ",
+        "observation": "",
+        "assistant": ": Okay."
+    },
+    {
+        "user": "Name is Scott-cell",
+        "function": "",
+        "Thought": "The user provided the name for the new contact. We still need the phone number before we can add a new contact using the 'add_new_contact' API.",
+        "observation": "",
+        "assistant": ": I see. And what's the phone number for Scott-cell?"
+    }
+]

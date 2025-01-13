@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I need to find a round trip flight to NYC.",
+        "assistant": ": What is the departure city and date? And when would you like to return?"
+    },
+    {
+        "user": "I would like to begin travelling day after tomorrow, leaving from Atlanta and returning on the 9th."
+    }
+]

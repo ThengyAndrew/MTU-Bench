@@ -1,0 +1,9 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "entity_name": "a very cellular song",
+            "playlist": "masters of metal"
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "time": "14:15",
+            "name": "Lucky Star",
+            "people": "6",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

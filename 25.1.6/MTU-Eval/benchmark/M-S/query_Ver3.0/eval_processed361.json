@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I want to make a restaurant reservation. Please make it for 11:30 in the morning, March 14th at Agrodolce Osteria.",
+        "assistant": ": In which city?"
+    },
+    {
+        "user": "Make it for Berkeley. No, I have changed my mind, make it for Kirin. Yes, that works well. Do they have live music there?"
+    }
+]

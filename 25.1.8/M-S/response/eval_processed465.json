@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "San Francisco",
+            "date": "2024-01-06",
+            "party_size": "1",
+            "restaurant_name": "Alamo Square Seafood Grill",
+            "time": "12:15"
+        }
+    }
+]

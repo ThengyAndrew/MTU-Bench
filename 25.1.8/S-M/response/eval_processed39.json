@@ -1,0 +1,17 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "07:00",
+            "label": "Morning Workout"
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "label": "Morning Workout",
+            "time": "07:00",
+            "sound": "Bird Chirping"
+        }
+    }
+]

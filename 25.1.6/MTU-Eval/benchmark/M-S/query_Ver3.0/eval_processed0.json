@@ -1,0 +1,17 @@
+[
+    {
+        "user": "Find some music please.",
+        "assistant": ": Ok, how about Be My Baby by Ariana Grande of her My Everything album?"
+    },
+    {
+        "user": "That sounds good.",
+        "assistant": ": Should I play this now?"
+    },
+    {
+        "user": "Yes. Play on any available device please. No wait. Play on kitchen speaker please. Yes, that's right.",
+        "assistant": ": Great, music has started playing on the kitchen speaker."
+    },
+    {
+        "user": "Tell me what genre is this?"
+    }
+]

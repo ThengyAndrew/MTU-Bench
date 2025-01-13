@@ -1,0 +1,18 @@
+[
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "123456"
+        }
+    },
+    {
+        "name": " transfer_funds",
+        "arguments": {
+            "account_number": "123456",
+            "source_account": "123456",
+            "destination_account": "7891011",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    }
+]

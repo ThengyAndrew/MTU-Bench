@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I need a place to eat that has live music.",
+        "assistant": ": In which city and what kind of cuisine? Would you like Indian, Mexican, or something else?"
+    },
+    {
+        "user": "I am in the mood to eat Mexican food in SF.",
+        "assistant": ": There is 1 such restaurant in San Francisco. I recommend Los Yaquis."
+    },
+    {
+        "user": "Is alcohol served there? What are they located?"
+    }
+]

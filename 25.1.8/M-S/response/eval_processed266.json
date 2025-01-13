@@ -1,0 +1,11 @@
+[
+    {
+        "name": "BuyEventTickets",
+        "arguments": {
+            "city_of_event": "Vancouver",
+            "date": "2024-03-12",
+            "event_name": "Whitecaps Vs Kansas City",
+            "number_of_seats": "1"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "change_alarm_name",
+        "arguments": {
+            "current_name": "Walk Dog",
+            "new_name": "Feed Cat"
+        }
+    }
+]

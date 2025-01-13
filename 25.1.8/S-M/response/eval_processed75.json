@@ -1,0 +1,17 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "Los Angeles"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "San Francisco",
+            "destination_city": "Los Angeles",
+            "departure_date": "FindEvents.date"
+        }
+    }
+]

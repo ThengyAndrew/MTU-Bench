@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you find me one-way flights?",
+        "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+    },
+    {
+        "user": "I will be leaving from San Fran and going to LA this Saturday."
+    }
+]

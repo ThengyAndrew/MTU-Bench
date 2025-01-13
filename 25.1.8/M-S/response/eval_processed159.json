@@ -1,0 +1,9 @@
+[
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "10:00",
+            "sound": "screaming monkey"
+        }
+    }
+]

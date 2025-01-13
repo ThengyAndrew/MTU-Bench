@@ -1,0 +1,77 @@
+[
+    {
+        "query": [
+            {
+                "user": "Can you show me some attractions I can visit?",
+                "assistant": ": In which city?"
+            },
+            {
+                "user": "In London, England please.",
+                "assistant": ": I found 10 attractions you may enjoy. One of them is a Historical Landmark, the 30 St Mary Axe (The Gherkin)."
+            },
+            {
+                "user": "What's their phone number?",
+                "assistant": ": 20 7071 5029 is their number."
+            },
+            {
+                "user": "Okay, good. How's the weather gonna be there on the the 9th?",
+                "assistant": ": Should be at 90 degrees Fahrenheit with a 5 percent chance of rain."
+            },
+            {
+                "user": "Good, okay. I want to get a cab to go there.",
+                "assistant": ": Can it be a shared ride? How many people is it for?"
+            },
+            {
+                "user": "No problem with a shared ride. It's for 3 people.",
+                "assistant": ": Your cab is booked and on the way."
+            },
+            {
+                "user": "Thanks a lot. That's all I need."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetRide",
+                    "description": "Call a taxi to head to a given destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

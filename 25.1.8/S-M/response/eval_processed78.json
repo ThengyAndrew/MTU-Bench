@@ -1,0 +1,16 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "Dentist"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "New York",
+            "destination_city": "San Francisco",
+            "departure_date": "get_user_appointments.appointment_date"
+        }
+    }
+]

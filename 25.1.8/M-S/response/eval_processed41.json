@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetTimesForMovie",
+        "arguments": {
+            "location": "Santa Rosa",
+            "movie_name": "Dumbo",
+            "show_date": "2024-01-04"
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "artist": "Red Hot Chili Peppers"
+        }
+    }
+]

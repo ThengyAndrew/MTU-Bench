@@ -1,0 +1,30 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "type": "Cardiology"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.doctor_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "concert",
+            "city": "New York"
+        }
+    },
+    {
+        "name": "ShareLocation",
+        "arguments": {
+            "location": "FindEvents.venue_address",
+            "contact_name": "Alex"
+        }
+    }
+]

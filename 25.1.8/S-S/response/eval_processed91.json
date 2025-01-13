@@ -1,0 +1,8 @@
+[
+    {
+        "name": "SearchHotel",
+        "arguments": {
+            "destination": "Anaheim"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SearchTrain",
+        "arguments": {
+            "day": "friday",
+            "departure": "cambridge",
+            "destination": "broxbourne",
+            "arriveBy": "18:15",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

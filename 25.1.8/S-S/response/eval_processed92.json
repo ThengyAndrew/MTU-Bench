@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "category": "Sports",
+            "city_of_event": "Sydney",
+            "date": "2023-04-08"
+        }
+    }
+]

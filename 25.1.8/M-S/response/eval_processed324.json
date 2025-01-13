@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "return_info": [
+                "entrance fee",
+                "phone number",
+                "postcode"
+            ]
+        }
+    }
+]

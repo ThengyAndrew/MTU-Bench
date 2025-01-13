@@ -1,0 +1,19 @@
+[
+    {
+        "name": "get_alarm",
+        "arguments": {
+            "time": "08:00",
+            "recurrence": [
+                "tomorrow"
+            ]
+        }
+    },
+    {
+        "name": " set_alarm",
+        "arguments": {
+            "time": "16:00",
+            "sound": "get_alarm.sound",
+            "vibrate": "5"
+        }
+    }
+]

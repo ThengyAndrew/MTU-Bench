@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Can you find me one-way flights?",
+        "function": "",
+        "Thought": "Missing destination_city, origin_city, departure_date. I can't call the function.",
+        "observation": "",
+        "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+    }
+]

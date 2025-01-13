@@ -1,0 +1,24 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "entity_name": "a very cellular song",
+            "playlist_owner": "my",
+            "playlist": "masters of metal"
+        }
+    },
+    {
+        "name": "SearchCreativeWork",
+        "arguments": {
+            "object_type": "novel",
+            "object_name": "to lose my life бн"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "doa: dead or alive",
+            "location_name": "loews cineplex entertainment"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Lovell Lodge",
+            "return_info": [
+                "stars",
+                "internet"
+            ]
+        }
+    }
+]

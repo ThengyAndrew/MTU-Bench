@@ -1,0 +1,21 @@
+[
+    {
+        "user": "Can you show me some attractions I can visit?",
+        "assistant": ": In which city?"
+    },
+    {
+        "user": "In London, England please.",
+        "assistant": ": I found 10 attractions you may enjoy. One of them is a Historical Landmark, the 30 St Mary Axe (The Gherkin)."
+    },
+    {
+        "user": "What's their phone number?",
+        "assistant": ": 20 7071 5029 is their number."
+    },
+    {
+        "user": "Okay, good. How's the weather gonna be there on the the 9th?",
+        "assistant": ": Should be at 90 degrees Fahrenheit with a 5 percent chance of rain."
+    },
+    {
+        "user": "Good, okay. I want to get a cab to go there."
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "user": "I have some books I forgot to return.",
+        "assistant": ": Can I have the last four digits of your library card number?"
+    },
+    {
+        "user": "3274",
+        "assistant": ": Yes, you currently have three books out. Would you like me to renew those for you?"
+    },
+    {
+        "user": "I would like to return them. but I need to know what the late fee will be.",
+        "assistant": ": The late fee is $3.75"
+    },
+    {
+        "user": "Is that for each book?",
+        "assistant": ": No, that is the total fee"
+    },
+    {
+        "user": "Can I come in and pay today?",
+        "assistant": ": Yes, you may. We accept cash or charge."
+    },
+    {
+        "user": "That's fine. Thank you.",
+        "assistant": ": You're welcome."
+    },
+    {
+        "user": "bye"
+    }
+]

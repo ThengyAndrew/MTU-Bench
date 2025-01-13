@@ -1,0 +1,25 @@
+[
+    {
+        "user": "Find me a one way flight.",
+        "assistant": ": What city are you flying from?"
+    },
+    {
+        "user": "I'd like to leave from NY on the 1st of March and fly Economy.",
+        "assistant": ": Where are you heading?"
+    },
+    {
+        "user": "I'd like three tickets to London, UK.",
+        "assistant": ": I found a flight with American Airlines that costs $203 and takes off at 6:15 pm with 0 stops."
+    },
+    {
+        "user": "I'd actually prefer Southwest Airlines.",
+        "assistant": ": I found 1 flight with Southwest Airlines that costs $267, has 0 stops, and takes off at 4:35 pm."
+    },
+    {
+        "user": "What time would I arrive in London?",
+        "assistant": ": It's a redeye flight that would arrive at 4:57 am."
+    },
+    {
+        "user": "Ok, thanks."
+    }
+]

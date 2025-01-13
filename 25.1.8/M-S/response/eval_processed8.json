@@ -1,0 +1,13 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "theatre",
+            "return_info": [
+                "address",
+                "postcode",
+                "phone"
+            ]
+        }
+    }
+]

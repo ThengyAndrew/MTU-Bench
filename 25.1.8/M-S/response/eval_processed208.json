@@ -1,0 +1,14 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "2",
+            "parking": "true",
+            "area": "north",
+            "priceRange": "moderate",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

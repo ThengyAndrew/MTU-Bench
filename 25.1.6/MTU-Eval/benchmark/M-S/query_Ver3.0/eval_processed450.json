@@ -1,0 +1,33 @@
+[
+    {
+        "user": "I need a place to eat that has live music.",
+        "assistant": ": In which city and what kind of cuisine? Would you like Indian, Mexican, or something else?"
+    },
+    {
+        "user": "I am in the mood to eat Mexican food in SF.",
+        "assistant": ": There is 1 such restaurant in San Francisco. I recommend Los Yaquis."
+    },
+    {
+        "user": "Is alcohol served there? What are they located?",
+        "assistant": ": The address is 324 South Van Ness Avenue, and I'm sorry for the confusion but alcohol is not served there."
+    },
+    {
+        "user": "Yes, that would be great.",
+        "assistant": ": Would you like to reserve a table there?"
+    },
+    {
+        "user": "Not right now.",
+        "assistant": ": Is there something else you would like?"
+    },
+    {
+        "user": "I want to do my hair at a salon in SF.",
+        "assistant": ": 1512 Barber Shop is an excellent salon in San Francisco."
+    },
+    {
+        "user": "I will check them out.",
+        "assistant": ": Would you like to make an appointment?"
+    },
+    {
+        "user": "Yes, for the 5th of this month at 15:45. Yes, that would work. May I have a contact number?"
+    }
+]

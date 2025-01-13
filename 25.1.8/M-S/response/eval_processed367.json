@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "area": "center",
+            "parking": "true",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

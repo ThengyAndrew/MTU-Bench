@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I am looking for a place to stay in the moderate price range. It must include free parking.",
+        "assistant": ": Is there a specific part of town you would like to stay in?"
+    },
+    {
+        "user": "I would prefer to stay in a 2 star hotel in the north.",
+        "assistant": ": The Ashley hotel is a 2 star hotel in the north with free parking in the moderate price range. I can book this for you."
+    },
+    {
+        "user": "That would be great! Can you let me know what the post code is? Thank you!",
+        "assistant": ": The postcode is cb41er. How long would you like to stay and how many should I book the hotel for?"
+    },
+    {
+        "user": "I don't need to book it at this time. Can you help me find a place to visit while I'm in town? I'd like a swimming pool in the North.",
+        "assistant": ": We list two swimming pools in the north area, Jesus Green outdoor pool and Kings Hedges learner pool. Would you like more information on either of those?"
+    },
+    {
+        "user": "Can you give me the phone number and postcode for the Jesus Green pool, please?"
+    }
+]

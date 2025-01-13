@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "college",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

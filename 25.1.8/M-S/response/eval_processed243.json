@@ -1,0 +1,12 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "food": "gastropub",
+            "area": "centre",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

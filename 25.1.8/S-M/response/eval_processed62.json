@@ -1,0 +1,17 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "doctor"
+        }
+    },
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "origin_city": "New York",
+            "destination_city": "Los Angeles",
+            "departure_date": "get_user_appointments.appointment_date",
+            "passengers": "1"
+        }
+    }
+]

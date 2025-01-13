@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "geographic_poi": "custer national forest",
+            "condition_temperature": "chillier",
+            "timeRange": "seven pm"
+        }
+    }
+]

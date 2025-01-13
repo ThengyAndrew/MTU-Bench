@@ -1,0 +1,16 @@
+[
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "cuisine": "souvlaki",
+            "state": "ne"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "i think i do",
+            "timeRange": "7 pm"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveCar",
+        "arguments": {
+            "car_type": "Standard",
+            "dropoff_date": "2024-01-05",
+            "pickup_date": "2024-01-04",
+            "pickup_location": "PHL International Airport",
+            "pickup_time": "15:00"
+        }
+    }
+]

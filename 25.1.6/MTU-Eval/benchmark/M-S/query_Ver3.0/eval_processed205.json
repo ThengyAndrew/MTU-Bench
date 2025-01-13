@@ -1,0 +1,13 @@
+[
+    {
+        "user": "The name of the restaurant is Lucky Star. Is there this restaurant?",
+        "assistant": ": Lucky Star is located at Cambridge Leisure Park Clifton Way Cherry Hinton in the south. Would you like me to book a table for you?"
+    },
+    {
+        "user": "It will be on 14:15 for 6.",
+        "assistant": ": I booked a table for 6 for you on Thursday at 14:15 at the Lucky Star. Your reference is AZNTY1ZZ. How else may I be of assistance today?"
+    },
+    {
+        "user": "Could you also help me find a nightclub to check out?"
+    }
+]

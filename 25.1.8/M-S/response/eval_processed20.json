@@ -1,0 +1,9 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "Mountain View",
+            "cuisine": "Punjabi"
+        }
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "genre": "jazz"
+        }
+    },
+    {
+        "name": " PlaySong",
+        "arguments": {
+            "song_name": "LookupSong.song_name",
+            "playback_device": "TV"
+        }
+    }
+]

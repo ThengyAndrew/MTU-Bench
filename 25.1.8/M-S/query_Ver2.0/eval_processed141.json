@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Hi, I have a question.",
+        "function": "",
+        "Thought": "The user has initiated the conversation and is about to ask a question.",
+        "observation": "",
+        "assistant": ": What is your question?"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "artist": "Adam Mitchel Lambert",
+            "playlist": "my spotlight on country 2016"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "artist": "les vandyke",
+            "service": "slacker"
+        }
+    }
+]

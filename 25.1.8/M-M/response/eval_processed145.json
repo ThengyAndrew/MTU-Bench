@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "condition_temperature": "freezing",
+            "timeRange": "today",
+            "geographic_poi": "Delaware and Lehigh National Heritage Corridor"
+        }
+    }
+]

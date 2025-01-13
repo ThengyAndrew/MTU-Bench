@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "Hamilton Lodge",
+            "return_info": [
+                "priceRange"
+            ]
+        }
+    }
+]

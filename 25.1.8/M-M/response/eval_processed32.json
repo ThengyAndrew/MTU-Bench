@@ -1,0 +1,16 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "type": "Cardiologist"
+        }
+    },
+    {
+        "name": " add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.doctor_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "user": "Add alarms",
+        "function": "",
+        "Thought": "The user wants to add an alarm. I need to find out which alarm the user want to add.",
+        "observation": "",
+        "assistant": ": Alarm to add?"
+    },
+    {
+        "user": "one for 9 pm tonight",
+        "function": "",
+        "Thought": "The user wants to add an alarm set for 9 pm tonight.",
+        "Action": "set_alarm",
+        "Action Input": "{\"time\": \"21:00\", \"recurrence\": [\"today\"]}",
+        "observation": ": {\"alarm_time\": \"21:00\", \"alarm_recurrence\": [\"today\"], \"alarm_status\": \"created\"}",
+        "assistant": ": Alarm has been set. would you like to edit another?"
+    }
+]

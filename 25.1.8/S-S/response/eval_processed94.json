@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "category": "Hip Hop",
+            "city": "Philadelphia",
+            "event_type": "Music"
+        }
+    }
+]

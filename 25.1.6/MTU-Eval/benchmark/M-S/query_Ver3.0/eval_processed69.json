@@ -1,0 +1,21 @@
+[
+    {
+        "user": "Hello robot. I need a restaurant.",
+        "assistant": ": Well, what is the place?"
+    },
+    {
+        "user": "Pittsburgh.",
+        "assistant": ": What cuisine type are you interested in?"
+    },
+    {
+        "user": "Thai restaurant.",
+        "assistant": ": Let me look up in my database. A good choice is 48. Are you happy about my answer?"
+    },
+    {
+        "user": "Not done yet. Tell me if the restaurant is open.",
+        "assistant": ": Currently, this place is closed. Are you happy about my answer?"
+    },
+    {
+        "user": "I have all I need. See you."
+    }
+]

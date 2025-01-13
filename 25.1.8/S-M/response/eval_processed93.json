@@ -1,0 +1,16 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "condition_temperature": "hot",
+            "geographic_poi": "southford falls state park"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "music_item": "symphony",
+            "year": "2013"
+        }
+    }
+]

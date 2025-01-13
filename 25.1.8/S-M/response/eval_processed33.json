@@ -1,0 +1,46 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "offers_cosmetic_services": true
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "14:00",
+            "appointment_date": "2024-12-15"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "get_account_balance",
+        "arguments": {
+            "account_number": "12843272323"
+        }
+    },
+    {
+        "name": "transfer_funds",
+        "arguments": {
+            "account_number": "12843272323",
+            "source_account": "checking",
+            "destination_account": "savings",
+            "amount": "get_account_balance.balance",
+            "transfer_speed": "now"
+        }
+    },
+    {
+        "name": "get_recent_transactions",
+        "arguments": {
+            "account_number": "12843272323"
+        }
+    }
+]

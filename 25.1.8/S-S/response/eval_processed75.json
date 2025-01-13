@@ -1,0 +1,11 @@
+[
+    {
+        "name": "BuyBusTicket",
+        "arguments": {
+            "from_location": "San Diego",
+            "leaving_date": "2024-03-13",
+            "to_location": "Anaheim",
+            "travelers": "2"
+        }
+    }
+]

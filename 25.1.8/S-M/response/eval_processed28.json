@@ -1,0 +1,36 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-02"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "San Francisco"
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "To Kill a Mockingbird",
+            "card_number": "apply_for_membership.library_number"
+        }
+    }
+]

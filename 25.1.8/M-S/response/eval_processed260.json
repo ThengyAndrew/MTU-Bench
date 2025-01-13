@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SearchRestaurant",
+        "arguments": {
+            "priceRange": "expensive",
+            "food": "Indian",
+            "area": "west",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

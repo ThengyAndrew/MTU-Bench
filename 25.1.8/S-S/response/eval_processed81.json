@@ -1,0 +1,10 @@
+[
+    {
+        "name": "SearchOnewayFlight",
+        "arguments": {
+            "departure_date": "2024-03-05",
+            "destination_city": "San Diego",
+            "origin_city": "Los Angeles"
+        }
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "San Francisco",
+            "offers_cosmetic_services": "true"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "14:00",
+            "appointment_date": "2024-03-01"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist appointment",
+            "appointment_date": "2024-03-01",
+            "appointment_time": "14:00",
+            "reminder_time": "1 hour before"
+        }
+    },
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "genre": "rock",
+            "year": "1990s"
+        }
+    },
+    {
+        "name": "PlaySong",
+        "arguments": {
+            "song_name": "LookupSong.song_name",
+            "playback_device": "TV"
+        }
+    }
+]

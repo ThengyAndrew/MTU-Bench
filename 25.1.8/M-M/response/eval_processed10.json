@@ -1,0 +1,21 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "06:30",
+            "recurrence": [
+                "Weekdays"
+            ]
+        }
+    },
+    {
+        "name": " change_alarm_sound",
+        "arguments": {
+            "time": "06:30",
+            "sound": "waves sound",
+            "recurrence": [
+                "Weekdays"
+            ]
+        }
+    }
+]

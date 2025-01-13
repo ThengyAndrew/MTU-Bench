@@ -1,0 +1,23 @@
+[
+    {
+        "name": "get_late_fees",
+        "arguments": {
+            "library_ID": "Akf47sef456dwd"
+        }
+    },
+    {
+        "name": "make_payment",
+        "arguments": {
+            "account_number": "Akf47sef456dwd",
+            "payment_amount": "get_late_fees.late_fees",
+            "payment_method": "Visa card"
+        }
+    },
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "A Series of Unfortunate Events",
+            "card_number": "Akf47sef456dwd"
+        }
+    }
+]

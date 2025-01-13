@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "stars": "0",
+            "internet": "true",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

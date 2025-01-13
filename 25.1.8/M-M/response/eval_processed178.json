@@ -1,0 +1,16 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "city": "milleville beach"
+        }
+    },
+    {
+        "name": " PlayMusic",
+        "arguments": {
+            "artist": "fink",
+            "sort": "top",
+            "service": "zvooq"
+        }
+    }
+]

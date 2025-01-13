@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Can you help me find a restaurant that serves indian food in the centre?",
+        "assistant": ": Yes, I have found one. Can I get the price range you would like?"
+    },
+    {
+        "user": "I'm not concerned with price. I do need a reservation for 7 at 15:30 on Wednesday.",
+        "assistant": ": I'll book you at the best -- The Kohinoor. Your booking was successful. The table will be reserved for 15 minutes. Your reference number is: MRRV4AHE. Anything else I can do for you?"
+    },
+    {
+        "user": "Thanks. I also want to find a museum to visit while I am in town. Any type will be fine."
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "FindRestaurants",
+        "arguments": {
+            "city": "San Francisco",
+            "cuisine": "Seafood",
+            "price_range": "moderate",
+            "serves_alcohol": "True"
+        }
+    }
+]

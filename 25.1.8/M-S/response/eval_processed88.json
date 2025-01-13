@@ -1,0 +1,8 @@
+[
+    {
+        "name": "get_book_status",
+        "arguments": {
+            "book_title": "A Song of Ice and Fire"
+        }
+    }
+]

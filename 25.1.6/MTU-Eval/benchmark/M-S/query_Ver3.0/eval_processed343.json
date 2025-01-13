@@ -1,0 +1,21 @@
+[
+    {
+        "user": "Hello! please can you help me to find a doctor for consultation?",
+        "assistant": ": Where are you looking for? Are you looking for a General Practitioner or any specialist?"
+    },
+    {
+        "user": "I'm looking for a general practitioner in Petaluma.",
+        "assistant": ": Do you wish to consult with the doctor Dr. Fasih A. Hameed, MD , who is a General Practitioner located in Petaluma for he has a good ratings from his clients."
+    },
+    {
+        "user": "Do you have their address? What is the numeric value of their rating?",
+        "assistant": ": The address is 1301 Southpoint Boulevard and they have a rating of 5.0."
+    },
+    {
+        "user": "Do you know any other doctors for I'm looking for a Dermatologist in Danville.",
+        "assistant": ": Do you wish to have consultation with Dermatology and Laser Centre, for they are Dermatologist located in Danville?"
+    },
+    {
+        "user": "Yup, this would work for me."
+    }
+]

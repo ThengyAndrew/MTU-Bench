@@ -1,0 +1,20 @@
+[
+    {
+        "user": "Can you locate some songs by Grimes on the Visions album?",
+        "function": "",
+        "Thought": "The user is asking to find songs by the artist Grimes on the album \"Visions\". I should use the LookupMusic API to search for this information.",
+        "Action": "LookupMusic",
+        "Action Input": "{'album': 'Visions', 'artist': 'Grimes'}",
+        "observation": ": {'album': 'Visions', 'artist': 'Grimes', 'genre': 'Electropop', 'song_name': 'Oblivion'}",
+        "assistant": ": Do you like Oblivion by Grimes on the Visions album?"
+    },
+    {
+        "user": "Yes, I do. Cast the song on the kitchen speaker. Yes, that is right.",
+        "function": "",
+        "Thought": "The user confirmed liking the song and has requested to cast it to the kitchen speaker. I'll use the PlayMedia API to fulfill this request.",
+        "Action": "PlayMedia",
+        "Action Input": "{'artist': 'Grimes', 'playback_device': 'kitchen speaker', 'song_name': 'Oblivion'}",
+        "observation": ": {'album': 'Visions', 'artist': 'Grimes', 'genre': 'Electropop', 'playback_device': 'kitchen speaker', 'song_name': 'Oblivion'}",
+        "assistant": ": Your song has started."
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "arguments": {
+            "city": "Mountain View",
+            "date": "2024-01-12",
+            "party_size": "4",
+            "restaurant_name": "Chaat Paradise",
+            "time": "12:00"
+        }
+    }
+]

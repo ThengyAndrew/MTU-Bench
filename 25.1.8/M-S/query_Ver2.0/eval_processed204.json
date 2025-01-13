@@ -1,0 +1,11 @@
+[
+    {
+        "user": "Can I get some information on milton country park ?",
+        "function": "",
+        "Thought": "The user is asking for information on Milton Country Park. I'll call the searchAttraction API with the name of the place to get the required information.",
+        "Action": "searchAttraction",
+        "Action Input": "{\"name\": \"milton country park\", \"return_info\": [\"all\"]}",
+        "observation": ": {\"name\": \"milton country park\", \"address\": \"milton country park, milton\", \"postcode\": \"cb46az\", \"admission\": \"free\"}",
+        "assistant": ": Yes, it's free admission and the address is Milton Country Park, Milton with the post code CB46AZ."
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "user": "Hello, how much in late fees do I owe you",
+        "function": "",
+        "Thought": "The Assistant will need to use the 'get_late_fees' API to determine the amount the user owes in late fees. However, I don't know the library_ID.",
+        "observation": "",
+        "assistant": ": What's your library ID?"
+    }
+]

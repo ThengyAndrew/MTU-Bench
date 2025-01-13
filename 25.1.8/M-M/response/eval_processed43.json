@@ -1,0 +1,9 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "San Francisco",
+            "offers_cosmetic_services": "true"
+        }
+    }
+]

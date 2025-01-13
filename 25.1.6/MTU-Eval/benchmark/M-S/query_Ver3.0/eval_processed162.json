@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need some help with my appointments.",
+        "assistant": ": What kind of help?"
+    },
+    {
+        "user": "I need to set a reminder for a dentist's appointment.",
+        "assistant": ": Which day?"
+    },
+    {
+        "user": "Three weeks from today.",
+        "assistant": ": Okay how about the time of day and the address?"
+    },
+    {
+        "user": "9am at 123 first street."
+    }
+]

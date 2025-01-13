@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Can you find me one-way flights?",
+        "assistant": ": Where are you planning to visit? Where will you be leaving from? When do you plan to leave?"
+    },
+    {
+        "user": "I will be leaving from San Fran and going to LA this Saturday.",
+        "assistant": ": There is an Alaska Airlines flight available. The outbound flight leaves at 8:20 pm with 0 stops. This tickets costs $100."
+    },
+    {
+        "user": "Are there any other flight options?"
+    }
+]

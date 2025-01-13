@@ -1,0 +1,14 @@
+[
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Friday",
+            "name": "Hamilton Lodge",
+            "stay": "3",
+            "people": "1",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

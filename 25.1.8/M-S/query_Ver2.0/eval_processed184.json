@@ -1,0 +1,9 @@
+[
+    {
+        "user": "i am looking for a rental car",
+        "function": "",
+        "Thought": "Missing dropoff_date, pickup_date, pickup_time. I can't call the function.",
+        "observation": "",
+        "assistant": ": when and what time do you need it? where are you picking up the car?"
+    }
+]

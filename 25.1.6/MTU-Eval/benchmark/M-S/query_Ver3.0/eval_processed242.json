@@ -1,0 +1,17 @@
+[
+    {
+        "user": "Do you know anything about the Cambridge University Botanic Gardens?",
+        "assistant": ": Yes, the entrance fee is 4 pounds. What else would you like to know?"
+    },
+    {
+        "user": "I'd like to know the area, and postcode please.",
+        "assistant": ": The area is centre and the postcode is cb21jf. Would you like anything else today?"
+    },
+    {
+        "user": "Yes, I'm looking for a train that arrives by 08:15 going to Birmingham New Street from Cambridge.",
+        "assistant": ": Arrivals are 07:44, 01:44, 07:44, 01:44, and 07:44. What day will you be traveling?"
+    },
+    {
+        "user": "Sorry, I am traveling on Wednesday."
+    }
+]

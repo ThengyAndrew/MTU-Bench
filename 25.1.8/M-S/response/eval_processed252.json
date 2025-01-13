@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FindEvents",
+        "arguments": {
+            "event_type": "Sports",
+            "city": "Vancouver",
+            "date": "2024-03-12"
+        }
+    }
+]

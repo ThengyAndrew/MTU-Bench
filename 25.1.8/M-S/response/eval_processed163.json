@@ -1,0 +1,14 @@
+[
+    {
+        "name": "bookHotel",
+        "arguments": {
+            "day": "Tuesday",
+            "name": "allenbell",
+            "stay": "5",
+            "people": "2",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

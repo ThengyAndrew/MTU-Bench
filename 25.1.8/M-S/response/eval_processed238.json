@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "hamilton lodge",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

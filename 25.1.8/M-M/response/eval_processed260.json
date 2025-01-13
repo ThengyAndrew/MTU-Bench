@@ -1,0 +1,17 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "condition_description": "sun be out",
+            "timeRange": "1 minute",
+            "city": "searcy",
+            "country": "uganda"
+        }
+    },
+    {
+        "name": " SearchCreativeWork",
+        "arguments": {
+            "object_name": "switched"
+        }
+    }
+]

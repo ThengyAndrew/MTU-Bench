@@ -1,0 +1,119 @@
+[
+    {
+        "name": "FindBus",
+        "description": "Search for a bus itinerary between two places on a certain date",
+        "required_parameters": [
+            "from_city",
+            "to_city",
+            "departure_date"
+        ],
+        "optional_parameters": {
+            "num_passengers": "1",
+            "category": "direct"
+        },
+        "result_parameters": [
+            "from_city",
+            "to_city",
+            "from_station",
+            "to_station",
+            "departure_date",
+            "departure_time",
+            "price",
+            "num_passengers",
+            "category"
+        ]
+    },
+    {
+        "name": "BuyBusTicket",
+        "description": "Purchase the bus tickets",
+        "required_parameters": [
+            "from_city",
+            "to_city",
+            "departure_date",
+            "departure_time",
+            "num_passengers"
+        ],
+        "optional_parameters": {
+            "additional_luggage": "False"
+        },
+        "result_parameters": [
+            "from_city",
+            "to_city",
+            "from_station",
+            "to_station",
+            "departure_date",
+            "departure_time",
+            "price",
+            "additional_luggage",
+            "num_passengers",
+            "category"
+        ]
+    },
+    {
+        "name": "FindAttractions",
+        "description": "Browse attractions in a given city",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "category": "dontcare",
+            "free_entry": "dontcare",
+            "good_for_kids": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "attraction_name",
+            "category",
+            "phone_number",
+            "free_entry",
+            "good_for_kids"
+        ]
+    },
+    {
+        "name": "ReserveHotel",
+        "description": "Reserve rooms at a selected place for given dates",
+        "required_parameters": [
+            "place_name",
+            "check_in_date",
+            "stay_length",
+            "location"
+        ],
+        "optional_parameters": {
+            "number_of_rooms": "1"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "check_in_date",
+            "stay_length",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    },
+    {
+        "name": "SearchHotel",
+        "description": "Look for accommodation in a city of choice",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "smoking_allowed": "dontcare",
+            "star_rating": "dontcare",
+            "number_of_rooms": "dontcare"
+        },
+        "result_parameters": [
+            "location",
+            "number_of_rooms",
+            "star_rating",
+            "place_name",
+            "street_address",
+            "phone_number",
+            "price_per_night",
+            "smoking_allowed"
+        ]
+    }
+]

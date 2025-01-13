@@ -1,0 +1,13 @@
+[
+    {
+        "user": "i want a place i can watch multiple sports in the centre.",
+        "assistant": ": I did not find any places in the Centre of town. Would you like to try another area?"
+    },
+    {
+        "user": "Are there any nightclubs that I could visit, instead?",
+        "assistant": ": Sure! I recommend The Fez Club. Their address is 8 market passage."
+    },
+    {
+        "user": "I need to have the phone number, entrance fee, and postcode please."
+    }
+]

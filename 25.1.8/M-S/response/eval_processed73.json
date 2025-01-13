@@ -1,0 +1,12 @@
+[
+    {
+        "name": "query_restaurant",
+        "arguments": {
+            "food_pref": "Thai",
+            "loc": "Pittsburgh",
+            "goals": [
+                "default"
+            ]
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "GetWeather",
+        "arguments": {
+            "geographic_poi": "milleville beach"
+        }
+    }
+]

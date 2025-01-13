@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "nightclub",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

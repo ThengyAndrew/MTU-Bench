@@ -1,0 +1,17 @@
+[
+    {
+        "user": "Hello , I 'm in need lodging that has free wifi and zero stars .",
+        "assistant": ": Great ! I found three results ! Two are in the centre and one in the north . Which would you prefer ?"
+    },
+    {
+        "user": "I would prefer one that is a guesthouse .",
+        "assistant": ": There are 2 options : one in the North and one in the town Centre . Which would you like ?"
+    },
+    {
+        "user": "Can I have the pricing and address of the one in the centre of town ?",
+        "assistant": ": I can not see the price but it does say it is cheap . Their address is 41 Warkworth Street . Would you like me to book it of you ?"
+    },
+    {
+        "user": "Yes , could you tell me the name of the lodging that you mentioned , please ?"
+    }
+]

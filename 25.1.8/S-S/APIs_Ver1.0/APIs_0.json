@@ -1,0 +1,51 @@
+[
+    {
+        "name": "ReserveRestaurant",
+        "description": "Reserve a table at a restaurant",
+        "required_parameters": [
+            "restaurant_name",
+            "city",
+            "time"
+        ],
+        "optional_parameters": {
+            "date": "2019-03-01",
+            "party_size": "2"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "date",
+            "time",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "party_size",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    },
+    {
+        "name": "FindRestaurants",
+        "description": "Find a restaurant of a particular cuisine in a city",
+        "required_parameters": [
+            "cuisine",
+            "city"
+        ],
+        "optional_parameters": {
+            "price_range": "dontcare",
+            "has_live_music": "dontcare",
+            "serves_alcohol": "dontcare"
+        },
+        "result_parameters": [
+            "restaurant_name",
+            "serves_alcohol",
+            "has_live_music",
+            "phone_number",
+            "street_address",
+            "price_range",
+            "city",
+            "cuisine"
+        ]
+    }
+]

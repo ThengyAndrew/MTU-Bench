@@ -1,0 +1,17 @@
+[
+    {
+        "name": "get_user_appointments",
+        "arguments": {
+            "name": "xxx"
+        }
+    },
+    {
+        "name": " set_alarm",
+        "arguments": {
+            "time": "08:00",
+            "recurrence": [
+                "get_user_appointments.appointment_date"
+            ]
+        }
+    }
+]

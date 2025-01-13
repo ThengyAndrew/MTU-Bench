@@ -1,0 +1,53 @@
+[
+    {
+        "query": [
+            {
+                "user": "Hello robot. I need a restaurant."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "query_restaurant",
+                    "description": "The tool searches for a restaurant based on the user's preferences and provided criteria such as type of food, location, and other options.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "food_pref": {
+                                "type": "string",
+                                "description": "The preferred type of cuisine or food the user is looking for."
+                            },
+                            "loc": {
+                                "type": "string",
+                                "description": "The location where the user is searching for a restaurant. This can be a specific city or a general area."
+                            },
+                            "open": {
+                                "type": "boolean",
+                                "description": "A criterion to find out if the restaurant is currently open."
+                            },
+                            "parking": {
+                                "type": "boolean",
+                                "description": "A criterion to inquire about the availability of parking at the restaurant."
+                            },
+                            "price": {
+                                "type": "boolean",
+                                "description": "A criterion to determine the price range or cost level of the restaurant."
+                            }
+                        },
+                        "required": [
+                            "food_pref",
+                            "loc"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

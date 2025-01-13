@@ -1,0 +1,13 @@
+[
+    {
+        "user": "I have a home automation request",
+        "assistant": ": What is your home automation request?"
+    },
+    {
+        "user": "What is the current house temperature?",
+        "assistant": ": The current house temperature is 80 degrees Fahrenheit."
+    },
+    {
+        "user": "Wow no wonder I'm so warm can you set it to 70?"
+    }
+]

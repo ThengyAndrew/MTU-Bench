@@ -1,0 +1,9 @@
+[
+    {
+        "user": "I'm searching for a flight.",
+        "assistant": ": Which metropolis do you wish to leave from?"
+    },
+    {
+        "user": "Search for flights from Washington."
+    }
+]

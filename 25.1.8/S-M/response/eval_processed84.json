@@ -1,0 +1,24 @@
+[
+    {
+        "name": "LookupSong",
+        "arguments": {
+            "artist": "Red Hot Chili Peppers"
+        }
+    },
+    {
+        "name": "PlaySong",
+        "arguments": {
+            "song_name": "LookupSong.song_name"
+        }
+    },
+    {
+        "name": "change_alarm_sound",
+        "arguments": {
+            "time": "15:00",
+            "sound": "Under the Bridge",
+            "recurrence": [
+                "today"
+            ]
+        }
+    }
+]

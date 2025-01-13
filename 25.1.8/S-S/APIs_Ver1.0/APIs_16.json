@@ -1,0 +1,37 @@
+[
+    {
+        "name": "eee",
+        "description": "Book an appointment at a dentist for a given time and date",
+        "required_parameters": [
+            "dentist_name",
+            "appointment_time",
+            "appointment_date"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "appointment_date",
+            "appointment_time",
+            "offers_cosmetic_services"
+        ]
+    },
+    {
+        "name": "FindProvider",
+        "description": "Find a dentist by location and optionally by services offered",
+        "required_parameters": [
+            "city"
+        ],
+        "optional_parameters": {
+            "offers_cosmetic_services": "dontcare"
+        },
+        "result_parameters": [
+            "dentist_name",
+            "phone_number",
+            "address",
+            "city",
+            "offers_cosmetic_services"
+        ]
+    }
+]

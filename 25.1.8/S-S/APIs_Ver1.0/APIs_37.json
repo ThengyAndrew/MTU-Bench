@@ -1,0 +1,72 @@
+[
+    {
+        "name": "BuyMovieTickets",
+        "description": "Buy movie tickets for a particular show",
+        "required_parameters": [
+            "movie_name",
+            "number_of_tickets",
+            "show_date",
+            "location",
+            "show_time",
+            "show_type"
+        ],
+        "optional_parameters": {},
+        "result_parameters": [
+            "price",
+            "number_of_tickets",
+            "show_type",
+            "theater_name",
+            "show_time",
+            "show_date",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    },
+    {
+        "name": "FindMovies",
+        "description": "Search for movies by location, genre or other attributes",
+        "required_parameters": [
+            "location"
+        ],
+        "optional_parameters": {
+            "genre": "dontcare",
+            "show_type": "dontcare",
+            "theater_name": "dontcare"
+        },
+        "result_parameters": [
+            "price",
+            "show_type",
+            "theater_name",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    },
+    {
+        "name": "GetTimesForMovie",
+        "description": "Get show times for a movie at a location on a given date",
+        "required_parameters": [
+            "movie_name",
+            "location",
+            "show_date"
+        ],
+        "optional_parameters": {
+            "show_type": "dontcare",
+            "theater_name": "dontcare"
+        },
+        "result_parameters": [
+            "price",
+            "show_type",
+            "theater_name",
+            "show_time",
+            "show_date",
+            "genre",
+            "street_address",
+            "location",
+            "movie_name"
+        ]
+    }
+]

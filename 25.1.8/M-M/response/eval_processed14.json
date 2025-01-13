@@ -1,0 +1,9 @@
+[
+    {
+        "name": "reserve_book",
+        "arguments": {
+            "book_title": "War and Peace",
+            "card_number": "123456"
+        }
+    }
+]

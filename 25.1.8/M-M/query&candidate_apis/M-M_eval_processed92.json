@@ -1,0 +1,41 @@
+{
+    "query": [
+        {
+            "User": "Hey, I want to listen to a song.",
+            "Assistant": "Of course, which song would you like to listen to?"
+        },
+        {
+            "User": "Hmm, let me think.",
+            "Assistant": "Sure, take your time."
+        },
+        {
+            "User": "I would like to listen to the song by Queen. Look up it for me. And can you play it for me on the TV, please?"
+        }
+    ],
+    "candidate_apis": [
+        {
+            "type": "function",
+            "function": {
+                "name": "LookupSong",
+                "description": "Search for a song. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "PlaySong",
+                "description": "Play the selected song on the device. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need help with my appointments",
+        "assistant": ": Appts, ok. How can i help"
+    },
+    {
+        "user": "I want to erase an appointment",
+        "assistant": ": Erase an appt. Which one"
+    },
+    {
+        "user": "My meeting next Tuesday at 2:00 PM.",
+        "assistant": ": Are you sure you want to delete next Tues 2pm appt?"
+    },
+    {
+        "user": "Yes"
+    }
+]

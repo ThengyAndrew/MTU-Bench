@@ -1,0 +1,62 @@
+[
+    {
+        "name": "get_current_temperature",
+        "arguments": {
+            "location": "living room"
+        }
+    },
+    {
+        "name": "adjust_room_temperature",
+        "arguments": {
+            "temperature": "get_current_temperature.temperature",
+            "location": "bedroom"
+        }
+    },
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "music_item": "album",
+            "playlist": "might and myth power metal"
+        }
+    },
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_select": "this textbook",
+            "object_type": "book",
+            "rating_value": "one"
+        }
+    },
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York",
+            "offers_cosmetic_services": true
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "14:00",
+            "appointment_date": "2024-05-05"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "BookAppointment.dentist_name",
+            "phone_number": "BookAppointment.phone_number"
+        }
+    },
+    {
+        "name": "set_appointment_reminder",
+        "arguments": {
+            "appointment_name": "Dentist Appointment",
+            "appointment_date": "2024-05-05",
+            "appointment_time": "14:00",
+            "appointment_address": "BookAppointment.address",
+            "reminder_time": "2 hours before"
+        }
+    }
+]

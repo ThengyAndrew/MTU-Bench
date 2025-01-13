@@ -1,0 +1,38 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-02-02"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number"
+        }
+    },
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_name": "36 children",
+            "rating_value": "two",
+            "best_rating": "6"
+        }
+    },
+    {
+        "name": "SearchScreeningEvent",
+        "arguments": {
+            "movie_name": "i think i do",
+            "timeRange": "7 pm"
+        }
+    }
+]

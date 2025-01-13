@@ -1,0 +1,16 @@
+[
+    {
+        "name": "AddToPlaylist",
+        "arguments": {
+            "playlist": "jukebox boogie rhythm & blues"
+        }
+    },
+    {
+        "name": "RateBook",
+        "arguments": {
+            "object_name": "in the company of cheerful ladies",
+            "rating_value": "zero",
+            "best_rating": "6"
+        }
+    }
+]

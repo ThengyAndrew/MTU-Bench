@@ -1,0 +1,8 @@
+[
+    {
+        "name": "apply_for_membership",
+        "arguments": {
+            "city_of_residence": "New York"
+        }
+    }
+]

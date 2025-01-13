@@ -1,0 +1,13 @@
+[
+    {
+        "user": "Can you give me a hand finding some music?",
+        "assistant": ": How about \"Without Me\" from the album \"Covers\" by Alec Chambers?"
+    },
+    {
+        "user": "Can you find me some Pop music instead?",
+        "assistant": ": I've got \"Adorn\" from the album \"Kaleidoscope Dream\" by Miguel, how does that sound?"
+    },
+    {
+        "user": "What else is there?"
+    }
+]

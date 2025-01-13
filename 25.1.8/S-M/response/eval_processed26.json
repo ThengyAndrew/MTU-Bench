@@ -1,0 +1,38 @@
+[
+    {
+        "name": "FindProvider",
+        "arguments": {
+            "city": "New York"
+        }
+    },
+    {
+        "name": "BookAppointment",
+        "arguments": {
+            "dentist_name": "FindProvider.dentist_name",
+            "appointment_time": "10:00",
+            "appointment_date": "2024-01-20"
+        }
+    },
+    {
+        "name": "add_new_contact",
+        "arguments": {
+            "contact_name": "FindProvider.dentist_name",
+            "phone_number": "FindProvider.phone_number",
+            "address": "FindProvider.address"
+        }
+    },
+    {
+        "name": "BookRestaurant",
+        "arguments": {
+            "restaurant_type": "pizzeria",
+            "facility": "parking",
+            "country": "ghana"
+        }
+    },
+    {
+        "name": "PlayMusic",
+        "arguments": {
+            "playlist": "modern psychedelia"
+        }
+    }
+]

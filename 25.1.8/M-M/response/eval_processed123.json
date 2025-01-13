@@ -1,0 +1,20 @@
+[
+    {
+        "name": "FindHomeByArea",
+        "arguments": {
+            "area": "Boston",
+            "intent": "rent",
+            "number_of_beds": "3",
+            "number_of_baths": "2",
+            "has_garage": "true",
+            "in_unit_laundry": "false"
+        }
+    },
+    {
+        "name": " ShareLocation",
+        "arguments": {
+            "location": "FindHomeByArea.address",
+            "contact_name": "Robert"
+        }
+    }
+]

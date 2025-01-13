@@ -1,0 +1,8 @@
+[
+    {
+        "name": "set_alarm",
+        "arguments": {
+            "time": "07:00"
+        }
+    }
+]

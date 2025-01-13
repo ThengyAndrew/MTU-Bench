@@ -1,0 +1,17 @@
+[
+    {
+        "user": "I need to find a round trip flight to NYC.",
+        "assistant": ": What is the departure city and date? And when would you like to return?"
+    },
+    {
+        "user": "I would like to begin travelling day after tomorrow, leaving from Atlanta and returning on the 9th.",
+        "assistant": ": There are 4 flights that fit your criteria. Does American Airlines work? There is a flight leaving at 3:25 pm and returning at 11:45 am with a ticket price of $144."
+    },
+    {
+        "user": "Are there additional options?",
+        "assistant": ": There is a Delta Airlines outbound flight that departs at 3:40 pm and the returning flight leaves at 11:25 am, with a ticket price of $125."
+    },
+    {
+        "user": "Are there any more? I would like Economy tickets from London, the same destination, the same time."
+    }
+]

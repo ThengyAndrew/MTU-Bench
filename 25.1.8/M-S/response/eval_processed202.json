@@ -1,0 +1,12 @@
+[
+    {
+        "name": "searchAttraction",
+        "arguments": {
+            "type": "museum",
+            "area": "west",
+            "return_info": [
+                "all"
+            ]
+        }
+    }
+]

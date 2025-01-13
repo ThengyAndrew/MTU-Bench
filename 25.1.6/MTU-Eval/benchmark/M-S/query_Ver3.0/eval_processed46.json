@@ -1,0 +1,21 @@
+[
+    {
+        "user": "I have a question about a world record",
+        "assistant": ": Sure, what would you like for me to look up?"
+    },
+    {
+        "user": "What was the loudest sound ever recorded?",
+        "assistant": ": The loudest sound ever recorded was a nuclear explosion."
+    },
+    {
+        "user": "Where was it located?",
+        "assistant": ": It was recorded in the United States."
+    },
+    {
+        "user": "How loud was it?",
+        "assistant": ": It was 600 decibals."
+    },
+    {
+        "user": "Thank you!"
+    }
+]

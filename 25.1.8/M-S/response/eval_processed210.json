@@ -1,0 +1,11 @@
+[
+    {
+        "name": "searchHotel",
+        "arguments": {
+            "name": "The Ashley hotel",
+            "return_info": [
+                "postcode"
+            ]
+        }
+    }
+]

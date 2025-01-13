@@ -1,0 +1,10 @@
+[
+    {
+        "name": "GetRide",
+        "arguments": {
+            "destination": "377 13th Street",
+            "number_of_riders": "4",
+            "shared_ride": "True"
+        }
+    }
+]
