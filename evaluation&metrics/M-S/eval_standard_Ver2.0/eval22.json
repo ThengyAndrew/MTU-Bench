@@ -1,0 +1,106 @@
+[
+    {
+        "id": "MTU_Bench_M-S_22",
+        "query": [
+            {
+                "user": "I need to find a round trip flight to NYC.",
+                "assistant": ": What is the departure city and date? And when would you like to return?"
+            },
+            {
+                "user": "I would like to begin travelling day after tomorrow, leaving from Atlanta and returning on the 9th.",
+                "assistant": ": There are 4 flights that fit your criteria. Does American Airlines work? There is a flight leaving at 3:25 pm and returning at 11:45 am with a ticket price of $144."
+            },
+            {
+                "user": "Are there additional options?",
+                "assistant": ": There is a Delta Airlines outbound flight that departs at 3:40 pm and the returning flight leaves at 11:25 am, with a ticket price of $125."
+            },
+            {
+                "user": "Are there any more? I would like Economy tickets from London, UK, the same destination, the same time.",
+                "assistant": ": There is 1 United Airlines flight that matches your needs. The departure flight leaves at 0:25 am and the return flight leaves at 2:40 pm, with a ticket price of $311."
+            },
+            {
+                "user": "great, that's everything for me."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetCarsAvailable",
+                    "description": "Discover cars available for rent in a certain location and period. The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveCar",
+                    "description": "Make a rental car reservation",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindBus",
+                    "description": "Search for a bus itinerary between two places on a certain date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyBusTicket",
+                    "description": "Purchase the bus tickets",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one way flights to the destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for roundtrip flights for the trip",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

@@ -3,7 +3,9 @@ import re
 import ast
 import os
 
-Version = 1.0
+# Version = 1.0
+
+Version = 2.0 # 添加 id
 Upper_limit = 103
 
 
@@ -27,8 +29,10 @@ def read_response():
 
 def read_query_and_apis():
     with open(f"{query_and_apis_folder_path}/eval_processed{file_num}.json", "r") as f:
-        to_return = json.load(f)
-    return to_return
+        read = json.load(f)
+        candidate_apis = read["candidate_apis"]
+        query = read["query"]
+    return query, candidate_apis
 
 
 if __name__ == '__main__':
@@ -37,8 +41,9 @@ if __name__ == '__main__':
     while file_num <= Upper_limit:
         try:
             with open(f'{store_folder_path}/eval{file_num}.json','w', encoding="utf-8") as w:
-
-                json_to_write = read_query_and_apis()
+                json_to_write = {}
+                json_to_write['id'] = f"MTU_Bench_M-M_{file_num}"
+                json_to_write['query'],  json_to_write['candidate_apis']= read_query_and_apis()
                 json_to_write['response'] = read_response()
                 list_mark = [json_to_write]
                 json.dump(list_mark, w, indent=4, ensure_ascii=False)

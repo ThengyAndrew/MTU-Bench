@@ -1,0 +1,168 @@
+[
+    {
+        "id": "MTU_Bench_M-S_228",
+        "query": [
+            {
+                "user": "It does n't matter what time I leave as long as I 'm there by 16:45. A train from Ely to Cambridge on Thursday.",
+                "assistant": ": There are 6 trains leaving that will get you there by 16:45 , the closest TR3240 arriving at 15:52 . Would you like to make a reservation ?"
+            },
+            {
+                "user": "Yes , please make me a reservation for two people on TR3240 arriving at 15:52 .",
+                "assistant": ": Booking was successful, the total fee is 8.8 GBP payable at the station. Reference number is: T4I7L6BG. Can I help with anything else today?"
+            },
+            {
+                "user": "Choose your favorite Chinese restaurant, which is expensive. I do need an address and post code, please.",
+                "assistant": ": How about The Hotpot? It is located at 66 Chesterton Road Chesterton and the postal code is cb41ep."
+            },
+            {
+                "user": "The Hotpot sounds great! Can you please make a reservation for Friday for 2 people at 8 pm?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchTrain",
+                    "description": "Searches for train information including pricing, schedules, and duration.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "departure": {
+                                "description": "Starting location of the train journey"
+                            },
+                            "destination": {
+                                "description": "Final destination of the train journey"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            },
+                            "day": {
+                                "description": "The date for the train search"
+                            },
+                            "leaveAt": {
+                                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+                            },
+                            "arriveBy": {
+                                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+                            },
+                            "trainID": {
+                                "description": "Specific train identifier"
+                            }
+                        },
+                        "required": [
+                            "departure",
+                            "destination",
+                            "return_info"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookTrain",
+                    "description": "Enables users to book train tickets.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "people": {
+                                "description": "Number of passengers for the booking"
+                            },
+                            "trainID": {
+                                "description": "The identifier of the train to be booked"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            }
+                        },
+                        "required": [
+                            "people",
+                            "trainID"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRestaurant",
+                    "description": "Allows users to search for restaurant information based on various filters.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "description": "The area where the restaurant is located."
+                            },
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "priceRange": {
+                                "description": "The price range of the restaurant."
+                            },
+                            "food": {
+                                "description": "Type of food or cuisine offered."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'."
+                            }
+                        },
+                        "required": [
+                            "area"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookRestaurant",
+                    "description": "Allows users to make restaurant reservations.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "day": {
+                                "description": "The date for the reservation."
+                            },
+                            "time": {
+                                "description": "The time for the reservation."
+                            },
+                            "people": {
+                                "description": "Number of people for the reservation."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "day",
+                            "time",
+                            "people"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "BookRestaurant",
+                "arguments": {
+                    "day": "friday",
+                    "time": "20:00",
+                    "name": "The Hotpot",
+                    "people": "2",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

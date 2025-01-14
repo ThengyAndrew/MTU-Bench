@@ -23,7 +23,7 @@ if __name__ == '__main__':
     with open(f'{store_folder_path}/eval.json','w', encoding="utf-8") as w:
         while file_num <= Upper_limit:
             try:
-                with open(f'eval_standard_Ver1.0/eval{file_num}.json','r', encoding="utf-8") as r:
+                with open(f'eval_standard_Ver2.0/eval{file_num}.json','r', encoding="utf-8") as r:
                     data_list = json.load(r)
                     for data in data_list:
                         list.append(data)

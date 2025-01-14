@@ -1,0 +1,38 @@
+[
+    {
+        "id": "MTU_Bench_S-S_34",
+        "query": [
+            {
+                "User": "I am looking for a dentist.",
+                "Assistant": "Sure, How can I help you?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookAppointment",
+                    "description": "Book an appointment with a specific doctor for the given date and time. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindProvider",
+                    "description": "Find a medical service provider based on their location and speciality. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": []
+    }
+]

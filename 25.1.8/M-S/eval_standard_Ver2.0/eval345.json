@@ -1,0 +1,102 @@
+[
+    {
+        "id": "MTU_Bench_M-S_345",
+        "query": [
+            {
+                "user": "Hello! please can you help me to find a doctor for consultation?",
+                "assistant": ": Where are you looking for? Are you looking for a General Practitioner or any specialist?"
+            },
+            {
+                "user": "I'm looking for a general practitioner in Petaluma.",
+                "assistant": ": Do you wish to consult with the doctor Dr. Fasih A. Hameed, MD , who is a General Practitioner located in Petaluma for he has a good ratings from his clients."
+            },
+            {
+                "user": "Do you have their address? What is the numeric value of their rating?",
+                "assistant": ": The address is 1301 Southpoint Boulevard and they have a rating of 5.0."
+            },
+            {
+                "user": "Do you know any other doctors for I'm looking for a Dermatologist in Danville.",
+                "assistant": ": Do you wish to have consultation with Dermatology and Laser Centre, for they are Dermatologist located in Danville?"
+            },
+            {
+                "user": "Yup, this would work for me.",
+                "assistant": ": Do you wish to have consultation with Dermatology and Laser Centre, for they are Dermatologist located in Danville?"
+            },
+            {
+                "user": "Yup, Please can you book the appointment on 7th of this month at 4 in the evening. Yup, sounds good.",
+                "assistant": ": Okay! your appointment is scheduled successfully."
+            },
+            {
+                "user": "Can I have the Centre's address?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookAppointment",
+                    "description": "Book an appointment with a specific doctor for the given date and time",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindProvider",
+                    "description": "Find a medical service provider based on their location and speciality",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetEvents",
+                    "description": "Get list of all calendar events for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetAvailableTime",
+                    "description": "Get a list of available times for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "AddEvent",
+                    "description": "Add event to the user's calendar",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "MTU_Bench_S-S_22",
+        "query": "Can you help me finding a furnished, pet-friendly 3 bedroom apartment in Vacaville for a visit on March 12th?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "aaa",
+                    "description": "Find an apartment in a city for a given number of bedrooms",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ScheduleVisit",
+                    "description": "Schedule a visit for a given property on a particular date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetEvents",
+                    "description": "Get list of all calendar events for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetAvailableTime",
+                    "description": "Get a list of available times for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "AddEvent",
+                    "description": "Add event to the user's calendar",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "aaa",
+                "arguments": {
+                    "area": "Vacaville",
+                    "number_of_beds": 3,
+                    "furnished": "True",
+                    "pets_allowed": "True"
+                }
+            }
+        ]
+    }
+]

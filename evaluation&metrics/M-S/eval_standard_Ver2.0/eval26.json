@@ -1,0 +1,53 @@
+[
+    {
+        "id": "MTU_Bench_M-S_26",
+        "query": [
+            {
+                "user": "I need help with a world record?",
+                "assistant": ": Sure. What can I answer for you?"
+            },
+            {
+                "user": "What is the biggest snake ever?",
+                "assistant": ": The biggest snake ever, or the biggest type of snake?"
+            },
+            {
+                "user": "The biggest ever.",
+                "assistant": ": Sure, Medusa is known as the biggest snake ever and is over 25 feet long."
+            },
+            {
+                "user": "What kind of snake was that?",
+                "assistant": ": She is a reticulated python."
+            },
+            {
+                "user": "Thanks!"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_world_record",
+                    "description": "Fetches details for a world record, which may include the record holder's name, the nature of the record, the date it was set, and any other relevant information or statistics.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "record_category": {
+                                "type": "string",
+                                "description": "The category of the world record. Examples include 'tallest man', 'fastest swimmer in Olympics', 'oldest person', etc."
+                            }
+                        },
+                        "required": [
+                            "record_category"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

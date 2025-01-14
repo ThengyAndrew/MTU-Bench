@@ -1,0 +1,67 @@
+[
+    {
+        "id": "MTU_Bench_S-S_75",
+        "query": "Can you help me book 2 bus tickets from San Diego to Anaheim for March 13th?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetCarsAvailable",
+                    "description": "Discover cars available for rent in a certain location and period. The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveCar",
+                    "description": "Make a rental car reservation",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ShareLocation",
+                    "description": "Send your location to a contact",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "BuyBusTicket",
+                "arguments": {
+                    "from_location": "San Diego",
+                    "leaving_date": "2024-03-13",
+                    "to_location": "Anaheim",
+                    "travelers": "2"
+                }
+            }
+        ]
+    }
+]

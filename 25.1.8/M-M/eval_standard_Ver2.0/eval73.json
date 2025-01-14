@@ -1,0 +1,98 @@
+[
+    {
+        "id": "MTU_Bench_S-S_73",
+        "query": [
+            {
+                "User": "Hello, I need to find a house.",
+                "Assistant": "Sure, could you please provide more details about the house you are looking for?"
+            },
+            {
+                "User": "Certainly. I am looking for a place to rent in San Francisco. It should have 3 bedrooms and 2 bathrooms.",
+                "Assistant": "Okay. And do you require any specific amenities, such as a garage or in-unit laundry?"
+            },
+            {
+                "User": "Yes, that would be nice. I need a garage and in-unit laundry.",
+                "Assistant": "Okay. I will find a house that meets your requirements."
+            },
+            {
+                "User": "Once you find it, please share the location with my friend John and let me know the weather there."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindHomeByArea",
+                    "description": "Search for a property to rent or buy in a given city. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ScheduleVisit",
+                    "description": "Schedule a visit to a property on a given date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ShareLocation",
+                    "description": "Send your location to a contact. The format for values of parameters related to date is \"^\\d{4}-\\d{2}-\\d{2}$\", and for parameters related to time, it is \"HH:MM\". Values for parameters indicating yes or no should use the boolean type.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "FindHomeByArea",
+                "arguments": {
+                    "area": "San Francisco",
+                    "intent": "rent",
+                    "number_of_beds": 3,
+                    "number_of_baths": 2,
+                    "has_garage": "true",
+                    "in_unit_laundry": "true"
+                }
+            },
+            {
+                "name": " ShareLocation",
+                "arguments": {
+                    "location": "FindHomeByArea.address",
+                    "contact_name": "John"
+                }
+            },
+            {
+                "name": " GetWeather",
+                "arguments": {
+                    "city": "San Francisco"
+                }
+            }
+        ]
+    }
+]

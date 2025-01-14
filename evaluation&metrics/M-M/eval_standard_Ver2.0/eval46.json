@@ -1,0 +1,74 @@
+[
+    {
+        "id": "MTU_Bench_M-M_46",
+        "query": "I've been having this toothache since yesterday. Can you book me a dentist appointment in San Jose for this Saturday at 2:30 in the afternoon?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve rooms at a selected place for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Look for accommodation in a city of choice",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one way flights to the destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for roundtrip flights for the trip",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

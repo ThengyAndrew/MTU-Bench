@@ -25,7 +25,7 @@ if __name__ == '__main__':
         with open(f'wrong_list.json','w', encoding="utf-8") as wrong:
             while file_num <= Upper_limit:
                 try:
-                    with open(f'eval_standard_Ver1.0/eval{file_num}.json','r', encoding="utf-8") as r:
+                    with open(f'eval_standard_Ver2.0/eval{file_num}.json','r', encoding="utf-8") as r:
                         data_list = json.load(r)
                         for data in data_list:
                             if data['response']:

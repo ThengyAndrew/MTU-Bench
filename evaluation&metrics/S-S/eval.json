@@ -1,5 +1,6 @@
 [
     {
+        "id": "MTU_Bench_S-S_0",
         "query": "Can you help me find a Brazilian restaurant in San Francisco that's moderately priced and make a reservation for 3 people at 19:30, then book me a regular cab for 5 to the restaurant?",
         "candidate_apis": [
             {
@@ -39,6 +40,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_1",
         "query": "I need to review round trip flights from Atlanta, GA to London, UK, departing on the 7th of this month and returning on the 9th.",
         "candidate_apis": [
             {
@@ -115,6 +117,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_2",
         "query": "I need a 9-star guesthouse with free parking and free wifi for tonight. What are my options?",
         "candidate_apis": [
             {
@@ -212,6 +215,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_3",
         "query": "I'm trying to book the restaurant called The Slug and Lettuce and book it for 5 people at 18:42 on Saturday.",
         "candidate_apis": [
             {
@@ -296,6 +300,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_4",
         "query": "Please book 5 economy bus tickets from Sacramento to San Diego for the 10th of this month. Can you help?",
         "candidate_apis": [
             {
@@ -373,6 +378,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_5",
         "query": "I'd like to find a two-star hotel in New York with WiFi available.",
         "candidate_apis": [
             {
@@ -460,6 +466,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_6",
         "query": "Find me a Chinese restaurant in San Francisco and book a table for two at 12 pm on March 5th. Then add that to my calendar titled \"Food\" at the location.",
         "candidate_apis": [
             {
@@ -534,6 +541,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_7",
         "query": "Can you check my bank account, I think someone is messing with my account. Show me my recent transactions",
         "candidate_apis": [
             {
@@ -655,6 +663,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_8",
         "query": "I would like to transfer $500 from my checking to my savings account. My account number is 112233456",
         "candidate_apis": [
             {
@@ -780,6 +789,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_9",
         "query": "i want to apply for a membership in Atlanta.",
         "candidate_apis": [
             {
@@ -931,6 +941,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_10",
         "query": "I think someone hacked my bank account. Can you check to make sure everything is alright? Show me recent transactions",
         "candidate_apis": [
             {
@@ -1050,6 +1061,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_11",
         "query": "I am looking for a 2-star hotel in Cambridge with free wifi and free parking. Can I have the address, please?",
         "candidate_apis": [
             {
@@ -1212,6 +1224,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_12",
         "query": "Can you help me find a moderately priced hotel in the centre with parking and internet availability?",
         "candidate_apis": [
             {
@@ -1338,6 +1351,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_13",
         "query": "Can you find me a zero-star hotel with free wifi for 6 people, starting this Monday for 2 nights?",
         "candidate_apis": [
             {
@@ -1527,6 +1541,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_14",
         "query": "Can you suggest a hotel with a 4-star rating, and free parking?",
         "candidate_apis": [
             {
@@ -1651,6 +1666,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_15",
         "query": "Can you help me find a cheap guesthouse with free wifi and free parking?",
         "candidate_apis": [
             {
@@ -1748,6 +1764,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_16",
         "query": "I would like to book an appointment with Yvonne Yang at Greenview Dental Care on the 11th at 11:45. Do they offer cosmetic services?",
         "candidate_apis": [
             {
@@ -1787,6 +1804,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_18",
         "query": "I need to rent a small car in Paris from the 10th to the 13th of March, picking it up at 3 in the afternoon.",
         "candidate_apis": [
             {
@@ -1852,6 +1870,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_19",
         "query": "I need a shared cab for four people to 377 13th Street for the event on the 11th of this month.",
         "candidate_apis": [
             {
@@ -1915,6 +1934,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_20",
         "query": "I need to search for a Gynecologist in San Francisco.",
         "candidate_apis": [
             {
@@ -2001,6 +2021,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_21",
         "query": "I want to book a bus from Las Vegas to Sacramento on the 10th of this month and then find a hotel in Sacramento that doesn't allow pets.",
         "candidate_apis": [
             {
@@ -2112,6 +2133,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_22",
         "query": "Can you help me finding a furnished, pet-friendly 3 bedroom apartment in Vacaville for a visit on March 12th?",
         "candidate_apis": [
             {
@@ -2188,6 +2210,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_23",
         "query": "Can you book me a non-refundable, one-stop flight on Delta Airlines from New York to Chicago, leaving on the 5th and returning on the 11th of this month in Economy class?",
         "candidate_apis": [
             {
@@ -2244,6 +2267,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_24",
         "query": "I'm going on a trip and need to book a roundtrip flight with United Airlines from Portland to Los Angeles, departing on the 6th and returning on the 10th of this month.",
         "candidate_apis": [
             {
@@ -2333,6 +2357,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_25",
         "query": "Can you find me a flight from San Diego to Sydney, leaving on March 1st and returning on March 8th with zero stops?",
         "candidate_apis": [
             {
@@ -2386,6 +2411,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_26",
         "query": "I need to find a round trip flight from Portland to LA, leaving on March 10th and returning on March 13th.",
         "candidate_apis": [
             {
@@ -2486,6 +2512,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_27",
         "query": "I am planning a trip from Seattle to LA, leaving on March 8th and returning on March 10th. Can you find me round trip flights?",
         "candidate_apis": [
             {
@@ -2533,6 +2560,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_28",
         "query": "I am looking for a one-way flight later today from New York to Washington with United Airlines.",
         "candidate_apis": [
             {
@@ -2592,6 +2620,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_29",
         "query": "I need to rent a medium-sized car in Kuala Lumpur from the 3rd to the 7th of March, picking it up at 3 PM. Can you help me with that?",
         "candidate_apis": [
             {
@@ -2663,6 +2692,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_30",
         "query": "Can you find a sports or games event on the 12th around Vancouver, BC, and help me purchase one ticket?",
         "candidate_apis": [
             {
@@ -2698,6 +2728,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_31",
         "query": "Find me some Music events in London and their available dates.",
         "candidate_apis": [
             {
@@ -2733,6 +2764,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_32",
         "query": "Can you find and play some Metalcore music by Our Last Night on my TV?",
         "candidate_apis": [
             {
@@ -2768,6 +2800,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_33",
         "query": "Can you play a song from The Martin Garrix Experience on the kitchen speaker?",
         "candidate_apis": [
             {
@@ -2803,6 +2836,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_34",
         "query": "I need to rent a standard car in Seattle, WA from Sunday evening until next Monday.",
         "candidate_apis": [
             {
@@ -2874,6 +2908,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_35",
         "query": "I want you to find me the song \"Man Down\" by Rihanna and play it on my kitchen speaker.",
         "candidate_apis": [
             {
@@ -2909,6 +2944,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_36",
         "query": "Please find and play a Romance movie with subtitles for me. Also, tell me who directed it.",
         "candidate_apis": [
             {
@@ -2968,6 +3004,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_37",
         "query": "Can you find me some Pop music and play it on the kitchen device?",
         "candidate_apis": [
             {
@@ -3015,6 +3052,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_38",
         "query": "Can you play a Pop song on my bedroom speaker?",
         "candidate_apis": [
             {
@@ -3050,6 +3088,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_39",
         "query": "I want to find a sports event in Atlanta, GA and buy two tickets for it.",
         "candidate_apis": [
             {
@@ -3073,6 +3112,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_40",
         "query": "Can you find me a drama movie with subtitles directed by Claire Denis?",
         "candidate_apis": [
             {
@@ -3120,6 +3160,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_41",
         "query": "I'd like to find some movies in the Musical genre to watch online.",
         "candidate_apis": [
             {
@@ -3167,6 +3208,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_42",
         "query": "I'm looking for a country music event in Chicago.",
         "candidate_apis": [
             {
@@ -3202,6 +3244,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_43",
         "query": "I want to listen to the song \"Pyaw Nay Par\" by Kaung Kaung on my kitchen speaker.",
         "candidate_apis": [
             {
@@ -3237,6 +3280,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_44",
         "query": "Can you please get me two one-way economy plane tickets to Las Vegas from Kuala Lumpur for the 4th of March?",
         "candidate_apis": [
             {
@@ -3296,6 +3340,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_45",
         "query": "Can you find me a dentist in San Jose that offers cosmetic services?",
         "candidate_apis": [
             {
@@ -3355,6 +3400,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_46",
         "query": "I've been having this toothache since yesterday. Can you book me a dentist appointment in San Jose for this Saturday at 2:30 in the afternoon?",
         "candidate_apis": [
             {
@@ -3426,6 +3472,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_47",
         "query": "I need a 1-bedroom apartment in San Francisco that allows pets. Can you find something for me?",
         "candidate_apis": [
             {
@@ -3485,6 +3532,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_48",
         "query": "Can you find me a one-way flight from San Francisco to Los Angeles for two people on March 2nd?",
         "candidate_apis": [
             {
@@ -3544,6 +3592,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_49",
         "query": "Can you find a music concert happening in San Francisco this weekend?",
         "candidate_apis": [
             {
@@ -3579,6 +3628,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_50",
         "query": "Can you locate some songs by Grimes on the Visions album and play Oblivion on the kitchen speaker?",
         "candidate_apis": [
             {
@@ -3626,6 +3676,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_51",
         "query": "how much in late fees do I owe?",
         "candidate_apis": [
             {
@@ -3775,6 +3826,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_52",
         "query": "I'm looking for the availability of \"A Song of Fire and Ice\" and other books in the series at the library.",
         "candidate_apis": [
             {
@@ -3926,6 +3978,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_53",
         "query": "Can you help me find a restaurant that serves Indian food in the centre?",
         "candidate_apis": [
             {
@@ -4037,6 +4090,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_54",
         "query": "I need a guesthouse in the centre with free parking and wifi. Can you book it for 3 people for 2 nights from Wednesday?",
         "candidate_apis": [
             {
@@ -4199,6 +4253,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_55",
         "query": "I need to book a train from Cambridge to London Liverpool Street, leaving on Thursday after 13:45.",
         "candidate_apis": [
             {
@@ -4283,6 +4338,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_56",
         "query": "I'll be leaving Cambridge on Wednesday at 10:45, heading to London Kings Cross. Can you book me 6 tickets and give me the reference number?",
         "candidate_apis": [
             {
@@ -4367,6 +4423,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_57",
         "query": "I am looking for a Saturday train from Cambridge to Norwich, leaving after 13:00.",
         "candidate_apis": [
             {
@@ -4516,6 +4573,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_58",
         "query": "Can you find a theatre in the centre of town, and provide the address, phone number, and entrance fee?",
         "candidate_apis": [
             {
@@ -4629,6 +4687,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_59",
         "query": "Can you seach a 3-star cheap hotel for Thursday night for a 4-night stay for 6 people?",
         "candidate_apis": [
             {
@@ -4724,6 +4783,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_60",
         "query": "I'm looking for a hotel called Hamilton Lodge. What's the type, postcode, and star rating?",
         "candidate_apis": [
             {
@@ -4849,6 +4909,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_61",
         "query": "What is the price for a train departing Stansted Airport after 11:00 on Sunday, heading to Cambridge, and I also need the entrance fee and phone number for a non-free college in the west area of Cambridge.",
         "candidate_apis": [
             {
@@ -4962,6 +5023,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_62",
         "query": "Could you book a table for 6 at Lucky Star at 14:15 and also find me the best nightclub in the centre with its entrance fee and address?",
         "candidate_apis": [
             {
@@ -5072,6 +5134,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_63",
         "query": "Can you find me an expensive Indian restaurant on the west side of town and give me the postcode?",
         "candidate_apis": [
             {
@@ -5156,6 +5219,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_64",
         "query": "I'm looking for a 4-star guesthouse near the centre with free parking. Can you give me the price range and postcode?",
         "candidate_apis": [
             {
@@ -5319,6 +5383,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_65",
         "query": "Hi! Can you find the restaurant Pizza Express Fen Ditton and tell me its address, phone number, and what type of food they serve?",
         "candidate_apis": [
             {
@@ -5402,6 +5467,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_66",
         "query": "I need a 4-star hotel with free parking on the east side of town that's cheap.",
         "candidate_apis": [
             {
@@ -5561,6 +5627,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_67",
         "query": "Can you find me a theatre in the city centre and provide its address, postcode, and phone number?",
         "candidate_apis": [
             {
@@ -5674,6 +5741,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_68",
         "query": "I'm looking for an expensive guesthouse in the east with free wifi.",
         "candidate_apis": [
             {
@@ -5797,6 +5865,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_69",
         "query": "I'm leaving from Kings Lynn and headed to Cambridge on Wednesday at 11:45. Can you help me find a train?",
         "candidate_apis": [
             {
@@ -5946,6 +6015,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_70",
         "query": "Can you find me a train from Cambridge to Stevenage that arrives by 16:45 on Wednesday and also provide information on the Fitzwilliam Museum, including its phone number and address?",
         "candidate_apis": [
             {
@@ -6059,6 +6129,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_71",
         "query": "Can you help me find information on Bridge Guest House, particularly if they offer free parking?",
         "candidate_apis": [
             {
@@ -6153,6 +6224,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_72",
         "query": "I need to find a general practitioner in Oakland with a high rating.",
         "candidate_apis": [
             {
@@ -6227,6 +6299,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_73",
         "query": "I want to find attractions in Chicago and book a hotel for 3 days.",
         "candidate_apis": [
             {
@@ -6276,6 +6349,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_74",
         "query": "I need to find a highly rated Gynecologist in Fremont and book an appointment for March 10th at 3:30 pm.",
         "candidate_apis": [
             {
@@ -6327,6 +6401,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_75",
         "query": "Can you help me book 2 bus tickets from San Diego to Anaheim for March 13th?",
         "candidate_apis": [
             {
@@ -6391,6 +6466,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_76",
         "query": "I would like the balance of my savings account.",
         "candidate_apis": [
             {
@@ -6452,6 +6528,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_77",
         "query": "I need a 1-star hotel with wifi in New Delhi.",
         "candidate_apis": [
             {
@@ -6491,6 +6568,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_78",
         "query": "I'd like to find a German restaurant in San Jose.",
         "candidate_apis": [
             {
@@ -6541,6 +6619,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_79",
         "query": "Can you find a Dermatologist in Danville and schedule an appointment for the 7th at 4pm, and then add it to my calendar under 'Doctor visit'?",
         "candidate_apis": [
             {
@@ -6615,6 +6694,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_80",
         "query": "Can you find me music events in Chicago on March 12th?",
         "candidate_apis": [
             {
@@ -6690,6 +6770,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_81",
         "query": "Can you help me book a one-way flight from Los Angeles to San Diego on the 5th of March?",
         "candidate_apis": [
             {
@@ -6777,6 +6858,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_82",
         "query": "I need an intermediate rental car from the 8th to the 12th of March, picking it up in Portland, OR around 15:30.",
         "candidate_apis": [
             {
@@ -6889,6 +6971,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_83",
         "query": "Could you find me a Music event in Berkeley and also recommend an average priced American restaurant that serves barbecue and alcohol?",
         "candidate_apis": [
             {
@@ -6963,6 +7046,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_84",
         "query": "I'm looking for a bus from Vancouver to Seattle on March 5th for three people. Do you have any options?",
         "candidate_apis": [
             {
@@ -7015,6 +7099,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_85",
         "query": "Will you find a regular cab for 1 to 836 Alturas Avenue #7?",
         "candidate_apis": [
             {
@@ -7066,6 +7151,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_86",
         "query": "I need to find a Gynecologist in Burlingame.",
         "candidate_apis": [
             {
@@ -7116,6 +7202,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_87",
         "query": "I need a Luxury ride for one person to 638 El Camino Real. How long will it take for the cab to arrive?",
         "candidate_apis": [
             {
@@ -7167,6 +7254,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_88",
         "query": "I need 1 bus ticket from Fresno to Vegas next Monday and a hotel in Vegas.",
         "candidate_apis": [
             {
@@ -7231,6 +7319,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_89",
         "query": "I'd like to find a two-bedroom apartment in Richmond that's furnished.",
         "candidate_apis": [
             {
@@ -7282,6 +7371,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_90",
         "query": "Can you find a good but affordable Italian restaurant in Campbell where I can have lots of pasta, and make a reservation for 2 at 5:30 pm? Also, it should serve alcohol but no live music is needed.",
         "candidate_apis": [
             {
@@ -7321,6 +7411,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_91",
         "query": "Can you find me a hotel in Anaheim?",
         "candidate_apis": [
             {
@@ -7382,6 +7473,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_92",
         "query": "I'm looking for sports events this Saturday in Sydney, Australia, and I need 3 tickets.",
         "candidate_apis": [
             {
@@ -7421,6 +7513,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_93",
         "query": "I need a round trip Premium Economy flight from SFO to Seattle, WA, leaving this Friday and returning on the 10th of this month.",
         "candidate_apis": [
             {
@@ -7534,6 +7627,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_94",
         "query": "I am looking for a hip hop music event in Philadelphia.",
         "candidate_apis": [
             {
@@ -7573,6 +7667,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_95",
         "query": "Can you help me find a pet-friendly hotel in New York with availability for 2 rooms?",
         "candidate_apis": [
             {
@@ -7612,6 +7707,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_96",
         "query": "Get a regular cab to 1069 B Street for three people.",
         "candidate_apis": [
             {
@@ -7675,6 +7771,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_97",
         "query": "Can you recommend some cool Pop songs for a party and find an entertaining music event in Napa?",
         "candidate_apis": [
             {
@@ -7748,6 +7845,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_98",
         "query": "I'm looking for a dermatologist in Walnut Creek with a high rating.",
         "candidate_apis": [
             {
@@ -7810,6 +7908,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_99",
         "query": "Find me some fantasy movies directed by Neil Marshall that I can watch online.",
         "candidate_apis": [
             {
@@ -7872,6 +7971,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_100",
         "query": "I'd like to book a roundtrip flight with United Airlines from Washington to Atlanta, leaving on March 7th and returning on March 12th.",
         "candidate_apis": [
             {
@@ -7961,6 +8061,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_101",
         "query": "I need to find an affordable round trip flight from Washington to Mexico for 4 people, departing on the 10th and returning on the 13th of this month.",
         "candidate_apis": [
             {
@@ -8027,6 +8128,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_102",
         "query": "Can you find me a one-way flight for three people from Las Vegas to Atlanta on the 5th of March?",
         "candidate_apis": [
             {
@@ -8091,6 +8193,7 @@
         ]
     },
     {
+        "id": "MTU_Bench_S-S_103",
         "query": "I need to find a round trip flight to NYC from London, leaving day after tomorrow and returning on the 9th, in Economy class.",
         "candidate_apis": [
             {

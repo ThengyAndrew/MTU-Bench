@@ -1,0 +1,200 @@
+[
+    {
+        "id": "MTU_Bench_M-S_137",
+        "query": [
+            {
+                "user": "I have a home automation request"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "check_light_status",
+                    "description": "Checks the current status of a lighting device within a specified area, such as a room, building, or designated section.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "string",
+                                "description": "The specified area, such as a room, building, or designated section from where the light status is to be checked."
+                            }
+                        },
+                        "required": [
+                            "location"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_current_temperature",
+                    "description": "Retrieves the current ambient temperature from a specified location, such as a room, building, or outdoor environment.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "string",
+                                "description": "The specified location, such as a room, building, or outdoor environment from where the current ambient temperature is to be retrieved."
+                            }
+                        },
+                        "required": [
+                            "location"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "check_door_status",
+                    "description": "Queries the status of a door to determine if it is currently open or closed, and may provide additional security information.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "door_location": {
+                                "type": "string",
+                                "description": "The location of the door that the user wants to check the status of"
+                            }
+                        },
+                        "required": [
+                            "door_location"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "play_music",
+                    "description": "Initiates the playback of music on a connected audio system, including options to select playlists, songs, or streaming services.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "song/playlist": {
+                                "type": "string",
+                                "description": "The specific song or playlist that the user wants to play."
+                            },
+                            "volume": {
+                                "type": "float",
+                                "description": "The volume at which the music should be played."
+                            },
+                            "music_service": {
+                                "type": "string",
+                                "description": "The specific music or streaming service, e.g. Spotify."
+                            },
+                            "location": {
+                                "type": "string",
+                                "description": "The location where the user wants the music to be played."
+                            },
+                            "music_genre": {
+                                "type": "string",
+                                "description": "The specific genre of music the user wants to play."
+                            }
+                        },
+                        "required": [
+                            "song/playlist"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "lock_door",
+                    "description": "Commands a smart lock to secure a door, ensuring the door is locked and reporting the lock status.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "door_name": {
+                                "type": "string",
+                                "description": "The name or location of the door that needs to be locked"
+                            }
+                        },
+                        "required": [
+                            "door_name"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "adjust_room_temperature",
+                    "description": "Controls the thermostat or heating/cooling system to set a specific temperature for a room or area.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "temperature": {
+                                "type": "integer",
+                                "description": "The desired temperature to set the thermostat or heating/cooling system to."
+                            },
+                            "location": {
+                                "type": "string",
+                                "description": "The specific room or area where the temperature should be adjusted."
+                            }
+                        },
+                        "required": [
+                            "temperature",
+                            "location"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "adjust_lighting",
+                    "description": "Modifies the lighting conditions in a specified area, which can include dimming, color changes, or turning lights on or off.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "string",
+                                "description": "Specifies the area where the lighting conditions are to be modified"
+                            },
+                            "action": {
+                                "type": "string",
+                                "description": "Determines the action to be executed on the specified lighting conditions such as turning on or off lights or dimming"
+                            },
+                            "intensity": {
+                                "type": "float",
+                                "description": "Represents the level of brightness to be set if the lights are to be dimmed or brightened"
+                            }
+                        },
+                        "required": [
+                            "location",
+                            "action"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "adjust_music_volume",
+                    "description": "Changes the volume of the music currently being played on a connected audio system.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "volume": {
+                                "type": "float",
+                                "description": "A numerical representation of the desired music volume"
+                            }
+                        },
+                        "required": [
+                            "volume"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

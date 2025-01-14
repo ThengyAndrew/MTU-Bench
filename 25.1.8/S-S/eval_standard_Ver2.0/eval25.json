@@ -1,0 +1,56 @@
+[
+    {
+        "id": "MTU_Bench_M-M_25",
+        "query": "Can you find me a flight from San Diego to Sydney, leaving on March 1st and returning on March 8th with zero stops?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve rooms at a selected place for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Look for accommodation in a city of choice",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchRoundtripFlights",
+                "arguments": {
+                    "origin_city": "San Diego",
+                    "destination_city": "Sydney",
+                    "departure_date": "2024-03-01",
+                    "return_date": "2024-03-08",
+                    "number_stops": 0
+                }
+            }
+        ]
+    }
+]

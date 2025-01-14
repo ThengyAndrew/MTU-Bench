@@ -1,0 +1,86 @@
+[
+    {
+        "id": "MTU_Bench_M-S_222",
+        "query": [
+            {
+                "user": "Can you check the 11th of this month on my calendar?",
+                "assistant": ": You have a Movie Show at 10 pm."
+            },
+            {
+                "user": "I need a cab for it.",
+                "assistant": ": The address is 2525 Sand Creek Road. How many passengers?"
+            },
+            {
+                "user": "Yes, and I need it for four.",
+                "assistant": ": Is a shared ride ok?"
+            },
+            {
+                "user": "Yes, a shared ride is fine. Change to 377 13th Street. Yes, I confirm that.",
+                "assistant": ": Your cab is on the way."
+            },
+            {
+                "user": "What is duration and cost?",
+                "assistant": ": The ride is 16 minutes and will cost $32.84."
+            },
+            {
+                "user": "That is all I need today."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetEvents",
+                    "description": "Get list of all calendar events for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetAvailableTime",
+                    "description": "Get a list of available times for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "AddEvent",
+                    "description": "Add event to the user's calendar",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetRide",
+                    "description": "Call a taxi to head to a given destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

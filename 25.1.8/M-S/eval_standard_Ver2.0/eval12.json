@@ -1,0 +1,56 @@
+[
+    {
+        "id": "MTU_Bench_M-S_12",
+        "query": [
+            {
+                "user": "Check for me please the weather in Mountain View."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveRestaurant",
+                    "description": "Reserve a table at a restaurant",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindRestaurants",
+                    "description": "Find a restaurant of a particular cuisine in a city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "GetWeather",
+                "arguments": {
+                    "city": "Mountain View"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "MTU_Bench_M-M_103",
+        "query": "I need to find a round trip flight to NYC from London, leaving day after tomorrow and returning on the 9th, in Economy class.",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetCarsAvailable",
+                    "description": "Discover cars available for rent in a certain location and period. The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveCar",
+                    "description": "Make a rental car reservation",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindBus",
+                    "description": "Search for a bus itinerary between two places on a certain date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyBusTicket",
+                    "description": "Purchase the bus tickets",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one way flights to the destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for roundtrip flights for the trip",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchRoundtripFlights",
+                "arguments": {
+                    "departure_date": "2024-01-06",
+                    "destination_airport": "New York",
+                    "origin_airport": "London",
+                    "return_date": "2025-01-09",
+                    "seating_class": "Economy"
+                }
+            }
+        ]
+    }
+]

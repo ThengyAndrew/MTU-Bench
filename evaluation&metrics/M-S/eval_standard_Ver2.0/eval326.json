@@ -1,0 +1,56 @@
+[
+    {
+        "id": "MTU_Bench_M-S_326",
+        "query": [
+            {
+                "user": "I need a place to sleep so I would like to book one room in a hotel.",
+                "assistant": ": Can you tell me when you will be going there? Is there a specific hotel you would like to make a booking?"
+            },
+            {
+                "user": "I will be going at the hotel on Friday next week. I would enjoy having a room at Kimpton Hotel Palomar Los Angeles Beverly Hills.",
+                "assistant": ": Can you tell me the number of days you need the room for? Do you have a specific city where you would like the hotel to be situated?"
+            },
+            {
+                "user": "I will need the room for 2 days and for the hotel to be in LAX. That suits me well. Do they have a phone number I can use to call them? Can you tell me if the hotel has wifi?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve a selected hotel for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Find a hotel at a given location",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "ReserveHotel",
+                "arguments": {
+                    "check_in_date": "2024-01-15",
+                    "destination": "Los Angeles",
+                    "hotel_name": "Kimpton Hotel Palomar Los Angeles Beverly Hills",
+                    "number_of_days": "2",
+                    "number_of_rooms": "1"
+                }
+            }
+        ]
+    }
+]

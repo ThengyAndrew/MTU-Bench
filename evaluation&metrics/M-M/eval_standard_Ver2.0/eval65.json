@@ -1,0 +1,86 @@
+[
+    {
+        "id": "MTU_Bench_M-M_65",
+        "query": "Hi! Can you find the restaurant Pizza Express Fen Ditton and tell me its address, phone number, and what type of food they serve?",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRestaurant",
+                    "description": "Allows users to search for restaurant information based on various filters.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "description": "The area where the restaurant is located."
+                            },
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "priceRange": {
+                                "description": "The price range of the restaurant."
+                            },
+                            "food": {
+                                "description": "Type of food or cuisine offered."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information to be returned, can include options such as 'all', 'name', 'address', 'phone'."
+                            }
+                        },
+                        "required": [
+                            "area"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookRestaurant",
+                    "description": "Allows users to make restaurant reservations.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "The name of the restaurant."
+                            },
+                            "day": {
+                                "description": "The date for the reservation."
+                            },
+                            "time": {
+                                "description": "The time for the reservation."
+                            },
+                            "people": {
+                                "description": "Number of people for the reservation."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Information that will be returned, including options such as 'all', 'name', 'phone', 'address', 'postcode'."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "day",
+                            "time",
+                            "people"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchRestaurant",
+                "arguments": {
+                    "name": "Pizza Express Fen Ditton",
+                    "return_info": [
+                        "food",
+                        "address",
+                        "phone"
+                    ]
+                }
+            }
+        ]
+    }
+]

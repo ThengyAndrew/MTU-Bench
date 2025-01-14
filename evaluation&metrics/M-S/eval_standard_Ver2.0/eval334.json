@@ -1,0 +1,58 @@
+[
+    {
+        "id": "MTU_Bench_M-S_334",
+        "query": [
+            {
+                "user": "Find me a one way flight.",
+                "assistant": ": What city are you flying from?"
+            },
+            {
+                "user": "I'd like to leave from NY on the 1st of March and fly Economy.",
+                "assistant": ": Where are you heading?"
+            },
+            {
+                "user": "I'd like three tickets to London, UK.",
+                "assistant": ": I found a flight with American Airlines that costs $203 and takes off at 6:15 pm with 0 stops."
+            },
+            {
+                "user": "I'd actually prefer Southwest Airlines.",
+                "assistant": ": I found 1 flight with Southwest Airlines that costs $267, has 0 stops, and takes off at 4:35 pm."
+            },
+            {
+                "user": "What time would I arrive in London?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one-way flights to the destination of choice",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for round-trip flights to the destination of choice",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

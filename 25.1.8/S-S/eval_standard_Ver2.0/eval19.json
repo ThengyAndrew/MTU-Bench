@@ -1,0 +1,66 @@
+[
+    {
+        "id": "MTU_Bench_M-M_19",
+        "query": "I need a shared cab for four people to 377 13th Street for the event on the 11th of this month.",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetEvents",
+                    "description": "Get list of all calendar events for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetAvailableTime",
+                    "description": "Get a list of available times for the user on a given day",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "AddEvent",
+                    "description": "Add event to the user's calendar",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "eee",
+                    "description": "Call a taxi to head to a given destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "eee",
+                "arguments": {
+                    "destination": "377 13th Street",
+                    "number_of_riders": 4,
+                    "shared_ride": "True"
+                }
+            }
+        ]
+    }
+]

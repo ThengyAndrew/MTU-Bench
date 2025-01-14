@@ -1,0 +1,98 @@
+[
+    {
+        "id": "MTU_Bench_M-S_305",
+        "query": [
+            {
+                "user": "I'm searching for a flight.",
+                "assistant": ": Which metropolis do you wish to leave from?"
+            },
+            {
+                "user": "Search for flights from Washington.",
+                "assistant": ": What place are you planning on visiting?"
+            },
+            {
+                "user": "I am taking a plane to Atlanta, GA."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetCarsAvailable",
+                    "description": "Discover cars available for rent in a certain location and period. The date related parameter's value should match the format \"^\\d{4}-\\d{2}-\\d{2}$\". The parameter value related to time should match the format HH:MM.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveCar",
+                    "description": "Make a rental car reservation",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindBus",
+                    "description": "Search for a bus itinerary between two places on a certain date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BuyBusTicket",
+                    "description": "Purchase the bus tickets",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchOnewayFlight",
+                    "description": "Search for one way flights to the destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchRoundtripFlights",
+                    "description": "Search for roundtrip flights for the trip",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "",
+                "arguments": {}
+            }
+        ]
+    }
+]

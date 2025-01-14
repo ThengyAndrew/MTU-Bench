@@ -1,0 +1,65 @@
+[
+    {
+        "id": "MTU_Bench_M-S_287",
+        "query": [
+            {
+                "user": "I am looking for some attractions to visit with some friends.",
+                "assistant": ": What city should I search in?"
+            },
+            {
+                "user": "I am looking for a performance venue in New York.",
+                "assistant": ": How about 92nd Street Y? It is a Performing Arts Venue."
+            },
+            {
+                "user": "Okay, that sounds good. What is the weather looking like on the March 10th?"
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetWeather",
+                    "description": "Get the weather of a certain location on a date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetRide",
+                    "description": "Call a taxi to head to a given destination",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "GetWeather",
+                "arguments": {
+                    "city": "New York",
+                    "date": "2024-03-10"
+                }
+            }
+        ]
+    }
+]

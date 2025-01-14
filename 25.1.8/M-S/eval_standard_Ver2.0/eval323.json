@@ -1,0 +1,118 @@
+[
+    {
+        "id": "MTU_Bench_M-S_323",
+        "query": [
+            {
+                "user": "I'm interested in any boats on the westside."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchAttraction",
+                    "description": "To search for attractions based on name, type, and location, with the capability to specify returned fields.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the attraction."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of attraction."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the attraction."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned. Options can include various attributes of the attractions."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchTrain",
+                    "description": "Searches for train information including pricing, schedules, and duration.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "departure": {
+                                "description": "Starting location of the train journey"
+                            },
+                            "destination": {
+                                "description": "Final destination of the train journey"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            },
+                            "day": {
+                                "description": "The date for the train search"
+                            },
+                            "leaveAt": {
+                                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+                            },
+                            "arriveBy": {
+                                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+                            },
+                            "trainID": {
+                                "description": "Specific train identifier"
+                            }
+                        },
+                        "required": [
+                            "departure",
+                            "destination",
+                            "return_info"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookTrain",
+                    "description": "Enables users to book train tickets.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "people": {
+                                "description": "Number of passengers for the booking"
+                            },
+                            "trainID": {
+                                "description": "The identifier of the train to be booked"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            }
+                        },
+                        "required": [
+                            "people",
+                            "trainID"
+                        ]
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "searchAttraction",
+                "arguments": {
+                    "type": "boat",
+                    "area": "west",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,173 @@
+[
+    {
+        "id": "MTU_Bench_M-S_264",
+        "query": [
+            {
+                "user": "I am leaving Cambridge and need to go to Broxbourne on Friday .",
+                "assistant": ": There are 19 trains for Friday that fit your needs, would you like to narrow that down with a time you would like to depart?"
+            },
+            {
+                "user": "I need to arrive by 18:15 please ."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchTrain",
+                    "description": "Searches for train information including pricing, schedules, and duration.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "departure": {
+                                "description": "Starting location of the train journey"
+                            },
+                            "destination": {
+                                "description": "Final destination of the train journey"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "List of details to be returned in response, with options such as 'all', 'trainID', 'Ticket' (price), 'ArriveBy', 'leaveAt'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            },
+                            "day": {
+                                "description": "The date for the train search"
+                            },
+                            "leaveAt": {
+                                "description": "Desired time of departure (requires either leaveAt or arriveBy)"
+                            },
+                            "arriveBy": {
+                                "description": "Desired time of arrival (requires either leaveAt or arriveBy)"
+                            },
+                            "trainID": {
+                                "description": "Specific train identifier"
+                            }
+                        },
+                        "required": [
+                            "departure",
+                            "destination",
+                            "return_info"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "BookTrain",
+                    "description": "Enables users to book train tickets.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "people": {
+                                "description": "Number of passengers for the booking"
+                            },
+                            "trainID": {
+                                "description": "The identifier of the train to be booked"
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Details that the user will receive after booking, including options like 'all', 'isSuccess', 'reference', 'Ticket'. If the user does not specify what information is needed, select 'all'; otherwise, fill in the corresponding name."
+                            }
+                        },
+                        "required": [
+                            "people",
+                            "trainID"
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "searchHotel",
+                    "description": "To search for hotels based on a set of criteria including rating, type, amenities, location, and price range.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "stars": {
+                                "type": "string",
+                                "description": "The hotel rating based on stars."
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "The type of hotel."
+                            },
+                            "parking": {
+                                "type": "boolean",
+                                "description": "Availability of parking at the hotel."
+                            },
+                            "internet": {
+                                "type": "boolean",
+                                "description": "Availability of internet service at the hotel."
+                            },
+                            "area": {
+                                "type": "string",
+                                "description": "The location area of the hotel."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the hotel."
+                            },
+                            "priceRange": {
+                                "type": "string",
+                                "description": "The price range of the hotel."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "A list specifying the fields to be returned."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "bookHotel",
+                    "description": "To book hotels by providing booking date, hotel name, duration of stay, number of people, and specifying fields to be returned.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "day": {
+                                "type": "string",
+                                "description": "The booking date."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The hotel name for the booking."
+                            },
+                            "stay": {
+                                "type": "string",
+                                "description": "The number of days to stay at the hotel."
+                            },
+                            "people": {
+                                "type": "string",
+                                "description": "The number of people for the booking."
+                            },
+                            "return_info": {
+                                "type": "array",
+                                "description": "Fields to be returned after booking."
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "SearchTrain",
+                "arguments": {
+                    "day": "friday",
+                    "departure": "cambridge",
+                    "destination": "broxbourne",
+                    "arriveBy": "18:15",
+                    "return_info": [
+                        "all"
+                    ]
+                }
+            }
+        ]
+    }
+]

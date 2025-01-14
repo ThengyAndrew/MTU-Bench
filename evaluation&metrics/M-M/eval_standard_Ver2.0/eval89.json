@@ -1,0 +1,54 @@
+[
+    {
+        "id": "MTU_Bench_M-M_89",
+        "query": "I'd like to find a two-bedroom apartment in Richmond that's furnished.",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindApartment",
+                    "description": "Find an apartment in a city for a given number of bedrooms",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ScheduleVisit",
+                    "description": "Schedule a visit for a given property on a particular date",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "GetRide",
+                    "description": "Book a cab for any destination, number of seats and ride type",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "FindApartment",
+                "arguments": {
+                    "area": "Richmond",
+                    "number_of_beds": "2",
+                    "furnished": "True"
+                }
+            }
+        ]
+    }
+]

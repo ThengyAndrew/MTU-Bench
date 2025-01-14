@@ -1,0 +1,80 @@
+[
+    {
+        "id": "MTU_Bench_M-S_336",
+        "query": [
+            {
+                "user": "I want to search for some attractive places to visit. Can you help me to find something suit to me?",
+                "assistant": ": Yes, in which City do you like to search for the attraction, any particular place you like to visit?"
+            },
+            {
+                "user": "Yes, search it in Chicago.",
+                "assistant": ": What about a Tourist Attraction at 360 CHICAGO."
+            },
+            {
+                "user": "That is nice. Anything else you have in your list.",
+                "assistant": ": Yes, how about a Museum. Found the one that is American Writers Museum which is the favorite one for many people. Hope you will also enjoy there."
+            },
+            {
+                "user": "I think so. Make me a hotel booking for 3 days.",
+                "assistant": ": Do you have any preferred Hotel to book rooms?"
+            },
+            {
+                "user": "Yes, Hotel Chicago Athletic Association will be perfect. Check there for reservation.",
+                "assistant": ": From Which date you need the rooms?"
+            },
+            {
+                "user": "Make the booking for one room from Saturday this week. That is correct to proceed."
+            }
+        ],
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "FindAttractions",
+                    "description": "Browse attractions in a given city",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve a selected hotel for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Find a hotel at a given location",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "ReserveHotel",
+                "arguments": {
+                    "check_in_date": "2024-01-09",
+                    "destination": "Chicago",
+                    "hotel_name": "Chicago Athletic Association",
+                    "number_of days": "3",
+                    "number_of_rooms": "1"
+                }
+            }
+        ]
+    }
+]

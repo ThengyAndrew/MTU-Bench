@@ -1,0 +1,41 @@
+[
+  {
+        "query": "Can you find a good but affordable Italian restaurant in Campbell where I can have lots of pasta, and make a reservation for 2 at 5:30 pm? Also, it should serve alcohol but no live music is needed.",
+        "candidate_apis": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "ReserveHotel",
+                    "description": "Reserve rooms at a selected place for given dates",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "SearchHotel",
+                    "description": "Look for accommodation in a city of choice",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            }
+        ],
+        "response": [
+            {
+                "name": "FindRestaurants",
+                "arguments": {
+                    "city": "Campbell",
+                    "cuisine": "Italian",
+                    "price_range": "moderate"
+                }
+            }
+        ]
+    }
+]
